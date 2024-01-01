@@ -1,8 +1,9 @@
 import { createElement } from "react";
-import { View } from "react-native";
+import { View, Text } from "react-native";
 import { validateSchema, validationStatus } from './util/Validation'
 import { ErrorList, ErrorItem } from "./util/Error";
-
+import { ObjectProvider } from "./context/ObjectProvider"
+import { ObjectState } from "./context/ObjectState";
 
 export const Form = ({schema, uischema, initData}:any) => {
     const validation:validationStatus = validateSchema(schema, initData);
@@ -22,9 +23,18 @@ export const Form = ({schema, uischema, initData}:any) => {
             );
         }        
     }
+
+    const INITIAL_STATE: ObjectState = {
+        _schema: schema,
+        _uischema: uischema,
+        _initData: initData
+    }
+
     return (
-        <View>
-            <ErrorItem  message={"Everything goes Well!!"}/>
-        </View>
+        <ObjectProvider 
+            objectState={INITIAL_STATE}
+        > 
+           <Text>As</Text>
+        </ObjectProvider>
     );
 }
