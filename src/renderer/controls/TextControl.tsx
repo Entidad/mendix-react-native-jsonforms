@@ -6,18 +6,19 @@ const styles = StyleSheet.create({
     inputText: {
         height: 40,
         margin: 12,
-        borderWidth: 1,
         padding: 10,
+        borderColor:'#000000',
+        borderWidth:2
       },
 });
 
-export const InputTextControl = () => {
+export const TextControl = () => {
     const { state } = useObject();
     let label="";
     console.log(state);
     return (
         <View>
-            <Text>{label || ''}</Text>            
+            <Text>{label || 'No label included'}</Text>            
             <TextInput
                 style={styles.inputText}
                 keyboardType="default"

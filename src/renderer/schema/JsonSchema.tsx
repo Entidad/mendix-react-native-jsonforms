@@ -27,6 +27,33 @@
 */
 
 export interface JsonSchema {
+    
+  type?: string;              // can be: string, boolean, integer, number, object, array, null  
+  description?: string;       // Description
+  format?: string;            // can be: date, time, datetime  
+  default?: any;              // Default json for the object represented by this schema  
+  required?: string[];        // Required fields
+  enum?: any[];               // Enumerates the values that this schema can be {"type": "string", "enum": ["red", "green", "blue"]}
+  readOnly?: boolean;
+  properties?: { [property: string]: JsonSchema };
+
+  // Number Validation
+  maximum?: number;           // If true maximum must be > value, >= otherwise
+  minimum?: number;           // If true minimum must be < value, <= otherwise
+ 
+  // String Validation
+  maxLength?: number;
+  minLength?: number;  
+  pattern?: string;           // This is a regex string that the value must conform to
+
+  // Combining Schemas
+  allOf?: JsonSchema[];
+  anyOf?: JsonSchema[];
+  oneOf?: JsonSchema[];
+  
+}
+
+export interface JsonSchemaOld {
   
   $ref?: string;              // This is important because it tells refs where the root of the document is located
   $id?: string;
