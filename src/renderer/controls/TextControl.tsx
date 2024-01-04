@@ -3,26 +3,50 @@ import { createElement } from 'react'
 import { StyleSheet, View, TextInput, Text } from "react-native";
 
 const styles = StyleSheet.create({
-    inputText: {
+    inputControl: {
         height: 40,
-        margin: 12,
-        padding: 10,
+        marginLeft: 12,
         borderColor:'#000000',
-        borderWidth:2
-      },
+        borderWidth:1,
+        marginBottom:12
+    },
+    inputLabel:{
+        marginLeft: 12
+    }
 });
 
-export const TextControl = () => {
-    const { state } = useObject();
-    let label="";
+export function TextControl(props:any){
+    const state = useObject();      
     console.log(state);
     return (
         <View>
-            <Text>{label || 'No label included'}</Text>            
+            <Text style={styles.inputLabel}>{props.label || 'No label included'}</Text>            
             <TextInput
-                style={styles.inputText}
+                style={styles.inputControl}
                 keyboardType="default"
+                placeholder={"Hola ..."}
+                maxLength={10}
             />
         </View>   
     )
 }
+
+/*
+keyboardType:
+default
+number-pad
+decimal-pad
+numeric
+email-address
+phone-pad
+url
+
+editable={true} with value={value}
+autoCapitalize={"characters"} 
+characters: all characters.
+words: first letter of each word.
+sentences: first letter of each sentence (default).
+none: don't auto capitalize anything.
+autoCorrect: false or true (default value:true)
+
+*/
