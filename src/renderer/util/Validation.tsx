@@ -1,5 +1,5 @@
 import Ajv from 'ajv';
-import { JsonSchema } from '../schema/JsonSchema'
+import { JsonSchema } from '../schemas/JsonSchema'
 import addFormats from 'ajv-formats';
 import type { Options, ErrorObject} from 'ajv';
 

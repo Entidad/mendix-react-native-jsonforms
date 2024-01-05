@@ -1,7 +1,7 @@
-import { JsonSchema } from '../schema/JsonSchema'
+import { JsonSchema, JsonUISchema, JsonData } from '../schemas/JsonSchema'
 
 export interface ObjectState {
     _schema: JsonSchema;
-    _uischema:JsonSchema;
-    _initData: JsonSchema;
+    _uischema:JsonUISchema;
+    _initData: JsonData;
 }
