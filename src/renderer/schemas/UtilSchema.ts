@@ -92,51 +92,58 @@ function TypeControl_FromRJSF(_type:string, _format:string, _enum:any, _uischema
 }
 
 function TypeControl_FromJSONForms(_type:string, _format:string, _enum:any, _uischema:any, _property:string):ControlType{
-  let props:any=getProperties_JSONForm(_uischema, _property);
-  if(props){
-    let options=props.options??undefined;    
-    if(options){
-      //Text
-      if(_type==="string" && _format==="password"){
-        return ControlType.PasswordControl;      
-      }
-      if(_type==="string" && _format===undefined && options.multi===true){
-        return ControlType.TextAreaControl;      
-      }
-      //IntegerRange
-      if(_type==="number" && options.slider===true){
-        return ControlType.IntegerRangeControl;      
-      }
-      //RadioButton
-      if(_type==="string" && _enum!=undefined && options.format==="radio"){
-        return ControlType.RadioControl;      
-      }
-      //Date
-      if(_type==="string" && (_format==="date" || options.format==="date")){
-        return ControlType.DateControl;
-      }
-      if(_type==="string" && (_format==="time" || options.format==="time")){
-        return ControlType.TimeControl;
-      }
-      if(_type==="string" && (_format==="date-time" || options.format==="date-time")){
-        return ControlType.DateTimeControl;      
-      }
-    }else{
-      if(_type==="string"){
-        return ControlType.TextControl;      
-      }
-      if(_type==="integer"){
-        return ControlType.IntegerControl;
-      }
-      if(_type==="number"){
-        return ControlType.NumberControl;      
-      }
-      if(_type==="boolean"){
-        return ControlType.CheckBoxControl;      
-      }
-      if(_type==="string" && _enum!=undefined){
-        return ControlType.EnumControl;      
-      }
+  let options:any=getOptions_JSONForm(_uischema, _property);
+  if(options){
+    //Text   
+    if(_type==="string" && options.multi===true){
+      return ControlType.TextAreaControl;      
+    }
+    //IntegerRange
+    if(_type==="number" && options.slider===true){
+      return ControlType.IntegerRangeControl;      
+    }
+    //RadioButton
+    if(_type==="string" && _enum!=undefined && options.format==="radio"){
+      return ControlType.RadioControl;      
+    }
+    //Date
+    if(_type==="string" && options.format==="date"){
+      return ControlType.DateControl;
+    }
+    if(_type==="string" && options.format==="time"){
+      return ControlType.TimeControl;
+    }
+    if(_type==="string" && options.format==="date-time"){
+      return ControlType.DateTimeControl;      
+    }
+  }else{
+    //Date
+    if(_type==="string" && _format==="date"){
+      return ControlType.DateControl;
+    }
+    if(_type==="string" && _format==="time"){
+      return ControlType.TimeControl;
+    }
+    if(_type==="string" && _format==="date-time"){
+      return ControlType.DateTimeControl;      
+    }
+    if(_type==="string" && _format==="password"){
+      return ControlType.PasswordControl;      
+    }
+    if(_type==="string" && _enum!=undefined){
+      return ControlType.EnumControl;      
+    }
+    if(_type==="string"){
+      return ControlType.TextControl;      
+    }
+    if(_type==="integer"){
+      return ControlType.IntegerControl;
+    }
+    if(_type==="number"){
+      return ControlType.NumberControl;      
+    }
+    if(_type==="boolean"){
+      return ControlType.CheckBoxControl;      
     }
   }
   return ControlType.UnknownControl;
@@ -171,7 +178,7 @@ export function getProperties_RJSF(_uischema:any, _property:string){
 }
 
 // Get Options from property
-export function getProperties_JSONForm(uischema:JsonUISchema, property:string){
+export function getOptions_JSONForm(uischema:JsonUISchema, property:string){
   let path="#/properties/"+property;
   let UI_Elements:UISchemaElement[]=uischema.elements??undefined;
   if(UI_Elements){
