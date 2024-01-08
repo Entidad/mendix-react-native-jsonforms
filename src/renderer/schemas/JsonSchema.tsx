@@ -29,7 +29,9 @@
 export interface JsonSchema {
     
   type?: string;              // can be: string, boolean, integer, number, object, array, null  
-  title?: string;             // Description
+  title?: string;             // Title or label
+  label?: string;             // Title or label
+  description?: string;       // Description
   format?: string;            // can be: date, time, datetime  
   default?: any;              // Default json for the object represented by this schema  
   required?: string[];        // Required fields
@@ -53,6 +55,7 @@ export interface JsonSchema {
   
 }
 
+//Support for work with UI Schema from JsonForms
 export interface JsonUISchema{
   type:string;                       // Type of UISchema
   elements: UISchemaElement[];       // Schema elements  
@@ -83,6 +86,28 @@ export interface UISchemaElementOption{
   views?:string[];                    // Array defining which views are displayed. Options: year, month, date
 }
 
+//Support for work with UI Schema from RJSF: React JSON Schema Forms
+export interface RJSF_UISchema{  
+  [property: string]: RJSF_Property;  
+}
+
+export interface RJSF_Property {
+  "ui:widget": string;
+  "ui:title"?: string;
+  "ui:description"?: string;
+  "ui:readonly"?:boolean;
+  "ui:disabled"?:boolean;
+  "ui:help"?: string;
+  "ui:emptyValue"?: string;
+  "ui:placeholder"?: string;  
+  "ui:options"?: { [property: string]: string }
+}
+
+export interface RJSF_Order{  
+  "ui:order": string[];  
+}
+
+//Support for work with Data 
 export interface JsonData {
-  [key: string]: any;
+  [property: string]: any;
 }

@@ -5,6 +5,7 @@ import { ErrorList, ErrorItem } from "./util/Error";
 import { ObjectProvider } from "./context/ObjectProvider"
 import { ObjectState } from "./context/ObjectState";
 import { TextControl, UnknownControl } from "./controls";
+import { getTypeControl, ControlType } from './schemas/UtilSchema'
 
 export const Form = ({schema, uischema, initData}:any) => {
     const validation:validationStatus = validateSchema(schema, initData);
@@ -28,8 +29,8 @@ export const Form = ({schema, uischema, initData}:any) => {
         _schema: schema,
         _uischema: uischema,
         _initData: initData
-    }
-    let elements=elementList(schema);
+    }    
+    let elements=elementList(schema, uischema);
     return (            
         <ObjectProvider 
             objectState={INITIAL_STATE}
@@ -44,7 +45,34 @@ export const Form = ({schema, uischema, initData}:any) => {
    
 }
 
-export const elementList = (schema:any):JSX.Element[] =>{
+export const elementList = (schema:any, uischema:any):JSX.Element[] =>{
+    let properties=schema.properties??undefined;
+    let elements:JSX.Element[]=[];
+    if(properties){        
+        for(let property in properties){
+            let props=properties[property];
+            let control=getTypeControl(props.type, props.format, props.enum, uischema, property);
+            let aux=property+"-"+control;
+            switch(control){
+                case ControlType.TextControl:
+                    elements.push(<TextControl label={aux}/>)
+                    break;
+                default:
+                    elements.push(<UnknownControl label={aux}/>)
+                    break;
+            }            
+        }
+    }else{
+        elements.push(
+            <View>
+                <ErrorItem  message={"No properties"}/>
+            </View>
+        );
+    }
+    return elements;
+}
+
+export const elementListOld = (schema:any):JSX.Element[] =>{
     let properties=schema.properties??undefined;
     let elements:JSX.Element[]=[];
     if(properties){        
@@ -65,4 +93,3 @@ export const elementList = (schema:any):JSX.Element[] =>{
     }
     return elements;
 }
-

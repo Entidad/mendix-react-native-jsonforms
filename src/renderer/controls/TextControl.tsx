@@ -31,6 +31,8 @@ export function TextControl(props:any){
     )
 }
 
+
+
 /*
 keyboardType:
 default
