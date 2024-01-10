@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
     }
 });
 
-export function TextControl(props:ControlProps){
+export function IntegerControl(props:ControlProps){
     const state = useObject();          
     console.log(state);
     return (
@@ -24,7 +24,7 @@ export function TextControl(props:ControlProps){
             <Text style={styles.inputLabel}>{props.label || 'No label included'}</Text>            
             <TextInput
                 style={styles.inputControl}
-                keyboardType="default"
+                keyboardType="numeric"
                 placeholder={props.placeholder}
             />
         </View>   
@@ -56,10 +56,15 @@ autoCorrect: false or true (default value:true)
 //default
 // minLength
 // maxLength
-
+// ui:emptyValue, ui:placeholder
 
 //title, description, label () y 
 // DEFAUYLT, MINLENGHT, MAXLENGTH
 
+
+“ui:description”
+“ui:help” (hint)
+“ui:disabled”: true
+"ui:readonly"
 
 */

@@ -38,10 +38,7 @@ function TypeControl_FromRJSF(_type:string, _format:string, _enum:any, _uischema
   let props:RJSF_Property|undefined=getProperties_RJSF(_uischema, _property);    
   if(props){
     let widget=props["ui:widget"]??undefined;    
-    //Text
-    if(_type==="string" && widget===undefined){
-      return ControlType.TextControl;      
-    }
+    //Text    
     if(_type==="string" && widget==="textarea"){
       return ControlType.TextAreaControl;      
     }
@@ -49,41 +46,44 @@ function TypeControl_FromRJSF(_type:string, _format:string, _enum:any, _uischema
       return ControlType.PasswordControl;      
     }
     //Number
-    if(_type==="number" && widget===undefined){
-      return ControlType.NumberControl;      
-    }
     if(_type==="number" && widget==="radio"){
       return ControlType.NumberEnumControl;      
     }
+    if(_type==="number"){
+      return ControlType.NumberControl;      
+    }    
     //Integer
-    if(_type==="integer" && widget===undefined){
-      return ControlType.IntegerControl;      
-    }
     if(_type==="integer" && widget==="range"){
       return ControlType.IntegerRangeControl;      
     }
-    //Boolean
-    if(_type==="boolean" && widget===undefined){
-      return ControlType.CheckBoxControl;      
-    }
+    if(_type==="integer"){
+      return ControlType.IntegerControl;      
+    }    
+    //Boolean    
     if(_type==="boolean" && widget==="radio"){
       return ControlType.RadioControl;      
     }
     if(_type==="boolean" && widget==="select"){
       return ControlType.SelectControl;      
     }
+    if(_type==="boolean"){
+      return ControlType.CheckBoxControl;      
+    }    
     //Date    
-    if(_type==="string" && _format==="date" && widget===undefined){
+    if(_type==="string" && _format==="date"){
       return ControlType.DateControl;
     }
-    if(_type==="string" && _format==="time" && widget===undefined){
+    if(_type==="string" && _format==="time"){
       return ControlType.TimeControl;
     }
-    if(_type==="string" && _format==="date-time" && widget===undefined){
+    if(_type==="string" && _format==="date-time"){
       return ControlType.DateTimeControl;      
+    }    
+    if(_type==="string"){
+      return ControlType.TextControl;      
     }
     //Enum
-    if(_type==="string" && _enum!==undefined && widget===undefined){
+    if(_type==="string" && _enum!==undefined){
       return ControlType.EnumControl;      
     }
   }
@@ -166,7 +166,20 @@ export function isRJSFSchema(_uischema:any){
   return true;
 }
 
-// Get RJSF Properties from by property
+// Get Properties from schema
+export function getBasicProperties(_schema:any, _property:string){
+  let properties=_schema.properties??undefined;
+  if(properties){        
+      for(let property in properties){     
+          if(property===_property){
+              return properties[property];
+          }
+      }
+  }
+  return undefined;
+}
+
+// Get RJSF Properties from by property in UISchema
 export function getProperties_RJSF(_uischema:any, _property:string){
   let uischema:RJSF_UISchema=_uischema;
   for(let property in uischema){
@@ -177,7 +190,7 @@ export function getProperties_RJSF(_uischema:any, _property:string){
   return undefined;
 }
 
-// Get Options from property
+// Get Options from property in UISchema
 export function getOptions_JSONForm(uischema:JsonUISchema, property:string){
   let path="#/properties/"+property;
   let UI_Elements:UISchemaElement[]=uischema.elements??undefined;
@@ -185,6 +198,20 @@ export function getOptions_JSONForm(uischema:JsonUISchema, property:string){
       for(let UI_Element of UI_Elements){  
           if(UI_Element.type==="Control" && UI_Element.scope===path){
               return UI_Element.options;
+          }
+      }
+  }
+  return undefined;
+}
+
+// Get Options from property in UISchema
+export function getUIElement_JSONForm(uischema:JsonUISchema, property:string){
+  let path="#/properties/"+property;
+  let UI_Elements:UISchemaElement[]=uischema.elements??undefined;
+  if(UI_Elements){
+      for(let UI_Element of UI_Elements){  
+          if(UI_Element.type==="Control" && UI_Element.scope===path){
+              return UI_Element;
           }
       }
   }
