@@ -3,7 +3,7 @@ import {
     getUIElement_JSONForm,
     getBasicProperties
 } from '../schemas/UtilSchema'
-import {isRJSFSchema} from '../schemas/UtilSchema'
+import { isRJSFSchema } from '../schemas/UtilSchema'
 export interface ControlProps{
     label?:string;
     title?:string;
@@ -50,6 +50,7 @@ export function initControlProps(){
     let props:ControlProps= {
         label:undefined, 
         value:undefined, 
+        default:undefined,
         description:undefined,
         hint:undefined,
         readonly:false,
@@ -115,6 +116,9 @@ export function setControlProps_RJSF(_uischema:any, _property:string, _props:Con
         }
         if(attrs["ui:title"]){
             _props.label=attrs["ui:title"];
+        }
+        if(attrs["ui:emptyValue"]){
+            _props.value=attrs["ui:emptyValue"];
         }
         if(attrs["ui:options"]){
             _props.options=attrs["ui:options"];

@@ -1,7 +1,6 @@
 import { useObject } from '../context/ObjectHook';
 import { createElement } from 'react'
 import { StyleSheet, View, TextInput, Text } from "react-native";
-import { ControlProps } from './Util'
 
 const styles = StyleSheet.create({
     inputControl: {
@@ -16,50 +15,30 @@ const styles = StyleSheet.create({
     }
 });
 
-export function TextControl(props:ControlProps){
+export function TextControl(props:any){
     const state = useObject();          
     console.log(state);
+    const _onChange = (text:any) => {
+        return text || props.default || props.value;
+     };
     return (
         <View>
             <Text style={styles.inputLabel}>{props.label || 'No label included'}</Text>            
+            
             <TextInput
                 style={styles.inputControl}
                 keyboardType="default"
+                maxLength={props.maxLength}
                 placeholder={props.placeholder}
+                placeholderTextColor='lightgray'
+                defaultValue={props.default??props.value}
+                editable={props.readonly!}
+                onChangeText={(text) => _onChange(text)}
             />
         </View>   
     )
 }
 
-
-
 /*
-keyboardType:
-default
-number-pad
-decimal-pad
-numeric
-email-address
-phone-pad
-url
-
-editable={true} with value={value}
-autoCapitalize={"characters"} 
-characters: all characters.
-words: first letter of each word.
-sentences: first letter of each sentence (default).
-none: don't auto capitalize anything.
-autoCorrect: false or true (default value:true)
-
-//Params:
-//placeholder
-//default
-// minLength
-// maxLength
-
-
-//title, description, label () y 
-// DEFAUYLT, MINLENGHT, MAXLENGTH
-
-
+<Text>{JSON.stringify(props)}</Text>
 */

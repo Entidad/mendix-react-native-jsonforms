@@ -4,9 +4,16 @@ import { validateSchema, validationStatus } from './util/Validation'
 import { ErrorList, ErrorItem } from "./util/Error";
 import { ObjectProvider } from "./context/ObjectProvider"
 import { ObjectState } from "./context/ObjectState";
-import { TextControl, NumberControl, IntegerControl, UnknownControl } from "./controls";
 import { getControlProps } from "./controls/Util"
 import { getTypeControl, ControlType } from './schemas/UtilSchema'
+import { 
+    TextControl, 
+    TextAreaControl,
+    PasswordControl,
+    NumberControl, 
+    IntegerControl, 
+    UnknownControl 
+} from "./controls";
 
 export const Form = ({schema, uischema, initData}:any) => {
     const validation:validationStatus = validateSchema(schema, initData);
@@ -54,48 +61,24 @@ export const elementList = (schema:any, uischema:any):JSX.Element[] =>{
             let initProps=properties[property];
             let control=getTypeControl(initProps.type, initProps.format, initProps.enum, uischema, property);
             let props=getControlProps(schema, uischema, property);
-            let aux=property+"-"+control;
             switch(control){
                 case ControlType.TextControl:
-                    elements.push(
-                        <TextControl 
-                            label={props.label??props.title}
-                            description={props.description}
-                            maxLength={props.maxLength}
-                            minLength={props.minLength}
-                            placeholder={props.placeholder}
-                            readonly={props.readonly}
-                            disabled={props.disabled}
-                            value={props.default}                            
-                        />);
+                    elements.push(<TextControl props={props}/>);
                     break;
+                case ControlType.TextAreaControl:                        
+                    elements.push(<TextAreaControl props={props}/>);
+                    break;     
                 case ControlType.NumberControl:                        
-                    elements.push(
-                        <NumberControl 
-                            label={props.label??props.title}
-                            description={props.description}
-                            maxLength={props.maxLength}
-                            minLength={props.minLength}
-                            placeholder={props.placeholder}
-                            readonly={props.readonly}
-                            disabled={props.disabled}
-                            value={props.default}                            
-                        />);
+                    elements.push(<NumberControl props={props}/>);
                     break;                    
                 case ControlType.IntegerControl:
-                    elements.push(
-                        <IntegerControl 
-                            label={props.label??props.title}
-                            description={props.description}
-                            maxLength={props.maxLength}
-                            minLength={props.minLength}
-                            placeholder={props.placeholder}
-                            readonly={props.readonly}
-                            disabled={props.disabled}
-                            value={props.default}                            
-                        />);
-                    break;                                            
+                    elements.push(<IntegerControl props={props}/>);
+                    break;       
+                case ControlType.PasswordControl:
+                    elements.push(<PasswordControl props={props}/>);
+                    break;                                                              
                 default:
+                    let aux=property+", Type:"+ControlType[control];
                     elements.push(<UnknownControl label={aux}/>)
                     break;
             }            

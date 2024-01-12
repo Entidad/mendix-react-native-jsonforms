@@ -1,7 +1,6 @@
 import { useObject } from '../context/ObjectHook';
 import { createElement } from 'react'
 import { StyleSheet, View, TextInput, Text } from "react-native";
-import { ControlProps } from './Util'
 
 const styles = StyleSheet.create({
     inputControl: {
@@ -16,7 +15,7 @@ const styles = StyleSheet.create({
     }
 });
 
-export function NumberControl(props:ControlProps){
+export function NumberControl(props:any){
     const state = useObject();          
     console.log(state);
     return (
@@ -30,41 +29,3 @@ export function NumberControl(props:ControlProps){
         </View>   
     )
 }
-
-
-
-/*
-keyboardType:
-default
-number-pad
-decimal-pad
-numeric
-email-address
-phone-pad
-url
-
-editable={true} with value={value}
-autoCapitalize={"characters"} 
-characters: all characters.
-words: first letter of each word.
-sentences: first letter of each sentence (default).
-none: don't auto capitalize anything.
-autoCorrect: false or true (default value:true)
-
-//Params:
-//placeholder
-//default
-// minLength
-// maxLength
-// ui:emptyValue, ui:placeholder
-
-//title, description, label () y 
-// DEFAUYLT, MINLENGHT, MAXLENGTH
-
-
-“ui:description”
-“ui:help” (hint)
-“ui:disabled”: true
-"ui:readonly"
-
-*/

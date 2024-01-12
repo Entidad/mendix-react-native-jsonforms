@@ -15,17 +15,21 @@ const styles = StyleSheet.create({
     }
 });
 
-export function IntegerControl(props:any){
+export function PasswordControl(props:any){
     const state = useObject();          
     console.log(state);
     return (
         <View>
-            <Text style={styles.inputLabel}>{props.label || 'No label included'}</Text>            
+            <Text style={styles.inputLabel}>{props.label || 'No label included'}</Text>     
             <TextInput
                 style={styles.inputControl}
-                keyboardType="numeric"
-                placeholder={props.placeholder}
+                keyboardType="default"
+                maxLength={props.maxLength}
             />
         </View>   
     )
 }
+
+/*
+<Text>{JSON.stringify(props)}</Text>
+*/
