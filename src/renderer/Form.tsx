@@ -12,6 +12,8 @@ import {
     PasswordControl,
     NumberControl, 
     IntegerControl, 
+    RadioControl,
+    CheckBoxControl,
     UnknownControl 
 } from "./controls";
 
@@ -74,11 +76,17 @@ export const elementList = (schema:any, uischema:any):JSX.Element[] =>{
                 case ControlType.IntegerControl:
                     elements.push(<IntegerControl props={props}/>);
                     break;       
+                case ControlType.RadioControl:                        
+                    elements.push(<RadioControl props={props}/>);
+                    break;                    
+                case ControlType.CheckBoxControl:
+                    elements.push(<CheckBoxControl props={props}/>);
+                    break;                           
                 case ControlType.PasswordControl:
                     elements.push(<PasswordControl props={props}/>);
                     break;     
                 default:
-                    let aux=property+", Type:"+ControlType[control];
+                    let aux=property+",Type:"+initProps.type+", Ctrl:"+ControlType[control];
                     elements.push(<UnknownControl label={aux}/>)
                     break;
             }            

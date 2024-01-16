@@ -49,16 +49,12 @@ function TypeControl_FromRJSF(_type:string, _format:string, _enum:any, _uischema
     if(_type==="number" && widget==="radio"){
       return ControlType.NumberEnumControl;      
     }
-    if(_type==="number"){
-      return ControlType.NumberControl;      
-    }    
+
     //Integer
     if(_type==="integer" && widget==="range"){
       return ControlType.IntegerRangeControl;      
     }
-    if(_type==="integer"){
-      return ControlType.IntegerControl;      
-    }    
+      
     //Boolean    
     if(_type==="boolean" && widget==="radio"){
       return ControlType.RadioControl;      
@@ -66,9 +62,7 @@ function TypeControl_FromRJSF(_type:string, _format:string, _enum:any, _uischema
     if(_type==="boolean" && widget==="select"){
       return ControlType.SelectControl;      
     }
-    if(_type==="boolean"){
-      return ControlType.CheckBoxControl;      
-    }    
+    
     //Date    
     if(_type==="string" && _format==="date"){
       return ControlType.DateControl;
@@ -79,16 +73,25 @@ function TypeControl_FromRJSF(_type:string, _format:string, _enum:any, _uischema
     if(_type==="string" && _format==="date-time"){
       return ControlType.DateTimeControl;      
     }    
-    if(_type==="string"){
-      return ControlType.TextControl;      
-    }
+    
     //Enum
     if(_type==="string" && _enum!==undefined){
       return ControlType.EnumControl;      
     }
   }
-  return ControlType.UnknownControl;
-  
+  if(_type==="number"){
+    return ControlType.NumberControl;      
+  }    
+  if(_type==="integer"){
+    return ControlType.IntegerControl;      
+  }  
+  if(_type==="boolean"){
+    return ControlType.CheckBoxControl;      
+  }    
+  if(_type==="string"){
+    return ControlType.TextControl;      
+  }
+  return ControlType.UnknownControl;  
 }
 
 function TypeControl_FromJSONForms(_type:string, _format:string, _enum:any, _uischema:any, _property:string):ControlType{

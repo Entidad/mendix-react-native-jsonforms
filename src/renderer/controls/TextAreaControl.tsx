@@ -1,6 +1,5 @@
 import { useObject } from '../context/ObjectHook';
 import { createElement, useState } from 'react'
-
 import { StyleSheet, View, TextInput, Text } from "react-native";
 
 const styles = StyleSheet.create({
