@@ -18,21 +18,21 @@ const styles = StyleSheet.create({
 export function TextControl(props:any){
     const state = useObject();          
     console.log(state);
+    let attr=props.props;
     const _onChange = (text:any) => {
-        return text || props.default || props.value;
-     };
+        return text || attr.placeholder || attr.value;
+    };
     return (
         <View>
-            <Text style={styles.inputLabel}>{props.label || 'No label included'}</Text>            
-            
+            <Text style={styles.inputLabel}>{attr.label || 'No label included'}</Text>                        
             <TextInput
                 style={styles.inputControl}
                 keyboardType="default"
-                maxLength={props.maxLength}
-                placeholder={props.placeholder}
+                maxLength={attr.maxLength}
+                placeholder={attr.placeholder}
                 placeholderTextColor='lightgray'
-                defaultValue={props.default??props.value}
-                editable={props.readonly!}
+                defaultValue={attr.value}
+                editable={!attr.readonly}
                 onChangeText={(text) => _onChange(text)}
             />
         </View>   

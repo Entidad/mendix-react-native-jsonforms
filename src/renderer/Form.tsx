@@ -76,34 +76,12 @@ export const elementList = (schema:any, uischema:any):JSX.Element[] =>{
                     break;       
                 case ControlType.PasswordControl:
                     elements.push(<PasswordControl props={props}/>);
-                    break;                                                              
+                    break;     
                 default:
                     let aux=property+", Type:"+ControlType[control];
                     elements.push(<UnknownControl label={aux}/>)
                     break;
             }            
-        }
-    }else{
-        elements.push(
-            <View>
-                <ErrorItem  message={"No properties"}/>
-            </View>
-        );
-    }
-    return elements;
-}
-
-export const elementListOld = (schema:any):JSX.Element[] =>{
-    let properties=schema.properties??undefined;
-    let elements:JSX.Element[]=[];
-    if(properties){        
-        for(let property in properties){       
-            if(properties[property].type==="string"){                
-                elements.push(<TextControl label={property}/>)
-            }
-            else{
-                elements.push(<UnknownControl label={property}/>)
-            }
         }
     }else{
         elements.push(

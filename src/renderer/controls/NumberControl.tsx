@@ -18,13 +18,21 @@ const styles = StyleSheet.create({
 export function NumberControl(props:any){
     const state = useObject();          
     console.log(state);
+    let attr=props.props;
+    const _onChange = (text:any) => {
+        return text || attr.placeholder || attr.value;
+    };
     return (
         <View>
-            <Text style={styles.inputLabel}>{props.label || 'No label included'}</Text>            
+            <Text style={styles.inputLabel}>{attr.label || 'No label included'}</Text>            
             <TextInput
                 style={styles.inputControl}
                 keyboardType="decimal-pad"
-                placeholder={props.placeholder}
+                placeholder={attr.placeholder}
+                placeholderTextColor='lightgray'
+                defaultValue={attr.value}
+                editable={!attr.readonly}
+                onChangeText={(text) => _onChange(text)}
             />
         </View>   
     )

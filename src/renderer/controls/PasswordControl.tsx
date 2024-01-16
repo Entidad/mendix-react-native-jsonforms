@@ -18,13 +18,14 @@ const styles = StyleSheet.create({
 export function PasswordControl(props:any){
     const state = useObject();          
     console.log(state);
+    let attr=props.props;
     return (
         <View>
-            <Text style={styles.inputLabel}>{props.label || 'No label included'}</Text>     
+            <Text style={styles.inputLabel}>{attr.label || 'No label included'}</Text>     
             <TextInput
                 style={styles.inputControl}
                 keyboardType="default"
-                maxLength={props.maxLength}
+                maxLength={attr.maxLength}
             />
         </View>   
     )

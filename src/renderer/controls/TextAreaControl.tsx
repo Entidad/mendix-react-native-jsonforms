@@ -1,44 +1,79 @@
 import { useObject } from '../context/ObjectHook';
-import { createElement } from 'react'
+import { createElement, useState } from 'react'
+
 import { StyleSheet, View, TextInput, Text } from "react-native";
 
 const styles = StyleSheet.create({
     inputControl: {
-        height: 40,
+        textAlignVertical: "top",
         marginLeft: 12,
+        paddingLeft:5,
+        backgroundColor: "transparent",
         borderColor:'#000000',
-        borderWidth:1,
-        marginBottom:12
+        borderWidth:1
     },
     inputLabel:{
         marginLeft: 12
+    },
+    inputContainer:{
+        width: "95%",
+        backgroundColor:"#fbfbf",
+        textAlignVertical: "top",
+    },
+    inputCharCount:{
+        bottom: 8,
+        right: 16,
+        fontSize: 14,
+        position: "absolute",
+        color: "#ccc"
+    },
+    exceedCharCountColor:{
+        bottom: 8,
+        right: 16,
+        fontSize: 14,
+        position: "absolute",
+        color: "#f44336"
+    },
+    charCountColor:{
+        bottom: 8,
+        right: 16,
+        fontSize: 14,
+        position: "absolute",
+        color: "#ccc"
     }
 });
 
 export function TextAreaControl(props:any){
-    const state = useObject();         
+    const state = useObject();   
+    console.log(state);    
     
-    const _onChange = (text:any) => {
-       return text || props.default || props.value;
-    };
+    let attr=props.props;    
+    let maxCharLimit=attr.maxLength || 200;
+    const [charCount, setCharCount] = useState(0);
 
-    console.log(state);
+    const _onChange = (text:any) => {
+        setCharCount(text.length);
+        return text || attr.placeholder || attr.value;
+     };
+
     return (
-        <View>
-            <Text style={styles.inputLabel}>{props.label || 'No label included'}</Text>            
+        <View style={styles.inputContainer}>
+            <Text style={styles.inputLabel}>{attr.label || 'No label included'}</Text>
             <TextInput
                 style={styles.inputControl}
                 keyboardType="default"                
                 multiline={true}
-                maxLength={props.maxLength}
-                numberOfLines={10}
+                maxLength={maxCharLimit}
+                numberOfLines={7}
                 placeholder={props.placeholder}
                 placeholderTextColor='lightgray'
                 underlineColorAndroid="transparent"
-                defaultValue={props.default??props.value}
-                editable={props.readonly!}
+                editable={!attr.readonly}
                 onChangeText={(text) => _onChange(text)}
             />
+            <Text style={charCount > maxCharLimit ? styles.exceedCharCountColor : styles.charCountColor}>
+                {`${charCount}/${maxCharLimit}`}
+            </Text>
         </View>   
     )
 }

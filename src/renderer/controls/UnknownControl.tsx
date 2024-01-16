@@ -17,7 +17,7 @@ export function UnknownControl(props:any){
     console.log(state);
     return (
         <View>
-            <Text style={styles.Unknown}>{label || ''}</Text>
+            <Text style={styles.Unknown}>{label}</Text>
         </View>   
     )
 }

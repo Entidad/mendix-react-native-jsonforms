@@ -7,8 +7,10 @@ import { isRJSFSchema } from '../schemas/UtilSchema'
 export interface ControlProps{
     label?:string;
     title?:string;
+    propertyName?:string;
     description?:string;
     value?:string;
+    emptyValue?:string;
     default?:any;
     
     
@@ -42,8 +44,13 @@ export function getControlProps(schema:any, uischema:any, property:string){
     }else{
         props=setControlProps_JSONForms(uischema, property, props);
     }
+    let label = props.label??(props.title??props.propertyName);
+    let value = props.value??(props.default??props.emptyValue);
+    props.label=label;
+    props.value=value;
     return props;
 }
+
 
 // Initialize Props;
 export function initControlProps(){
@@ -115,10 +122,10 @@ export function setControlProps_RJSF(_uischema:any, _property:string, _props:Con
             _props.description=attrs["ui:description"];
         }
         if(attrs["ui:title"]){
-            _props.label=attrs["ui:title"];
+            _props.title=attrs["ui:title"];
         }
         if(attrs["ui:emptyValue"]){
-            _props.value=attrs["ui:emptyValue"];
+            _props.emptyValue=attrs["ui:emptyValue"];
         }
         if(attrs["ui:options"]){
             _props.options=attrs["ui:options"];
@@ -158,3 +165,4 @@ export function setControlProps_JSONForms(_uischema:any, _property:string, _prop
     }
     return _props;
 }
+
