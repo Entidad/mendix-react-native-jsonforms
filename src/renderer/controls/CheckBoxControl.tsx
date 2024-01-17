@@ -1,12 +1,13 @@
 import { useObject } from '../context/ObjectHook';
 import { createElement, useState } from 'react'
 import { StyleSheet, View, TouchableHighlight, Text, Image  } from "react-native";
-/*
-import exampleImage from './img/ic_check_box.png'
-const exampleImageUri = Image.resolveAssetSource(exampleImage).uri
-*/
 
 const styles = StyleSheet.create({
+    viewControl:{
+        marginLeft: 12,
+        marginTop:12,
+        marginBottom:12
+    },
     inputControl: {
         height: 40,
         marginLeft: 12,
@@ -15,7 +16,7 @@ const styles = StyleSheet.create({
         marginBottom:12
     },
     inputLabel:{
-        marginLeft: 12
+        marginLeft: 0
     },
     container: {
         flexDirection: 'row',
@@ -28,72 +29,52 @@ const styles = StyleSheet.create({
         flex: 1,
         marginLeft: 10
     },
-    icono:{
+    checkIcon:{
         tintColor:'#000',
-        width: 35,
-        height: 35,
+        width: 24,
+        height: 24,
     },
 });
 
+//Based on img folder
+const icn_checked = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAAcElEQVR4Ac3LzwnAIBSD8UD3K7pQcZj+2ccp+lzCepNA8LWHgsn1+2HeRRjq4AWBgczpxqD6fw/yN7BjQfIA51DAzyXIg1yArQWXzjVIQItOkUvQySFyCTrhXAMinGtAhHMN+D+A4uY3gwBz8hWz7gFdnBvHhko3SQAAAABJRU5ErkJggg==';
+const icn_unchecked='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAAO0lEQVR4AWMYvCCQ4SXDfzzwFYM/inqQcgLwJYp6sBAmwJQfeA2jGkY1vCKYvF+gavBneElAue+gzfwA1h18EUJriLAAAAAASUVORK5CYII=';
+//const icn_indeterminate='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAAPUlEQVR4AWMYvCCQ4SXDfzzwFYM/inqQcgLwJaqG/0RAGBjVgAVQTQNhOKrhFUHlL1A1+DO8JKDcd9BmfgBB0itwLBGOFgAAAABJRU5ErkJggg=='
 
-const data = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAAcElEQVR4Ac3LzwnAIBSD8UD3K7pQcZj+2ccp+lzCepNA8LWHgsn1+2HeRRjq4AWBgczpxqD6fw/yN7BjQfIA51DAzyXIg1yArQWXzjVIQItOkUvQySFyCTrhXAMinGtAhHMN+D+A4uY3gwBz8hWz7gFdnBvHhko3SQAAAABJRU5ErkJggg==';
 export function CheckBoxControl(props:any){
     const state = useObject();          
     console.log(state);
     let attr=props.props;
     const [checked, setChecked] = useState(false);
-    
  
-
     const _onPress = () => {
         setChecked(!checked);
     };
 
-
-
-    return (
-        <View>
-            <Text style={styles.inputLabel}>{attr.label+".."+checked || 'No label included'}</Text>            
-            <TouchableHighlight
-                onPress={() => _onPress()}
-                underlayColor='transparent'
-            >
-                <View style={styles.container}>
-                    <Image source={{uri:data}} style={styles.icono}/>
-                </View>
-            </TouchableHighlight>
-        </View>   
-    )
-}
-
-/*
-
-    const icnChecked = {
-        name: "icn_checked",
-        image: require('../controls/img/ic_check_box.png')
+    const renderCheckBox=() => {
+        var _uri = checked ? icn_checked : icn_unchecked;
+        return (
+            <Image source={{uri:_uri}} style={styles.checkIcon}/>
+        );
     }
-
-const renderRight=(text:string)=>{
+    const renderText=(text:string)=>{
         return (
             <Text style={[styles.rightText]}>{text}</Text>
         );
     }
 
-                    {renderRight(attr.label)}
-
-   const icnChecked = {
-        name: "icn_checked",
-        image: require('/img/ic_check_box.png')
-    }
-    
- const icnUnchecked = {
-        name: "icn_unchecked",
-        image: require('./img/ic_check_box_outline_blank.png')
-        ././img/ic_check_box.png
-    }
-const renderCheckBox=() => {
-        var source = checked ? icnChecked.image.default : icnUnchecked.image;
-        return (
-            <Image source={source} style={styles.icono}/>
-        );
-    }*/
+    return (
+        <View style={styles.viewControl}>
+            <Text style={styles.inputLabel}>{attr.description || 'No label included'}</Text>
+            <TouchableHighlight
+                onPress={() => _onPress()}
+                underlayColor='transparent'
+            >
+                <View style={styles.container}>
+                    {renderCheckBox()}
+                    {renderText(attr.label)}
+                </View>
+            </TouchableHighlight>
+        </View>   
+    )
+}
