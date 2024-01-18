@@ -62,7 +62,8 @@ export function initControlProps(){
         hint:undefined,
         readonly:false,
         disabled:false,
-        placeholder:undefined
+        placeholder:undefined,
+        enum:[]
     }
     return props;  
 }

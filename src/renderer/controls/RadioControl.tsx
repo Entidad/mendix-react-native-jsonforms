@@ -1,6 +1,6 @@
 import { useObject } from '../context/ObjectHook';
 import { createElement, useState } from 'react'
-import { StyleSheet, TouchableWithoutFeedback, TouchableOpacity, View, TextInput, Text } from "react-native";
+import { StyleSheet, TouchableWithoutFeedback, TouchableOpacity, View, Text } from "react-native";
 
 const styles = StyleSheet.create({
     viewControl:{
@@ -52,20 +52,27 @@ const styles = StyleSheet.create({
 export function RadioControl(props:any){
     const state = useObject();          
     console.log(state);
+
     let attr=props.props;
+    let opts:[string]=attr.enum;
     const [index, setIndex] = useState(undefined);
 
+    if(opts.length<1){
+        opts.push('Yes');
+        opts.push('No');
+    }
+    
     const _onPress = (idx:any) => {
         setIndex(idx);
     };
 
-    const renderRadioControl=(idx:any) => {
-        if(idx=index){
+    const renderRadioControl=(value:any) => {
+        if(value=index){
             return(
             <View style={styles.inputRadioView} >
                 <TouchableOpacity
                     style={styles.inputRadioActive}
-                    onPress={() => { _onPress(idx) }
+                    onPress={() => { _onPress(value) }
                 }>
                     <View style={styles.inputRadioActive}/>
                 </TouchableOpacity>
@@ -76,7 +83,7 @@ export function RadioControl(props:any){
             <View style={styles.inputRadioView} >
                 <TouchableOpacity
                     style={styles.inputRadioNormal}
-                    onPress={() => { _onPress(idx) }
+                    onPress={() => { _onPress(value) }
                 }>
                     <View style={styles.inputRadioActive}/>
                 </TouchableOpacity>
@@ -84,12 +91,12 @@ export function RadioControl(props:any){
         );
     }
 
-    const renderRadioLabel=(label:string, indice:any) => {
+    const renderRadioLabel=(label:string) => {
         return (
             <TouchableWithoutFeedback
                 onPress={() => {
                     if (!attr.readonly) {
-                        _onPress(indice)};
+                        _onPress(label)};
                     }
             }>
                 <View>
@@ -99,16 +106,19 @@ export function RadioControl(props:any){
         );
     }
 
-    const renderRadioGroup=(val:any, idx:any) => {
+    const renderRadioGroup=(opts:[string]) => {
         return(
         <View style={styles.viewVertical}>
-            <TouchableOpacity
-                style={styles.inputRadio}
-                onPress={() => { _onPress( idx) }
-                }>
-                    {renderRadioControl(idx)}
-                    {renderRadioLabel(val, idx)}
-            </TouchableOpacity>
+                {opts!=undefined && opts.map((optionValue) => (
+                <TouchableOpacity
+                    style={styles.inputRadio}
+                    onPress={() => { _onPress( optionValue ) }
+                    }>
+                        {renderRadioControl(optionValue)}
+                        {renderRadioLabel(optionValue)}
+                </TouchableOpacity>
+
+                ))}
         </View>
         );
     }
@@ -116,7 +126,7 @@ export function RadioControl(props:any){
     return (
         <View style={styles.viewControl}>
             <Text style={styles.inputLabel}>{attr.description || 'No label included'}</Text>            
-            {renderRadioGroup("Hola", 1)}
+            {renderRadioGroup(opts)}
         </View>   
     )
 }

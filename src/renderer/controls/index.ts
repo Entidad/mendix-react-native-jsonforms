@@ -4,6 +4,7 @@ import {PasswordControl} from "./PasswordControl";
 import {IntegerControl} from "./IntegerControl";
 import {NumberControl} from "./NumberControl";
 import {CheckBoxControl} from "./CheckBoxControl";
+import {CheckGroupControl} from "./CheckGroupControl";
 import {RadioControl} from "./RadioControl";
 import {UnknownControl} from "./UnknownControl";
 
@@ -14,6 +15,7 @@ export {
   NumberControl,
   IntegerControl,
   CheckBoxControl,
+  CheckGroupControl,
   RadioControl,
   UnknownControl,  
 };

@@ -15,6 +15,7 @@ export enum ControlType {
   IntegerControl,
   IntegerRangeControl,
   CheckBoxControl,
+  CheckGroupControl,
   RadioControl,
   SelectControl,  
   DateControl,
@@ -56,9 +57,9 @@ function TypeControl_FromRJSF(_type:string, _format:string, _enum:any, _uischema
     }
       
     //Boolean    
-    if(_type==="boolean" && widget==="radio"){
+    if(_type==="boolean" && widget==="radio"){ 
       return ControlType.RadioControl;      
-    }
+    }        
     if(_type==="boolean" && widget==="select"){
       return ControlType.SelectControl;      
     }
@@ -72,11 +73,14 @@ function TypeControl_FromRJSF(_type:string, _format:string, _enum:any, _uischema
     }
     if(_type==="string" && _format==="date-time"){
       return ControlType.DateTimeControl;      
-    }    
-    
-    //Enum
-    if(_type==="string" && _enum!==undefined){
-      return ControlType.EnumControl;      
+    }
+
+    //Radio and CheckBoxGroups
+    if(_type==="string" && (widget==="RadioWidget" || widget==="radio")){
+      return ControlType.RadioControl;      
+    }        
+    if(_type==="string" && (widget=="CheckboxesWidget" || widget==="checkbox")){
+      return ControlType.CheckGroupControl;      
     }
   }
   if(_type==="number"){
@@ -88,6 +92,9 @@ function TypeControl_FromRJSF(_type:string, _format:string, _enum:any, _uischema
   if(_type==="boolean"){
     return ControlType.CheckBoxControl;      
   }    
+  if(_type==="string" && _enum!==undefined){
+    return ControlType.EnumControl;      
+  }
   if(_type==="string"){
     return ControlType.TextControl;      
   }

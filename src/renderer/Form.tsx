@@ -12,15 +12,16 @@ import {
     PasswordControl,
     NumberControl, 
     IntegerControl, 
-    RadioControl,
     CheckBoxControl,
+    CheckGroupControl,
     UnknownControl 
 } from "./controls";
 
 export const Form = ({schema, uischema, initData}:any) => {
+        
     const validation:validationStatus = validateSchema(schema, initData);
-    console.log(uischema);
-    if(!validation.validation){
+    //if(!validation.validation){    
+    if(false){            
         if(validation.errors.length!=0){
             return(
                 <View>
@@ -35,6 +36,7 @@ export const Form = ({schema, uischema, initData}:any) => {
             );
         }        
     }
+
     const INITIAL_STATE: ObjectState = {
         _schema: schema,
         _uischema: uischema,
@@ -76,12 +78,12 @@ export const elementList = (schema:any, uischema:any):JSX.Element[] =>{
                 case ControlType.IntegerControl:
                     elements.push(<IntegerControl props={props}/>);
                     break;       
-                case ControlType.RadioControl:                        
-                    elements.push(<RadioControl props={props}/>);
-                    break;                    
                 case ControlType.CheckBoxControl:
                     elements.push(<CheckBoxControl props={props}/>);
                     break;                           
+                case ControlType.CheckGroupControl:
+                    elements.push(<CheckGroupControl props={props}/>);
+                    break;                        
                 case ControlType.PasswordControl:
                     elements.push(<PasswordControl props={props}/>);
                     break;     

@@ -38,7 +38,7 @@ export interface JsonSchema {
   enum?: any[];               // Enumerates the values that this schema can be {"type": "string", "enum": ["red", "green", "blue"]}
   readOnly?: boolean;
   properties?: { [property: string]: JsonSchema };
-
+  
   // Number Validation
   maximum?: number;           // If true maximum must be > value, >= otherwise
   minimum?: number;           // If true minimum must be < value, <= otherwise
@@ -48,11 +48,14 @@ export interface JsonSchema {
   minLength?: number;  
   pattern?: string;           // This is a regex string that the value must conform to
 
+  //Array
+  items?: JsonSchema | JsonSchema[];
+  uniqueItems?:boolean;
+
   // Combining Schemas
   allOf?: JsonSchema[];
   anyOf?: JsonSchema[];
   oneOf?: JsonSchema[];
-  
 }
 
 //Support for work with UI Schema from JsonForms
