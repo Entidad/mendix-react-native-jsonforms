@@ -45,12 +45,12 @@ const icn_unchecked='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAA
 export function CheckGroupControl(props:any){
     const state = useObject();          
     console.log(state);
-    let attr=props.props;
     
+    let attr=props.props;    
     let opts:any[]=attr.enum || [];
+    
     let tmp:any[]=[];
     const [checked, setChecked] = useState(tmp);     
-    
 
     const _onPress = (label:any) => { 
         tmp=[...checked];    

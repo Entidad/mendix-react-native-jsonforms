@@ -14,7 +14,8 @@ import {
     IntegerControl, 
     CheckBoxControl,
     CheckGroupControl,
-    UnknownControl 
+    RadioControl,
+    UnknownControl
 } from "./controls";
 
 export const Form = ({schema, uischema, initData}:any) => {
@@ -83,7 +84,10 @@ export const elementList = (schema:any, uischema:any):JSX.Element[] =>{
                     break;                           
                 case ControlType.CheckGroupControl:
                     elements.push(<CheckGroupControl props={props}/>);
-                    break;                        
+                    break;
+                case ControlType.RadioControl:
+                    elements.push(<RadioControl props={props}/>);
+                    break; 
                 case ControlType.PasswordControl:
                     elements.push(<PasswordControl props={props}/>);
                     break;     

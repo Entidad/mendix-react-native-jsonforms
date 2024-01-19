@@ -7,41 +7,53 @@ const styles = StyleSheet.create({
         marginLeft: 12,
         marginTop:12,
         marginBottom:12,
+        flexDirection: 'column'
     },
-    viewVertical:{
-        flexDirection: 'column',
-        paddingLeft: 10,
-    },
-    inputLabel:{
-        marginLeft: 0
-    },
-    inputControl: {
-        height: 40,
-        marginLeft: 12,
-        borderColor:'#000000',
-        borderWidth:1,
-        marginBottom:12
-    },
-    inputRadioView:{
+    viewRow:{
         flexDirection: 'row',
-        marginBottom: 5,
+        marginTop: 5
     },
+    inputDescription:{
+        marginLeft: 0
+    },    
     inputRadio: {
         justifyContent: 'center',
         alignItems: 'center',    
-        width: 30,
-        height: 30,        
+        
         alignSelf: 'center',    
-        borderColor: '#2196f3',
-        borderRadius: 30,
-    },    
+        borderColor: '#000',
+        borderWidth: 3,
+
+        width: 24,
+        height: 24,        
+        borderRadius: 24,
+    }, 
     inputRadioNormal: {
-        borderRadius: 10,
+
+        justifyContent: 'center',
+        alignItems: 'center',            
+        alignSelf: 'center',    
+
+        borderColor: '#fff',
+        borderWidth: 3,
+        borderRadius: 14,
+
+        width: 14,
+        height: 14,                
     },    
     inputRadioActive: {
-        width: 20,
-        height: 20,
-        backgroundColor: '#2196f3',
+        
+        justifyContent: 'center',
+        alignItems: 'center',            
+        alignSelf: 'center',    
+        
+        borderColor: '#000',
+        borderWidth: 1,    
+        borderRadius: 14,
+
+        width: 14,
+        height: 14,        
+        backgroundColor: '#000',
     },
     inputRadioLabel: {
         paddingLeft: 10,
@@ -54,79 +66,50 @@ export function RadioControl(props:any){
     console.log(state);
 
     let attr=props.props;
-    let opts:[string]=attr.enum;
-    const [index, setIndex] = useState(undefined);
-
-    if(opts.length<1){
+    let opts:any[]=attr.enum || [];    
+    if(opts.length==0){
         opts.push('Yes');
         opts.push('No');
     }
-    
-    const _onPress = (idx:any) => {
-        setIndex(idx);
+
+    const [value, setValue] = useState(undefined);
+
+    const _onPress = (label:any) => {
+        setValue(label);
     };
 
-    const renderRadioControl=(value:any) => {
-        if(value=index){
-            return(
-            <View style={styles.inputRadioView} >
-                <TouchableOpacity
-                    style={styles.inputRadioActive}
-                    onPress={() => { _onPress(value) }
-                }>
-                    <View style={styles.inputRadioActive}/>
-                </TouchableOpacity>
-            </View>
-            );
-        }
-        return (
-            <View style={styles.inputRadioView} >
-                <TouchableOpacity
-                    style={styles.inputRadioNormal}
-                    onPress={() => { _onPress(value) }
-                }>
-                    <View style={styles.inputRadioActive}/>
-                </TouchableOpacity>
-            </View>
-        );
-    }
-
-    const renderRadioLabel=(label:string) => {
-        return (
-            <TouchableWithoutFeedback
-                onPress={() => {
-                    if (!attr.readonly) {
-                        _onPress(label)};
-                    }
-            }>
-                <View>
-                    <Text style={styles.inputRadioLabel}>{label}</Text>
-                </View>
-            </TouchableWithoutFeedback>
-        );
-    }
-
-    const renderRadioGroup=(opts:[string]) => {
+    const renderRadioControl=(label:any) => {        
         return(
-        <View style={styles.viewVertical}>
-                {opts!=undefined && opts.map((optionValue) => (
-                <TouchableOpacity
-                    style={styles.inputRadio}
-                    onPress={() => { _onPress( optionValue ) }
+            <View style={styles.viewRow}>
+                <View style={styles.inputRadio}>
+                    <TouchableOpacity
+                        onPress={() => { _onPress(label)}
                     }>
-                        {renderRadioControl(optionValue)}
-                        {renderRadioLabel(optionValue)}
-                </TouchableOpacity>
-
-                ))}
-        </View>
+                        <View style={value===label?styles.inputRadioActive:styles.inputRadioNormal}>
+                        </View>
+                    </TouchableOpacity>
+                </View>
+                <View>
+                    <TouchableWithoutFeedback
+                        onPress={() => { _onPress(label)}}
+                    >
+                        <View>
+                            <Text style={styles.inputRadioLabel}>
+                                {label}
+                            </Text>
+                        </View>
+                    </TouchableWithoutFeedback>
+                </View>
+            </View>
         );
     }
     
     return (
         <View style={styles.viewControl}>
-            <Text style={styles.inputLabel}>{attr.description || 'No label included'}</Text>            
-            {renderRadioGroup(opts)}
+            <Text style={styles.inputDescription}>{attr.description || 'No label included'}</Text>            
+            {opts!=undefined && opts.map((optionValue) => (
+                renderRadioControl(optionValue)
+            ))}
         </View>   
     )
 }
