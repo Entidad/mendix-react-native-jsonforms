@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
         lineHeight: 20,
     },  
 });
-
+// Comments
 export function RadioControl(props:any){
     const state = useObject();          
     console.log(state);
@@ -106,7 +106,7 @@ export function RadioControl(props:any){
     
     return (
         <View style={styles.viewControl}>
-            <Text style={styles.inputDescription}>{attr.description || 'No label included'}</Text>            
+            <Text style={styles.inputDescription}>{attr.description || (attr.label || 'No label included')}</Text>            
             {opts!=undefined && opts.map((optionValue) => (
                 renderRadioControl(optionValue)
             ))}

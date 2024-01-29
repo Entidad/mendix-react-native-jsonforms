@@ -92,7 +92,7 @@ export function CheckGroupControl(props:any){
 
     return (
         <View style={styles.viewControl}>
-            <Text style={styles.inputLabel}>{attr.description || 'No label included'}</Text>
+            <Text style={styles.inputLabel}>{attr.description || (attr.label || 'No label included')}</Text>
             {opts.map((optionValue) => (
                renderControl(optionValue)
             ))}

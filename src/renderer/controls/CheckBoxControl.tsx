@@ -65,7 +65,7 @@ export function CheckBoxControl(props:any){
 
     return (
         <View style={styles.viewControl}>
-            <Text style={styles.inputLabel}>{attr.description || 'No label included'}</Text>
+            <Text style={styles.inputLabel}>{attr.description || (attr.label || 'No label included')}</Text>
             <TouchableHighlight
                 onPress={() => _onPress()}
                 underlayColor='transparent'

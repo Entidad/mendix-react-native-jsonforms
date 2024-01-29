@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
         marginLeft: 12
     }
 });
-
+// Comments
 export function TextControl(props:any){
     const state = useObject();          
     console.log(state);
