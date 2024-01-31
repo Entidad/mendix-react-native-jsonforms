@@ -45,7 +45,7 @@ export function CheckBoxControl(props:any){
     const state = useObject();          
     console.log(state);
     let attr=props.props;
-    const [checked, setChecked] = useState(false);
+    const [checked, setChecked] = useState(getDataFromBoolean(attr.data));
  
     const _onPress = () => {
         setChecked(!checked);
@@ -78,3 +78,10 @@ export function CheckBoxControl(props:any){
         </View>   
     )
 }
+
+function getDataFromBoolean(val:any){
+    if(typeof val === 'boolean'){
+        return val;
+    }    
+    return false;
+ }

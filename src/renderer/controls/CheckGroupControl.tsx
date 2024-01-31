@@ -50,13 +50,13 @@ export function CheckGroupControl(props:any){
     let opts:any[]=attr.enum || [];
     
     let tmp:any[]=[];
-    const [checked, setChecked] = useState(tmp);     
+    const [checked, setChecked] = useState(attr.data || tmp);     
 
     const _onPress = (label:any) => { 
-        tmp=[...checked];    
+        tmp=[...checked];
         let exist=tmp.filter(item => item === label);
         if(exist.length==0){
-            setChecked([...tmp, label]);            
+            setChecked([...tmp, label]);
         }else{
             setChecked(tmp.filter(item => item !== label));
         }        
