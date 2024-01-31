@@ -20,7 +20,7 @@ export function TextControl(props:any){
     console.log(state);
     let attr=props.props;
     const _onChange = (text:any) => {
-        return text || attr.placeholder || attr.value;
+        return text || attr.placeholder || attr.data || attr.value;
     };
     return (
         <View>
@@ -31,7 +31,7 @@ export function TextControl(props:any){
                 maxLength={attr.maxLength}
                 placeholder={attr.placeholder}
                 placeholderTextColor='lightgray'
-                defaultValue={attr.value}
+                defaultValue={attr.data || attr.value}
                 editable={!attr.readonly}
                 onChangeText={(text) => _onChange(text)}
             />

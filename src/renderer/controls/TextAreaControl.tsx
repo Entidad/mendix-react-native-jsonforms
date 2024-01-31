@@ -52,7 +52,7 @@ export function TextAreaControl(props:any){
 
     const _onChange = (text:any) => {
         setCharCount(text.length);
-        return text || attr.placeholder || attr.value;
+        return text || attr.placeholder  || attr.data || attr.value;
      };
 
     return (
@@ -64,7 +64,8 @@ export function TextAreaControl(props:any){
                 multiline={true}
                 maxLength={maxCharLimit}
                 numberOfLines={7}
-                placeholder={props.placeholder}
+                defaultValue={attr.data || attr.value}
+                placeholder={attr.placeholder}
                 placeholderTextColor='lightgray'
                 underlineColorAndroid="transparent"
                 editable={!attr.readonly}
