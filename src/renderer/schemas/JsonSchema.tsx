@@ -112,5 +112,5 @@ export interface RJSF_Order{
 
 //Support for work with Data 
 export interface JsonData {
-  [property: string]: any;
+  [key: string]: any;
 }

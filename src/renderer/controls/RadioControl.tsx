@@ -67,12 +67,14 @@ export function RadioControl(props:any){
 
     let attr=props.props;
     let opts:any[]=attr.enum || [];    
+    let data=getDataFromBoolean(attr.data);
+    
     if(opts.length==0){
         opts.push('Yes');
         opts.push('No');
     }
 
-    const [value, setValue] = useState(undefined);
+    const [value, setValue] = useState(data);
 
     const _onPress = (label:any) => {
         setValue(label);
@@ -113,3 +115,11 @@ export function RadioControl(props:any){
         </View>   
     )
 }
+
+function getDataFromBoolean(val:any){
+    if(typeof val === 'boolean'){
+        if(val){return "Yes";}
+        return "No";
+    }    
+    return val;
+ }

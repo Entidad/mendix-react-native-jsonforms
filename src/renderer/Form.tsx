@@ -43,7 +43,7 @@ export const Form = ({schema, uischema, initData}:any) => {
         _uischema: uischema,
         _initData: initData
     }    
-    let elements=elementList(schema, uischema);
+    let elements=elementList(schema, uischema, initData);
     return (            
         <ObjectProvider 
             objectState={INITIAL_STATE}
@@ -58,7 +58,7 @@ export const Form = ({schema, uischema, initData}:any) => {
    
 }
 //Comments
-export const elementList = (schema:any, uischema:any):JSX.Element[] =>{
+export const elementList = (schema:any, uischema:any, initData:any):JSX.Element[] =>{
     let properties=schema.properties??undefined;
     let elements:JSX.Element[]=[];
     if(properties){        
@@ -66,6 +66,7 @@ export const elementList = (schema:any, uischema:any):JSX.Element[] =>{
             let initProps=properties[property];
             let control=getTypeControl(initProps.type, initProps.format, initProps.enum, uischema, property);
             let props=getControlProps(schema, uischema, property);
+            props.data=initData[property];
             switch(control){
                 case ControlType.TextControl:
                     elements.push(<TextControl props={props}/>);

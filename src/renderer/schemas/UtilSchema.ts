@@ -227,8 +227,3 @@ export function getUIElement_JSONForm(uischema:JsonUISchema, property:string){
   }
   return undefined;
 }
-
-// Get Data from property
-export function getData(JSONData:any, property:string){
-  return JSONData[property]??'';
-}

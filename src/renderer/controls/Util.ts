@@ -12,7 +12,7 @@ export interface ControlProps{
     value?:string;
     emptyValue?:string;
     default?:any;
-    
+    data?:any;
     
     minLength?:number;
     maxLength?:number;
@@ -166,4 +166,3 @@ export function setControlProps_JSONForms(_uischema:any, _property:string, _prop
     }
     return _props;
 }
-
