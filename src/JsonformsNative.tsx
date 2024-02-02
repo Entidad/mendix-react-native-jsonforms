@@ -24,7 +24,7 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
             schema: "{}",
             uischema: "{}",
             initData: "{}",
-            formData: "Waiting for the form submition",
+            formData: "{}",
             showwarning: false
         };
     }
@@ -36,13 +36,14 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
                         schema={JSON.parse(this.state.schema)}
                         uischema={JSON.parse(this.state.uischema)}
                         initData={JSON.parse(this.state.initData)}
+                        formData={JSON.parse(this.state.formData)}
                     />                 
                 </View>
                 );
     }
 
     componentDidMount(): void {
-        const { mxSchema, mxUiSchema, mxInitData } = this.props;
+        const {  mxSchema, mxUiSchema, mxInitData } = this.props;
 
         let inputSchema = mxSchema.value ? mxSchema.value.toString() : '{"description": "JSON schema received was empty!","type": "object"}';
         if (!isValidJSON(inputSchema)) {

@@ -43,15 +43,14 @@ const styles = StyleSheet.create({
 });
 
 export function TextAreaControl(props:any){
-    const state = useObject();   
-    console.log(state);    
-    
-    let attr=props.props;    
+    const state = useObject().state;   
+    let attr=props.props;        
     let maxCharLimit=attr.maxLength || 200;
-    const [charCount, setCharCount] = useState(0);
 
+    const [charCount, setCharCount] = useState(0);
     const _onChange = (text:any) => {
         setCharCount(text.length);
+        state._formData[attr.propertyName]=text;
         return text || attr.placeholder  || attr.data || attr.value;
      };
 

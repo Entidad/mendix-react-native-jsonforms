@@ -18,9 +18,9 @@ import {
     UnknownControl
 } from "./controls";
 
-export const Form = ({schema, uischema, initData}:any) => {
+export const Form = ({schema, uischema, initData, formData}:any) => {
         
-    const validation:validationStatus = validateSchema(schema, initData);
+    const validation:validationStatus =  validateSchema(schema, initData);
     //if(!validation.validation){    
     if(false){            
         if(validation.errors.length!=0){
@@ -37,13 +37,14 @@ export const Form = ({schema, uischema, initData}:any) => {
             );
         }        
     }
-
+ 
+    let elements=elementList(schema, uischema, initData, formData);
     const INITIAL_STATE: ObjectState = {
         _schema: schema,
         _uischema: uischema,
-        _initData: initData
-    }    
-    let elements=elementList(schema, uischema, initData);
+        _initData: initData,
+        _formData: formData
+    }   
     return (            
         <ObjectProvider 
             objectState={INITIAL_STATE}
@@ -58,7 +59,7 @@ export const Form = ({schema, uischema, initData}:any) => {
    
 }
 //Comments
-export const elementList = (schema:any, uischema:any, initData:any):JSX.Element[] =>{
+export const elementList = (schema:any, uischema:any, initData:any, formData:any):JSX.Element[] =>{
     let properties=schema.properties??undefined;
     let elements:JSX.Element[]=[];
     if(properties){        
@@ -67,6 +68,9 @@ export const elementList = (schema:any, uischema:any, initData:any):JSX.Element[
             let control=getTypeControl(initProps.type, initProps.format, initProps.enum, uischema, property);
             let props=getControlProps(schema, uischema, property);
             props.data=initData[property];
+            props.propertyName=property;
+            formData[property]='';
+
             switch(control){
                 case ControlType.TextControl:
                     elements.push(<TextControl props={props}/>);

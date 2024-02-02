@@ -43,8 +43,7 @@ const icn_unchecked='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAA
 //const icn_indeterminate='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAAPUlEQVR4AWMYvCCQ4SXDfzzwFYM/inqQcgLwJaqG/0RAGBjVgAVQTQNhOKrhFUHlL1A1+DO8JKDcd9BmfgBB0itwLBGOFgAAAABJRU5ErkJggg=='
 
 export function CheckGroupControl(props:any){
-    const state = useObject();          
-    console.log(state);
+    const state = useObject().state;
     
     let attr=props.props;    
     let opts:any[]=attr.enum || [];
@@ -59,7 +58,8 @@ export function CheckGroupControl(props:any){
             setChecked([...tmp, label]);
         }else{
             setChecked(tmp.filter(item => item !== label));
-        }        
+        }
+        state._formData[attr.propertyName]=checked;
     };
 
     const renderCheckBox=(label:any) => {

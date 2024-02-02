@@ -62,9 +62,7 @@ const styles = StyleSheet.create({
 });
 // Comments
 export function RadioControl(props:any){
-    const state = useObject();          
-    console.log(state);
-
+    const state = useObject().state;    
     let attr=props.props;
     let opts:any[]=attr.enum || [];    
     let data=getDataFromBoolean(attr.data);
@@ -78,6 +76,7 @@ export function RadioControl(props:any){
 
     const _onPress = (label:any) => {
         setValue(label);
+        state._formData[attr.propertyName]=label;
     };
 
     const renderRadioControl=(label:any) => {        

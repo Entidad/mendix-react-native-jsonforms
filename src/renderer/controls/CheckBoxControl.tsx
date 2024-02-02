@@ -42,13 +42,13 @@ const icn_unchecked='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAA
 //const icn_indeterminate='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAAPUlEQVR4AWMYvCCQ4SXDfzzwFYM/inqQcgLwJaqG/0RAGBjVgAVQTQNhOKrhFUHlL1A1+DO8JKDcd9BmfgBB0itwLBGOFgAAAABJRU5ErkJggg=='
 
 export function CheckBoxControl(props:any){
-    const state = useObject();          
-    console.log(state);
+    const state = useObject().state;          
     let attr=props.props;
     const [checked, setChecked] = useState(getDataFromBoolean(attr.data));
  
     const _onPress = () => {
         setChecked(!checked);
+        state._formData[attr.propertyName]=checked;
     };
 
     const renderCheckBox=() => {

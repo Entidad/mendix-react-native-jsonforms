@@ -16,12 +16,13 @@ const styles = StyleSheet.create({
 });
 // Comments
 export function TextControl(props:any){
-    const state = useObject();          
-    console.log(state);
+    const state = useObject().state;              
     let attr=props.props;
     const _onChange = (text:any) => {
-        return text || attr.placeholder || attr.data || attr.value;
+        state._formData[attr.propertyName]=text;
+        return text || attr.placeholder || attr.data || attr.value;        
     };
+    
     return (
         <View>
             <Text style={styles.inputLabel}>{attr.label || 'No label included'}</Text>                        
