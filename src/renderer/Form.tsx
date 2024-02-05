@@ -15,10 +15,11 @@ import {
     CheckBoxControl,
     CheckGroupControl,
     RadioControl,
+    SubmitControl,
     UnknownControl
 } from "./controls";
 
-export const Form = ({schema, uischema, initData, formData}:any) => {
+export const Form = ({schema, uischema, initData, formData, onSubmit}:any) => {
         
     const validation:validationStatus =  validateSchema(schema, initData);
     //if(!validation.validation){    
@@ -49,15 +50,27 @@ export const Form = ({schema, uischema, initData, formData}:any) => {
         <ObjectProvider 
             objectState={INITIAL_STATE}
         >
-            {
-                elements.map((element:JSX.Element) => (
-                    element
-                ))
-            }
+            <View>
+                {
+                    elements.map((element:JSX.Element) => (
+                        element
+                    ))
+                }                
+            </View>
+            <View>
+                <SubmitControl onPress={() => {
+                            onSubmit(INITIAL_STATE._formData);
+                            //const jsonString: string = JSON.stringify(JSON.parse(this.state.formData)); 
+
+                            //this.props.mxFormData.setValue(jsonString);
+                            //console.debug("FormData:"+jsonString);
+                        }} />
+            </View>
         </ObjectProvider>
     )
    
 }
+
 //Comments
 export const elementList = (schema:any, uischema:any, initData:any, formData:any):JSX.Element[] =>{
     let properties=schema.properties??undefined;

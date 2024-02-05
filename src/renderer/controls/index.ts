@@ -6,7 +6,9 @@ import {NumberControl} from "./NumberControl";
 import {CheckBoxControl} from "./CheckBoxControl";
 import {CheckGroupControl} from "./CheckGroupControl";
 import {RadioControl} from "./RadioControl";
+import {SubmitControl} from "./SubmitControl";
 import {UnknownControl} from "./UnknownControl";
+
 
 export {
   TextControl,
@@ -17,6 +19,7 @@ export {
   CheckBoxControl,
   CheckGroupControl,
   RadioControl,
+  SubmitControl,
   UnknownControl,  
 };
 

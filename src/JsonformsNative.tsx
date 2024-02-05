@@ -37,6 +37,11 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
                         uischema={JSON.parse(this.state.uischema)}
                         initData={JSON.parse(this.state.initData)}
                         formData={JSON.parse(this.state.formData)}
+                        onSubmit={(data:any) => {
+                            const jsonString: string = JSON.stringify(data); 
+                            this.props.mxFormData.setValue(jsonString);
+                            console.debug("FormData:"+jsonString);
+                        }}
                     />                 
                 </View>
                 );

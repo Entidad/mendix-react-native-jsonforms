@@ -29,7 +29,7 @@
 					<attributeType name="String"/>
 				</attributeTypes>
 			</property>		
-			<property key="mxFormData" type="attribute" required="true">
+			<property key="mxFormData" type="attribute" required="true" onChange="onChangeAction">
 				<caption>formData</caption>
 				<description>Containing the data after submit the form</description>
 				<attributeTypes>

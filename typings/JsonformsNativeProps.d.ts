@@ -4,7 +4,7 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
-import { ActionValue, EditableValue } from "mendix";
+import { EditableValue } from "mendix";
 
 export interface JsonformsNativeProps<Style> {
     name: string;
@@ -13,7 +13,6 @@ export interface JsonformsNativeProps<Style> {
     mxUiSchema: EditableValue<string>;
     mxInitData: EditableValue<string>;
     mxFormData: EditableValue<string>;
-    onChangeAction?: ActionValue;
 }
 
 export interface JsonformsNativePreviewProps {
