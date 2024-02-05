@@ -58,12 +58,12 @@ export function CheckGroupControl(props:any){
             setChecked([...tmp, label]);
         }else{
             setChecked(tmp.filter(item => item !== label));
-        }
-        state._formData[attr.propertyName]=checked;
+        }        
     };
 
     const renderCheckBox=(label:any) => {
         tmp=[...checked];    
+        state._formData[attr.propertyName]=checked;
         let exist=tmp.filter(item => item === label);
         var _uri = exist.length===0 ? icn_unchecked:icn_checked;
         return (

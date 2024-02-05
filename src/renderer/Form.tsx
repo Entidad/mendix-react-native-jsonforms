@@ -60,10 +60,6 @@ export const Form = ({schema, uischema, initData, formData, onSubmit}:any) => {
             <View>
                 <SubmitControl onPress={() => {
                             onSubmit(INITIAL_STATE._formData);
-                            //const jsonString: string = JSON.stringify(JSON.parse(this.state.formData)); 
-
-                            //this.props.mxFormData.setValue(jsonString);
-                            //console.debug("FormData:"+jsonString);
                         }} />
             </View>
         </ObjectProvider>
@@ -82,7 +78,7 @@ export const elementList = (schema:any, uischema:any, initData:any, formData:any
             let props=getControlProps(schema, uischema, property);
             props.data=initData[property];
             props.propertyName=property;
-            formData[property]='';
+            formData[property]=props.data||'';
 
             switch(control){
                 case ControlType.TextControl:

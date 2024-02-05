@@ -48,7 +48,7 @@ export function CheckBoxControl(props:any){
  
     const _onPress = () => {
         setChecked(!checked);
-        state._formData[attr.propertyName]=checked;
+        state._formData[attr.propertyName]=!checked;
     };
 
     const renderCheckBox=() => {
