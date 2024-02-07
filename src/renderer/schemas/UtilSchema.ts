@@ -227,3 +227,16 @@ export function getUIElement_JSONForm(uischema:JsonUISchema, property:string){
   }
   return undefined;
 }
+
+// Validate if a property is required
+export function isPropertyRequired(_schema:any, _property:string){
+  let items=_schema.required??undefined;
+  if(items){        
+      for(let item in items){     
+          if(item===_property){
+              return true;
+          }
+      }
+  }
+  return false;
+}

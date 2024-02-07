@@ -1,7 +1,8 @@
 import {
     getProperties_RJSF, 
     getUIElement_JSONForm,
-    getBasicProperties
+    getBasicProperties,
+    isPropertyRequired
 } from '../schemas/UtilSchema'
 import { isRJSFSchema } from '../schemas/UtilSchema'
 export interface ControlProps{
@@ -24,7 +25,7 @@ export interface ControlProps{
     disabled?:boolean;    
     placeholder?:string;
     options?:any
-
+    required?:boolean;
     
     multi?:boolean;
     slider?:boolean;
@@ -63,7 +64,8 @@ export function initControlProps(){
         readonly:false,
         disabled:false,
         placeholder:undefined,
-        enum:[]
+        enum:[],
+        required:false
     }
     return props;  
 }
@@ -71,6 +73,9 @@ export function initControlProps(){
 // Set Basic Properties
 export function setControlProps(_schema:any, _property:string, _props:ControlProps){
     let props=getBasicProperties(_schema, _property);
+    if(isPropertyRequired(_schema, _property)){
+        _props.required=true;
+    }
     if(props){
         if(props.label){
             _props.label=props.label;
@@ -166,3 +171,4 @@ export function setControlProps_JSONForms(_uischema:any, _property:string, _prop
     }
     return _props;
 }
+

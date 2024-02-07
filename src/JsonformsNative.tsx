@@ -40,7 +40,6 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
                         onSubmit={(data:any) => {
                             const jsonString: string = JSON.stringify(data); 
                             this.props.mxFormData.setValue(jsonString);
-                            console.log(jsonString);
                         }}
                     />                 
                 </View>

@@ -5,4 +5,5 @@ export interface ObjectState {
     _uischema:JsonUISchema;
     _initData: JsonData;
     _formData:JsonData;
+    _isRequired:boolean;
 }

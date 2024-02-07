@@ -44,7 +44,8 @@ export const Form = ({schema, uischema, initData, formData, onSubmit}:any) => {
         _schema: schema,
         _uischema: uischema,
         _initData: initData,
-        _formData: formData
+        _formData: formData,
+        _isRequired:false,
     }   
     return (            
         <ObjectProvider 
