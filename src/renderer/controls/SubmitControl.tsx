@@ -16,12 +16,8 @@ export function SubmitControl(props:any){
 
     const _onPress = () => {
         let required=isDataRequired(state._formData, state._schema.required);
-        console.log("Required:"+required);
-        if(required){
-            console.log("Act");
-            state._isRequired=true;            
-        }else{
-            state._isRequired=false;
+        props.required(required);
+        if(!required){
             props.onPress();
         }
     };  

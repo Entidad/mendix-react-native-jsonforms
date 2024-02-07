@@ -1,4 +1,4 @@
-import { createElement } from "react";
+import { createElement, useState } from "react";
 import { View } from "react-native";
 import { validateSchema, validationStatus } from './util/Validation'
 import { ErrorList, ErrorItem } from "./util/Error";
@@ -20,7 +20,9 @@ import {
 } from "./controls";
 
 export const Form = ({schema, uischema, initData, formData, onSubmit}:any) => {
-        
+    
+    const [req, setReq] = useState(false);
+
     const validation:validationStatus =  validateSchema(schema, initData);
     //if(!validation.validation){    
     if(false){            
@@ -39,7 +41,7 @@ export const Form = ({schema, uischema, initData, formData, onSubmit}:any) => {
         }        
     }
  
-    let elements=elementList(schema, uischema, initData, formData);
+    let elements=elementList(schema, uischema, initData, formData, req);
     const INITIAL_STATE: ObjectState = {
         _schema: schema,
         _uischema: uischema,
@@ -56,12 +58,10 @@ export const Form = ({schema, uischema, initData, formData, onSubmit}:any) => {
                     elements.map((element:JSX.Element) => (
                         element
                     ))
-                }                
-            </View>
-            <View>
-                <SubmitControl onPress={() => {
+                }    
+                <SubmitControl required={(reqx:boolean)=>{setReq(reqx)}} onPress={() => {
                             onSubmit(INITIAL_STATE._formData);
-                        }} />
+                        }} />            
             </View>
         </ObjectProvider>
     )
@@ -69,7 +69,7 @@ export const Form = ({schema, uischema, initData, formData, onSubmit}:any) => {
 }
 
 //Comments
-export const elementList = (schema:any, uischema:any, initData:any, formData:any):JSX.Element[] =>{
+export const elementList = (schema:any, uischema:any, initData:any, formData:any, req:any):JSX.Element[] =>{
     let properties=schema.properties??undefined;
     let elements:JSX.Element[]=[];
     if(properties){        
@@ -80,6 +80,7 @@ export const elementList = (schema:any, uischema:any, initData:any, formData:any
             props.data=initData[property];
             props.propertyName=property;
             formData[property]=props.data||'';
+            props.req=req;
 
             switch(control){
                 case ControlType.TextControl:

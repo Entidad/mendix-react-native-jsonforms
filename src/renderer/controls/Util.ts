@@ -26,6 +26,7 @@ export interface ControlProps{
     placeholder?:string;
     options?:any
     required?:boolean;
+    req?:boolean;
     
     multi?:boolean;
     slider?:boolean;

@@ -1,5 +1,5 @@
 import { useObject } from '../context/ObjectHook';
-import { createElement, useEffect  } from 'react'
+import { createElement  } from 'react'
 import { StyleSheet, View, TextInput, Text } from "react-native";
 
 const styles = StyleSheet.create({
@@ -24,29 +24,17 @@ const styles = StyleSheet.create({
 // Comments
 export function TextControl(props:any){
     const state = useObject().state;   
-    let styleCtrl=styles.inputControl;
-             
-    console.log("StyleCntrl"+styleCtrl);
     let attr=props.props;
     const _onChange = (text:any) => {
         state._formData[attr.propertyName]=text;
         return text || attr.placeholder || attr.data || attr.value;        
     };
     
-    useEffect(() => {
-        console.log("Entra aqui");
-        if(state._isRequired){
-            styleCtrl=styles.requiredControl;
-        }else{
-            styleCtrl=styles.inputControl;
-        }
-    });
-
     return (
         <View>
             <Text style={styles.inputLabel}>{attr.label || 'No label included'}</Text>                        
             <TextInput
-                style={styleCtrl}
+                style={attr.req?styles.requiredControl:styles.inputControl}
                 keyboardType="default"
                 maxLength={attr.maxLength}
                 placeholder={attr.placeholder}
