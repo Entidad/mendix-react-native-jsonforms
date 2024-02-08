@@ -232,7 +232,7 @@ export function getUIElement_JSONForm(uischema:JsonUISchema, property:string){
 export function isPropertyRequired(_schema:any, _property:string){
   let items=_schema.required??undefined;
   if(items){        
-      for(let item in items){     
+      for(let item of items){     
           if(item===_property){
               return true;
           }

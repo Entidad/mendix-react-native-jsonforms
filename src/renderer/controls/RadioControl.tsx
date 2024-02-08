@@ -1,6 +1,7 @@
 import { useObject } from '../context/ObjectHook';
 import { createElement, useState } from 'react'
 import { StyleSheet, TouchableWithoutFeedback, TouchableOpacity, View, Text } from "react-native";
+import { isEmptyBoolean } from '../util/Util'
 
 const styles = StyleSheet.create({
     viewControl:{
@@ -58,12 +59,18 @@ const styles = StyleSheet.create({
     inputRadioLabel: {
         paddingLeft: 10,
         lineHeight: 20,
-    },  
+    },
+    inputError:{
+        marginLeft: 12,
+        color:'#FF0000',
+        fontSize: 10
+    }  
 });
 // Comments
 export function RadioControl(props:any){
-    const state = useObject().state;    
+    const state = useObject();    
     let attr=props.props;
+    const [error, setError]=useState(attr.error);
     let opts:any[]=attr.enum || [];    
     let data=getDataFromBoolean(attr.data);
     
@@ -76,7 +83,11 @@ export function RadioControl(props:any){
 
     const _onPress = (label:any) => {
         setValue(label);
-        state._formData[attr.propertyName]=label;
+        state.formData[attr.propertyName]=label;
+        state.setFormData(state.formData);
+
+        attr.error=isEmptyBoolean(label);
+        setError(attr.error);
     };
 
     const renderRadioControl=(label:any) => {        
@@ -111,6 +122,10 @@ export function RadioControl(props:any){
             {opts!=undefined && opts.map((optionValue) => (
                 renderRadioControl(optionValue)
             ))}
+             {(state.showError && error)
+                ? <Text style={styles.inputError}>{attr.errorMessage}</Text>
+                : ""
+            }
         </View>   
     )
 }

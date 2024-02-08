@@ -25,8 +25,9 @@ export interface ControlProps{
     disabled?:boolean;    
     placeholder?:string;
     options?:any
-    required?:boolean;
-    req?:boolean;
+    
+    error?:boolean;
+    errorMessage?:string;
     
     multi?:boolean;
     slider?:boolean;
@@ -66,7 +67,8 @@ export function initControlProps(){
         disabled:false,
         placeholder:undefined,
         enum:[],
-        required:false
+        error:false,
+        errorMessage:"This field is required"
     }
     return props;  
 }
@@ -75,7 +77,7 @@ export function initControlProps(){
 export function setControlProps(_schema:any, _property:string, _props:ControlProps){
     let props=getBasicProperties(_schema, _property);
     if(isPropertyRequired(_schema, _property)){
-        _props.required=true;
+        _props.error=true;
     }
     if(props){
         if(props.label){

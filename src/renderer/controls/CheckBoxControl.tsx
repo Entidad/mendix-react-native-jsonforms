@@ -34,6 +34,11 @@ const styles = StyleSheet.create({
         width: 24,
         height: 24,
     },
+    inputError:{
+        marginLeft: 12,
+        color:'#FF0000',
+        fontSize: 10
+    }
 });
 
 //Based on img folder
@@ -42,13 +47,18 @@ const icn_unchecked='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAA
 //const icn_indeterminate='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAAPUlEQVR4AWMYvCCQ4SXDfzzwFYM/inqQcgLwJaqG/0RAGBjVgAVQTQNhOKrhFUHlL1A1+DO8JKDcd9BmfgBB0itwLBGOFgAAAABJRU5ErkJggg=='
 
 export function CheckBoxControl(props:any){
-    const state = useObject().state;          
+    const state = useObject();          
     let attr=props.props;
     const [checked, setChecked] = useState(getDataFromBoolean(attr.data));
+    const [error, setError]=useState(attr.error);
  
     const _onPress = () => {
         setChecked(!checked);
-        state._formData[attr.propertyName]=!checked;
+        state.formData[attr.propertyName]=!checked;
+        state.setFormData(state.formData);
+        
+        attr.error=checked;
+        setError(attr.error);
     };
 
     const renderCheckBox=() => {
@@ -75,6 +85,10 @@ export function CheckBoxControl(props:any){
                     {renderText(attr.label)}
                 </View>
             </TouchableHighlight>
+            {(state.showError && error)
+                ? <Text style={styles.inputError}>{attr.errorMessage}</Text>
+                : ""
+            }
         </View>   
     )
 }

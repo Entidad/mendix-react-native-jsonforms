@@ -1,6 +1,7 @@
 import { useObject } from '../context/ObjectHook';
 import { createElement, useState } from 'react'
 import { StyleSheet, View, TouchableHighlight, Text, Image  } from "react-native";
+import { isEmptyArray } from '../util/Util'
 
 const styles = StyleSheet.create({
     viewControl:{
@@ -35,6 +36,11 @@ const styles = StyleSheet.create({
         width: 24,
         height: 24,
     },
+    inputError:{
+        marginLeft: 12,
+        color:'#FF0000',
+        fontSize: 10
+    }
 });
 
 //Based on img folder
@@ -43,10 +49,10 @@ const icn_unchecked='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAA
 //const icn_indeterminate='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAAPUlEQVR4AWMYvCCQ4SXDfzzwFYM/inqQcgLwJaqG/0RAGBjVgAVQTQNhOKrhFUHlL1A1+DO8JKDcd9BmfgBB0itwLBGOFgAAAABJRU5ErkJggg=='
 
 export function CheckGroupControl(props:any){
-    const state = useObject().state;
-    
+    const state = useObject();    
     let attr=props.props;    
     let opts:any[]=attr.enum || [];
+    const [error, setError]=useState(attr.error);
     
     let tmp:any[]=[];
     const [checked, setChecked] = useState(attr.data || tmp);     
@@ -54,16 +60,22 @@ export function CheckGroupControl(props:any){
     const _onPress = (label:any) => { 
         tmp=[...checked];
         let exist=tmp.filter(item => item === label);
+        let arr;
         if(exist.length==0){
-            setChecked([...tmp, label]);
+            arr=[...tmp, label];
         }else{
-            setChecked(tmp.filter(item => item !== label));
-        }        
+            arr=tmp.filter(item => item !== label);            
+        }
+        setChecked(arr);
+        attr.error=isEmptyArray(arr);
+        setError(attr.error);
     };
 
     const renderCheckBox=(label:any) => {
-        tmp=[...checked];    
-        state._formData[attr.propertyName]=checked;
+        tmp=[...checked];
+        state.formData[attr.propertyName]=tmp;
+        state.setFormData(state.formData);        
+
         let exist=tmp.filter(item => item === label);
         var _uri = exist.length===0 ? icn_unchecked:icn_checked;
         return (
@@ -96,6 +108,10 @@ export function CheckGroupControl(props:any){
             {opts.map((optionValue) => (
                renderControl(optionValue)
             ))}
+            {(state.showError && error)
+                ? <Text style={styles.inputError}>{attr.errorMessage}</Text>
+                : ""
+            }
         </View>   
     )
 }

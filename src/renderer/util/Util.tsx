@@ -97,3 +97,27 @@ export const convertDateToString = (
   }
   return dateString;
 };
+
+export function isEmpty(value:string){
+  if(value && value.trim()!="" && value.length>0){
+    return false;
+  }
+  return true;
+}
+
+export function isEmptyArray(arr:any){
+  if(arr==undefined || arr.length==0){
+    return true;
+  }
+  return false;
+}
+
+export function isEmptyBoolean(val:any){
+  if(typeof val === 'boolean'){
+    return !val;
+  }
+  if(val==undefined || val=="" || val=="No"){
+    return true;
+  }
+  return false;
+}

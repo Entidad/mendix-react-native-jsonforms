@@ -12,16 +12,14 @@ const styles = StyleSheet.create({
 });
 
 export function SubmitControl(props:any){    
-    const state = useObject().state;   
-
+    const state = useObject();   
     const _onPress = () => {
-        let required=isDataRequired(state._formData, state._schema.required);
-        props.required(required);
+        let required=isDataRequired(state.formData, state.schema.required);
+        state.setShowError(required);
         if(!required){
             props.onPress();
         }
     };  
-
     return (
         <View style={styles.SubmitContainer}>
             <Button

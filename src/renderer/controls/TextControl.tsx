@@ -1,6 +1,7 @@
 import { useObject } from '../context/ObjectHook';
-import { createElement  } from 'react'
+import { createElement, useState  } from 'react'
 import { StyleSheet, View, TextInput, Text } from "react-native";
+import { isEmpty } from '../util/Util'
 
 const styles = StyleSheet.create({
     inputControl: {
@@ -19,22 +20,32 @@ const styles = StyleSheet.create({
     },
     inputLabel:{
         marginLeft: 12
+    },
+    inputError:{
+        marginLeft: 12,
+        color:'#FF0000',
+        fontSize: 10
     }
 });
-// Comments
+
 export function TextControl(props:any){
-    const state = useObject().state;   
+    const state = useObject();   
     let attr=props.props;
+    const [error, setError]=useState(attr.error);
+
     const _onChange = (text:any) => {
-        state._formData[attr.propertyName]=text;
-        return text || attr.placeholder || attr.data || attr.value;        
+        state.formData[attr.propertyName]=text;
+        state.setFormData(state.formData);
+        attr.error=isEmpty(text);
+        setError(attr.error);
+        return text;
+        //return text || attr.placeholder || attr.data || attr.value;        
     };
-    
     return (
         <View>
             <Text style={styles.inputLabel}>{attr.label || 'No label included'}</Text>                        
             <TextInput
-                style={attr.req?styles.requiredControl:styles.inputControl}
+                style={(state.showError && error)?styles.requiredControl:styles.inputControl}
                 keyboardType="default"
                 maxLength={attr.maxLength}
                 placeholder={attr.placeholder}
@@ -43,10 +54,10 @@ export function TextControl(props:any){
                 editable={!attr.readonly}
                 onChangeText={(text) => _onChange(text)}
             />
+            {(state.showError && error)
+                ? <Text style={styles.inputError}>{attr.errorMessage}</Text>
+                : ""
+            }
         </View>   
     )
 }
-
-/*
-<Text>{JSON.stringify(props)}</Text>
-*/
