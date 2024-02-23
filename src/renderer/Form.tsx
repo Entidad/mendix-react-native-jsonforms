@@ -39,7 +39,7 @@ export const Form = ({schema, uischema, initData, formData, onSubmit}:any) => {
                 <View>
                     <ErrorItem  message={"The form data is empty"}/>
                 </View>
-            );
+            ); 
         }        
     }    
     
