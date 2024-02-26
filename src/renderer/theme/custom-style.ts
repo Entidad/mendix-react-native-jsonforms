@@ -23,7 +23,8 @@ import {
     progressBar,
     progressCircle,
     rating,
-    slider    
+    slider,    
+    checkbox
 } from "./custom-variables"
 export function getStyle(){
     return{
@@ -38,6 +39,7 @@ export function getStyle(){
 		spacing:spacing,
 		button:button,
 		input:input,
+        checkbox:checkbox,
 		image:image,
 		navigation:navigation,
 		container:container,
