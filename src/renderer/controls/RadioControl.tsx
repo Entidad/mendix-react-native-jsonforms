@@ -2,14 +2,17 @@ import { useObject } from '../context/ObjectHook';
 import { createElement, useState } from 'react'
 import { StyleSheet, TouchableWithoutFeedback, TouchableOpacity, View, Text } from "react-native";
 import { isEmptyBoolean } from '../util/Util'
+import { getStyle } from '../theme/custom-style';
 
-const styles = StyleSheet.create({
+const styleTmp = StyleSheet.create({
     viewControl:{
         marginLeft: 12,
         marginTop:12,
         marginBottom:12,
         flexDirection: 'column'
     },
+
+
     viewRow:{
         flexDirection: 'row',
         marginTop: 5
@@ -22,7 +25,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',    
         
         alignSelf: 'center',    
-        borderColor: '#000',
+        borderColor: '#D4D4D4',
         borderWidth: 3,
 
         width: 24,
@@ -36,7 +39,7 @@ const styles = StyleSheet.create({
         alignSelf: 'center',    
 
         borderColor: '#fff',
-        borderWidth: 3,
+        borderWidth: 2,
         borderRadius: 14,
 
         width: 14,
@@ -48,26 +51,22 @@ const styles = StyleSheet.create({
         alignItems: 'center',            
         alignSelf: 'center',    
         
-        borderColor: '#000',
+        borderColor: '#1A6251',
         borderWidth: 1,    
         borderRadius: 14,
 
         width: 14,
         height: 14,        
-        backgroundColor: '#000',
+        backgroundColor: '#1A6251',
     },
     inputRadioLabel: {
-        paddingLeft: 10,
+        paddingLeft: 15,
         lineHeight: 20,
-    },
-    inputError:{
-        marginLeft: 12,
-        color:'#FF0000',
-        fontSize: 10
-    }  
+    }
 });
 // Comments
 export function RadioControl(props:any){
+    let styles=getStyle();
     const state = useObject();    
     let attr=props.props;
     const [error, setError]=useState(attr.error);
@@ -92,21 +91,21 @@ export function RadioControl(props:any){
 
     const renderRadioControl=(label:any) => {        
         return(
-            <View style={styles.viewRow}>
-                <View style={styles.inputRadio}>
+            <View style={styleTmp.viewRow}>
+                <View style={styleTmp.inputRadio}>
                     <TouchableOpacity
                         onPress={() => { _onPress(label)}
                     }>
-                        <View style={value===label?styles.inputRadioActive:styles.inputRadioNormal}>
+                        <View style={value===label?styleTmp.inputRadioActive:styleTmp.inputRadioNormal}>
                         </View>
                     </TouchableOpacity>
                 </View>
-                <View>
+                <View style={styleTmp.inputRadioLabel}>
                     <TouchableWithoutFeedback
                         onPress={() => { _onPress(label)}}
                     >
                         <View>
-                            <Text style={styles.inputRadioLabel}>
+                            <Text style={styles.input.label}>
                                 {label}
                             </Text>
                         </View>
@@ -117,13 +116,13 @@ export function RadioControl(props:any){
     }
     
     return (
-        <View style={styles.viewControl}>
-            <Text style={styles.inputDescription}>{attr.description || (attr.label || 'No label included')}</Text>            
+        <View style={styleTmp.viewControl}>
+            <Text style={styles.input.label}>{attr.description || (attr.label || 'No label included')}</Text>            
             {opts!=undefined && opts.map((optionValue) => (
                 renderRadioControl(optionValue)
             ))}
              {(state.showError && error)
-                ? <Text style={styles.inputError}>{attr.errorMessage}</Text>
+                ? <Text style={styles.input.inputError}>{attr.errorMessage}</Text>
                 : ""
             }
         </View>   

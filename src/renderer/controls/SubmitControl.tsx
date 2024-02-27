@@ -1,15 +1,27 @@
 import { useObject } from '../context/ObjectHook';
 import { createElement } from 'react'
-import { StyleSheet, View, Button } from "react-native";
+import { StyleSheet, View, Pressable, Text } from "react-native";
+import { getStyle } from '../theme/custom-style';
 
 const styles = StyleSheet.create({
-    SubmitContainer: {
-        marginLeft: 12,
-        marginRight: 12,
-        justifyContent: 'center',
-        marginHorizontal: 16
-    }
-});
+    button:{
+        rippleColor         :getStyle().button.container.rippleColor,
+        minWidth            :getStyle().button.container.minWidth,
+        maxHeight           :getStyle().button.container.minHeight,
+        borderColor         :getStyle().button.primary.borderColor,
+        backgroundColor     :getStyle().button.primary.backgroundColor,
+        borderRadius        :getStyle().button.container.borderRadius,
+        justifyContent      : 'center',
+        alignItems          : 'center',
+        margin              : 20,     
+        padding             : 10
+    },
+    text: {
+        fontSize:getStyle().button.caption.fontSize,
+        fontWeight: 'normal',
+        color: getStyle().button.primary.color      
+    },
+  });
 
 export function SubmitControl(props:any){    
     const state = useObject();   
@@ -21,12 +33,10 @@ export function SubmitControl(props:any){
         }
     };  
     return (
-        <View style={styles.SubmitContainer}>
-            <Button
-                color="#000"
-                title="Submit"
-                onPress={() => _onPress()}
-            />
+        <View>
+            <Pressable style={styles.button}  onPress={() => _onPress()}>
+                <Text style={styles.text}>{"Submit"}</Text>
+            </Pressable>
         </View>   
     )
 }
