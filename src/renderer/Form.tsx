@@ -1,5 +1,5 @@
 import { createElement, useState } from "react";
-import { View } from "react-native";
+import { View, ScrollView } from "react-native";
 import { validateSchema, validationStatus } from './util/Validation'
 import { ErrorList, ErrorItem } from "./util/Error";
 import { ObjectProvider } from "./context/ObjectProvider"
@@ -58,15 +58,17 @@ export const Form = ({schema, uischema, initData, formData, onSubmit}:any) => {
             objectState={START_STATE}
         >
             <View>
-                {
-                    elements.map((element:JSX.Element) => (
-                        element
-                    ))
-                }    
-                <SubmitControl                    
-                    onPress={() => {
-                            onSubmit(START_STATE.formData);
-                    }} />            
+                <ScrollView>
+                    {
+                        elements.map((element:JSX.Element) => (
+                            element
+                        ))
+                    }    
+                    <SubmitControl                    
+                        onPress={() => {
+                                onSubmit(START_STATE.formData);
+                        }} />  
+                </ScrollView>          
             </View>
         </ObjectProvider>
     )

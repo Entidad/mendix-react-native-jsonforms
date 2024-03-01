@@ -7,8 +7,8 @@ import Svg, {Path} from 'react-native-svg'
 const styleTmp = StyleSheet.create({
     viewControl:{
         marginLeft: 12,
-        marginTop:12,
-        marginBottom:12
+        marginTop:10,
+        marginBottom:10
     },
     container: {
         flexDirection: 'row',
