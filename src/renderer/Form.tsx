@@ -4,8 +4,8 @@ import { validateSchema, validationStatus } from './util/Validation'
 import { ErrorList, ErrorItem } from "./util/Error";
 import { ObjectProvider } from "./context/ObjectProvider"
 import { ObjectState } from "./context/ObjectState";
-import { getControlProps } from "./controls/Util"
-import { getTypeControl, ControlType } from './schemas/UtilSchema'
+import { getControlType, getControlProps } from './schemas/UtilSchema'
+import { ControlType } from './schemas/ControlType'
 import { 
     TextControl, 
     TextAreaControl,
@@ -63,7 +63,7 @@ export const Form = ({schema, uischema, initData, formData, onSubmit}:any) => {
                         elements.map((element:JSX.Element) => (
                             element
                         ))
-                    }    
+                    }     
                     <SubmitControl                    
                         onPress={() => {
                                 onSubmit(START_STATE.formData);
@@ -81,13 +81,12 @@ export const elementList = (schema:any, uischema:any, initData:any, formData:any
     let elements:JSX.Element[]=[];
     if(properties){        
         for(let property in properties){
-            let initProps=properties[property];
-            let control=getTypeControl(initProps.type, initProps.format, initProps.enum, uischema, property);
+            let allProps=properties[property];
+            let control=getControlType(allProps, uischema, property);
             let props=getControlProps(schema, uischema, property);
             props.data=initData[property];
             props.propertyName=property;
             formData[property]=props.data||'';
-
             switch(control){
                 case ControlType.TextControl:
                     elements.push(<TextControl props={props}/>);
@@ -114,7 +113,7 @@ export const elementList = (schema:any, uischema:any, initData:any, formData:any
                     elements.push(<PasswordControl props={props}/>);
                     break;     
                 default:
-                    let aux=property+",Type:"+initProps.type+", Ctrl:"+ControlType[control];
+                    let aux=property+",Type:"+allProps.type+", Ctrl:"+ControlType[control];
                     elements.push(<UnknownControl label={aux}/>)
                     break;
             }            

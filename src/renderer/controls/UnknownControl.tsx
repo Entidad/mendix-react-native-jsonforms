@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
 export function UnknownControl(props:any){
     const state = useObject();      
     let label="No applicable control found for "+(props.label??'undefined');
-    console.log(state);
+    console.log("No Control Found:"+state);
     return (
         <View>
             <Text style={styles.Unknown}>{label}</Text>

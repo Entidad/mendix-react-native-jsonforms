@@ -35,6 +35,8 @@ export function CheckGroupControl(props:any){
     let styles=getStyle();
     const state = useObject();    
     let attr=props.props;    
+    console.debug("Show Attribtues");
+    console.debug(attr);
     let opts:any[]=attr.enum || [];
     const [error, setError]=useState(attr.error);
     

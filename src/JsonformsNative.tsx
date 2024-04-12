@@ -73,7 +73,7 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
     componentDidMount(): void {
         const {  mxSchema, mxUiSchema, mxInitData } = this.props;
 
-        let inputSchema = mxSchema.value ? mxSchema.value.toString() : '{"description": "JSON schema received was empty!","type": "object"}';
+        let inputSchema = mxSchema.value ? mxSchema.value.toString() : '{}';
         let inputUISchema = mxUiSchema.value ? mxUiSchema.value.toString() : "{}";
         let inputInitData = mxInitData.value ? mxInitData.value.toString() : "{}";
 
@@ -110,7 +110,7 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
             mxUiSchema.value !== prevProps.mxUiSchema.value ||
             mxInitData.value !== prevProps.mxInitData.value
         ) {
-            let inputSchema = mxSchema.value?.toString() || '{"description": "JSON schema received was empty!","type": "object"}';
+            let inputSchema = mxSchema.value?.toString() || '{}';
             let inputUISchema = mxUiSchema!.value?.toString() || "{}";
             let inputInitData = mxInitData!.value?.toString() || "{}";
 
