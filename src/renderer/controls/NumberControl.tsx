@@ -16,10 +16,10 @@ const styles = StyleSheet.create({
 });
 
 export function NumberControl(props:any){
-    const state = useObject();          
-    console.log(state);
+    const state = useObject();
     let attr=props.props;
     const _onChange = (text:any) => {
+        state.setFormData(state.formData);
         return text || attr.placeholder || attr.value;
     };
     return (

@@ -13,6 +13,8 @@ export interface JsonformsNativeProps<Style> {
     mxUiSchema: EditableValue<string>;
     mxInitData: EditableValue<string>;
     mxFormData: EditableValue<string>;
+    mxI18nData: EditableValue<string>;
+    mxLanguage: EditableValue<string>;
 }
 
 export interface JsonformsNativePreviewProps {
@@ -28,5 +30,7 @@ export interface JsonformsNativePreviewProps {
     mxUiSchema: string;
     mxInitData: string;
     mxFormData: string;
+    mxI18nData: string;
+    mxLanguage: string;
     onChangeAction: {} | null;
 }

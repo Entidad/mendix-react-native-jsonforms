@@ -13,11 +13,14 @@ export interface CustomStyle extends Style {
 interface AppState {
     schema: string;
     uischema: string;
-    initData: string;
+    initData: string;    
+    i18nData: string;
+    language: string;
     formData: string;
     errorSchema:any;
     errorUiSchema:any;
     errorInitData:any;
+    errorI18nData:any;
 }
 
 export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>, AppState> {
@@ -27,15 +30,18 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
             schema: "{}",
             uischema: "{}",
             initData: "{}",
+            i18nData: "{}",                        
+            language: "",
             formData: "{}",
             errorSchema:undefined,
             errorUiSchema:undefined,
-            errorInitData:undefined
+            errorInitData:undefined,
+            errorI18nData:undefined
         };
     }
 
     render(): ReactNode {
-        if(this.state.errorSchema || this.state.errorUiSchema || this.state.errorInitData){
+        if(this.state.errorSchema || this.state.errorUiSchema || this.state.errorInitData || this.state.errorI18nData){
             return (
                 <View>
                     {(this.state.errorSchema)
@@ -50,6 +56,10 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
                         ? <ErrorItem  message={"Error in Init Data:"+this.state.errorInitData}/>
                         : ""
                     }
+                    {(this.state.errorI18nData)
+                        ? <ErrorItem  message={"Error in I18n Data:"+this.state.errorI18nData}/>
+                        : ""
+                    }
                 </View>
             )
         }else{
@@ -59,6 +69,8 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
                             schema={JSON.parse(this.state.schema)}
                             uischema={JSON.parse(this.state.uischema)}
                             initData={JSON.parse(this.state.initData)}
+                            i18nData={JSON.parse(this.state.i18nData)}
+                            language={this.state.language}
                             formData={JSON.parse(this.state.formData)}
                             onSubmit={(data:any) => {
                                 const jsonString: string = JSON.stringify(data); 
@@ -71,15 +83,18 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
     }
 
     componentDidMount(): void {
-        const {  mxSchema, mxUiSchema, mxInitData } = this.props;
+        const {  mxSchema, mxUiSchema, mxInitData, mxI18nData, mxLanguage } = this.props;
 
         let inputSchema = mxSchema.value ? mxSchema.value.toString() : '{}';
         let inputUISchema = mxUiSchema.value ? mxUiSchema.value.toString() : "{}";
         let inputInitData = mxInitData.value ? mxInitData.value.toString() : "{}";
+        let inputI18nData = mxI18nData.value ? mxI18nData.value.toString() : "{}";
+        let inputLanguage = mxLanguage.value ? mxLanguage.value.toString() : "";
 
         let eSchema=isValidJSON(inputSchema);
         let eUiSchema=isValidJSON(inputUISchema);
         let eInitData=isValidJSON(inputInitData);
+        let eI18nData=isValidJSON(inputI18nData);
 
         if (eSchema) {
             console.debug(eSchema);
@@ -93,30 +108,42 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
             console.debug(eInitData);
             inputUISchema = "{}";
         }
+        if (eI18nData) {
+            console.debug(eI18nData);
+            inputI18nData = "{}";
+        }
         this.setState({
             schema: inputSchema,
             uischema: inputUISchema,
             initData: inputInitData,
+            i18nData: inputI18nData,
+            language: inputLanguage,
             errorSchema:eSchema,
             errorUiSchema:eUiSchema,
-            errorInitData:eInitData
+            errorInitData:eInitData,
+            errorI18nData:eI18nData
         });
     }
 
     componentDidUpdate(prevProps: Readonly<JsonformsNativeProps<CustomStyle>>): void {
-        const { mxSchema, mxUiSchema, mxInitData } = this.props;
+        const { mxSchema, mxUiSchema, mxInitData, mxI18nData, mxLanguage } = this.props;
         if (
             mxSchema.value !== prevProps.mxSchema.value ||
             mxUiSchema.value !== prevProps.mxUiSchema.value ||
-            mxInitData.value !== prevProps.mxInitData.value
+            mxInitData.value !== prevProps.mxInitData.value || 
+            mxI18nData.value !== prevProps.mxI18nData.value ||
+            mxLanguage.value !== prevProps.mxLanguage.value
         ) {
             let inputSchema = mxSchema.value?.toString() || '{}';
             let inputUISchema = mxUiSchema!.value?.toString() || "{}";
             let inputInitData = mxInitData!.value?.toString() || "{}";
+            let inputI18nData = mxI18nData!.value?.toString() || "{}";
+            let inputLanguage = mxLanguage!.value?.toString() || "";
 
             let eSchema=isValidJSON(inputSchema);
             let eUiSchema=isValidJSON(inputUISchema);
             let eInitData=isValidJSON(inputInitData);
+            let eI18nData=isValidJSON(inputI18nData);
 
             if(eSchema){
                 console.debug(eSchema);
@@ -130,13 +157,20 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
                 console.debug(eInitData);
                 inputInitData = '{}';
             }
+            if(eI18nData){
+                console.debug(eI18nData);
+                inputI18nData = '{}';
+            }
             this.setState({
                 schema: inputSchema,
                 uischema: inputUISchema,
                 initData: inputInitData,
+                i18nData: inputI18nData,
+                language: inputLanguage,
                 errorSchema:eSchema,
                 errorUiSchema:eUiSchema,
-                errorInitData:eInitData
+                errorInitData:eInitData,
+                errorI18nData:eI18nData
             });
         }
     }

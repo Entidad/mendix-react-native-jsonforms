@@ -19,7 +19,7 @@ import {
     UnknownControl
 } from "./controls";
 
-export const Form = ({schema, uischema, initData, formData, onSubmit}:any) => {
+export const Form = ({schema, uischema, initData, i18nData, language, formData, onSubmit}:any) => {
     
     const [data, setData] = useState(formData);
     const [show, setShow] = useState(false);
@@ -47,12 +47,14 @@ export const Form = ({schema, uischema, initData, formData, onSubmit}:any) => {
         schema: schema,
         uischema: uischema,
         initData: initData,
+        i18nData: i18nData,
+        language: language,
         formData: data,
         setFormData: setData,
         showError: show,
         setShowError:setShow
     }   
-    let elements=elementList(schema, uischema, initData, START_STATE.formData);  
+    let elements=elementList(schema, uischema, initData, i18nData, language, START_STATE.formData);  
     return (            
         <ObjectProvider 
             objectState={START_STATE}
@@ -76,7 +78,7 @@ export const Form = ({schema, uischema, initData, formData, onSubmit}:any) => {
 }
 
 //Comments
-export const elementList = (schema:any, uischema:any, initData:any, formData:any):JSX.Element[] =>{
+export const elementList = (schema:any, uischema:any, initData:any, i18nData:any, language:string, formData:any):JSX.Element[] =>{
     let properties=schema.properties??undefined;
     let elements:JSX.Element[]=[];
     if(properties){        
@@ -86,6 +88,11 @@ export const elementList = (schema:any, uischema:any, initData:any, formData:any
             let props=getControlProps(schema, uischema, property);
             props.data=initData[property];
             props.propertyName=property;
+            let translate=getObjectTranslate(i18nData, language, property);
+            if(translate){
+                props.label=translate.label;
+                props.description=translate.description;
+            }
             formData[property]=props.data||'';
             switch(control){
                 case ControlType.TextControl:
@@ -126,4 +133,12 @@ export const elementList = (schema:any, uischema:any, initData:any, formData:any
         );
     }
     return elements;
+}
+
+export function getObjectTranslate(i18nData:any, language:string, propertyName:string){
+    if(language!==""){
+        let arr=i18nData[language];
+        return arr[propertyName];
+    }
+    return undefined;
 }

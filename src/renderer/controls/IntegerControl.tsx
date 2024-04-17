@@ -17,9 +17,9 @@ const styles = StyleSheet.create({
 // Comments
 export function IntegerControl(props:any){
     const state = useObject();          
-    console.log(state);
     let attr=props.props;
     const _onChange = (text:any) => {
+        state.setFormData(state.formData);
         return text || attr.placeholder || attr.value;
     };
     return (

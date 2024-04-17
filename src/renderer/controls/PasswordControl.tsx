@@ -17,7 +17,10 @@ const styles = StyleSheet.create({
 
 export function PasswordControl(props:any){
     const state = useObject();          
-    console.log(state);
+    const _onChange = (text:any) => {
+        state.setFormData(state.formData);
+        return text || attr.placeholder || attr.value;
+    };
     let attr=props.props;
     return (
         <View>
@@ -26,6 +29,7 @@ export function PasswordControl(props:any){
                 style={styles.inputControl}
                 keyboardType="default"
                 maxLength={attr.maxLength}
+                onChangeText={(text) => _onChange(text)}
             />
         </View>   
     )
