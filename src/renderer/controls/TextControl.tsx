@@ -1,8 +1,14 @@
 import { useObject } from '../context/ObjectHook';
 import { createElement, useState  } from 'react'
-import { View, TextInput, Text } from "react-native";
+import { StyleSheet, View, TextInput, Text } from "react-native";
 import { isEmpty } from '../util/Util'
 import { getStyle } from '../theme/custom-style';
+
+const styleTmp = StyleSheet.create({
+    viewControl:{
+        marginBottom:10
+    }
+});
 
 export function TextControl(props:any){
     let styles=getStyle().input;
@@ -11,15 +17,18 @@ export function TextControl(props:any){
     const [error, setError]=useState(attr.error);
 
     const _onChange = (text:any) => {
+        
+        console.log(state.formData);
         state.formData[attr.propertyName]=text;
         state.setFormData(state.formData);
         attr.error=isEmpty(text);
         setError(attr.error);
-        return text;
-        //return text || attr.placeholder  || attr.data || attr.value;        
+
+        //return text;
+        return text || attr.placeholder  || attr.data || attr.value;        
     };
     return (
-        <View>
+        <View style={styleTmp.viewControl}>
             <Text style={styles.label}>{attr.label || 'No label included'}</Text>                        
             <TextInput
                 style={(state.showError && error)?styles.inputError:styles.input}

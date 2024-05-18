@@ -1,5 +1,5 @@
 import { createElement, useState } from "react";
-import { View, ScrollView } from "react-native";
+import { View, ScrollView, StyleSheet } from "react-native";
 import { validateSchema, validationStatus } from './util/Validation'
 import { ErrorList, ErrorItem } from "./util/Error";
 import { ObjectProvider } from "./context/ObjectProvider"
@@ -15,11 +15,20 @@ import {
     CheckBoxControl,
     CheckGroupControl,
     RadioControl,
-    SubmitControl,
     UnknownControl
 } from "./controls";
 
-export const Form = ({schema, uischema, initData, i18nData, language, formData, onSubmit}:any) => {
+const styleTmp = StyleSheet.create({
+    viewControl:{
+        marginLeft: 12,
+        marginTop:10,
+        marginBottom:10,
+        marginRight:12,
+        flexDirection: 'column'
+    },
+});
+
+export const Form = ({schema, uischema, initData, i18nData, language, formData}:any) => {
     
     const [data, setData] = useState(formData);
     const [show, setShow] = useState(false);
@@ -59,17 +68,13 @@ export const Form = ({schema, uischema, initData, i18nData, language, formData, 
         <ObjectProvider 
             objectState={START_STATE}
         >
-            <View>
+            <View style={styleTmp.viewControl}>
                 <ScrollView>
                     {
                         elements.map((element:JSX.Element) => (
                             element
                         ))
-                    }     
-                    <SubmitControl                    
-                        onPress={() => {
-                                onSubmit(START_STATE.formData);
-                        }} />  
+                    }                         
                 </ScrollView>          
             </View>
         </ObjectProvider>

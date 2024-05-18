@@ -6,8 +6,6 @@ import Svg, {Path} from 'react-native-svg'
 
 const styleTmp = StyleSheet.create({
     viewControl:{
-        marginLeft: 12,
-        marginTop:10,
         marginBottom:10
     },
     container: {

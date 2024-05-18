@@ -6,13 +6,8 @@ import { getStyle } from '../theme/custom-style';
 
 const styleTmp = StyleSheet.create({
     viewControl:{
-        marginLeft: 12,
-        marginTop:10,
         marginBottom:10,
-        flexDirection: 'column'
     },
-
-
     viewRow:{
         flexDirection: 'row',
         marginTop: 5

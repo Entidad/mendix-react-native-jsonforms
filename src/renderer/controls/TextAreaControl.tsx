@@ -1,7 +1,13 @@
 import { useObject } from '../context/ObjectHook';
 import { createElement, useState } from 'react'
-import { View, TextInput, Text } from "react-native";
+import { StyleSheet, View, TextInput, Text } from "react-native";
 import { getStyle } from '../theme/custom-style';
+
+const styleTmp = StyleSheet.create({
+    viewControl:{
+        marginBottom:10
+    }
+});
 
 export function TextAreaControl(props:any){
     let styles=getStyle().input;
@@ -13,11 +19,13 @@ export function TextAreaControl(props:any){
     const _onChange = (text:any) => {
         setCharCount(text.length);
         state.formData[attr.propertyName]=text;
+        state.setFormData(state.formData);
+        
         return text || attr.placeholder  || attr.data || attr.value;
      };
 
     return (
-        <View>
+        <View style={styleTmp.viewControl}>
             <Text style={styles.label}>{attr.label || 'No label included'}</Text>
             <TextInput
                 style={styles.input}
