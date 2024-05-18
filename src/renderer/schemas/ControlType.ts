@@ -49,4 +49,6 @@ export interface ControlProps{
     format?:string;
     enum?:string[];
     items?:string[];
+
+    onChange:any;
 }

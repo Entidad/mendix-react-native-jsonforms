@@ -20,6 +20,7 @@ export function IntegerControl(props:any){
         
         state.formData[attr.propertyName]=text;
         state.setFormData(state.formData);
+        attr.onChange(state.formData);        
         attr.error=isEmpty(text);
         setError(attr.error);
 

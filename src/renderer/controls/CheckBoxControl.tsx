@@ -35,7 +35,8 @@ export function CheckBoxControl(props:any){
     const _onPress = () => {
         setChecked(!checked);
         state.formData[attr.propertyName]=!checked;
-        state.setFormData(state.formData);        
+        state.setFormData(state.formData);     
+        attr.onChange(state.formData);
         attr.error=checked;
         setError(attr.error);
     };

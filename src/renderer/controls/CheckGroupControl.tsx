@@ -48,7 +48,7 @@ export function CheckGroupControl(props:any){
         }else{
             arr=tmp.filter(item => item !== label);            
         }
-        setChecked(arr);
+        setChecked(arr);        
         attr.error=isEmptyArray(arr);
         setError(attr.error);
     };
@@ -57,7 +57,8 @@ export function CheckGroupControl(props:any){
         tmp=[...checked];
         state.formData[attr.propertyName]=tmp;
         state.setFormData(state.formData);        
-
+        attr.onChange(state.formData);
+        
         let exist=tmp.filter(item => item === label);
         if(exist.length===0){
             return(

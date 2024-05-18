@@ -20,7 +20,7 @@ export function TextAreaControl(props:any){
         setCharCount(text.length);
         state.formData[attr.propertyName]=text;
         state.setFormData(state.formData);
-        
+        attr.onChange(state.formData);        
         return text || attr.placeholder  || attr.data || attr.value;
      };
 

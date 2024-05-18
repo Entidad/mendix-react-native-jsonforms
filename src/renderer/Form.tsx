@@ -28,7 +28,7 @@ const styleTmp = StyleSheet.create({
     },
 });
 
-export const Form = ({schema, uischema, initData, i18nData, language, formData}:any) => {
+export const Form = ({schema, uischema, initData, i18nData, language, formData, onChange}:any) => {
     
     const [data, setData] = useState(formData);
     const [show, setShow] = useState(false);
@@ -63,7 +63,7 @@ export const Form = ({schema, uischema, initData, i18nData, language, formData}:
         showError: show,
         setShowError:setShow
     }   
-    let elements=elementList(schema, uischema, initData, i18nData, language, START_STATE.formData);  
+    let elements=elementList(schema, uischema, initData, i18nData, language, onChange);  
     return (            
         <ObjectProvider 
             objectState={START_STATE}
@@ -83,7 +83,7 @@ export const Form = ({schema, uischema, initData, i18nData, language, formData}:
 }
 
 //Comments
-export const elementList = (schema:any, uischema:any, initData:any, i18nData:any, language:string, formData:any):JSX.Element[] =>{
+export const elementList = (schema:any, uischema:any, initData:any, i18nData:any, language:string, onChange:any):JSX.Element[] =>{
     let properties=schema.properties??undefined;
     let elements:JSX.Element[]=[];
     if(properties){        
@@ -92,13 +92,14 @@ export const elementList = (schema:any, uischema:any, initData:any, i18nData:any
             let control=getControlType(allProps, uischema, property);
             let props=getControlProps(schema, uischema, property);
             props.data=initData[property];
-            props.propertyName=property;
+            props.propertyName=property;         
+            props.onChange=onChange;               
             let translate=getObjectTranslate(i18nData, language, property);
             if(translate){
                 props.label=translate.label;
                 props.description=translate.description;
             }
-            formData[property]=props.data||'';
+            //formData[property]=props.data||'';
             switch(control){
                 case ControlType.TextControl:
                     elements.push(<TextControl props={props}/>);

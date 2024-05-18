@@ -73,7 +73,11 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
                             language={this.state.language}
                             formData={JSON.parse(this.state.formData)}
                             onChange={(data:any) => {
+                                console.debug("Open");
+                                console.debug(data);
                                 const jsonString: string = JSON.stringify(data); 
+                                console.debug(jsonString);
+                                console.debug("Close");
                                 this.props.mxFormData.setValue(jsonString);
                             }}
                         />                 

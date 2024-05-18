@@ -40,7 +40,8 @@ export function initControlProps(){
       enum:[],
       items:[],
       error:false,
-      errorMessage:"This field is required"
+      errorMessage:"This field is required",
+      onChange:undefined
   }
   return props;  
 }

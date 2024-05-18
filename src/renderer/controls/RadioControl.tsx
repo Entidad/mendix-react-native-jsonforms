@@ -79,7 +79,7 @@ export function RadioControl(props:any){
         setValue(label);
         state.formData[attr.propertyName]=label;
         state.setFormData(state.formData);
-
+        attr.onChange(state.formData);
         attr.error=isEmptyBoolean(label);
         setError(attr.error);
     };

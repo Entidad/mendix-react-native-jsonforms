@@ -17,13 +17,11 @@ export function TextControl(props:any){
     const [error, setError]=useState(attr.error);
 
     const _onChange = (text:any) => {
-        
-        console.log(state.formData);
         state.formData[attr.propertyName]=text;
-        state.setFormData(state.formData);
+        state.setFormData(state.formData); 
+        attr.onChange(state.formData);        
         attr.error=isEmpty(text);
         setError(attr.error);
-
         //return text;
         return text || attr.placeholder  || attr.data || attr.value;        
     };
