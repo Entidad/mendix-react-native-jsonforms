@@ -34,7 +34,7 @@ export function IntegerControl(props:any){
                 keyboardType="numeric"
                 placeholder={attr.placeholder}
                 placeholderTextColor='lightgray'
-                defaultValue={attr.value}
+                defaultValue={attr.data || attr.value}
                 editable={!attr.readonly}
                 onChangeText={(text) => _onChange(text)}
             />
