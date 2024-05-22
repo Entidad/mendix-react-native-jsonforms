@@ -25,6 +25,7 @@ export function TextControl(props:any){
         //return text;
         return text || attr.placeholder  || attr.data || attr.value;        
     };
+
     return (
         <View style={styleTmp.viewControl}>
             <Text style={styles.label}>{attr.label || 'No label included'}</Text>                        

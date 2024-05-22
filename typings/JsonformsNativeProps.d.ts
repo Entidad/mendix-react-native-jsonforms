@@ -15,6 +15,7 @@ export interface JsonformsNativeProps<Style> {
     mxFormData: EditableValue<string>;
     mxI18nData: EditableValue<string>;
     mxLanguage: EditableValue<string>;
+    mxReadOnly: EditableValue<boolean>;
 }
 
 export interface JsonformsNativePreviewProps {
@@ -32,5 +33,6 @@ export interface JsonformsNativePreviewProps {
     mxFormData: string;
     mxI18nData: string;
     mxLanguage: string;
+    mxReadOnly: string;
     onChangeAction: {} | null;
 }

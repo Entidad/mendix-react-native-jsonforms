@@ -49,6 +49,13 @@
                 <attributeTypes>
                     <attributeType name="String"/>
                 </attributeTypes>
+            </property>
+			<property key="mxReadOnly" type="attribute" required="true">
+                <caption>ReadOnly</caption>
+                <description>Makes the controls of the form no editable, present only the values</description>
+                <attributeTypes>
+                    <attributeType name="Boolean"/>
+                </attributeTypes>
             </property>		
 		</propertyGroup>
 		<propertyGroup caption="Events">

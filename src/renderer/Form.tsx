@@ -17,6 +17,7 @@ import {
     RadioControl,
     UnknownControl
 } from "./controls";
+import { ReadOnlyControl } from "./controls/ReadOnlyControl";
 
 const styleTmp = StyleSheet.create({
     viewControl:{
@@ -28,7 +29,7 @@ const styleTmp = StyleSheet.create({
     },
 });
 
-export const Form = ({schema, uischema, initData, i18nData, language, formData, onChange}:any) => {
+export const Form = ({schema, uischema, initData, i18nData, language, formData, onChange, readOnly}:any) => {
     
     const [data, setData] = useState(formData);
     const [show, setShow] = useState(false);
@@ -63,7 +64,7 @@ export const Form = ({schema, uischema, initData, i18nData, language, formData, 
         showError: show,
         setShowError:setShow
     }   
-    let elements=elementList(schema, uischema, initData, i18nData, language, onChange);  
+    let elements=elementList(schema, uischema, initData, i18nData, language, onChange, readOnly);  
     return (            
         <ObjectProvider 
             objectState={START_STATE}
@@ -83,7 +84,7 @@ export const Form = ({schema, uischema, initData, i18nData, language, formData, 
 }
 
 //Comments
-export const elementList = (schema:any, uischema:any, initData:any, i18nData:any, language:string, onChange:any):JSX.Element[] =>{
+export const elementList = (schema:any, uischema:any, initData:any, i18nData:any, language:string, onChange:any, readOnly:boolean):JSX.Element[] =>{
     let properties=schema.properties??undefined;
     let elements:JSX.Element[]=[];
     if(properties){        
@@ -99,37 +100,58 @@ export const elementList = (schema:any, uischema:any, initData:any, i18nData:any
                 props.label=translate.label;
                 props.description=translate.description;
             }
-            //formData[property]=props.data||'';
-            switch(control){
-                case ControlType.TextControl:
-                    elements.push(<TextControl props={props}/>);
-                    break;
-                case ControlType.TextAreaControl:                        
-                    elements.push(<TextAreaControl props={props}/>);
-                    break;     
-                case ControlType.NumberControl:                        
-                    elements.push(<NumberControl props={props}/>);
-                    break;                    
-                case ControlType.IntegerControl:
-                    elements.push(<IntegerControl props={props}/>);
-                    break;       
-                case ControlType.CheckBoxControl:
-                    elements.push(<CheckBoxControl props={props}/>);
-                    break;                           
-                case ControlType.CheckGroupControl:
-                    elements.push(<CheckGroupControl props={props}/>);
-                    break;
-                case ControlType.RadioControl:
-                    elements.push(<RadioControl props={props}/>);
-                    break; 
-                case ControlType.PasswordControl:
-                    elements.push(<PasswordControl props={props}/>);
-                    break;     
-                default:
-                    let aux=property+",Type:"+allProps.type+", Ctrl:"+ControlType[control];
-                    elements.push(<UnknownControl label={aux}/>)
-                    break;
-            }            
+            if(readOnly){
+                props.label=(props.label || "No label").toString();
+                let defaultValue=props.data || "---";
+                if(defaultValue!==undefined){                    
+                    if(control==ControlType.CheckGroupControl){
+                        let tmp=[...defaultValue];
+                        defaultValue=tmp.toString();
+                    }
+                    if(control==ControlType.CheckBoxControl){
+                        defaultValue=props.data?"Yes":"No";
+                    }else{
+                        defaultValue=defaultValue.toString();
+                    }
+                }else{
+                    defaultValue="---"
+                }
+                props.data=defaultValue;
+                console.log("label:"+props.label);
+                console.log(defaultValue);
+                elements.push(<ReadOnlyControl props={props}/>);
+            }else{
+                switch(control){
+                    case ControlType.TextControl:
+                        elements.push(<TextControl props={props}/>);
+                        break;
+                    case ControlType.TextAreaControl:                        
+                        elements.push(<TextAreaControl props={props}/>);
+                        break;     
+                    case ControlType.NumberControl:                        
+                        elements.push(<NumberControl props={props}/>);
+                        break;                    
+                    case ControlType.IntegerControl:
+                        elements.push(<IntegerControl props={props}/>);
+                        break;       
+                    case ControlType.CheckBoxControl:
+                        elements.push(<CheckBoxControl props={props}/>);
+                        break;                           
+                    case ControlType.CheckGroupControl:
+                        elements.push(<CheckGroupControl props={props}/>);
+                        break;
+                    case ControlType.RadioControl:
+                        elements.push(<RadioControl props={props}/>);
+                        break; 
+                    case ControlType.PasswordControl:
+                        elements.push(<PasswordControl props={props}/>);
+                        break;     
+                    default:
+                        let aux=property+",Type:"+allProps.type+", Ctrl:"+ControlType[control];
+                        elements.push(<UnknownControl label={aux}/>)
+                        break;
+                }        
+            }   
         }
     }else{
         elements.push(

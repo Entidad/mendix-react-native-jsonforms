@@ -17,6 +17,7 @@ interface AppState {
     i18nData: string;
     language: string;
     formData: string;
+    readOnly:boolean;
     errorSchema:any;
     errorUiSchema:any;
     errorInitData:any;
@@ -33,6 +34,7 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
             i18nData: "{}",                        
             language: "",
             formData: "{}",
+            readOnly:false,
             errorSchema:undefined,
             errorUiSchema:undefined,
             errorInitData:undefined,
@@ -72,6 +74,7 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
                             i18nData={JSON.parse(this.state.i18nData)}
                             language={this.state.language}
                             formData={JSON.parse(this.state.formData)}
+                            readOnly={this.state.readOnly}
                             onChange={(data:any) => {
                                 console.debug("Open");
                                 console.debug(data);
@@ -87,13 +90,14 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
     }
 
     componentDidMount(): void {
-        const {  mxSchema, mxUiSchema, mxInitData, mxI18nData, mxLanguage } = this.props;
+        const {  mxSchema, mxUiSchema, mxInitData, mxI18nData, mxLanguage, mxReadOnly } = this.props;
 
         let inputSchema = mxSchema.value ? mxSchema.value.toString() : '{}';
         let inputUISchema = mxUiSchema.value ? mxUiSchema.value.toString() : "{}";
         let inputInitData = mxInitData.value ? mxInitData.value.toString() : "{}";
         let inputI18nData = mxI18nData.value ? mxI18nData.value.toString() : "{}";
         let inputLanguage = mxLanguage.value ? mxLanguage.value.toString() : "";
+        let inputReadOnly = mxReadOnly.value ?? false;
 
         let eSchema=isValidJSON(inputSchema);
         let eUiSchema=isValidJSON(inputUISchema);
@@ -122,6 +126,7 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
             initData: inputInitData,
             i18nData: inputI18nData,
             language: inputLanguage,
+            readOnly: inputReadOnly,
             errorSchema:eSchema,
             errorUiSchema:eUiSchema,
             errorInitData:eInitData,
@@ -130,19 +135,21 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
     }
 
     componentDidUpdate(prevProps: Readonly<JsonformsNativeProps<CustomStyle>>): void {
-        const { mxSchema, mxUiSchema, mxInitData, mxI18nData, mxLanguage } = this.props;
+        const { mxSchema, mxUiSchema, mxInitData, mxI18nData, mxLanguage, mxReadOnly } = this.props;
         if (
             mxSchema.value !== prevProps.mxSchema.value ||
             mxUiSchema.value !== prevProps.mxUiSchema.value ||
             mxInitData.value !== prevProps.mxInitData.value || 
             mxI18nData.value !== prevProps.mxI18nData.value ||
-            mxLanguage.value !== prevProps.mxLanguage.value
+            mxLanguage.value !== prevProps.mxLanguage.value ||
+            mxReadOnly.value !== prevProps.mxReadOnly.value
         ) {
             let inputSchema = mxSchema.value?.toString() || '{}';
             let inputUISchema = mxUiSchema!.value?.toString() || "{}";
             let inputInitData = mxInitData!.value?.toString() || "{}";
             let inputI18nData = mxI18nData!.value?.toString() || "{}";
             let inputLanguage = mxLanguage!.value?.toString() || "";
+            let inputReadOnly = mxReadOnly!.value || false;
 
             let eSchema=isValidJSON(inputSchema);
             let eUiSchema=isValidJSON(inputUISchema);
@@ -171,6 +178,7 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
                 initData: inputInitData,
                 i18nData: inputI18nData,
                 language: inputLanguage,
+                readOnly: inputReadOnly,
                 errorSchema:eSchema,
                 errorUiSchema:eUiSchema,
                 errorInitData:eInitData,

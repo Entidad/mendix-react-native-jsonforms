@@ -22,7 +22,7 @@ export function TextAreaControl(props:any){
         state.setFormData(state.formData);
         attr.onChange(state.formData);        
         return text || attr.placeholder  || attr.data || attr.value;
-     };
+    };
 
     return (
         <View style={styleTmp.viewControl}>
