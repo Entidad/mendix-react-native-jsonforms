@@ -1,6 +1,6 @@
 {
   "name": "jsonformsnative",
-  "widgetName": "JsonformsNative",
+  "widgetName": "JsonForms",
   "version": "1.0.0",
   "description": "Mendix JsonForms Render for Native",
   "copyright": "GPL",
@@ -12,7 +12,7 @@
   "config": {
     "projectPath": "./tests/testProject"
   },
-  "packagePath": "entidad.io",
+  "packagePath": "io.entidad.widget.native",
   "scripts": {
     "start": "pluggable-widgets-tools start:native",
     "build": "pluggable-widgets-tools build:native",
