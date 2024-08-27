@@ -27,6 +27,7 @@ export interface JsonFormsPreviewProps {
     style: string;
     styleObject?: CSSProperties;
     readOnly: boolean;
+    renderMode?: "design" | "xray" | "structure";
     mxSchema: string;
     mxUiSchema: string;
     mxInitData: string;

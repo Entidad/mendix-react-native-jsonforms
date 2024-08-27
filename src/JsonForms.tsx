@@ -1,7 +1,7 @@
 import { Component, ReactNode, createElement } from "react";
 import { TextStyle, ViewStyle, View } from "react-native";
 import { Style } from "@mendix/pluggable-widgets-tools";
-import { JsonformsNativeProps } from "../typings/JsonformsNativeProps";
+import { JsonFormsProps } from "../typings/JsonFormsProps";
 import { Form } from "../src/renderer/Form";
 import { ErrorItem } from "./renderer/util/Error";
 
@@ -24,7 +24,7 @@ interface AppState {
     errorI18nData:any;
 }
 
-export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>, AppState> {
+export class JsonForms extends Component<JsonFormsProps<CustomStyle>, AppState> {
     constructor(props: any) {
         super(props);
         this.state = {
@@ -134,7 +134,7 @@ export class JsonformsNative extends Component<JsonformsNativeProps<CustomStyle>
         });
     }
 
-    componentDidUpdate(prevProps: Readonly<JsonformsNativeProps<CustomStyle>>): void {
+    componentDidUpdate(prevProps: Readonly<JsonFormsProps<CustomStyle>>): void {
         const { mxSchema, mxUiSchema, mxInitData, mxI18nData, mxLanguage, mxReadOnly } = this.props;
         if (
             mxSchema.value !== prevProps.mxSchema.value ||

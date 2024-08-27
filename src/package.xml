@@ -5,7 +5,7 @@
             <widgetFile path="JsonForms.xml"/>
         </widgetFiles>
         <files>
-            <file path="io/entidad/widget/native/jsonformsnative"/>
+            <file path="io/entidad/widget/native/jsonforms"/>
         </files>
     </clientModule>
 </package>

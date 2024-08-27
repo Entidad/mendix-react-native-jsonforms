@@ -1,4 +1,4 @@
-import { JsonformsNativePreviewProps } from "../typings/JsonformsNativeProps";
+import { JsonFormsPreviewProps } from "../typings/JsonFormsProps";
 
 export type Platform = "web" | "desktop";
 
@@ -100,7 +100,7 @@ export type PreviewProps =
     | DatasourceProps;
 
 export function getProperties(
-    _values: JsonformsNativePreviewProps,
+    _values: JsonFormsPreviewProps,
     defaultProperties: Properties /* , target: Platform*/
 ): Properties {
     // Do the values manipulation here to control the visibility of properties in Studio and Studio Pro conditionally.
@@ -112,7 +112,7 @@ export function getProperties(
     return defaultProperties;
 }
 
-// export function check(_values: JsonformsNativePreviewProps): Problem[] {
+// export function check(_values: JsonFormsPreviewProps): Problem[] {
 //     const errors: Problem[] = [];
 //     // Add errors to the above array to throw errors in Studio and Studio Pro.
 //     /* Example
@@ -127,7 +127,7 @@ export function getProperties(
 //     return errors;
 // }
 
-// export function getPreview(values: JsonformsNativePreviewProps, isDarkMode: boolean, version: number[]): PreviewProps {
+// export function getPreview(values: JsonFormsPreviewProps, isDarkMode: boolean, version: number[]): PreviewProps {
 //     // Customize your pluggable widget appearance for Studio Pro.
 //     return {
 //         type: "Container",
@@ -135,6 +135,6 @@ export function getProperties(
 //     }
 // }
 
-// export function getCustomCaption(values: JsonformsNativePreviewProps, platform: Platform): string {
-//     return "JsonformsNative";
+// export function getCustomCaption(values: JsonFormsPreviewProps, platform: Platform): string {
+//     return "JsonForms";
 // }
