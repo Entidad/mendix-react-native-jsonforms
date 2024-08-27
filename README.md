@@ -27,7 +27,7 @@ The following native controls are implemented
 * `src/renderer/controls/UnknownControl.tsx`
 
 ## Styling
-Styles may be edited in `src/renderer/theme/custom-variables.js`
+Compile time styling can be customized by edited `src/renderer/theme/custom-variables.js`. Modeling time styling can be achieved by editing the `UI / Style JSON` field. A sample style can be found at `styles/sample.json`
 
 ## Demo project
 N/A
