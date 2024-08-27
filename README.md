@@ -7,6 +7,28 @@ Todo...
 ## Usage
 Todo...
 
+## Project Layout
+Todo...
+
+## Controls
+
+The following native controls are implemented
+
+* `src/renderer/controls/TextControl.tsx`
+* `src/renderer/controls/CheckBoxControl.tsx`
+* `src/renderer/controls/CheckGroupControl.tsx`
+* `src/renderer/controls/IntegerControl.tsx`
+* `src/renderer/controls/NumberControl.tsx`
+* `src/renderer/controls/PasswordControl.tsx`
+* `src/renderer/controls/RadioControl.tsx`
+* `src/renderer/controls/ReadOnlyControl.tsx`
+* `src/renderer/controls/TextAreaControl.tsx`
+* `src/renderer/controls/TextControl.tsx`
+* `src/renderer/controls/UnknownControl.tsx`
+
+## Styling
+Styles may be edited in `src/renderer/theme/custom-variables.js`
+
 ## Demo project
 N/A
 
