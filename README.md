@@ -1,17 +1,17 @@
 ## JsonformsNative
-[Mendix JsonForms Render for Native]
+Mendix JsonForms Render for Native
 
 ## Features
-[feature highlights]
+Todo...
 
 ## Usage
-[step by step instructions]
+Todo...
 
 ## Demo project
-[link to sandbox]
+N/A
 
 ## Issues, suggestions and feature requests
-[link to GitHub issues]
+Todo...
 
 ## Development and contribution
 
@@ -22,3 +22,8 @@
     - the bundle will be included in the `deployment` and `widgets` folder of the Mendix test project.
 
 [specify contribution]
+
+## References
+
+* [https://jsonforms.io/](https://jsonforms.io/)
+* [https://jsonforms.io/docs/](https://jsonforms.io/docs/)
