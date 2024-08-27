@@ -21,16 +21,16 @@ import { ReadOnlyControl } from "./controls/ReadOnlyControl";
 
 const styleTmp = StyleSheet.create({
     viewControl:{
-        marginLeft: 12,
-        marginTop:10,
-        marginBottom:10,
-        marginRight:12,
+        marginLeft: 0,
+        marginTop:0,
+        marginBottom:0,
+        marginRight:0,
         flexDirection: 'column'
     },
 });
 
-export const Form = ({schema, uischema, initData, i18nData, language, formData, onChange, readOnly}:any) => {
-    
+export const Form = ({schema, uischema, initData, i18nData, language, formData, onChange, readOnly, style/*ockert*/}:any) => {
+   console.info(style); //ockert
     const [data, setData] = useState(formData);
     const [show, setShow] = useState(false);
     //
@@ -64,7 +64,7 @@ export const Form = ({schema, uischema, initData, i18nData, language, formData, 
         showError: show,
         setShowError:setShow
     }   
-    let elements=elementList(schema, uischema, initData, i18nData, language, onChange, readOnly);  
+    let elements=elementList(schema, uischema, initData, i18nData, language, onChange, readOnly,style);  
     return (            
         <ObjectProvider 
             objectState={START_STATE}
@@ -84,7 +84,7 @@ export const Form = ({schema, uischema, initData, i18nData, language, formData, 
 }
 
 //Comments
-export const elementList = (schema:any, uischema:any, initData:any, i18nData:any, language:string, onChange:any, readOnly:boolean):JSX.Element[] =>{
+export const elementList = (schema:any, uischema:any, initData:any, i18nData:any, language:string, onChange:any, readOnly:boolean, style:any):JSX.Element[] =>{
     let properties=schema.properties??undefined;
     let elements:JSX.Element[]=[];
     if(properties){        
@@ -95,6 +95,7 @@ export const elementList = (schema:any, uischema:any, initData:any, i18nData:any
             props.data=initData[property];
             props.propertyName=property;         
             props.onChange=onChange;               
+            props.style=style;
             let translate=getObjectTranslate(i18nData, language, property);
             if(translate){
                 props.label=translate.label;

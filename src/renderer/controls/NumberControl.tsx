@@ -11,9 +11,9 @@ const styleTmp = StyleSheet.create({
 });
 
 export function NumberControl(props:any){
-    let styles=getStyle().input;
     const state = useObject();          
     let attr=props.props;
+    let styles={...getStyle().input,...attr?.style?.input||{}};
     const [error, setError]=useState(attr.error);
 
     const _onChange = (text:any) => {

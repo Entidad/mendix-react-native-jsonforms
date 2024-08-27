@@ -15,6 +15,7 @@ interface AppState {
     uischema: string;
     initData: string;    
     i18nData: string;
+    styleData: string;
     language: string;
     formData: string;
     readOnly:boolean;
@@ -22,6 +23,7 @@ interface AppState {
     errorUiSchema:any;
     errorInitData:any;
     errorI18nData:any;
+    errorStyleData:any;
 }
 
 export class JsonForms extends Component<JsonFormsProps<CustomStyle>, AppState> {
@@ -32,13 +34,15 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>, AppState> 
             uischema: "{}",
             initData: "{}",
             i18nData: "{}",                        
+            styleData: "{}",                        
             language: "",
             formData: "{}",
             readOnly:false,
             errorSchema:undefined,
             errorUiSchema:undefined,
             errorInitData:undefined,
-            errorI18nData:undefined
+            errorI18nData:undefined,
+            errorStyleData:undefined
         };
     }
 
@@ -72,6 +76,7 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>, AppState> 
                             uischema={JSON.parse(this.state.uischema)}
                             initData={JSON.parse(this.state.initData)}
                             i18nData={JSON.parse(this.state.i18nData)}
+                            style={JSON.parse(this.state.styleData)}
                             language={this.state.language}
                             formData={JSON.parse(this.state.formData)}
                             readOnly={this.state.readOnly}
@@ -90,12 +95,13 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>, AppState> 
     }
 
     componentDidMount(): void {
-        const {  mxSchema, mxUiSchema, mxInitData, mxI18nData, mxLanguage, mxReadOnly } = this.props;
+        const {  mxSchema, mxUiSchema, mxInitData, mxI18nData, mxStyleData, mxLanguage, mxReadOnly } = this.props;
 
         let inputSchema = mxSchema.value ? mxSchema.value.toString() : '{}';
         let inputUISchema = mxUiSchema.value ? mxUiSchema.value.toString() : "{}";
         let inputInitData = mxInitData.value ? mxInitData.value.toString() : "{}";
         let inputI18nData = mxI18nData.value ? mxI18nData.value.toString() : "{}";
+        let inputStyleData = mxStyleData ? mxStyleData : "{}";
         let inputLanguage = mxLanguage.value ? mxLanguage.value.toString() : "";
         let inputReadOnly = mxReadOnly.value ?? false;
 
@@ -103,6 +109,7 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>, AppState> 
         let eUiSchema=isValidJSON(inputUISchema);
         let eInitData=isValidJSON(inputInitData);
         let eI18nData=isValidJSON(inputI18nData);
+        let eStyleData=isValidJSON(inputStyleData);
 
         if (eSchema) {
             console.debug(eSchema);
@@ -120,27 +127,34 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>, AppState> 
             console.debug(eI18nData);
             inputI18nData = "{}";
         }
+        if (eStyleData) {
+            console.debug(eStyleData);
+            inputStyleData = "{}";
+        }
         this.setState({
             schema: inputSchema,
             uischema: inputUISchema,
             initData: inputInitData,
             i18nData: inputI18nData,
+            styleData: inputStyleData,
             language: inputLanguage,
             readOnly: inputReadOnly,
             errorSchema:eSchema,
             errorUiSchema:eUiSchema,
             errorInitData:eInitData,
-            errorI18nData:eI18nData
+            errorI18nData:eI18nData,
+            errorStyleData:eStyleData
         });
     }
 
     componentDidUpdate(prevProps: Readonly<JsonFormsProps<CustomStyle>>): void {
-        const { mxSchema, mxUiSchema, mxInitData, mxI18nData, mxLanguage, mxReadOnly } = this.props;
+        const { mxSchema, mxUiSchema, mxInitData, mxI18nData, mxStyleData, mxLanguage, mxReadOnly } = this.props;
         if (
             mxSchema.value !== prevProps.mxSchema.value ||
             mxUiSchema.value !== prevProps.mxUiSchema.value ||
             mxInitData.value !== prevProps.mxInitData.value || 
             mxI18nData.value !== prevProps.mxI18nData.value ||
+            mxStyleData !== prevProps.mxStyleData ||
             mxLanguage.value !== prevProps.mxLanguage.value ||
             mxReadOnly.value !== prevProps.mxReadOnly.value
         ) {
@@ -148,6 +162,7 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>, AppState> 
             let inputUISchema = mxUiSchema!.value?.toString() || "{}";
             let inputInitData = mxInitData!.value?.toString() || "{}";
             let inputI18nData = mxI18nData!.value?.toString() || "{}";
+            let inputStyleData = mxStyleData || "{}";
             let inputLanguage = mxLanguage!.value?.toString() || "";
             let inputReadOnly = mxReadOnly!.value || false;
 
@@ -155,6 +170,7 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>, AppState> 
             let eUiSchema=isValidJSON(inputUISchema);
             let eInitData=isValidJSON(inputInitData);
             let eI18nData=isValidJSON(inputI18nData);
+            let eStyleData=isValidJSON(inputStyleData);
 
             if(eSchema){
                 console.debug(eSchema);
@@ -172,11 +188,17 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>, AppState> 
                 console.debug(eI18nData);
                 inputI18nData = '{}';
             }
+            if(eStyleData){
+                console.debug(eStyleData);
+                inputStyleData = '{}';
+            }
+
             this.setState({
                 schema: inputSchema,
                 uischema: inputUISchema,
                 initData: inputInitData,
                 i18nData: inputI18nData,
+                styleData: inputStyleData,
                 language: inputLanguage,
                 readOnly: inputReadOnly,
                 errorSchema:eSchema,

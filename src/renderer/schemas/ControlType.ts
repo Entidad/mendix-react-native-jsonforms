@@ -27,6 +27,7 @@ export interface ControlProps{
     emptyValue?:string;
     default?:any;
     data?:any;
+    style?:any;//ockert
     
     minLength?:number;
     maxLength?:number;

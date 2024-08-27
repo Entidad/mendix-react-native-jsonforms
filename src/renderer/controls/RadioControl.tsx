@@ -4,66 +4,60 @@ import { StyleSheet, TouchableWithoutFeedback, TouchableOpacity, View, Text } fr
 import { isEmptyBoolean } from '../util/Util'
 import { getStyle } from '../theme/custom-style';
 
-const styleTmp = StyleSheet.create({
-    viewControl:{
-        marginBottom:10,
-    },
-    viewRow:{
-        flexDirection: 'row',
-        marginTop: 5
-    },
-    inputDescription:{
-        marginLeft: 0
-    },    
-    inputRadio: {
-        justifyContent: 'center',
-        alignItems: 'center',    
-        
-        alignSelf: 'center',    
-        borderColor: '#D4D4D4',
-        borderWidth: 3,
-
-        width: 24,
-        height: 24,        
-        borderRadius: 24,
-    }, 
-    inputRadioNormal: {
-
-        justifyContent: 'center',
-        alignItems: 'center',            
-        alignSelf: 'center',    
-
-        borderColor: '#fff',
-        borderWidth: 2,
-        borderRadius: 14,
-
-        width: 14,
-        height: 14,                
-    },    
-    inputRadioActive: {
-        
-        justifyContent: 'center',
-        alignItems: 'center',            
-        alignSelf: 'center',    
-        
-        borderColor: '#1A6251',
-        borderWidth: 1,    
-        borderRadius: 14,
-
-        width: 14,
-        height: 14,        
-        backgroundColor: '#1A6251',
-    },
-    inputRadioLabel: {
-        paddingLeft: 15,
-        lineHeight: 20,
-    }
-});
 // Comments
 export function RadioControl(props:any){
-    let styles=getStyle();
+
     const state = useObject();    
     let attr=props.props;
+	const styles={...getStyle(),...attr?.style||{}};
+	const styleTmp = StyleSheet.create({...{
+	    viewControl:{
+		marginBottom:styles.radioButtons.radioButtonItemContainerStyle.marginBottom//10
+	    },
+	    viewRow:{
+		flexDirection: 'row',
+		marginTop: 5
+	    },
+	    inputDescription:{
+		marginLeft: 0
+	    },    
+	    inputRadio: {
+		justifyContent: 'center',
+		alignItems: 'center',    
+		alignSelf: 'center',
+		borderColor: styles.radioButtons.circularButtonStyle.borderColor,//'#FF0000',
+		borderWidth: 3,//here
+		width: styles.radioButtons.circularButtonStyle.width,//24
+		height: styles.radioButtons.circularButtonStyle.height,//24
+		borderRadius: styles.radioButtons.circularButtonStyle.borderRadius,//24
+	    }, 
+	    inputRadioNormal: {
+		justifyContent: 'center',
+		alignItems: 'center',            
+		alignSelf: 'center',    
+		borderColor: styles.radioButtons.circularButtonStyle.borderColor,//"#FFF"
+		//borderWidth: 2,
+		borderRadius: styles.radioButtons.circularButtonStyle.borderRadius,//14
+		width: styles.radioButtons.circularButtonStyle.width,//14
+		height: styles.radioButtons.circularButtonStyle.height,//14
+	    },    
+	    inputRadioActive: {
+		justifyContent: 'center',
+		alignItems: 'center',            
+		alignSelf: 'center',     
+		borderColor: styles.radioButtons.activeButtonStyle.backgroundColor,//'#00FF00',
+		//borderWidth: 1,    
+		borderRadius: styles.radioButtons.activeButtonStyle.borderRadius,//'#00FF00',
+		width: styles.radioButtons.activeButtonStyle.width,//14
+		height: styles.radioButtons.activeButtonStyle.height,//14
+		backgroundColor: styles.radioButtons.activeButtonStyle.backgroundColor,//'#0000FF',
+	    },
+	    inputRadioLabel: {
+		paddingLeft: 15,
+		lineHeight: 20,
+	    }
+	},...attr?.style?.radioButtons||{}});
+
     const [error, setError]=useState(attr.error);
     let opts:any[]=attr.enum || [];    
     let data=getDataFromBoolean(attr.data);

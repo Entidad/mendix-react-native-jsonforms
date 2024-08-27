@@ -10,9 +10,9 @@ const styleTmp = StyleSheet.create({
 });
 
 export function TextAreaControl(props:any){
-    let styles=getStyle().input;
     const state = useObject();   
     let attr=props.props;        
+    let styles={...getStyle().input,...attr?.style?.input||{}};
     let maxCharLimit=attr.maxLength || 200;
 
     const [charCount, setCharCount] = useState(0);

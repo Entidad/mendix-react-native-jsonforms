@@ -26,9 +26,9 @@ const styleTmp = StyleSheet.create({
     }
 });
 export function CheckBoxControl(props:any){
-    let styles=getStyle();
     const state = useObject();          
     let attr=props.props;
+    let styles={...getStyle().input,...attr?.style?.input||{}};
     const [checked, setChecked] = useState(getDataFromBoolean(attr.data));
     const [error, setError]=useState(attr.error);
  

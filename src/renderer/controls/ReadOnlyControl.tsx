@@ -17,8 +17,8 @@ const styleTmp = StyleSheet.create({
 });
 
 export function ReadOnlyControl(props:any){
-    let styles=getStyle().input;    
     let attr=props.props;
+    let styles={...getStyle().input,...attr?.style?.input||{}};
     return (
         <View style={styleTmp.viewControl}>
             <Text style={styles.label && styleTmp.label}>{attr.label}</Text>

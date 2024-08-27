@@ -16,6 +16,7 @@ export interface JsonFormsProps<Style> {
     mxI18nData: EditableValue<string>;
     mxLanguage: EditableValue<string>;
     mxReadOnly: EditableValue<boolean>;
+    mxStyleData: string;
 }
 
 export interface JsonFormsPreviewProps {
@@ -36,4 +37,5 @@ export interface JsonFormsPreviewProps {
     mxLanguage: string;
     mxReadOnly: string;
     onChangeAction: {} | null;
+    mxStyleData: string;
 }

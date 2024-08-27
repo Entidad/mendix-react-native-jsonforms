@@ -30,9 +30,9 @@ const styleTmp = StyleSheet.create({
 });
 
 export function CheckGroupControl(props:any){
-    let styles=getStyle();
     const state = useObject();    
     let attr=props.props;    
+    let styles={...getStyle(),...attr?.style||{}};
     let opts:any[]=attr.enum || [];
     const [error, setError]=useState(attr.error);
     
