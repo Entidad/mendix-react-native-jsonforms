@@ -4,7 +4,7 @@
  * @author Mendix Widgets Framework Team
  */
 import { CSSProperties } from "react";
-import { EditableValue } from "mendix";
+import { DynamicValue, EditableValue } from "mendix";
 
 export interface JsonFormsProps<Style> {
     name: string;
@@ -16,7 +16,7 @@ export interface JsonFormsProps<Style> {
     mxI18nData: EditableValue<string>;
     mxLanguage: EditableValue<string>;
     mxReadOnly: EditableValue<boolean>;
-    mxStyleData: string;
+    mxStyleData: DynamicValue<string>;
 }
 
 export interface JsonFormsPreviewProps {

@@ -70,9 +70,10 @@
 			</property>
 		</propertyGroup>
 		<propertyGroup caption="UI">
-			<property key="mxStyleData" type="string" defaultValue="{}" multiline="true">
+			<property key="mxStyleData" type="expression" defaultValue="'{}'">
 				<caption>Style JSON</caption>
 				<description></description>
+				<returnType type="String"/>
                         </property>
 		</propertyGroup>
 
