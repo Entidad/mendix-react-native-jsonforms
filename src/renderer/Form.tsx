@@ -30,7 +30,6 @@ const styleTmp = StyleSheet.create({
 });
 
 export const Form = ({schema, uischema, initData, i18nData, language, formData, onChange, readOnly, style/*ockert*/}:any) => {
-   console.info(style); //ockert
     const [data, setData] = useState(formData);
     const [show, setShow] = useState(false);
     //
