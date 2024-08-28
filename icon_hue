@@ -1,0 +1,8 @@
+#!/bin/bash
+TMP="$(mktemp temp.XXXXXXXX)"
+WIDGET_XML=./src/$(cat ./src/package.xml |sed -e 's/ xmlns.*=".*"//g'|xmlstarlet sel -t -v "//package/clientModule/widgetFiles/widgetFile/@path")
+cat $WIDGET_XML|xmlstarlet ed \
+	-N s="http://www.mendix.com/widget/1.0/" \
+	-u '/s:widget/s:icon' \
+	-v $(cat $WIDGET_XML|tr -d "\n"|xmlstarlet sel -N s="http://www.mendix.com/widget/1.0/" -t -v "/s:widget/s:icon"|base64 -d|convert png:- -modulate  100,100,$((1 + RANDOM % 100)) png:-|base64 -w 0) > $TMP
+mv $TMP $WIDGET_XML

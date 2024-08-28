@@ -1,19 +1,14 @@
-import{useObject}from'../context/ObjectHook';
-import{createElement,useState}from'react'
-import{StyleSheet,View,TextInput,Text}from"react-native";
-import{isEmpty}from'../util/Util'
-import{getStyle}from'../theme/custom-style';
-const styleTmp=StyleSheet.create({
-	viewControl:{
-		marginBottom:10
-	}
-});
+import{useObject}from"../context/ObjectHook";
+import{createElement,useState}from"react"
+import{/*StyleSheet,*/View,TextInput,Text}from"react-native";
+import{isEmpty}from"../util/Util"
+import{getStyle}from"../theme/custom-style";
+import{mergeDeep}from"../../util/merge";
 export function TextControl(props:any){
 	const state=useObject();
 	let attr=props.props;
-	let styles={...getStyle().input,...attr?.style?.input||{}};
-	console.info("TextControl:");
-	console.info(JSON.stringify(styles));
+        let styles:any={};
+        mergeDeep(styles,getStyle().input,attr?.style?.input||{});
 	const[error,setError]=useState(attr.error);
 	const _onChange=(text:any)=>{
 		state.formData[attr.propertyName]=text;
@@ -25,20 +20,20 @@ export function TextControl(props:any){
 		return text||attr.placeholder||attr.data||attr.value;		
 	};
 	return(
-		<View style={styleTmp.viewControl}>
-			<Text style={styles.label}>{attr.label||'No label included'}</Text>						
+		<View style={/*styles?.itemContainer||{}*/{}}>
+			<Text style={styles?.label}>{attr.label||"No label included"}</Text>						
 			<TextInput
-				style={(state.showError&&error)?styles.inputError:styles.input}
+				style={(state.showError&&error)?styles?.inputError||{}:styles?.input||{}}
 				keyboardType="default"
 				maxLength={attr.maxLength}
 				placeholder={attr.placeholder}
-				placeholderTextColor='lightgray'
+				placeholderTextColor="lightgray"
 				defaultValue={attr.data||attr.value}
 				editable={!attr.readonly}
 				onChangeText={(text)=>_onChange(text)}
 			/>
 			{(state.showError&&error)
-				?<Text style={styles.inputError}>{attr.errorMessage}</Text>
+				?<Text style={styles?.inputError||{}}>{attr.errorMessage}</Text>
 				:""
 			}
 		</View>

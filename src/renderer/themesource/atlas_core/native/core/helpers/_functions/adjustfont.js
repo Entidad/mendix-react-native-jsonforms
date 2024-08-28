@@ -34,15 +34,15 @@ function adjustFont(size) {
         }
         // Catch other weird android width sizings
         if (height < 667) {
-            return size * 1; //1.15
+            return size * 1.15;
         }
         // catch in-between size Androids and scale font up
         if (height >= 667 && height <= 735) {
-            return size * 1; //1.2;
+            return size * 1.2;
         }
         // catch larger devices
         // ie iphone 6s plus / 7 plus / mi note
-        return size * 1.06;  //1.27
+        return size * 1.27;
     }
     if (pixelRatio === 3.5) {
         // catch Android font scaling on small machines
