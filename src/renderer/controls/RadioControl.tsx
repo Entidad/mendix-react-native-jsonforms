@@ -75,13 +75,32 @@ export function RadioControl(props:any){
 		setError(attr.error);
 	};
 	const renderRadioControl=(label:any)=>{		
+							//<View style={value===label?styles?.activeButtonStyle||{}:styles?.circularButtonStyle||{}}></View>
 		return(
 			<View style={styleTmp.viewRow}>
 				<View style={styles?.radioButtonItemContainerStyle||{}}>
 					<TouchableOpacity
 						onPress={()=>{_onPress(label)}
 					}>
-						<View style={value===label?styles?.activeButtonStyle||{}:styles?.circularButtonStyle||{}}>
+						<View style={{
+							height: 24,
+							width: 24,
+							borderRadius: 12,
+							borderWidth: 2,
+							borderColor: styles?.circularButtonStyle?.borderColor||'#000',
+							alignItems: 'center',
+							justifyContent: 'center',
+						}}>
+							{
+								value===label?
+								<View style={{
+									height: 12,
+									width: 12,
+									borderRadius: 6,
+									backgroundColor: styles?.activeButtonStyle?.backgroundColor||'#000'
+								}}/>
+								:null
+							}
 						</View>
 					</TouchableOpacity>
 				</View>
