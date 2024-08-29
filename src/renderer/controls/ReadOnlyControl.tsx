@@ -19,8 +19,6 @@ export function ReadOnlyControl(props:any){
 	let attr=props.props;
         let styles:any={};
         mergeDeep(styles,customVariables?.input,attr?.style?.input||{});
-	console.info("ReadOnlyControl:");
-	console.info(JSON.stringify(styles));
 	return (
 		<View style={styleTmp.viewControl}>
 			<Text style={styles.label && styleTmp.label}>{attr.label}</Text>

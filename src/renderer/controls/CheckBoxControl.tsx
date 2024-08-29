@@ -32,8 +32,6 @@ export function CheckBoxControl(props:any){
         mergeDeep(styles,customVariables?.checkbox,attr?.style?.checkbox||{});
         let stylesInput:any={};
         mergeDeep(styles,customVariables?.input,attr?.style?.input||{});
-	console.info("CheckBoxControl:");
-	console.info(JSON.stringify(styles));
 	const[checked,setChecked]=useState(getDataFromBoolean(attr.data));
 	const[error,setError]=useState(attr.error);
 	const _onPress=()=>{

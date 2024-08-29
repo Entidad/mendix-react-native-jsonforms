@@ -21,7 +21,7 @@ export function TextControl(props:any){
 	};
 	return(
 		<View style={/*styles?.itemContainer||{}*/{}}>
-			<Text style={styles?.label}>{attr.label||"No label included"}</Text>						
+			<Text style={styles?.label}>{attr.label||"No label included"}</Text>
 			<TextInput
 				style={(state.showError&&error)?styles?.inputError||{}:styles?.input||{}}
 				keyboardType="default"

@@ -13,8 +13,6 @@ export function TextAreaControl(props:any){
 	let attr=props.props;		
         let styles:any={};
         mergeDeep(styles,customVariables?.input,attr?.style?.input||{});
-	console.info("TextAreaControl:");
-	console.info(JSON.stringify(styles));
 	let maxCharLimit=attr.maxLength||200;
 	const[charCount,setCharCount]=useState(0);
 	const _onChange=(text:any)=>{

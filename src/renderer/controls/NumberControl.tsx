@@ -14,8 +14,6 @@ export function NumberControl(props:any){
 	let attr=props.props;
         let styles:any={};
         mergeDeep(styles,customVariables?.input,attr?.style?.input||{});
-	console.info("NumberControl:");
-	console.info(JSON.stringify(styles));
 	const[error,setError]=useState(attr.error);
 	const _onChange=(text:any)=>{
 		state.formData[attr.propertyName]=text;

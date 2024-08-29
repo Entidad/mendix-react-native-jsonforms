@@ -9,8 +9,8 @@ export function RadioControl(props:any){
 	let attr=props.props;
         let styles:any={};
         mergeDeep(styles,customVariables?.radioButtons,attr?.style?.radioButtons||{});
-	console.info("RadioControl:");
-	console.info(JSON.stringify(styles));
+        let stylesInput:any={};
+        mergeDeep(stylesInput,customVariables?.input,attr?.style?.input||{});
 	const styleTmp=StyleSheet.create({...{
 		viewControl:{
 			marginBottom:10
@@ -90,7 +90,7 @@ export function RadioControl(props:any){
 						onPress={()=>{_onPress(label)}}
 					>
 						<View>
-							<Text style={styles?.labelTextStyle||{}}>
+							<Text style={stylesInput?.label||{}}>
 								{label}
 							</Text>
 						</View>
@@ -101,12 +101,12 @@ export function RadioControl(props:any){
 	}
 	return(
 		<View style={styleTmp.viewControl}>
-			<Text style={styles?.labelTextStyle||{}}>{attr.description||(attr.label||"No label included")}</Text>			
+			<Text style={stylesInput?.label||{}}>{attr.description||(attr.label||"No label included")}</Text>			
 			{opts!=undefined&&opts.map((optionValue)=>(
 				renderRadioControl(optionValue)
 			))}
 			{(state.showError&&error)
-				?<Text style={styles?.input?.inputError||{}}>{attr.errorMessage}</Text>
+				?<Text style={stylesInput?.inputError||{}}>{attr.errorMessage}</Text>
 				:""
 			}
 		</View>
