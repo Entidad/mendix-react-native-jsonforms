@@ -2,7 +2,7 @@ import{useObject}from'../context/ObjectHook';
 import{createElement,useState}from'react'
 import{StyleSheet,View,TextInput,Text}from"react-native";
 import{isEmpty}from'../util/Util'
-import{getStyle}from'../theme/custom-style';
+import*as customVariables from'../theme/custom-variables';
 import{mergeDeep}from"../../util/merge";
 const styleTmp=StyleSheet.create({
 	viewControl:{
@@ -13,7 +13,7 @@ export function IntegerControl(props:any){
 	const state=useObject();
 	let attr=props.props;
         let styles:any={};
-        mergeDeep(styles,getStyle().input,attr?.style?.input||{});
+        mergeDeep(styles,customVariables.input,attr?.style?.input||{});
 	console.info("IntegerControl:");
 	console.info(JSON.stringify(styles));
 	const[error,setError]=useState(attr.error);

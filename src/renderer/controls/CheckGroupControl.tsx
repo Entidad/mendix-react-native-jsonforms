@@ -2,7 +2,7 @@ import{useObject}from'../context/ObjectHook';
 import{createElement,useState}from'react'
 import{StyleSheet,View,TouchableHighlight,Text}from"react-native";
 import{isEmptyArray}from'../util/Util'
-import{getStyle}from'../theme/custom-style';
+import*as customVariables from'../theme/custom-variables';
 import Svg,{Path}from'react-native-svg'
 const styleTmp=StyleSheet.create({
 	viewControl:{
@@ -30,9 +30,7 @@ const styleTmp=StyleSheet.create({
 export function CheckGroupControl(props:any){
 	const state=useObject();	
 	let attr=props.props;	
-	let styles={...getStyle(),...attr?.style||{}};
-	console.info("CheckGroupControl:");
-	console.info(JSON.stringify(styles));
+	let styles={...customVariables,...attr?.style||{}};
 	let opts:any[]=attr.enum||[];
 	const[error,setError]=useState(attr.error);
 	let tmp:any[]=[];

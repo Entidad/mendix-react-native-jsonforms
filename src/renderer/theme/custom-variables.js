@@ -1,5 +1,3 @@
-
-
 import { Appearance, Platform } from "react-native";
 import { adjustFont, anyColorToRgbString, setContrastScale } from "../themesource/atlas_core/native/api";
 //ls ./src/renderer/themesource/atlas_core/native/api.js
@@ -634,10 +632,11 @@ export const radioButtons = {
         marginEnd                   : spacing.smaller
     },
     activeButtonStyle: {
-        width                       : 8,
-        height                      : 8,
-        borderRadius                : 4,
-        backgroundColor             : brand.primary
+        width                       : 32,
+        height                      : 32,
+        borderRadius                : 32,
+        backgroundColor             : brand.primary,
+        marginEnd                   : spacing.smaller
     },
     radioButtonItemTitleStyle: {
         color                       : font.colorParagraph,

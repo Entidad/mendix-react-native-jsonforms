@@ -1,6 +1,6 @@
 import{createElement}from'react'
 import{StyleSheet,View,Text}from"react-native";
-import{getStyle}from'../theme/custom-style';
+import*as customVariables from'../theme/custom-variables';
 import{mergeDeep}from"../../util/merge";
 const styleTmp=StyleSheet.create({
 	viewControl:{
@@ -18,7 +18,7 @@ const styleTmp=StyleSheet.create({
 export function ReadOnlyControl(props:any){
 	let attr=props.props;
         let styles:any={};
-        mergeDeep(styles,getStyle().input,attr?.style?.input||{});
+        mergeDeep(styles,customVariables?.input,attr?.style?.input||{});
 	console.info("ReadOnlyControl:");
 	console.info(JSON.stringify(styles));
 	return (

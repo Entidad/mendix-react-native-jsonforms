@@ -2,13 +2,13 @@ import{useObject}from"../context/ObjectHook";
 import{createElement,useState}from"react";
 import{StyleSheet,TouchableWithoutFeedback,TouchableOpacity,View,Text}from"react-native";
 import{isEmptyBoolean}from"../util/Util";
-import{getStyle}from"../theme/custom-style";
+import*as customVariables from"../theme/custom-variables";
 import{mergeDeep}from"../../util/merge";
 export function RadioControl(props:any){
 	const state=useObject();	
 	let attr=props.props;
         let styles:any={};
-        mergeDeep(styles,getStyle().radioButtons,attr?.style?.radioButtons||{});
+        mergeDeep(styles,customVariables?.radioButtons,attr?.style?.radioButtons||{});
 	console.info("RadioControl:");
 	console.info(JSON.stringify(styles));
 	const styleTmp=StyleSheet.create({...{

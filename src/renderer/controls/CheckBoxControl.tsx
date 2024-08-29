@@ -1,7 +1,7 @@
 import{useObject}from'../context/ObjectHook';
 import{createElement,useState}from'react'
 import{StyleSheet,View,TouchableHighlight,Text}from"react-native";
-import{getStyle}from'../theme/custom-style';
+import*as customVariables from'../theme/custom-variables';
 import Svg,{Path}from'react-native-svg'
 import{mergeDeep}from"../../util/merge";
 const styleTmp=StyleSheet.create({
@@ -29,7 +29,9 @@ export function CheckBoxControl(props:any){
 	const state=useObject();
 	let attr=props.props;
         let styles:any={};
-        mergeDeep(styles,getStyle().input,attr?.style?.input||{});
+        mergeDeep(styles,customVariables?.checkbox,attr?.style?.checkbox||{});
+        let stylesInput:any={};
+        mergeDeep(styles,customVariables?.input,attr?.style?.input||{});
 	console.info("CheckBoxControl:");
 	console.info(JSON.stringify(styles));
 	const[checked,setChecked]=useState(getDataFromBoolean(attr.data));
@@ -47,7 +49,7 @@ export function CheckBoxControl(props:any){
 			return(
 				<View style={styleTmp.iconCheck}>
 					<Svg width="24" height="24" viewBox="0 0 24 24">
-						<Path fill="#1A6251" d="M19 0h-14c-2.762 0-5 2.239-5 5v14c0 2.761 2.238 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-8.959 17l-4.5-4.319 1.395-1.435 3.08 2.937 7.021-7.183 1.422 1.409-8.418 8.591z"/>
+						<Path fill={styles?.checkboxInput?.color||"#1A6251"} d="M19 0h-14c-2.762 0-5 2.239-5 5v14c0 2.761 2.238 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-8.959 17l-4.5-4.319 1.395-1.435 3.08 2.937 7.021-7.183 1.422 1.409-8.418 8.591z"/>
 					</Svg>
 				</View>
 			)
@@ -64,13 +66,13 @@ export function CheckBoxControl(props:any){
 	const renderText=(text:string)=>{
 		return (
 			<View style={styleTmp.iconLabel}>
-				<Text style={[styles?.input?.label||{}]}>{text}</Text>
+				<Text style={[stylesInput?.label||{}]}>{text}</Text>
 			</View>
 		);
 	}
 	return (
 		<View style={styleTmp.viewControl}>
-			<Text style={styles?.input?.label||{}}>{attr.description||(attr.label||'No label included')}</Text>
+			<Text style={stylesInput?.label||{}}>{attr.description||(attr.label||'No label included')}</Text>
 			<TouchableHighlight
 				onPress={()=>_onPress()}
 				underlayColor='transparent'
@@ -81,7 +83,7 @@ export function CheckBoxControl(props:any){
 				</View>
 			</TouchableHighlight>
 			{(state.showError&&error)
-				?<Text style={styles?.input?.inputError||{}}>{attr.errorMessage}</Text>
+				?<Text style={stylesInput?.inputError||{}}>{attr.errorMessage}</Text>
 				:""
 			}
 		</View>   

@@ -116,72 +116,24 @@ The main keys for the controls are as follows
 
 ```
 {
-  "label": {
-    "numberOfLines": 1,
-    "color": "#0A1325",
-    "fontSize": 12,
-    "text-align": "left",
-    "font-weight": "600",
-    "fontFamily": "OpenSans-SemiBold"
-  },
-  "labelDisabled": {
-    "color": "#0A1325"
-  },
-  "input": {
-    "color": "#0A1325",
-    "borderColor": "#cdcdcd",
-    "backgroundColor": "#FFF",
-    "selectionColor": "#cdcdcd",
-    "placeholderTextColor": "#a6a6a6",
-    "fontSize": 14,
-    "lineHeight": 24,
-    "borderWidth": 1,
-    "borderRadius": 8,
-    "minWidth": 48,
-    "minHeight": 48,
-    "paddingVertical": 8,
-    "paddingHorizontal": 8
-  },
-  "inputContainer": {
-    "underlayColor": "rgba(166,166,166,0.4)"
-  },
-  "inputDisabled": {
-    "color": "#7C7C7C",
-    "borderColor": "#d4d4d4",
-    "backgroundColor": "#F8F8F8"
-  },
-  "inputError": {
-    "color": "#AE1C23",
-    "borderColor": "#AE1C23",
-    "placeholderTextColor": "#AE1C23",
-    "backgroundColor": "#F1D4D5"
-  },
-  "validationMessage": {
-    "color": "#AE1C23",
-    "fontSize": 14
-  },
-  "valueContainer": {
-    "rippleColor": "#f3f3f3"
-  },
-  "itemContainer": {
-    "paddingVertical": 12,
-    "paddingHorizontal": 16,
-    "backgroundColor": "#FFF"
-  },
-  "item": {
-    "color": "#0A1325",
-    "fontSize": 14
-  },
-  "selectedItemContainer": {
-    "borderWidth": 1,
-    "borderRadius": 8,
-    "borderColor": "#1A6251",
-    "backgroundColor": "transparent"
-  },
-  "selectedItem": {
-    "color": "#0A1325",
-    "fontSize": 14
-  }
+    checkboxInput: {
+        color: brand.primary,
+        size: 20,
+        backgroundColor: background.primary,
+        borderColor: border.color,
+        borderWidth: border.width,
+        borderRadius: border.radiusSmall,
+        width: 40,
+        height: 40
+    },
+    checkboxInputDisabled: {
+        color: brand.primaryLight,
+        backgroundColor: background.secondary
+    },
+    checkboxInputError: {
+        color: brand.danger,
+        borderColor: brand.danger
+    }
 }
 ```
 
@@ -197,8 +149,17 @@ The main keys for the controls are as follows
 
 ```
 {
-	...
-}
+    checkboxInput: {
+        color: brand.primary,
+        size: 20,
+        backgroundColor: background.primary,
+        borderColor: border.color,
+        borderWidth: border.width,
+        borderRadius: border.radiusSmall,
+        width: 40,
+        height: 40
+    },
+
 ```
 
 ### IntegerControl Styling:
