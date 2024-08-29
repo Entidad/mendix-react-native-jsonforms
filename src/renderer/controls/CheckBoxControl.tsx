@@ -31,7 +31,7 @@ export function CheckBoxControl(props:any){
         let styles:any={};
         mergeDeep(styles,customVariables?.checkbox,attr?.style?.checkbox||{});
         let stylesInput:any={};
-        mergeDeep(styles,customVariables?.input,attr?.style?.input||{});
+        mergeDeep(stylesInput,customVariables?.input,attr?.style?.input||{});
 	const[checked,setChecked]=useState(getDataFromBoolean(attr.data));
 	const[error,setError]=useState(attr.error);
 	const _onPress=()=>{
@@ -55,7 +55,7 @@ export function CheckBoxControl(props:any){
 			return(
 				<View style={styleTmp.iconUncheck}>
 					<Svg width="24" height="24" viewBox="0 0 24 24">
-						<Path fill="#D4D4D4" d="M5 2c-1.654 0-3 1.346-3 3v14c0 1.654 1.346 3 3 3h14c1.654 0 3-1.346 3-3v-14c0-1.654-1.346-3-3-3h-14zm19 3v14c0 2.761-2.238 5-5 5h-14c-2.762 0-5-2.239-5-5v-14c0-2.761 2.238-5 5-5h14c2.762 0 5 2.239 5 5z"/>
+						<Path fill={styles?.checkboxInput?.color||"#D4D4D4"} d="M5 2c-1.654 0-3 1.346-3 3v14c0 1.654 1.346 3 3 3h14c1.654 0 3-1.346 3-3v-14c0-1.654-1.346-3-3-3h-14zm19 3v14c0 2.761-2.238 5-5 5h-14c-2.762 0-5-2.239-5-5v-14c0-2.761 2.238-5 5-5h14c2.762 0 5 2.239 5 5z"/>
 					</Svg>
 				</View>
 			)
