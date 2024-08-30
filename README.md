@@ -79,7 +79,7 @@ Here follows some styling samples for the various components.
 
 </details>
 
-### TextAreaControl Styling:
+### TextAreaControl Styling
 
 ![TextAreaControl](../main/images/TextAreaControl.png?raw=true)
 
@@ -126,7 +126,7 @@ Here follows some styling samples for the various components.
 
 </details>
 
-### CheckBoxControl Styling:
+### CheckBoxControl Styling
 
 ![CheckBoxControl](../main/images/CheckBoxControl.png?raw=true)
 
@@ -171,7 +171,7 @@ Here follows some styling samples for the various components.
 
 </details>
 
-### CheckGroupControl Styling:
+### CheckGroupControl Styling
 
 ![CheckGroupControl](../main/images/CheckGroupControl.png?raw=true)
 
@@ -217,7 +217,7 @@ Here follows some styling samples for the various components.
 
 </details>
 
-### IntegerControl Styling:
+### IntegerControl Styling
 
 ![IntegerControl](../main/images/IntegerControl.png?raw=true)
 
@@ -260,7 +260,7 @@ Here follows some styling samples for the various components.
 
 </details>
 
-### RadioControl Styling:
+### RadioControl Styling
 
 ![RadioControl](../main/images/RadioControl.png?raw=true)
 
