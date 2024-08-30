@@ -41,73 +41,40 @@ Here follows some styling samples for the various components.
 
 ```
 {
-	input: {
-		label: {
-			numberOfLines: 1,
-			color: font.colorTitle,
-			fontSize: font.sizeSmall,
-			textAlign: "left"
-		},
-		labelDisabled: {
-			color: font.colorTitle
-		},
-		input: {
-			color: font.colorTitle,
-			borderColor: contrast.lower,
-			backgroundColor: background.primary,
-			selectionColor: contrast.lower,
-			placeholderTextColor: contrast.low,
-			fontSize: font.size,
-			lineHeight: font.lineHeight,
-			borderWidth: border.width,
-			borderRadius: border.radiusLarge,
-			minWidth: 48,
-			minHeight: 48,
-			paddingVertical: spacing.small,
-			paddingHorizontal: spacing.small
-		},
-		inputContainer: {
-			underlayColor: `rgba(${anyColorToRgbString(contrast.low)},0.4)`
-		},
-		inputDisabled: {
-			color: font.colorDisabled,
-			borderColor: border.color,
-			backgroundColor: background.secondary
-		},
-		inputError: {
-			color: brand.danger,
-			borderColor: brand.danger,
-			placeholderTextColor: brand.danger,
-			backgroundColor: brand.dangerLight
-		},
-		validationMessage: {
-			color: brand.danger,
-			fontSize: font.size
-		},
-		// Only used for the DropDown & ReferenceSelector
-		valueContainer: {
-			rippleColor: contrast.lowest
-		},
-		itemContainer: {
-			paddingVertical: 12,
-			paddingHorizontal: spacing.regular,
-			backgroundColor: background.primary
-		},
-		item: {
-			color: font.colorTitle,
-			fontSize: font.size
-		},
-		selectedItemContainer: {
-			borderWidth: border.width,
-			borderRadius: border.radiusLarge,
-			borderColor: brand.primary,
-			backgroundColor: "transparent"
-		},
-		selectedItem: {
-			color: font.colorTitle,
-			fontSize: font.size
-		}
-	}
+    "input": {
+        "label": {
+            "numberOfLines": 1,
+            "color": "#FF0000",
+            "fontSize": 12,
+            "textAlign": "left"
+        },
+        "input": {
+            "color": "#00FF00",
+            "borderColor": "#0000FF",
+            "backgroundColor": "#FFFF00",
+            "selectionColor": "#FF00FF",
+            "placeholderTextColor": "#FFFF00",
+            "fontSize": 8,
+            "lineHeight": 8,
+            "borderWidth": 8,
+            "borderRadius": 12,
+            "minWidth": 48,
+            "minHeight": 48,
+            "paddingVertical": 4,
+            "paddingHorizontal":8 
+        },
+        "inputError": {
+            "color": "#FF0000",
+            "borderColor": "#00FFFF",
+            "placeholderTextColor": "#FF00FF",
+            "backgroundColor": "#FFCCCC" 
+        },
+        "itemContainer": {
+            "paddingVertical": 12,
+            "paddingHorizontal": 8,
+            "backgroundColor": "#00FF00" 
+        }
+    }
 }
 ```
 
