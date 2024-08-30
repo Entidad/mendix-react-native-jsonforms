@@ -49,10 +49,10 @@ export function CheckBoxControl(props:any){
 	}
 	const renderText=(text:string)=>{
 		return (
-			<View style={{
-				flex:1,
-				marginBottom:15
-				marginBottom:15
+			<View style={styles?.labelContainer||{
+				flex:styles?.labelContainer?.flex||1,
+				marginTop:styles?.labelContainer?.marginTop||15,
+				marginLeft:styles?.labelContainer?.marginLeft||15
 			}}>
 				<Text style={[stylesInput?.label||{}]}>{text}</Text>
 			</View>

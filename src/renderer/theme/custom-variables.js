@@ -319,7 +319,13 @@ export const checkbox = {
     checkboxInputError: {
         color: brand.danger,
         borderColor: brand.danger
-    }
+    },
+    labelContainer: {
+	flex:1,
+	marginTop:15,
+	marginLeft:15,
+    },
+
 };
 //
 // Container Styles
