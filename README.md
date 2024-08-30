@@ -343,9 +343,6 @@ The main keys for the controls are as follows
   <summary>JSON</summary>
 
 ```json
-```
-</details>
-```
 {
     label: {
         numberOfLines: 1,
@@ -385,6 +382,8 @@ The main keys for the controls are as follows
     },
 }
 ```
+
+</details>
 
 # Compiled Styling
 
