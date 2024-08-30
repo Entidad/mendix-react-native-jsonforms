@@ -1,37 +1,18 @@
-import{useObject}from'../context/ObjectHook';
-import{createElement,useState}from'react'
-import{StyleSheet,View,TouchableHighlight,Text}from"react-native";
-import*as customVariables from'../theme/custom-variables';
-import Svg,{Path}from'react-native-svg'
+import{useObject}from"../context/ObjectHook";
+import{createElement,useState}from"react"
+import{View}from"react-native";
+import{TouchableHighlight}from"react-native";
+import{Text}from"react-native";
+import*as customVariables from"../theme/custom-variables";
+import Svg,{Path}from"react-native-svg"
 import{mergeDeep}from"../../util/merge";
-const styleTmp=StyleSheet.create({
-	viewControl:{
-		marginBottom:10
-	},
-	container: {
-		flexDirection:'row',
-		alignItems:'center'
-	},
-	iconCheck:{		
-		width:40,
-		height:40
-	},
-	iconUncheck:{		
-		width:40,
-		height:40
-	},
-	iconLabel:{
-		flex:1,
-		marginBottom:15
-	}
-});
 export function CheckBoxControl(props:any){
 	const state=useObject();
 	let attr=props.props;
-        let styles:any={};
-        mergeDeep(styles,customVariables?.checkbox,attr?.style?.checkbox||{});
-        let stylesInput:any={};
-        mergeDeep(stylesInput,customVariables?.input,attr?.style?.input||{});
+	let styles:any={};
+	mergeDeep(styles,customVariables?.checkbox,attr?.style?.checkbox||{});
+	let stylesInput:any={};
+	mergeDeep(stylesInput,customVariables?.input,attr?.style?.input||{});
 	const[checked,setChecked]=useState(getDataFromBoolean(attr.data));
 	const[error,setError]=useState(attr.error);
 	const _onPress=()=>{
@@ -44,26 +25,23 @@ export function CheckBoxControl(props:any){
 	};
 	const renderCheckBox=()=>{
 		if(checked){
-				//<View style={styleTmp.iconCheck}>
 			return(
 				<View style={styles?.checkboxInput||{
-					width:styles?.iconCheck?.width||40,
-					height:styles?.iconCheck?.height||40
+					width:styles?.checkBoxInput?.width||40,
+					height:styles?.checkBoxInput?.height||40
 				}}>
-					<Svg width="24" height="24" viewBox="0 0 24 24">
-						<Path fill={styles?.checkboxInput?.color||"#1A6251"} d="M19 0h-14c-2.762 0-5 2.239-5 5v14c0 2.761 2.238 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-8.959 17l-4.5-4.319 1.395-1.435 3.08 2.937 7.021-7.183 1.422 1.409-8.418 8.591z"/>
+					<Svg width={styles?.checkBoxInput?.width||40} height={styles?.checkBoxInput?.height||40} viewBox="0 0 24 24">
+						<Path fill={styles?.checkboxInput?.color||"#1A6251"} d="m 5.2350576,12.635087 4.8984404,4.898442 0.179711,-0.179706 2.222656,-2.222655 6.229167,-6.2291688 -2.435439,-2.4354389 -6.229167,6.2291677 -2.4630024,-2.463002 z"/>
 					</Svg>
 				</View>
 			)
 		}else{
-				//<View style={styleTmp.iconUncheck}>
 			return(
-				<View style={styles?.iconUncheck||{
-					width:styles?.iconUncheck?.width||40,
-					height:styles?.iconUncheck?.height||40
+				<View style={styles?.checkboxInput||{
+					width:styles?.checkBoxInput?.width||40,
+					height:styles?.checkBoxInput?.height||40
 				}}>
-					<Svg width="24" height="24" viewBox="0 0 24 24">
-						<Path fill={styles?.checkboxInput?.color||"#D4D4D4"} d="M5 2c-1.654 0-3 1.346-3 3v14c0 1.654 1.346 3 3 3h14c1.654 0 3-1.346 3-3v-14c0-1.654-1.346-3-3-3h-14zm19 3v14c0 2.761-2.238 5-5 5h-14c-2.762 0-5-2.239-5-5v-14c0-2.761 2.238-5 5-5h14c2.762 0 5 2.239 5 5z"/>
+					<Svg  width={styles?.checkBoxInput?.width||40} height={styles?.checkBoxInput?.height||40} viewBox="0 0 24 24">
 					</Svg>
 				</View>
 			)
@@ -71,19 +49,28 @@ export function CheckBoxControl(props:any){
 	}
 	const renderText=(text:string)=>{
 		return (
-			<View style={styleTmp.iconLabel}>
+			<View style={{
+				flex:1,
+				marginBottom:15
+				marginBottom:15
+			}}>
 				<Text style={[stylesInput?.label||{}]}>{text}</Text>
 			</View>
 		);
 	}
 	return (
-		<View style={styleTmp.viewControl}>
-			<Text style={stylesInput?.label||{}}>{attr.description||(attr.label||'No label included')}</Text>
+		<View style={{
+			marginBottom:10
+		}}>
+			<Text style={stylesInput?.label||{}}>{attr.description||(attr.label||"No label included")}</Text>
 			<TouchableHighlight
 				onPress={()=>_onPress()}
-				underlayColor='transparent'
+				underlayColor="transparent"
 			>
-				<View style={styleTmp.container}>
+				<View style={{
+					flexDirection:"row",
+					alignItems:"center"
+				}}>
 					{renderCheckBox()}
 					{renderText(attr.label)}
 				</View>
@@ -92,11 +79,11 @@ export function CheckBoxControl(props:any){
 				?<Text style={stylesInput?.inputError||{}}>{attr.errorMessage}</Text>
 				:""
 			}
-		</View>   
+		</View>
 	)
 }
 function getDataFromBoolean(val:any){
-	if(typeof val==='boolean'){
+	if(typeof val==="boolean"){
 		return val;
 	}	
 	return false;
