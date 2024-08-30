@@ -115,7 +115,7 @@ Here follows some styling samples for the various components.
 
 ### TextAreaControl Styling:
 
-![TextControl](../main/images/TextAreaControl.png?raw=true)
+![TextAreaControl](../main/images/TextAreaControl.png?raw=true)
 
 <details>
   <summary>JSON</summary>
@@ -377,7 +377,7 @@ Here follows some styling samples for the various components.
 
 ### IntegerControl Styling:
 
-![RadioControl](../main/images/IntegerControl.png?raw=true)
+![IntegerControl](../main/images/IntegerControl.png?raw=true)
 
 <details>
   <summary>JSON</summary>
@@ -472,7 +472,8 @@ Here follows some styling samples for the various components.
 			fontSize: font.sizeSmall,
 			lineHeight: font.lineHeightSmall,
 			marginBottom: spacing.small,
-			marginLeft: spacing.small
+			marginLeft: spacing.small,
+			marginTop: spacing.smaller
 		},
 		outerCircle: {
 			height: 24,
