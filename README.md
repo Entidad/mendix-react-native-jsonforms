@@ -31,7 +31,7 @@ Compile time styling can be customized by edited `src/renderer/theme/custom-vari
 
 Here follows some styling samples for the various components.
 
-### TextControl Styling:
+### TextControl Styling
 
 ![TextControl](../main/images/TextControl.png?raw=true)
 
