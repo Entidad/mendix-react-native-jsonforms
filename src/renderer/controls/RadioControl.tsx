@@ -5,7 +5,7 @@ import{TouchableOpacity}from"react-native";
 import{View}from"react-native";
 import{Text}from"react-native";
 import{isEmptyBoolean}from"../util/Util";
-import*as customVariables from"../theme/custom-variables";
+import*as customVariables from"../theme/widget-variables";
 import{mergeDeep}from"../../util/merge";
 export function RadioControl(props:any){
 	const state=useObject();	

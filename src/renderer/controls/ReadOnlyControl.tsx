@@ -1,28 +1,24 @@
 import{createElement}from'react'
-import{StyleSheet,View,Text}from"react-native";
-import*as customVariables from'../theme/custom-variables';
+import{View}from"react-native";
+import{Text}from"react-native";
+import*as customVariables from'../theme/widget-variables';
 import{mergeDeep}from"../../util/merge";
-const styleTmp=StyleSheet.create({
-	viewControl:{
-		marginBottom:10
-	},
-	label:{
-		fontWeight:"bold",
-		color:"black",
-		fontSize:16
-	},
-	value:{
-		marginLeft:5
-	}
-});
 export function ReadOnlyControl(props:any){
 	let attr=props.props;
         let styles:any={};
         mergeDeep(styles,customVariables?.input,attr?.style?.input||{});
 	return (
-		<View style={styleTmp.viewControl}>
-			<Text style={styles.label && styleTmp.label}>{attr.label}</Text>
-			<Text style={styles.labelDisabled && styleTmp.value}>{attr.data}</Text>			
+		<View style={{
+			marginBottom:10
+		}}>
+			<Text style={styles.label && {
+				fontWeight:"bold",
+				color:"black",
+				fontSize:16
+			}}>{attr.label}</Text>
+			<Text style={styles.labelDisabled && {
+				marginLeft:5
+			}}>{attr.data}</Text>			
 		</View>
 	);
 }

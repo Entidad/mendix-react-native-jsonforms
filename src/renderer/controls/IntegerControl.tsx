@@ -4,7 +4,7 @@ import{View}from"react-native";
 import{TextInput}from"react-native";
 import{Text}from"react-native";
 import{isEmpty}from'../util/Util'
-import*as customVariables from'../theme/custom-variables';
+import*as customVariables from'../theme/widget-variables';
 import{mergeDeep}from"../../util/merge";
 export function IntegerControl(props:any){
 	const state=useObject();

@@ -4,7 +4,7 @@ import{View}from"react-native";
 import{TouchableHighlight}from"react-native";
 import{Text}from"react-native";
 import{isEmptyArray}from'../util/Util'
-import*as customVariables from'../theme/custom-variables';
+import*as customVariables from'../theme/widget-variables';
 import Svg,{Path}from'react-native-svg'
 import{mergeDeep}from"../../util/merge";
 export function CheckGroupControl(props:any){

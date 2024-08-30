@@ -1,13 +1,10 @@
 import{useObject}from'../context/ObjectHook';
 import{createElement,useState}from'react'
-import{StyleSheet,View,TextInput,Text}from"react-native";
-import*as customVariables from'../theme/custom-variables';
+import{View}from"react-native";
+import{TextInput}from"react-native";
+import{Text}from"react-native";
+import*as customVariables from'../theme/widget-variables';
 import{mergeDeep}from"../../util/merge";
-const styleTmp=StyleSheet.create({
-	viewControl:{
-		marginBottom:10
-	}
-});
 export function TextAreaControl(props:any){
 	const state=useObject();
 	let attr=props.props;		
@@ -23,7 +20,9 @@ export function TextAreaControl(props:any){
 		return text||attr.placeholder||attr.data||attr.value;
 	};
 	return(
-		<View style={styleTmp.viewControl}>
+		<View style={{
+			marginBottom:10
+		}}>
 			<Text style={styles.label}>{attr.label||'No label included'}</Text>
 			<TextInput
 				style={styles.input}
