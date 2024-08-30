@@ -36,10 +36,15 @@ The main keys for the controls are as follows
 ```
 {
 	"radioButtons":{...},
+	"input":{...},
+	...
 }
 ```
 
 ### TextControl Styling:
+
+
+![TextControl](../main/images/TextControl.png?raw=true)
 
 ```
 {
@@ -114,6 +119,8 @@ The main keys for the controls are as follows
 
 ### CheckBoxControl Styling:
 
+![CheckBoxControl](../main/images/CheckBoxControl.png?raw=true)
+
 ```
 {
     checkboxInput: {
@@ -139,6 +146,8 @@ The main keys for the controls are as follows
 
 ### NumberControl Styling:
 
+![NumberControl](../main/images/NumberControl.png?raw=true)
+
 ```
 {
 	...
@@ -146,6 +155,8 @@ The main keys for the controls are as follows
 ```
 
 ### CheckGroupControl Styling:
+
+![CheckGroupControl](../main/images/CheckGroupControl.png?raw=true)
 
 ```
 {
@@ -163,6 +174,8 @@ The main keys for the controls are as follows
 ```
 
 ### IntegerControl Styling:
+
+![RadioControl](../main/images/IntegerControl.png?raw=true)
 
 ```
 {
