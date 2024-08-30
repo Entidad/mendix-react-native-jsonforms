@@ -48,7 +48,7 @@ The main keys for the controls are as follows
 
 <details>
   <summary>JSON</summary>
-  ```json
+```json
 {
     label: {
         numberOfLines: 1,
