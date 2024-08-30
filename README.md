@@ -48,72 +48,71 @@ The main keys for the controls are as follows
 
 ```
 {
-  "label": {
-    "numberOfLines": 1,
-    "color": "#0A1325",
-    "fontSize": 12,
-    "text-align": "left",
-    "font-weight": "600",
-    "fontFamily": "OpenSans-SemiBold"
-  },
-  "labelDisabled": {
-    "color": "#0A1325"
-  },
-  "input": {
-    "color": "#0A1325",
-    "borderColor": "#cdcdcd",
-    "backgroundColor": "#FFF",
-    "selectionColor": "#cdcdcd",
-    "placeholderTextColor": "#a6a6a6",
-    "fontSize": 14,
-    "lineHeight": 24,
-    "borderWidth": 1,
-    "borderRadius": 8,
-    "minWidth": 48,
-    "minHeight": 48,
-    "paddingVertical": 8,
-    "paddingHorizontal": 8
-  },
-  "inputContainer": {
-    "underlayColor": "rgba(166,166,166,0.4)"
-  },
-  "inputDisabled": {
-    "color": "#7C7C7C",
-    "borderColor": "#d4d4d4",
-    "backgroundColor": "#F8F8F8"
-  },
-  "inputError": {
-    "color": "#AE1C23",
-    "borderColor": "#AE1C23",
-    "placeholderTextColor": "#AE1C23",
-    "backgroundColor": "#F1D4D5"
-  },
-  "validationMessage": {
-    "color": "#AE1C23",
-    "fontSize": 14
-  },
-  "valueContainer": {
-    "rippleColor": "#f3f3f3"
-  },
-  "itemContainer": {
-    "paddingVertical": 12,
-    "paddingHorizontal": 16,
-    "backgroundColor": "#FFF"
-  },
-  "item": {
-    "color": "#0A1325",
-    "fontSize": 14
-  },
-  "selectedItemContainer": {
-    "borderWidth": 1,
-    "borderRadius": 8,
-    "borderColor": "#1A6251",
-    "backgroundColor": "transparent"
-  },
-  "selectedItem": {
-    "color": "#0A1325",
-    "fontSize": 14
-  }
+    label: {
+        numberOfLines: 1,
+        color: font.colorTitle,
+        fontSize: font.sizeSmall,
+        textAlign: "left"
+    },
+    labelDisabled: {
+        color: font.colorTitle
+    },
+    input: {
+        color: font.colorTitle,
+        borderColor: contrast.lower,
+        backgroundColor: background.primary,
+        selectionColor: contrast.lower,
+        placeholderTextColor: contrast.low,
+        fontSize: font.size,
+        lineHeight: font.lineHeight,
+        borderWidth: border.width,
+        borderRadius: border.radiusLarge,
+        minWidth: 48,
+        minHeight: 48,
+        paddingVertical: spacing.small,
+        paddingHorizontal: spacing.small
+    },
+    inputContainer: {
+        underlayColor: `rgba(${anyColorToRgbString(contrast.low)},0.4)`
+    },
+    inputDisabled: {
+        color: font.colorDisabled,
+        borderColor: border.color,
+        backgroundColor: background.secondary
+    },
+    inputError: {
+        color: brand.danger,
+        borderColor: brand.danger,
+        placeholderTextColor: brand.danger,
+        backgroundColor: brand.dangerLight
+    },
+    validationMessage: {
+        color: brand.danger,
+        fontSize: font.size
+    },
+    // Only used for the DropDown & ReferenceSelector
+    valueContainer: {
+        rippleColor: contrast.lowest
+    },
+    itemContainer: {
+        paddingVertical: 12,
+        paddingHorizontal: spacing.regular,
+        backgroundColor: background.primary
+    },
+    item: {
+        color: font.colorTitle,
+        fontSize: font.size
+    },
+    selectedItemContainer: {
+        borderWidth: border.width,
+        borderRadius: border.radiusLarge,
+        borderColor: brand.primary,
+        backgroundColor: "transparent"
+    },
+    selectedItem: {
+        color: font.colorTitle,
+        fontSize: font.size
+    }
 }
 ```
 
@@ -150,7 +149,71 @@ The main keys for the controls are as follows
 
 ```
 {
-	...
+    label: {
+        numberOfLines: 1,
+        color: font.colorTitle,
+        fontSize: font.sizeSmall,
+        textAlign: "left"
+    },
+    labelDisabled: {
+        color: font.colorTitle
+    },
+    input: {
+        color: font.colorTitle,
+        borderColor: contrast.lower,
+        backgroundColor: background.primary,
+        selectionColor: contrast.lower,
+        placeholderTextColor: contrast.low,
+        fontSize: font.size,
+        lineHeight: font.lineHeight,
+        borderWidth: border.width,
+        borderRadius: border.radiusLarge,
+        minWidth: 48,
+        minHeight: 48,
+        paddingVertical: spacing.small,
+        paddingHorizontal: spacing.small
+    },
+    inputContainer: {
+        underlayColor: `rgba(${anyColorToRgbString(contrast.low)},0.4)`
+    },
+    inputDisabled: {
+        color: font.colorDisabled,
+        borderColor: border.color,
+        backgroundColor: background.secondary
+    },
+    inputError: {
+        color: brand.danger,
+        borderColor: brand.danger,
+        placeholderTextColor: brand.danger,
+        backgroundColor: brand.dangerLight
+    },
+    validationMessage: {
+        color: brand.danger,
+        fontSize: font.size
+    },
+    // Only used for the DropDown & ReferenceSelector
+    valueContainer: {
+        rippleColor: contrast.lowest
+    },
+    itemContainer: {
+        paddingVertical: 12,
+        paddingHorizontal: spacing.regular,
+        backgroundColor: background.primary
+    },
+    item: {
+        color: font.colorTitle,
+        fontSize: font.size
+    },
+    selectedItemContainer: {
+        borderWidth: border.width,
+        borderRadius: border.radiusLarge,
+        borderColor: brand.primary,
+        backgroundColor: "transparent"
+    },
+    selectedItem: {
+        color: font.colorTitle,
+        fontSize: font.size
+    }
 }
 ```
 
@@ -179,7 +242,71 @@ The main keys for the controls are as follows
 
 ```
 {
-	...
+    label: {
+        numberOfLines: 1,
+        color: font.colorTitle,
+        fontSize: font.sizeSmall,
+        textAlign: "left"
+    },
+    labelDisabled: {
+        color: font.colorTitle
+    },
+    input: {
+        color: font.colorTitle,
+        borderColor: contrast.lower,
+        backgroundColor: background.primary,
+        selectionColor: contrast.lower,
+        placeholderTextColor: contrast.low,
+        fontSize: font.size,
+        lineHeight: font.lineHeight,
+        borderWidth: border.width,
+        borderRadius: border.radiusLarge,
+        minWidth: 48,
+        minHeight: 48,
+        paddingVertical: spacing.small,
+        paddingHorizontal: spacing.small
+    },
+    inputContainer: {
+        underlayColor: `rgba(${anyColorToRgbString(contrast.low)},0.4)`
+    },
+    inputDisabled: {
+        color: font.colorDisabled,
+        borderColor: border.color,
+        backgroundColor: background.secondary
+    },
+    inputError: {
+        color: brand.danger,
+        borderColor: brand.danger,
+        placeholderTextColor: brand.danger,
+        backgroundColor: brand.dangerLight
+    },
+    validationMessage: {
+        color: brand.danger,
+        fontSize: font.size
+    },
+    // Only used for the DropDown & ReferenceSelector
+    valueContainer: {
+        rippleColor: contrast.lowest
+    },
+    itemContainer: {
+        paddingVertical: 12,
+        paddingHorizontal: spacing.regular,
+        backgroundColor: background.primary
+    },
+    item: {
+        color: font.colorTitle,
+        fontSize: font.size
+    },
+    selectedItemContainer: {
+        borderWidth: border.width,
+        borderRadius: border.radiusLarge,
+        borderColor: brand.primary,
+        backgroundColor: "transparent"
+    },
+    selectedItem: {
+        color: font.colorTitle,
+        fontSize: font.size
+    }
 }
 ```
 
@@ -187,10 +314,44 @@ The main keys for the controls are as follows
 
 ![RadioControl](../main/images/RadioControl.png?raw=true)
 
-
 ```
 {
-	...
+    label: {
+        numberOfLines: 1,
+        color: font.colorTitle,
+        fontSize: font.sizeSmall,
+        textAlign: "left"
+    },
+    labelTextStyle: {
+        color: font.colorTitle,
+        fontSize: font.sizeSmall,
+        lineHeight: font.lineHeightSmall,
+        marginBottom: spacing.small
+    },
+    outerCircle: {
+	height: 24,
+	width: 24,
+	borderRadius: 12,
+	borderWidth: 2,
+        borderColor: border.color,
+	alignItems: 'center',
+	justifyContent: 'center',
+    },
+    innerCircle: {
+	height: 12,
+	width: 12,
+	borderRadius: 6,
+        backgroundColor: brand.primary
+    },
+    radioButtonItemContainerStyle: {
+        marginBottom: spacing.small
+    },
+    radioButtonError: {
+        color: brand.danger,
+        borderColor: brand.danger,
+        placeholderTextColor: brand.danger,
+        backgroundColor: brand.dangerLight
+    },
 }
 ```
 
