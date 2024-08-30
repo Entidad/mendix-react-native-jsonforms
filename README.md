@@ -2,15 +2,14 @@
 Mendix JsonForms Render for Native
 
 ## Features
-Todo...
+JSON Forms is a declarative framework for efficiently building form-based web UIs. These UIs are targeted at entering, modifying and viewing data and are usually embedded within an application.
+
+Implements features from the JSON Forms library in a mendix widget
 
 ## Usage
-Todo...
+Emplace the JSON Forms widget in a dataview and configure the attributes
 
-## Project Layout
-Todo...
-
-## Controls
+## Controls Implemented
 
 The following native controls are implemented
 
@@ -322,10 +321,11 @@ For styling the components `theme/native/custom-variables.js`, `theme/native/exc
 To modify the compiled styling edit `src/renderer/theme/custom-variables.js`
 
 ## Demo project
-N/A
+Currently there is no demo project
 
 ## Issues, suggestions and feature requests
-Todo...
+
+[GitHub](https://github.com/Entidad/mendix-react-native-jsonforms/issues)
 
 ## Development and contribution
 
@@ -335,7 +335,7 @@ Todo...
     - the bundle will be included in a `dist` folder in the root directory of the project;
     - the bundle will be included in the `deployment` and `widgets` folder of the Mendix test project.
 
-[specify contribution]
+Contributions welcome
 
 ## References
 
