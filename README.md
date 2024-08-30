@@ -48,6 +48,7 @@ The main keys for the controls are as follows
 
 <details>
   <summary>JSON</summary>
+
 ```
 {
     label: {
@@ -117,6 +118,7 @@ The main keys for the controls are as follows
     }
 }
 ```
+
 </details>
 
 ### CheckBoxControl Styling:
