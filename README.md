@@ -172,7 +172,8 @@ The main keys for the controls are as follows
 
 ### RadioControl Styling:
 
-![RadioControl](https://raw.githubusercontent.com/Entidad/mendix-react-native-jsonforms/main/images/RadioControl.png)
+![RadioControl](../blob/master/images/RadioControl.png?raw=true)
+
 
 ```
 {
