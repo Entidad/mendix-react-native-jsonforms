@@ -81,7 +81,7 @@ export function CheckGroupControl(props:any){
 					flexDirection:'row',
 					alignItems:'center',
 					height:35,
-					marginTop:5
+					marginTop:20
 				}}>
 					{renderCheckBox(label)}
 					{renderText(label)}
