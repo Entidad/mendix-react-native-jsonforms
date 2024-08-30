@@ -348,7 +348,13 @@ Here follows some styling samples for the various components.
 			borderRadius: border.radiusSmall,
 			width: 40,
 			height: 40
+		},
+		labelContainer: {
+			flex:1,
+			marginTop:spacing.small,
+			marginLeft:spacing.small
 		}
+
 	},
 	input: {
 		label: {
