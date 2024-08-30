@@ -303,6 +303,11 @@ Here follows some styling samples for the various components.
 		checkboxInputError: {
 			color: brand.danger,
 			borderColor: brand.danger
+		},
+		labelContainer: {
+			flex:1,
+			marginTop:spacing.small,
+			marginLeft:spacing.small
 		}
 	}
 	input: {

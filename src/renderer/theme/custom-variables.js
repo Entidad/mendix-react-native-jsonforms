@@ -322,10 +322,9 @@ export const checkbox = {
     },
     labelContainer: {
 	flex:1,
-	marginTop:15,
-	marginLeft:15,
-    },
-
+	marginTop:0,
+	marginLeft:spacing.small
+    }
 };
 //
 // Container Styles
@@ -622,10 +621,11 @@ export const radioButtons = {
         textAlign: "left"
     },
     labelTextStyle: {
-        color                       : font.colorTitle,
-        fontSize                    : font.sizeSmall,
-        lineHeight                  : font.lineHeightSmall,
-        marginBottom                : spacing.small
+        color: font.colorTitle,
+        fontSize: font.sizeSmall,
+        lineHeight: font.lineHeightSmall,
+        marginBottom: spacing.small,
+        marginLeft: spacing.small
     },
     outerCircle: {
 	height: 24,
