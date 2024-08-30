@@ -64,8 +64,8 @@ export function CheckGroupControl(props:any){
 		return(
 			<View style={styles?.labelContainer||{
 				flex:styles?.labelContainer?.flex||1,
-				marginTop:styles?.labelContainer?.marginTop||15,
-				marginLeft:styles?.labelContainer?.marginLeft||15
+				marginTop:styles?.labelContainer?.marginTop||4,
+				marginLeft:styles?.labelContainer?.marginLeft||8
 			}}>
 				<Text style={[stylesInput?.label||{}]}>{text}</Text>
 			</View>

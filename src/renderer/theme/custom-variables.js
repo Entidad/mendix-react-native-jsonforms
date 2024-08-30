@@ -618,14 +618,10 @@ export const radioButtons = {
         numberOfLines: 1,
         color: font.colorTitle,
         fontSize: font.sizeSmall,
-        textAlign: "left"
-    },
-    labelTextStyle: {
-        color: font.colorTitle,
-        fontSize: font.sizeSmall,
         lineHeight: font.lineHeightSmall,
         marginBottom: spacing.small,
-        marginLeft: spacing.small
+        marginLeft: spacing.small,
+        marginTop: spacing.smaller
     },
     outerCircle: {
 	height: 24,

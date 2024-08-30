@@ -465,42 +465,48 @@ Here follows some styling samples for the various components.
 
 ```
 {
-    label: {
-        numberOfLines: 1,
-        color: font.colorTitle,
-        fontSize: font.sizeSmall,
-        textAlign: "left"
-    },
-    labelTextStyle: {
-        color: font.colorTitle,
-        fontSize: font.sizeSmall,
-        lineHeight: font.lineHeightSmall,
-        marginBottom: spacing.small
-    },
-    outerCircle: {
-	height: 24,
-	width: 24,
-	borderRadius: 12,
-	borderWidth: 2,
-        borderColor: border.color,
-	alignItems: 'center',
-	justifyContent: 'center',
-    },
-    innerCircle: {
-	height: 12,
-	width: 12,
-	borderRadius: 6,
-        backgroundColor: brand.primary
-    },
-    radioButtonItemContainerStyle: {
-        marginBottom: spacing.small
-    },
-    radioButtonError: {
-        color: brand.danger,
-        borderColor: brand.danger,
-        placeholderTextColor: brand.danger,
-        backgroundColor: brand.dangerLight
-    },
+	radioButtons:{
+		label: {
+			numberOfLines: 1,
+			color: font.colorTitle,
+			fontSize: font.sizeSmall,
+			lineHeight: font.lineHeightSmall,
+			marginBottom: spacing.small,
+			marginLeft: spacing.small
+		},
+		outerCircle: {
+			height: 24,
+			width: 24,
+			borderRadius: 12,
+			borderWidth: 2,
+			borderColor: border.color,
+			alignItems: 'center',
+			justifyContent: 'center',
+		},
+		innerCircle: {
+			height: 12,
+			width: 12,
+			borderRadius: 6,
+				backgroundColor: brand.primary
+		},
+		radioButtonItemContainerStyle: {
+			marginBottom: spacing.small
+		},
+		radioButtonError: {
+			color: brand.danger,
+			borderColor: brand.danger,
+			placeholderTextColor: brand.danger,
+			backgroundColor: brand.dangerLight
+		}
+	},
+	input: {
+		label: {
+			numberOfLines: 1,
+			color: font.colorTitle,
+			fontSize: font.sizeSmall,
+			textAlign: "left"
+		},
+
 }
 ```
 
