@@ -46,7 +46,9 @@ The main keys for the controls are as follows
 
 ![TextControl](../main/images/TextControl.png?raw=true)
 
-```
+<details>
+  <summary>JSON</summary>
+  ```json
 {
     label: {
         numberOfLines: 1,
@@ -115,6 +117,7 @@ The main keys for the controls are as follows
     }
 }
 ```
+</details>
 
 ### CheckBoxControl Styling:
 
