@@ -49,7 +49,7 @@ The main keys for the controls are as follows
 <details>
   <summary>JSON</summary>
 
-```json
+```
 {
     label: {
         numberOfLines: 1,
@@ -128,7 +128,7 @@ The main keys for the controls are as follows
 <details>
   <summary>JSON</summary>
 
-```json
+```
 {
     checkboxInput: {
         color: brand.primary,
@@ -160,7 +160,7 @@ The main keys for the controls are as follows
 <details>
   <summary>JSON</summary>
 
-```json
+```
 {
     label: {
         numberOfLines: 1,
@@ -239,7 +239,7 @@ The main keys for the controls are as follows
 <details>
   <summary>JSON</summary>
 
-```json
+```
 {
     checkboxInput: {
         color: brand.primary,
@@ -263,7 +263,7 @@ The main keys for the controls are as follows
 <details>
   <summary>JSON</summary>
 
-```json
+```
 {
     label: {
         numberOfLines: 1,
@@ -342,7 +342,7 @@ The main keys for the controls are as follows
 <details>
   <summary>JSON</summary>
 
-```json
+```
 {
     label: {
         numberOfLines: 1,
