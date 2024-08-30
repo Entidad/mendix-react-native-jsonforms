@@ -49,11 +49,11 @@ Here follows some styling samples for the various components.
             "textAlign": "left"
         },
         "input": {
-            "color": "#00FF00",
-            "borderColor": "#0000FF",
-            "backgroundColor": "#FFFF00",
-            "selectionColor": "#FF00FF",
-            "placeholderTextColor": "#FFFF00",
+            "color": "#FF0000",
+            "borderColor": "#FF0000",
+            "backgroundColor": "#FF0000",
+            "selectionColor": "#FF0000",
+            "placeholderTextColor": "#FF0000",
             "fontSize": 8,
             "lineHeight": 8,
             "borderWidth": 8,
@@ -65,14 +65,14 @@ Here follows some styling samples for the various components.
         },
         "inputError": {
             "color": "#FF0000",
-            "borderColor": "#00FFFF",
-            "placeholderTextColor": "#FF00FF",
-            "backgroundColor": "#FFCCCC" 
+            "borderColor": "#FF0000",
+            "placeholderTextColor": "#FF0000",
+            "backgroundColor": "#FF0000" 
         },
         "itemContainer": {
             "paddingVertical": 12,
             "paddingHorizontal": 8,
-            "backgroundColor": "#00FF00" 
+            "backgroundColor": "#FF0000" 
         }
     }
 }
@@ -92,70 +92,33 @@ Here follows some styling samples for the various components.
 	input: {
 		label: {
 			numberOfLines: 1,
-			color: font.colorTitle,
-			fontSize: font.sizeSmall,
+			color: "#FF0000",
+			fontSize: 8,
 			textAlign: "left"
 		},
 		labelDisabled: {
-			color: font.colorTitle
+			color: "#FF0000"
 		},
 		input: {
-			color: font.colorTitle,
-			borderColor: contrast.lower,
-			backgroundColor: background.primary,
-			selectionColor: contrast.lower,
-			placeholderTextColor: contrast.low,
-			fontSize: font.size,
-			lineHeight: font.lineHeight,
-			borderWidth: border.width,
-			borderRadius: border.radiusLarge,
+			color: "#FF0000",
+			borderColor: "#FF0000",
+			backgroundColor: "#FF0000",
+			selectionColor: "#FF0000",
+			placeholderTextColor: "#FF0000",
+			fontSize: 8,
+			lineHeight: 8,
+			borderWidth: 8,
+			borderRadius: 8,
 			minWidth: 48,
 			minHeight: 48,
-			paddingVertical: spacing.small,
-			paddingHorizontal: spacing.small
-		}
-	}
-}
-```
-
-</details>
-
-### NumberControl Styling:
-
-![NumberControl](../main/images/NumberControl.png?raw=true)
-
-<details>
-  <summary>JSON</summary>
-
-```
-{
-	input: {
-		label: {
-			numberOfLines: 1,
-			color: font.colorTitle,
-			fontSize: font.sizeSmall,
-			textAlign: "left"
-		},
-		input: {
-			color: font.colorTitle,
-			borderColor: contrast.lower,
-			backgroundColor: background.primary,
-			selectionColor: contrast.lower,
-			placeholderTextColor: contrast.low,
-			fontSize: font.size,
-			lineHeight: font.lineHeight,
-			borderWidth: border.width,
-			borderRadius: border.radiusLarge,
-			minWidth: 48,
-			minHeight: 48,
-			paddingVertical: spacing.small,
-			paddingHorizontal: spacing.small
+			paddingVertical: 8,
+			paddingHorizontal: 8
 		},
 		inputError: {
-			color: brand.danger,
-			borderColor: brand.danger,
-			placeholderTextColor: brand.danger,
-			backgroundColor: brand.dangerLight
+			color: "#FF0000",
+			borderColor: "#FF0000",
+			placeholderTextColor: "#FF0000",
+			backgroundColor: "#FF0000"
 		}
 	}
 }
@@ -173,35 +136,35 @@ Here follows some styling samples for the various components.
 
 ```
 {
-	checkbox:{
-		checkboxInput: {
-			color: brand.primary,
-			size: 20,
-			backgroundColor: background.primary,
-			borderColor: border.color,
-			borderWidth: border.width,
-			borderRadius: border.radiusSmall,
-			width: 40,
-			height: 40
+	"checkbox":{
+		"checkboxInput": {
+			"color": "#FF0000",
+			"size": 20,
+			"backgroundColor": "#FF0000",
+			"borderColor": "#FF0000",
+			"borderWidth": 8,
+			"borderRadius": 8,
+			"width": 40,
+			"height": 40
 		},
-		labelContainer: {
-			flex:1,
-			marginTop:spacing.small,
-			marginLeft:spacing.small
+		"labelContainer": {
+			"flex":1,
+			"marginTop":8,
+			"marginLeft":8
 		}
 	}
-	input: {
-		label: {
-			numberOfLines: 1,
-			color: font.colorTitle,
-			fontSize: font.sizeSmall,
-			textAlign: "left"
+	"input": {
+		"label": {
+			"numberOfLines": 1,
+			"color": "#FF0000",
+			"fontSize": 8,
+			"textAlign": "left"
 		},
-		inputError: {
-			color: brand.danger,
-			borderColor: brand.danger,
-			placeholderTextColor: brand.danger,
-			backgroundColor: brand.dangerLight
+		"inputError": {
+			"color": "#FF0000",
+			"borderColor": "#FF0000",
+			"placeholderTextColor": "#FF0000",
+			"backgroundColor": "#FF0000"
 		}
 	}
 }
@@ -218,36 +181,36 @@ Here follows some styling samples for the various components.
 
 ```
 {
-	checkbox: {
-		checkboxInput: {
-			color: brand.primary,
-			size: 20,
-			backgroundColor: background.primary,
-			borderColor: border.color,
-			borderWidth: border.width,
-			borderRadius: border.radiusSmall,
-			width: 40,
-			height: 40
+	"checkbox": {
+		"checkboxInput": {
+			"color": "#FF0000",
+			"size": 20,
+			"backgroundColor": "#FF0000",
+			"borderColor": "#FF0000",
+			"borderWidth": 8,
+			"borderRadius": 8,
+			"width": 40,
+			"height": 40
 		},
-		labelContainer: {
-			flex:1,
-			marginTop:spacing.small,
-			marginLeft:spacing.small
+		"labelContainer": {
+			"flex":1,
+			"marginTop":8,
+			"marginLeft":8
 		}
 
 	},
-	input: {
-		label: {
-			numberOfLines: 1,
-			color: font.colorTitle,
-			fontSize: font.sizeSmall,
-			textAlign: "left"
+	"input": {
+		"label": {
+			"numberOfLines": 1,
+			"color": "#FF0000"
+			"fontSize": 8,
+			"textAlign": "left"
 		},
-		inputError: {
-			color: brand.danger,
-			borderColor: brand.danger,
-			placeholderTextColor: brand.danger,
-			backgroundColor: brand.dangerLight
+		"inputError": {
+			"color": "#FF0000",
+			"borderColor": "#FF0000",
+			"placeholderTextColor": "#FF0000",
+			"backgroundColor": "#FF0000"
 		}
 	}
 }
@@ -264,33 +227,33 @@ Here follows some styling samples for the various components.
 
 ```
 {
-	input: {
-		label: {
-			numberOfLines: 1,
-			color: font.colorTitle,
-			fontSize: font.sizeSmall,
-			textAlign: "left"
+	"input": {
+		"label": {
+			"numberOfLines": 1,
+			"color": "#FF0000"
+			"fontSize": 8,
+			"textAlign": "left"
 		},
-		input: {
-			color: font.colorTitle,
-			borderColor: contrast.lower,
-			backgroundColor: background.primary,
-			selectionColor: contrast.lower,
-			placeholderTextColor: contrast.low,
-			fontSize: font.size,
-			lineHeight: font.lineHeight,
-			borderWidth: border.width,
-			borderRadius: border.radiusLarge,
-			minWidth: 48,
-			minHeight: 48,
-			paddingVertical: spacing.small,
-			paddingHorizontal: spacing.small
+		"input": {
+			"color": "#FF0000",
+			"borderColor": "#FF0000",
+			"backgroundColor": "#FF0000",
+			"selectionColor": "#FF0000",
+			"placeholderTextColor": "#FF0000",
+			"fontSize": 8,
+			"lineHeight": 8,
+			"borderWidth": 8,
+			"borderRadius": 8,
+			"minWidth": 48,
+			"minHeight": 48,
+			"paddingVertical": 8,
+			"paddingHorizontal": 8
 		},
-		inputError: {
-			color: brand.danger,
-			borderColor: brand.danger,
-			placeholderTextColor: brand.danger,
-			backgroundColor: brand.dangerLight
+		"inputError": {
+			"color": "#FF0000",
+			"borderColor": "#FF0000",
+			"placeholderTextColor": "#FF0000",
+			"backgroundColor": "#FF0000"
 		}
 	}
 }
@@ -307,43 +270,43 @@ Here follows some styling samples for the various components.
 
 ```
 {
-	radioButtons:{
-		label: {
-			numberOfLines: 1,
-			color: font.colorTitle,
-			fontSize: font.sizeSmall,
-			lineHeight: font.lineHeightSmall,
-			marginBottom: spacing.small,
-			marginLeft: spacing.small,
-			marginTop: spacing.smaller
+	"radioButtons":{
+		"label": {
+			"numberOfLines": 1,
+			"color": "#FF0000",
+			"fontSize": 8,
+			"lineHeight": 8,
+			"marginBottom": 8,
+			"marginLeft": 8,
+			"marginTop": 8
 		},
-		outerCircle: {
-			height: 24,
-			width: 24,
-			borderRadius: 12,
-			borderWidth: 2,
-			borderColor: border.color,
-			alignItems: 'center',
-			justifyContent: 'center',
+		"outerCircle": {
+			"height": 24,
+			"width": 24,
+			"borderRadius": 12,
+			"borderWidth": 2,
+			"borderColor": "#FF0000",
+			"alignItems": 'center',
+			"justifyContent": 'center',
 		},
-		innerCircle: {
-			height: 12,
-			width: 12,
-			borderRadius: 6,
-				backgroundColor: brand.primary
+		"innerCircle": {
+			"height": 12,
+			"width": 12,
+			"borderRadius": 6,
+			"backgroundColor": "#FF0000"
 		},
-		radioButtonItemContainerStyle: {
-			marginBottom: spacing.small
+		"radioButtonItemContainerStyle": {
+			"marginBottom": 8
 		}
 	},
-	input: {
-		label: {
-			numberOfLines: 1,
-			color: font.colorTitle,
-			fontSize: font.sizeSmall,
-			textAlign: "left"
-		},
-
+	"input": {
+		"label": {
+			"numberOfLines": 1,
+			"color": "#FF0000",
+			"fontSize": 8,
+			"textAlign": "left"
+		}
+	}
 }
 ```
 
