@@ -49,7 +49,7 @@ The main keys for the controls are as follows
 <details>
   <summary>JSON</summary>
 
-```
+```json
 {
     label: {
         numberOfLines: 1,
@@ -125,7 +125,10 @@ The main keys for the controls are as follows
 
 ![CheckBoxControl](../main/images/CheckBoxControl.png?raw=true)
 
-```
+<details>
+  <summary>JSON</summary>
+
+```json
 {
     checkboxInput: {
         color: brand.primary,
@@ -148,11 +151,16 @@ The main keys for the controls are as follows
 }
 ```
 
+</details>
+
 ### NumberControl Styling:
 
 ![NumberControl](../main/images/NumberControl.png?raw=true)
 
-```
+<details>
+  <summary>JSON</summary>
+
+```json
 {
     label: {
         numberOfLines: 1,
@@ -222,11 +230,16 @@ The main keys for the controls are as follows
 }
 ```
 
+</details>
+
 ### CheckGroupControl Styling:
 
 ![CheckGroupControl](../main/images/CheckGroupControl.png?raw=true)
 
-```
+<details>
+  <summary>JSON</summary>
+
+```json
 {
     checkboxInput: {
         color: brand.primary,
@@ -237,15 +250,20 @@ The main keys for the controls are as follows
         borderRadius: border.radiusSmall,
         width: 40,
         height: 40
-    },
-
+    }
+}
 ```
+
+</details>
 
 ### IntegerControl Styling:
 
 ![RadioControl](../main/images/IntegerControl.png?raw=true)
 
-```
+<details>
+  <summary>JSON</summary>
+
+```json
 {
     label: {
         numberOfLines: 1,
@@ -315,10 +333,18 @@ The main keys for the controls are as follows
 }
 ```
 
+</details>
+
 ### RadioControl Styling:
 
 ![RadioControl](../main/images/RadioControl.png?raw=true)
 
+<details>
+  <summary>JSON</summary>
+
+```json
+```
+</details>
 ```
 {
     label: {
