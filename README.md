@@ -30,16 +30,7 @@ The following native controls are implemented
 
 Compile time styling can be customized by edited `src/renderer/theme/custom-variables.js`. Modeling time styling can be achieved by editing the `UI / Style JSON` field. A sample style can be found at `styles/sample.json`
 
-The main keys for the controls are as follows
-
-
-```
-{
-	"radioButtons":{...},
-	"input":{...},
-	...
-}
-```
+Here follows some styling samples for the various components.
 
 ### TextControl Styling:
 
