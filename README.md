@@ -113,47 +113,6 @@ Here follows some styling samples for the various components.
 			minHeight: 48,
 			paddingVertical: spacing.small,
 			paddingHorizontal: spacing.small
-		},
-		inputContainer: {
-			underlayColor: `rgba(${anyColorToRgbString(contrast.low)},0.4)`
-		},
-		inputDisabled: {
-			color: font.colorDisabled,
-			borderColor: border.color,
-			backgroundColor: background.secondary
-		},
-		inputError: {
-			color: brand.danger,
-			borderColor: brand.danger,
-			placeholderTextColor: brand.danger,
-			backgroundColor: brand.dangerLight
-		},
-		validationMessage: {
-			color: brand.danger,
-			fontSize: font.size
-		},
-		// Only used for the DropDown & ReferenceSelector
-		valueContainer: {
-			rippleColor: contrast.lowest
-		},
-		itemContainer: {
-			paddingVertical: 12,
-			paddingHorizontal: spacing.regular,
-			backgroundColor: background.primary
-		},
-		item: {
-			color: font.colorTitle,
-			fontSize: font.size
-		},
-		selectedItemContainer: {
-			borderWidth: border.width,
-			borderRadius: border.radiusLarge,
-			borderColor: brand.primary,
-			backgroundColor: "transparent"
-		},
-		selectedItem: {
-			color: font.colorTitle,
-			fontSize: font.size
 		}
 	}
 }
@@ -177,9 +136,6 @@ Here follows some styling samples for the various components.
 			fontSize: font.sizeSmall,
 			textAlign: "left"
 		},
-		labelDisabled: {
-			color: font.colorTitle
-		},
 		input: {
 			color: font.colorTitle,
 			borderColor: contrast.lower,
@@ -195,46 +151,11 @@ Here follows some styling samples for the various components.
 			paddingVertical: spacing.small,
 			paddingHorizontal: spacing.small
 		},
-		inputContainer: {
-			underlayColor: `rgba(${anyColorToRgbString(contrast.low)},0.4)`
-		},
-		inputDisabled: {
-			color: font.colorDisabled,
-			borderColor: border.color,
-			backgroundColor: background.secondary
-		},
 		inputError: {
 			color: brand.danger,
 			borderColor: brand.danger,
 			placeholderTextColor: brand.danger,
 			backgroundColor: brand.dangerLight
-		},
-		validationMessage: {
-			color: brand.danger,
-			fontSize: font.size
-		},
-		// Only used for the DropDown & ReferenceSelector
-		valueContainer: {
-			rippleColor: contrast.lowest
-		},
-		itemContainer: {
-			paddingVertical: 12,
-			paddingHorizontal: spacing.regular,
-			backgroundColor: background.primary
-		},
-		item: {
-			color: font.colorTitle,
-			fontSize: font.size
-		},
-		selectedItemContainer: {
-			borderWidth: border.width,
-			borderRadius: border.radiusLarge,
-			borderColor: brand.primary,
-			backgroundColor: "transparent"
-		},
-		selectedItem: {
-			color: font.colorTitle,
-			fontSize: font.size
 		}
 	}
 }
@@ -262,14 +183,6 @@ Here follows some styling samples for the various components.
 			borderRadius: border.radiusSmall,
 			width: 40,
 			height: 40
-		},
-		checkboxInputDisabled: {
-			color: brand.primaryLight,
-			backgroundColor: background.secondary
-		},
-		checkboxInputError: {
-			color: brand.danger,
-			borderColor: brand.danger
 		},
 		labelContainer: {
 			flex:1,
@@ -358,9 +271,6 @@ Here follows some styling samples for the various components.
 			fontSize: font.sizeSmall,
 			textAlign: "left"
 		},
-		labelDisabled: {
-			color: font.colorTitle
-		},
 		input: {
 			color: font.colorTitle,
 			borderColor: contrast.lower,
@@ -376,46 +286,11 @@ Here follows some styling samples for the various components.
 			paddingVertical: spacing.small,
 			paddingHorizontal: spacing.small
 		},
-		inputContainer: {
-			underlayColor: `rgba(${anyColorToRgbString(contrast.low)},0.4)`
-		},
-		inputDisabled: {
-			color: font.colorDisabled,
-			borderColor: border.color,
-			backgroundColor: background.secondary
-		},
 		inputError: {
 			color: brand.danger,
 			borderColor: brand.danger,
 			placeholderTextColor: brand.danger,
 			backgroundColor: brand.dangerLight
-		},
-		validationMessage: {
-			color: brand.danger,
-			fontSize: font.size
-		},
-		// Only used for the DropDown & ReferenceSelector
-		valueContainer: {
-			rippleColor: contrast.lowest
-		},
-		itemContainer: {
-			paddingVertical: 12,
-			paddingHorizontal: spacing.regular,
-			backgroundColor: background.primary
-		},
-		item: {
-			color: font.colorTitle,
-			fontSize: font.size
-		},
-		selectedItemContainer: {
-			borderWidth: border.width,
-			borderRadius: border.radiusLarge,
-			borderColor: brand.primary,
-			backgroundColor: "transparent"
-		},
-		selectedItem: {
-			color: font.colorTitle,
-			fontSize: font.size
 		}
 	}
 }
@@ -459,12 +334,6 @@ Here follows some styling samples for the various components.
 		},
 		radioButtonItemContainerStyle: {
 			marginBottom: spacing.small
-		},
-		radioButtonError: {
-			color: brand.danger,
-			borderColor: brand.danger,
-			placeholderTextColor: brand.danger,
-			backgroundColor: brand.dangerLight
 		}
 	},
 	input: {
