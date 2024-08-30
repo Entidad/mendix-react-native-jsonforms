@@ -172,7 +172,7 @@ The main keys for the controls are as follows
 
 ### RadioControl Styling:
 
-![RadioControl](../blob/master/images/RadioControl.png?raw=true)
+![RadioControl](../main/images/RadioControl.png?raw=true)
 
 
 ```
