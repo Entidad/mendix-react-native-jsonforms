@@ -9,8 +9,6 @@ export function RadioControl(props:any){
 	let attr=props.props;
         let styles:any={};
         mergeDeep(styles,customVariables?.radioButtons,attr?.style?.radioButtons||{});
-        let stylesInput:any={};
-        mergeDeep(stylesInput,customVariables?.input,attr?.style?.input||{});
 	const styleTmp=StyleSheet.create({...{
 		viewControl:{
 			marginBottom:10
@@ -82,22 +80,22 @@ export function RadioControl(props:any){
 					<TouchableOpacity
 						onPress={()=>{_onPress(label)}
 					}>
-						<View style={{
-							height: 24,
-							width: 24,
-							borderRadius: 12,
-							borderWidth: 2,
-							borderColor: styles?.circularButtonStyle?.borderColor||'#000',
-							alignItems: 'center',
-							justifyContent: 'center',
+						<View style={styles?.outerCircle||{
+							height:styles?.outerCircle?.height||24,
+							width:styles?.outerCircle?.width||24,
+							borderRadius:styles?.outerCircle?.borderRadius||12,
+							borderWidth:styles?.outerCircle?.borderWidth||12,
+							borderColor:styles?.outerCircle?.borderColor||"#000",
+							alignItems:styles?.outerCircle?.alignItems||"center",
+							justifyContent:styles?.outerCircle?.justifyContent||"center"
 						}}>
 							{
 								value===label?
-								<View style={{
-									height: 12,
-									width: 12,
-									borderRadius: 6,
-									backgroundColor: styles?.activeButtonStyle?.backgroundColor||'#000'
+								<View style={styles?.innerCircle||{
+									height:styles?.innerCircle?.height||12,
+									width:styles?.innerCircle?.width||12,
+									borderRadius:styles?.innerCircle?.borderRadius||6,
+									backgroundColor:styles?.innerCircle?.backgroundColor||"#000"
 								}}/>
 								:null
 							}
@@ -109,7 +107,7 @@ export function RadioControl(props:any){
 						onPress={()=>{_onPress(label)}}
 					>
 						<View>
-							<Text style={stylesInput?.label||{}}>
+							<Text style={styles?.labelTextStyle||{}}>
 								{label}
 							</Text>
 						</View>
@@ -120,12 +118,12 @@ export function RadioControl(props:any){
 	}
 	return(
 		<View style={styleTmp.viewControl}>
-			<Text style={stylesInput?.label||{}}>{attr.description||(attr.label||"No label included")}</Text>			
+			<Text style={styles?.label||{}}>{attr.description||(attr.label||"No label included")}</Text>			
 			{opts!=undefined&&opts.map((optionValue)=>(
 				renderRadioControl(optionValue)
 			))}
 			{(state.showError&&error)
-				?<Text style={stylesInput?.inputError||{}}>{attr.errorMessage}</Text>
+				?<Text style={styles?.radioButtonError||{}}>{attr.errorMessage}</Text>
 				:""
 			}
 		</View>
