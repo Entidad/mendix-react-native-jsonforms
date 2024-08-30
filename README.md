@@ -194,56 +194,6 @@ Here follows some styling samples for the various components.
 
 </details>
 
-
-
-### CheckBoxControl Styling:
-
-![CheckBoxControl](../main/images/CheckBoxControl.png?raw=true)
-
-<details>
-  <summary>JSON</summary>
-
-```
-{
-	checkbox:{
-		checkboxInput: {
-			color: brand.primary,
-			size: 20,
-			backgroundColor: background.primary,
-			borderColor: border.color,
-			borderWidth: border.width,
-			borderRadius: border.radiusSmall,
-			width: 40,
-			height: 40
-		},
-		checkboxInputDisabled: {
-			color: brand.primaryLight,
-			backgroundColor: background.secondary
-		},
-		checkboxInputError: {
-			color: brand.danger,
-			borderColor: brand.danger
-		}
-	}
-	input: {
-		label: {
-			numberOfLines: 1,
-			color: font.colorTitle,
-			fontSize: font.sizeSmall,
-			textAlign: "left"
-		},
-		inputError: {
-			color: brand.danger,
-			borderColor: brand.danger,
-			placeholderTextColor: brand.danger,
-			backgroundColor: brand.dangerLight
-		}
-	}
-}
-```
-
-</details>
-
 ### NumberControl Styling:
 
 ![NumberControl](../main/images/NumberControl.png?raw=true)
@@ -322,6 +272,54 @@ Here follows some styling samples for the various components.
 	}
 }
 
+```
+
+</details>
+
+### CheckBoxControl Styling:
+
+![CheckBoxControl](../main/images/CheckBoxControl.png?raw=true)
+
+<details>
+  <summary>JSON</summary>
+
+```
+{
+	checkbox:{
+		checkboxInput: {
+			color: brand.primary,
+			size: 20,
+			backgroundColor: background.primary,
+			borderColor: border.color,
+			borderWidth: border.width,
+			borderRadius: border.radiusSmall,
+			width: 40,
+			height: 40
+		},
+		checkboxInputDisabled: {
+			color: brand.primaryLight,
+			backgroundColor: background.secondary
+		},
+		checkboxInputError: {
+			color: brand.danger,
+			borderColor: brand.danger
+		}
+	}
+	input: {
+		label: {
+			numberOfLines: 1,
+			color: font.colorTitle,
+			fontSize: font.sizeSmall,
+			textAlign: "left"
+		},
+		inputError: {
+			color: brand.danger,
+			borderColor: brand.danger,
+			placeholderTextColor: brand.danger,
+			backgroundColor: brand.dangerLight
+		}
+	}
+}
 ```
 
 </details>
