@@ -1,14 +1,11 @@
 import{useObject}from'../context/ObjectHook';
 import{createElement,useState}from'react'
-import{StyleSheet,View,TextInput,Text}from"react-native";
+import{View}from"react-native";
+import{TextInput}from"react-native";
+import{Text}from"react-native";
 import{isEmpty}from'../util/Util'
 import*as customVariables from'../theme/custom-variables';
 import{mergeDeep}from"../../util/merge";
-const styleTmp=StyleSheet.create({
-	viewControl:{
-		marginBottom:10
-	}
-});
 export function IntegerControl(props:any){
 	const state=useObject();
 	let attr=props.props;
@@ -24,7 +21,7 @@ export function IntegerControl(props:any){
 		return text||attr.placeholder||attr.value;
 	};
 	return(
-		<View style={styleTmp.viewControl}>
+		<View style={{}}>
 			<Text style={styles.label}>{attr.label||'No label included'}</Text>
 			<TextInput
 				style={(state.showError&&error)?styles.inputError:styles.input}
