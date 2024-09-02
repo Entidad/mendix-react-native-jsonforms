@@ -184,6 +184,9 @@ Here follows some styling samples for the various components.
 ```
 {
     "checkboxControl": {
+        "label":{
+             "color":"#FF0000"
+        },
         "container": {
             "flexDirection":"row",
             "alignItems":"center",
