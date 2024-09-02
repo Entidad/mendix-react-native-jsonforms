@@ -3,7 +3,8 @@ import{
 	font,
 	spacing,
 	border,
-	brand
+	brand,
+	checkbox
 }from"./custom-variables.js";
 export * from "./custom-variables.js";
 // entidad
@@ -43,3 +44,13 @@ export const radioButtons = {
         backgroundColor: brand.dangerLight
     },
 };
+export const checkboxControl={...checkbox,...{label:{
+        numberOfLines: 1,
+        color: font.colorTitle,
+        fontSize: font.sizeSmall,
+        lineHeight: font.lineHeightSmall,
+        marginBottom: spacing.small,
+        marginLeft: spacing.small,
+        marginTop: spacing.smaller
+    }
+}};

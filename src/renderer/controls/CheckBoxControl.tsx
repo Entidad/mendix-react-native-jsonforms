@@ -10,7 +10,8 @@ export function CheckBoxControl(props:any){
 	const state=useObject();
 	let attr=props.props;
 	let styles:any={};
-	mergeDeep(styles,customVariables?.checkbox,attr?.style?.checkbox||{});
+	//mergeDeep(styles,customVariables?.checkbox,attr?.style?.checkbox||{});
+	mergeDeep(styles,customVariables?.checkboxControl,attr?.style?.checkboxControl||{});
 	let stylesInput:any={};
 	mergeDeep(stylesInput,customVariables?.input,attr?.style?.input||{});
 	const[checked,setChecked]=useState(getDataFromBoolean(attr.data));
@@ -54,7 +55,7 @@ export function CheckBoxControl(props:any){
 				marginTop:styles?.labelContainer?.marginTop||15,
 				marginLeft:styles?.labelContainer?.marginLeft||15
 			}}>
-				<Text style={[stylesInput?.label||{}]}>{text}</Text>
+				<Text style={[styles?.label||{}]}>{text}</Text>
 			</View>
 		);
 	}

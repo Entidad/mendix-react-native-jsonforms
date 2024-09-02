@@ -135,7 +135,10 @@ Here follows some styling samples for the various components.
 
 ```
 {
-    "checkbox":{
+    "checkboxControl":{
+        "label":{
+             "color":"#FF0000"
+        },
         "checkboxInput": {
             "color": "#FF0000",
             "size": 20,
