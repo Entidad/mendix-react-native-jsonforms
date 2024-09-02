@@ -611,7 +611,8 @@ export const slider = {
     }
 };
 
-//entidad
+/*
+// entidad
 // Radio buttons styles
 export const radioButtons = {
     label: {
@@ -649,3 +650,4 @@ export const radioButtons = {
     },
 
 };
+*/
