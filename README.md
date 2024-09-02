@@ -88,38 +88,38 @@ Here follows some styling samples for the various components.
 
 ```
 {
-	input: {
-		label: {
-			numberOfLines: 1,
-			color: "#FF0000",
-			fontSize: 8,
-			textAlign: "left"
-		},
-		labelDisabled: {
-			color: "#FF0000"
-		},
-		input: {
-			color: "#FF0000",
-			borderColor: "#FF0000",
-			backgroundColor: "#FF0000",
-			selectionColor: "#FF0000",
-			placeholderTextColor: "#FF0000",
-			fontSize: 8,
-			lineHeight: 8,
-			borderWidth: 8,
-			borderRadius: 8,
-			minWidth: 48,
-			minHeight: 48,
-			paddingVertical: 8,
-			paddingHorizontal: 8
-		},
-		inputError: {
-			color: "#FF0000",
-			borderColor: "#FF0000",
-			placeholderTextColor: "#FF0000",
-			backgroundColor: "#FF0000"
-		}
-	}
+    input: {
+        label: {
+            numberOfLines: 1,
+            color: "#FF0000",
+            fontSize: 8,
+            textAlign: "left"
+        },
+        labelDisabled: {
+            color: "#FF0000"
+        },
+        input: {
+            color: "#FF0000",
+            borderColor: "#FF0000",
+            backgroundColor: "#FF0000",
+            selectionColor: "#FF0000",
+            placeholderTextColor: "#FF0000",
+            fontSize: 8,
+            lineHeight: 8,
+            borderWidth: 8,
+            borderRadius: 8,
+            minWidth: 48,
+            minHeight: 48,
+            paddingVertical: 8,
+            paddingHorizontal: 8
+        },
+        inputError: {
+            color: "#FF0000",
+            borderColor: "#FF0000",
+            placeholderTextColor: "#FF0000",
+            backgroundColor: "#FF0000"
+        }
+    }
 }
 
 ```
@@ -135,37 +135,37 @@ Here follows some styling samples for the various components.
 
 ```
 {
-	"checkbox":{
-		"checkboxInput": {
-			"color": "#FF0000",
-			"size": 20,
-			"backgroundColor": "#FF0000",
-			"borderColor": "#FF0000",
-			"borderWidth": 8,
-			"borderRadius": 8,
-			"width": 40,
-			"height": 40
-		},
-		"labelContainer": {
-			"flex":1,
-			"marginTop":8,
-			"marginLeft":8
-		}
-	}
-	"input": {
-		"label": {
-			"numberOfLines": 1,
-			"color": "#FF0000",
-			"fontSize": 8,
-			"textAlign": "left"
-		},
-		"inputError": {
-			"color": "#FF0000",
-			"borderColor": "#FF0000",
-			"placeholderTextColor": "#FF0000",
-			"backgroundColor": "#FF0000"
-		}
-	}
+    "checkbox":{
+        "checkboxInput": {
+            "color": "#FF0000",
+            "size": 20,
+            "backgroundColor": "#FF0000",
+            "borderColor": "#FF0000",
+            "borderWidth": 8,
+            "borderRadius": 8,
+            "width": 40,
+            "height": 40
+        },
+        "labelContainer": {
+            "flex":1,
+            "marginTop":8,
+            "marginLeft":8
+        }
+    }
+    "input": {
+        "label": {
+            "numberOfLines": 1,
+            "color": "#FF0000",
+            "fontSize": 8,
+            "textAlign": "left"
+        },
+        "inputError": {
+            "color": "#FF0000",
+            "borderColor": "#FF0000",
+            "placeholderTextColor": "#FF0000",
+            "backgroundColor": "#FF0000"
+        }
+    }
 }
 ```
 
@@ -180,38 +180,38 @@ Here follows some styling samples for the various components.
 
 ```
 {
-	"checkbox": {
-		"checkboxInput": {
-			"color": "#FF0000",
-			"size": 20,
-			"backgroundColor": "#FF0000",
-			"borderColor": "#FF0000",
-			"borderWidth": 8,
-			"borderRadius": 8,
-			"width": 40,
-			"height": 40
-		},
-		"labelContainer": {
-			"flex":1,
-			"marginTop":8,
-			"marginLeft":8
-		}
+    "checkbox": {
+        "checkboxInput": {
+            "color": "#FF0000",
+            "size": 20,
+            "backgroundColor": "#FF0000",
+            "borderColor": "#FF0000",
+            "borderWidth": 8,
+            "borderRadius": 8,
+            "width": 40,
+            "height": 40
+        },
+        "labelContainer": {
+            "flex":1,
+            "marginTop":8,
+            "marginLeft":8
+        }
 
-	},
-	"input": {
-		"label": {
-			"numberOfLines": 1,
-			"color": "#FF0000"
-			"fontSize": 8,
-			"textAlign": "left"
-		},
-		"inputError": {
-			"color": "#FF0000",
-			"borderColor": "#FF0000",
-			"placeholderTextColor": "#FF0000",
-			"backgroundColor": "#FF0000"
-		}
-	}
+    },
+    "input": {
+        "label": {
+            "numberOfLines": 1,
+            "color": "#FF0000"
+            "fontSize": 8,
+            "textAlign": "left"
+        },
+        "inputError": {
+            "color": "#FF0000",
+            "borderColor": "#FF0000",
+            "placeholderTextColor": "#FF0000",
+            "backgroundColor": "#FF0000"
+        }
+    }
 }
 ```
 
@@ -226,35 +226,35 @@ Here follows some styling samples for the various components.
 
 ```
 {
-	"input": {
-		"label": {
-			"numberOfLines": 1,
-			"color": "#FF0000"
-			"fontSize": 8,
-			"textAlign": "left"
-		},
-		"input": {
-			"color": "#FF0000",
-			"borderColor": "#FF0000",
-			"backgroundColor": "#FF0000",
-			"selectionColor": "#FF0000",
-			"placeholderTextColor": "#FF0000",
-			"fontSize": 8,
-			"lineHeight": 8,
-			"borderWidth": 8,
-			"borderRadius": 8,
-			"minWidth": 48,
-			"minHeight": 48,
-			"paddingVertical": 8,
-			"paddingHorizontal": 8
-		},
-		"inputError": {
-			"color": "#FF0000",
-			"borderColor": "#FF0000",
-			"placeholderTextColor": "#FF0000",
-			"backgroundColor": "#FF0000"
-		}
-	}
+    "input": {
+        "label": {
+            "numberOfLines": 1,
+            "color": "#FF0000"
+            "fontSize": 8,
+            "textAlign": "left"
+        },
+        "input": {
+            "color": "#FF0000",
+            "borderColor": "#FF0000",
+            "backgroundColor": "#FF0000",
+            "selectionColor": "#FF0000",
+            "placeholderTextColor": "#FF0000",
+            "fontSize": 8,
+            "lineHeight": 8,
+            "borderWidth": 8,
+            "borderRadius": 8,
+            "minWidth": 48,
+            "minHeight": 48,
+            "paddingVertical": 8,
+            "paddingHorizontal": 8
+        },
+        "inputError": {
+            "color": "#FF0000",
+            "borderColor": "#FF0000",
+            "placeholderTextColor": "#FF0000",
+            "backgroundColor": "#FF0000"
+        }
+    }
 }
 ```
 
@@ -269,43 +269,43 @@ Here follows some styling samples for the various components.
 
 ```
 {
-	"radioButtons":{
-		"label": {
-			"numberOfLines": 1,
-			"color": "#FF0000",
-			"fontSize": 8,
-			"lineHeight": 8,
-			"marginBottom": 8,
-			"marginLeft": 8,
-			"marginTop": 8
-		},
-		"outerCircle": {
-			"height": 24,
-			"width": 24,
-			"borderRadius": 12,
-			"borderWidth": 2,
-			"borderColor": "#FF0000",
-			"alignItems": 'center',
-			"justifyContent": 'center',
-		},
-		"innerCircle": {
-			"height": 12,
-			"width": 12,
-			"borderRadius": 6,
-			"backgroundColor": "#FF0000"
-		},
-		"radioButtonItemContainerStyle": {
-			"marginBottom": 8
-		}
-	},
-	"input": {
-		"label": {
-			"numberOfLines": 1,
-			"color": "#FF0000",
-			"fontSize": 8,
-			"textAlign": "left"
-		}
-	}
+    "radioButtons":{
+        "label": {
+            "numberOfLines": 1,
+            "color": "#FF0000",
+            "fontSize": 8,
+            "lineHeight": 8,
+            "marginBottom": 8,
+            "marginLeft": 8,
+            "marginTop": 8
+        },
+        "outerCircle": {
+            "height": 24,
+            "width": 24,
+            "borderRadius": 12,
+            "borderWidth": 2,
+            "borderColor": "#FF0000",
+            "alignItems": 'center',
+            "justifyContent": 'center',
+        },
+        "innerCircle": {
+            "height": 12,
+            "width": 12,
+            "borderRadius": 6,
+            "backgroundColor": "#FF0000"
+        },
+        "radioButtonItemContainerStyle": {
+            "marginBottom": 8
+        }
+    },
+    "input": {
+        "label": {
+            "numberOfLines": 1,
+            "color": "#FF0000",
+            "fontSize": 8,
+            "textAlign": "left"
+        }
+    }
 }
 ```
 
