@@ -181,6 +181,12 @@ Here follows some styling samples for the various components.
 ```
 {
     "checkbox": {
+        "container": {
+            "flexDirection":"row",
+            "alignItems":"center",
+            "height":35,
+            "marginTop":20
+        },
         "checkboxInput": {
             "color": "#FF0000",
             "size": 20,
@@ -196,7 +202,6 @@ Here follows some styling samples for the various components.
             "marginTop":8,
             "marginLeft":8
         }
-
     },
     "input": {
         "label": {
