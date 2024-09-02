@@ -5,8 +5,8 @@ import{
 	border,
 	brand,
 	checkbox
-}from"./custom-variables.js";
-export * from "./custom-variables.js";
+}from"../../theme/theme/native/custom-variables.js";
+export * from "../../theme/theme/native/custom-variables.js";
 // entidad
 // Radio buttons styles
 export const radioButtons = {
