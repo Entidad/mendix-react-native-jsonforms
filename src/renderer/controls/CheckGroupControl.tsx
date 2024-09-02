@@ -11,7 +11,7 @@ export function CheckGroupControl(props:any){
 	const state=useObject();	
 	let attr=props.props;	
         let styles:any={};
-        mergeDeep(styles,customVariables?.checkbox,attr?.style?.checkbox||{});
+        mergeDeep(styles,customVariables?.checkboxControl,attr?.style?.checkboxControl||{});
         let stylesInput:any={};
         mergeDeep(stylesInput,customVariables?.input,attr?.style?.input||{});
 	let opts:any[]=attr.enum||[];
@@ -67,7 +67,7 @@ export function CheckGroupControl(props:any){
 				marginTop:styles?.labelContainer?.marginTop||4,
 				marginLeft:styles?.labelContainer?.marginLeft||8
 			}}>
-				<Text style={[stylesInput?.label||{}]}>{text}</Text>
+				<Text style={[styles?.label||{}]}>{text}</Text>
 			</View>
 		);
 	}

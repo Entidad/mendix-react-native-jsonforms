@@ -183,7 +183,7 @@ Here follows some styling samples for the various components.
 
 ```
 {
-    "checkbox": {
+    "checkboxControl": {
         "container": {
             "flexDirection":"row",
             "alignItems":"center",
