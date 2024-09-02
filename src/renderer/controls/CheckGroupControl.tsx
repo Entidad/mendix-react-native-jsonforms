@@ -1,11 +1,11 @@
-import{useObject}from'../context/ObjectHook';
-import{createElement,useState}from'react'
+import{useObject}from"../context/ObjectHook";
+import{createElement,useState}from"react"
 import{View}from"react-native";
 import{TouchableHighlight}from"react-native";
 import{Text}from"react-native";
-import{isEmptyArray}from'../util/Util'
-import*as customVariables from'../theme/widget-variables';
-import Svg,{Path}from'react-native-svg'
+import{isEmptyArray}from"../util/Util"
+import*as customVariables from"../theme/widget-variables";
+import Svg,{Path}from"react-native-svg"
 import{mergeDeep}from"../../util/merge";
 export function CheckGroupControl(props:any){
 	const state=useObject();	
@@ -72,16 +72,24 @@ export function CheckGroupControl(props:any){
 		);
 	}
 	const renderControl=(label:any)=>{
+/*
+{
+					flexDirection:"row",
+					alignItems:"center",
+					height:35,
+					marginTop:20
+				}
+*/
 		return(
 			<TouchableHighlight
 				onPress={()=>_onPress(label)}
-				underlayColor='transparent'
+				underlayColor="transparent"
 			>
-				<View style={{
-					flexDirection:'row',
-					alignItems:'center',
-					height:35,
-					marginTop:20
+				<View style={styles?.container||{
+					flexDirection:styles?.container?.flexDirection||"row",
+					alignItems:styles?.container?.alignItems||"center",
+					height:styles?.container?.height||35,
+					marginTop:styles?.container?.marginTop||20
 				}}>
 					{renderCheckBox(label)}
 					{renderText(label)}
@@ -93,7 +101,7 @@ export function CheckGroupControl(props:any){
 		<View style={{
 			marginBottom:10
 		}}>
-			<Text style={stylesInput?.label||{}}>{attr.description||(attr.label||'No label included')}</Text>
+			<Text style={stylesInput?.label||{}}>{attr.description||(attr.label||"No label included")}</Text>
 			{opts.map((optionValue)=>(
 				renderControl(optionValue)
 			))}
