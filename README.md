@@ -29,6 +29,52 @@ The following native controls are implemented
 
 Compile time styling can be customized by edited `src/renderer/theme/custom-variables.js`. Modeling time styling can be achieved by editing the `UI / Style JSON` field. A sample style can be found at `styles/sample.json`
 
+### Main Container
+
+The main container around the widget can be styled as follows
+
+<details>
+  <summary>JSON</summary>
+
+```
+{
+    "jsonformsControlsContainer": {
+        "viewControl":{
+            "marginLeft: 0,
+            "marginTop:0,
+            "marginBottom:0,
+            "marginRight:0,
+            "flexDirection":"column"
+        }
+    }
+   }
+```
+</details>
+
+## Conponent Wrapper Stylling
+
+Each component has a wrapper that can be styled as follows
+
+<details>
+  <summary>JSON</summary>
+
+```
+{
+    "jsonformsControlContainer": {
+        "marginTop:0,
+        "marginBottom:0,
+        "paddingTop:0,
+        "paddingBottom:0,
+        "borderColor":"#FF0000"
+        "borderTopWidth":0,
+        "borderBottomWidth":0,
+    }
+}
+```
+</details>
+
+
+
 Here follows some styling samples for the various components.
 
 ### TextControl Styling

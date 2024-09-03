@@ -6,6 +6,7 @@ import{
 	brand,
 	checkbox
 }from"../../theme/theme/native/custom-variables.js";
+import { StyleSheet } from "react-native";
 export * from "../../theme/theme/native/custom-variables.js";
 // entidad
 // Radio buttons styles
@@ -56,3 +57,23 @@ export const checkboxControl={...checkbox,...{
 		marginTop: spacing.smaller
 	}
 }};
+export const jsonformsControlsContainer=StyleSheet.create({
+//export const jsonformsControlsContainer={
+    viewControl:{
+        marginLeft: 0,
+        marginTop:0,
+        marginBottom:0,
+        marginRight:0,
+        flexDirection: 'column'
+    }
+//};
+});
+export const jsonformsControlContainer={
+	marginBottom:0,
+	marginTop:0,
+	paddingBottom:0,
+	paddingTop:0,
+	borderColor:"#000000",
+	borderTopWidth:0,
+	borderTopHeight:0
+};
