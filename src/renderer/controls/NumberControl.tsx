@@ -21,9 +21,7 @@ export function NumberControl(props:any){
 		return text||attr.placeholder||attr.value;
 	};
 	return(
-		<View style={{
-			marginBottom:10
-		}}>
+		<View style={{}}>
 			<Text style={styles.label}>{attr.label||'No label included'}</Text>
 			<TextInput
 				style={(state.showError&&error)?styles.inputError:styles.input}

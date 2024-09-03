@@ -67,30 +67,25 @@ export function CheckGroupControl(props:any){
 				marginTop:styles?.labelContainer?.marginTop||4,
 				marginLeft:styles?.labelContainer?.marginLeft||8
 			}}>
-				<Text style={[styles?.label||{}]}>{text}</Text>
+				<Text style={[styles?.caption||{}]}>{text}</Text>
 			</View>
 		);
 	}
-	const renderControl=(label:any)=>{
-/*
-{
-					flexDirection:"row",
-					alignItems:"center",
-					height:35,
-					marginTop:20
-				}
-*/
+	const renderControl=(label:any,index:any)=>{
+		let stylesContainer=
+			styles?.container||{
+				flexDirection:styles?.container?.flexDirection||"row",
+				alignItems:styles?.container?.alignItems||"center",
+				height:styles?.container?.height||35,
+				marginTop:styles?.container?.marginTop||20
+			}
+		if(index==0)stylesContainer.marginTop=0;
 		return(
 			<TouchableHighlight
 				onPress={()=>_onPress(label)}
 				underlayColor="transparent"
 			>
-				<View style={styles?.container||{
-					flexDirection:styles?.container?.flexDirection||"row",
-					alignItems:styles?.container?.alignItems||"center",
-					height:styles?.container?.height||35,
-					marginTop:styles?.container?.marginTop||20
-				}}>
+				<View style={stylesContainer}>
 					{renderCheckBox(label)}
 					{renderText(label)}
 				</View>
@@ -98,12 +93,10 @@ export function CheckGroupControl(props:any){
 		);
 	}
 	return(
-		<View style={{
-			marginBottom:10
-		}}>
+		<View style={{}}>
 			<Text style={stylesInput?.label||{}}>{attr.description||(attr.label||"No label included")}</Text>
-			{opts.map((optionValue)=>(
-				renderControl(optionValue)
+			{opts.map((optionValue,index)=>(
+				renderControl(optionValue,index)
 			))}
 			{(state.showError&&error)
 				?<Text style={stylesInput?.inputError||{}}>{attr.errorMessage}</Text>

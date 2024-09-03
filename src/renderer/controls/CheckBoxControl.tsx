@@ -10,7 +10,6 @@ export function CheckBoxControl(props:any){
 	const state=useObject();
 	let attr=props.props;
 	let styles:any={};
-	//mergeDeep(styles,customVariables?.checkbox,attr?.style?.checkbox||{});
 	mergeDeep(styles,customVariables?.checkboxControl,attr?.style?.checkboxControl||{});
 	let stylesInput:any={};
 	mergeDeep(stylesInput,customVariables?.input,attr?.style?.input||{});
@@ -28,10 +27,10 @@ export function CheckBoxControl(props:any){
 		if(checked){
 			return(
 				<View style={styles?.checkboxInput||{
-					width:styles?.checkBoxInput?.width||40,
-					height:styles?.checkBoxInput?.height||40
+					width:styles?.checkboxInput?.width||40,
+					height:styles?.checkboxInput?.height||40
 				}}>
-					<Svg width={styles?.checkBoxInput?.width||40} height={styles?.checkBoxInput?.height||40} viewBox="0 0 24 24">
+					<Svg width={styles?.checkboxInput?.width||40} height={styles?.checkboxInput?.height||40} viewBox="0 0 24 24">
 						<Path fill={styles?.checkboxInput?.color||"#1A6251"} d="m 5.2350576,12.635087 4.8984404,4.898442 0.179711,-0.179706 2.222656,-2.222655 6.229167,-6.2291688 -2.435439,-2.4354389 -6.229167,6.2291677 -2.4630024,-2.463002 z"/>
 					</Svg>
 				</View>
@@ -39,10 +38,10 @@ export function CheckBoxControl(props:any){
 		}else{
 			return(
 				<View style={styles?.checkboxInput||{
-					width:styles?.checkBoxInput?.width||40,
-					height:styles?.checkBoxInput?.height||40
+					width:styles?.checkboxInput?.width||40,
+					height:styles?.checkboxInput?.height||40
 				}}>
-					<Svg  width={styles?.checkBoxInput?.width||40} height={styles?.checkBoxInput?.height||40} viewBox="0 0 24 24">
+					<Svg  width={styles?.checkboxInput?.width||40} height={styles?.checkboxInput?.height||40} viewBox="0 0 24 24">
 					</Svg>
 				</View>
 			)
@@ -55,14 +54,12 @@ export function CheckBoxControl(props:any){
 				marginTop:styles?.labelContainer?.marginTop||4,
 				marginLeft:styles?.labelContainer?.marginLeft||8
 			}}>
-				<Text style={[styles?.label||{}]}>{text}</Text>
+				<Text style={[styles?.caption||{}]}>{text}</Text>
 			</View>
 		);
 	}
 	return (
-		<View style={{
-			marginBottom:10
-		}}>
+		<View style={{}}>
 			<Text style={stylesInput?.label||{}}>{attr.description||(attr.label||"No label included")}</Text>
 			<TouchableHighlight
 				onPress={()=>_onPress()}

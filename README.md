@@ -184,7 +184,7 @@ Here follows some styling samples for the various components.
 ```
 {
     "checkboxControl": {
-        "label":{
+        "caption":{
              "color":"#FF0000"
         },
         "container": {
@@ -281,7 +281,7 @@ Here follows some styling samples for the various components.
 ```
 {
     "radioButtons":{
-        "label": {
+        "caption": {
             "numberOfLines": 1,
             "color": "#FF0000",
             "fontSize": 8,
