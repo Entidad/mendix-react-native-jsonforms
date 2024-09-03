@@ -30,13 +30,19 @@ export function RadioControl(props:any){
 		attr.error=isEmptyBoolean(label);
 		setError(attr.error);
 	};
-	const renderRadioControl=(label:any)=>{		
+	const renderRadioControl=(label:any,index:any)=>{
+				//flexDirection:"row",
+				//marginTop:5
+		let radioButtonItemContainerStyle=styles?.radioButtonItemContainerStyle||{
+			marginBottom:styles?.radioButtonItemContainerStyle?.marginBottom||5,
+			marginTop:styles?.radioButtonItemContainerStyle?.marginTop||5,
+		};
+		if(index==0)radioButtonItemContainerStyle.marginTop=0;
 		return(
 			<View style={{
-				flexDirection:"row",
-				marginTop:5
+				flexDirection:"row"
 			}}>
-				<View style={styles?.radioButtonItemContainerStyle||{}}>
+				<View style={radioButtonItemContainerStyle}>
 					<TouchableOpacity
 						onPress={()=>{_onPress(label)}
 					}>
@@ -90,8 +96,8 @@ export function RadioControl(props:any){
 			marginBottom:10
 		}}>
 			<Text style={stylesInput?.label||{}}>{attr.description||(attr.label||"No label included")}</Text>			
-			{opts!=undefined&&opts.map((optionValue)=>(
-				renderRadioControl(optionValue)
+			{opts!=undefined&&opts.map((optionValue,index)=>(
+				renderRadioControl(optionValue,index)
 			))}
 			{(state.showError&&error)
 				?<Text style={stylesInput?.inputError||{}}>{attr.errorMessage}</Text>

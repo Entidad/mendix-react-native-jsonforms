@@ -34,15 +34,16 @@ export const radioButtons = {
 	borderRadius: 6,
         backgroundColor: brand.primary
     },
-    radioButtonItemContainerStyle: {
-        marginBottom: spacing.small
-    },
     radioButtonError: {
         color: brand.danger,
         borderColor: brand.danger,
         placeholderTextColor: brand.danger,
         backgroundColor: brand.dangerLight
     },
+    radioButtonItemContainerStyle: {
+        marginBottom: spacing.small,
+        marginTop: spacing.small
+    }
 };
 export const checkboxControl={...checkbox,...{
 	caption:{
