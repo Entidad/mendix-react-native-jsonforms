@@ -1,70 +1,103 @@
 {
-  "input": {
-    "label": {
-      "numberOfLines": 1,
-      "color": "#0A1325",
-      "fontSize": 12,
-      "text-align": "left",
-      "font-weight": "600",
-      "fontFamily": "OpenSans-SemiBold"
-    },
-    "labelDisabled": {
-      "color": "#0A1325"
-    },
     "input": {
-      "color": "#0A1325",
-      "borderColor": "#cdcdcd",
-      "backgroundColor": "#FFFFFF",
-      "selectionColor": "#cdcdcd",
-      "placeholderTextColor": "#a6a6a6",
-      "fontSize": 14,
-      "lineHeight": 24,
-      "borderWidth": 1,
-      "borderRadius": 8,
-      "minWidth": 48,
-      "minHeight": 48,
-      "paddingVertical": 8,
-      "paddingHorizontal": 8
+        "label": {
+            "numberOfLines": 1,
+            "color": "#201313",
+            "fontSize": 14,
+            "textAlign": "left",
+            "fontFamily": "Lato-Bold",
+            "marginTop": 24,
+            "marginBottom": 8
+        },
+        "labelDisabled": {
+            "color": "#0A1325"
+        },
+        "input": {
+            "color": "#201313",
+            "borderColor": "#cdcdcd",
+            "backgroundColor": "#FFFFFF",
+            "selectionColor": "#cdcdcd",
+            "placeholderTextColor": "#a6a6a6",
+            "fontSize": 14,
+            "fontFamily": "Lato-Regular",
+            "lineHeight": 14,
+            "borderWidth": 1,
+            "borderRadius": 12,
+            "minWidth": 48,
+            "minHeight": 48,
+            "paddingVertical": 8,
+            "paddingHorizontal": 8
+        },
+        "inputError": {
+            "color": "#FF0000",
+            "borderColor": "#FF0000",
+            "placeholderTextColor": "#FF0000",
+            "backgroundColor": "#FF0000"
+        },
+        "itemContainer": {
+            "paddingVertical": 12,
+            "paddingHorizontal": 8,
+            "backgroundColor": "#FFFFFF"
+        }
     },
-    "inputContainer": {
-      "underlayColor": "rgba(166,166,166,0.4)"
+    "checkboxControl": {
+        "caption": {
+            "color": "#201313",
+            "fontSize": 14,
+            "fontFamily": "Lato-Regular",
+            "textAlign": "left"
+        },
+        "container": {
+            "flexDirection": "row",
+            "alignItems": "center",
+            "height": 35,
+            "marginTop": 20,
+            "marginBottom": 20
+        },
+        "checkboxInput": {
+            "color": "#622C6D",
+            "size": 20,
+            "backgroundColor": "#FCFCFC",
+            "borderColor": "#CCCCCC",
+            "borderWidth": 1,
+            "borderRadius": 8,
+            "width": 40,
+            "height": 40
+        },
+        "labelContainer": {
+            "flex": 1,
+            "marginTop": 0,
+            "marginLeft": 8
+        }
     },
-    "inputDisabled": {
-      "color": "#7C7C7C",
-      "borderColor": "#d4d4d4",
-      "backgroundColor": "#F8F8F8"
-    },
-    "inputError": {
-      "color": "#AE1C23",
-      "borderColor": "#AE1C23",
-      "placeholderTextColor": "#AE1C23",
-      "backgroundColor": "#F1D4D5"
-    },
-    "validationMessage": {
-      "color": "#AE1C23",
-      "fontSize": 14
-    },
-    "valueContainer": {
-      "rippleColor": "#f3f3f3"
-    },
-    "itemContainer": {
-      "paddingVertical": 12,
-      "paddingHorizontal": 16,
-      "backgroundColor": "#FFF"
-    },
-    "item": {
-      "color": "#0A1325",
-      "fontSize": 14
-    },
-    "selectedItemContainer": {
-      "borderWidth": 1,
-      "borderRadius": 8,
-      "borderColor": "#1A6251",
-      "backgroundColor": "transparent"
-    },
-    "selectedItem": {
-      "color": "#0A1325",
-      "fontSize": 14
+    "radioButtons": {
+        "caption": {
+            "numberOfLines": 1,
+            "color": "#201313",
+            "fontSize": 14,
+            "fontFamily": "Lato-Regular",
+            "lineHeight": 20,
+            "marginBottom": 8,
+            "marginLeft": 8,
+            "marginTop": 8
+        },
+        "outerCircle": {
+            "height": 40,
+            "width": 40,
+            "borderRadius": 20,
+            "borderWidth": 1,
+            "borderColor": "#CCCCCC",
+            "alignItems": "center",
+            "justifyContent": "center"
+        },
+        "innerCircle": {
+            "height": 32,
+            "width": 32,
+            "borderRadius": 16,
+            "backgroundColor": "#622C6D"
+        },
+        "radioButtonItemContainerStyle": {
+            "marginBottom": 8
+        }
     }
-  }
 }
