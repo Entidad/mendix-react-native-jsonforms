@@ -77,3 +77,18 @@ export const jsonformsControlContainer={
 	borderTopWidth:0,
 	borderTopHeight:0
 };
+export const readOnlyControl={
+	label: {
+		fontSize: font.sizeSmall,
+		fontWeight: font.weightBold,
+		color: font.colorTitle
+	},
+	value:{
+		fontSize: font.sizeSmall,
+		fontWeight: font.weightNormal,
+		color: font.colorTitle
+	},
+	container:{
+		marginBottom:spacing.small
+	}
+}

@@ -1,7 +1,7 @@
 {
   "name": "jsonformsnative",
   "widgetName": "JsonForms",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Mendix JsonForms Render for Native",
   "copyright": "GPL",
   "author": "Carlos Sanchez, Ockert van Schalkwyk",
@@ -10,7 +10,7 @@
   },
   "license": "GPL",
   "config": {
-    "projectPath": "./../fwos-demo-app-main"
+    "projectPath": "./../fwos-demo-app"
   },
   "packagePath": "io.entidad.widget.native",
   "scripts": {

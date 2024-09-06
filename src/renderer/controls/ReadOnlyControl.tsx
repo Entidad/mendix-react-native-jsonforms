@@ -6,19 +6,23 @@ import{mergeDeep}from"../../util/merge";
 export function ReadOnlyControl(props:any){
 	let attr=props.props;
         let styles:any={};
-        mergeDeep(styles,customVariables?.input,attr?.style?.input||{});
-	return (
-		<View style={{
+        mergeDeep(styles,customVariables?.readOnlyControl,attr?.style?.readOnlyControl||{});
+/*
 			marginBottom:10
-		}}>
-			<Text style={styles.label && {
+*/
+/*
+
 				fontWeight:"bold",
 				color:"black",
 				fontSize:16
-			}}>{attr.label}</Text>
-			<Text style={styles.labelDisabled && {
+*/
+/*
 				marginLeft:5
-			}}>{attr.data}</Text>			
+*/
+	return (
+		<View style={styles?.container||{}}>
+			<Text style={styles?.label||{}}>{attr.label}</Text>
+			<Text style={styles?.value||{}}>{attr.data}</Text>			
 		</View>
 	);
 }

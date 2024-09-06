@@ -69,7 +69,6 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>, AppState>{
 				</View>
 			)
 		}else{
-//style={JSON.parse(this.state.styleData)}
 			return(
 					<View>
 						<Form

@@ -368,6 +368,37 @@ Here follows some styling samples for the various components.
 
 </details>
 
+### ReadOnlyControl Styling
+
+![ReadOnlyControl](../main/images/ReadOnlyControl.png?raw=true)
+
+<details>
+  <summary>JSON</summary>
+
+```
+{
+  "readOnlyControl": {
+    "label": {
+      "fontSize": 12,
+      "fontWeight": "bold",
+      "color": "#FFFFFF88"
+    },
+    "value": {
+      "fontSize": 16,
+      "fontWeight": "normal",
+      "color": "#FFFFFF",
+      "marginBottom": 8
+    },
+    "container": {
+      "borderBottomColor": "#FFFFFF44",
+      "borderBottomWidth": 2
+    }
+  }
+}
+```
+
+</details>
+
 # Compiled Styling
 
 For styling the components `theme/native/custom-variables.js`, `theme/native/exclusion-variables.js`, and `themesource` were copied from a stock standard Mendix project and added to the source tree with minor modifications at the following locations.
@@ -399,5 +430,6 @@ Contributions welcome
 * [https://jsonforms.io/](https://jsonforms.io/)
 * [https://jsonforms.io/docs/](https://jsonforms.io/docs/)
 * [https://stackoverflow.com/questions/27936772/how-to-deep-merge-instead-of-shallow-merge](https://stackoverflow.com/questions/27936772/how-to-deep-merge-instead-of-shallow-merge)
+
 
 
