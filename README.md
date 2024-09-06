@@ -40,11 +40,11 @@ The main container around the widget can be styled as follows
 {
     "jsonformsControlsContainer": {
         "viewControl":{
-            "marginLeft: 0,
-            "marginTop:0,
-            "marginBottom:0,
-            "marginRight:0,
-            "flexDirection":"column"
+            "marginLeft": 0,
+            "marginTop": 0,
+            "marginBottom": 0,
+            "marginRight": 0,
+            "flexDirection": "column"
         }
     }
    }
@@ -61,13 +61,13 @@ Each component has a wrapper that can be styled as follows
 ```
 {
     "jsonformsControlContainer": {
-        "marginTop:0,
-        "marginBottom:0,
-        "paddingTop:0,
-        "paddingBottom:0,
-        "borderColor":"#FF0000"
-        "borderTopWidth":0,
-        "borderBottomWidth":0,
+        "marginTop": 0,
+        "marginBottom": 0,
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "borderColor": "#FF0000"
+        "borderTopWidth": 0,
+        "borderBottomWidth": 0
     }
 }
 ```
@@ -90,8 +90,11 @@ Here follows some styling samples for the various components.
         "label": {
             "numberOfLines": 1,
             "color": "#FF0000",
-            "fontSize": 12,
-            "textAlign": "left"
+            "fontSize": 14,
+            "textAlign": "left",
+            "fontFamily": "Lato-Bold",
+            "marginTop": 24,
+            "marginBottom": 8
         },
         "input": {
             "color": "#FF0000",
@@ -99,14 +102,15 @@ Here follows some styling samples for the various components.
             "backgroundColor": "#FF0000",
             "selectionColor": "#FF0000",
             "placeholderTextColor": "#FF0000",
-            "fontSize": 8,
-            "lineHeight": 8,
-            "borderWidth": 8,
+            "fontSize": 14,
+            "fontFamily": "Lato-Regular",
+            "lineHeight": 14,
+            "borderWidth": 1,
             "borderRadius": 12,
             "minWidth": 48,
             "minHeight": 48,
-            "paddingVertical": 4,
-            "paddingHorizontal":8 
+            "paddingVertical": 8,
+            "paddingHorizontal": 8
         },
         "inputError": {
             "color": "#FF0000",
@@ -117,7 +121,7 @@ Here follows some styling samples for the various components.
         "itemContainer": {
             "paddingVertical": 12,
             "paddingHorizontal": 8,
-            "backgroundColor": "#FF0000" 
+            "backgroundColor": "#FFFFFF" 
         }
     }
 }
@@ -134,40 +138,43 @@ Here follows some styling samples for the various components.
 
 ```
 {
-    input: {
-        label: {
-            numberOfLines: 1,
-            color: "#FF0000",
-            fontSize: 8,
-            textAlign: "left"
+  "input": {
+        "label": {
+            "numberOfLines": 1,
+            "color": "#201313",
+            "fontSize": 14,
+            "textAlign": "left",
+            "fontFamily": "Lato-Bold",
+            "marginTop": 24,
+            "marginBottom": 8
         },
-        labelDisabled: {
-            color: "#FF0000"
+        "labelDisabled": {
+            "color": "#0A1325"
         },
-        input: {
-            color: "#FF0000",
-            borderColor: "#FF0000",
-            backgroundColor: "#FF0000",
-            selectionColor: "#FF0000",
-            placeholderTextColor: "#FF0000",
-            fontSize: 8,
-            lineHeight: 8,
-            borderWidth: 8,
-            borderRadius: 8,
-            minWidth: 48,
-            minHeight: 48,
-            paddingVertical: 8,
-            paddingHorizontal: 8
+        "input": {
+            "color": "#201313",
+            "borderColor": "#cdcdcd",
+            "backgroundColor": "#FFFFFF",
+            "selectionColor": "#cdcdcd",
+            "placeholderTextColor": "#a6a6a6",
+            "fontSize": 14,
+            "fontFamily": "Lato-Regular",
+            "lineHeight": 14,
+            "borderWidth": 1,
+            "borderRadius": 12,
+            "minWidth": 48,
+            "minHeight": 48,
+            "paddingVertical": 8,
+            "paddingHorizontal": 8
         },
-        inputError: {
-            color: "#FF0000",
-            borderColor: "#FF0000",
-            placeholderTextColor: "#FF0000",
-            backgroundColor: "#FF0000"
+        "inputError": {
+            "color": "#FF0000",
+            "borderColor": "#FF0000",
+            "placeholderTextColor": "#FF0000",
+            "backgroundColor": "#FF0000"
         }
     }
 }
-
 ```
 
 </details>
@@ -183,21 +190,24 @@ Here follows some styling samples for the various components.
 {
     "checkboxControl":{
         "caption":{
-             "color":"#FF0000"
+            "color":"#FF0000",
+            "fontSize": 14,
+            "fontFamily": "Lato-Regular",
+            "textAlign": "left"
         },
         "checkboxInput": {
             "color": "#FF0000",
             "size": 20,
             "backgroundColor": "#FF0000",
             "borderColor": "#FF0000",
-            "borderWidth": 8,
+            "borderWidth": 1,
             "borderRadius": 8,
             "width": 40,
             "height": 40
         },
         "labelContainer": {
             "flex":1,
-            "marginTop":8,
+            "marginTop":0,
             "marginLeft":8
         }
     }
@@ -205,7 +215,7 @@ Here follows some styling samples for the various components.
         "label": {
             "numberOfLines": 1,
             "color": "#FF0000",
-            "fontSize": 8,
+            "fontSize": 14,
             "textAlign": "left"
         },
         "inputError": {
@@ -231,27 +241,31 @@ Here follows some styling samples for the various components.
 {
     "checkboxControl": {
         "caption":{
-             "color":"#FF0000"
+            "color":"#FF0000",
+            "fontSize": 14,
+            "fontFamily": "Lato-Regular",
+            "textAlign": "left"
         },
         "container": {
-            "flexDirection":"row",
-            "alignItems":"center",
-            "height":35,
-            "marginTop":20
+            "flexDirection": "row",
+            "alignItems": "center",
+            "height": 35,
+            "marginTop": 20,
+            "marginBottom": 20
         },
         "checkboxInput": {
             "color": "#FF0000",
             "size": 20,
             "backgroundColor": "#FF0000",
             "borderColor": "#FF0000",
-            "borderWidth": 8,
+            "borderWidth": 1,
             "borderRadius": 8,
             "width": 40,
             "height": 40
         },
         "labelContainer": {
             "flex":1,
-            "marginTop":8,
+            "marginTop":0,
             "marginLeft":8
         }
     },
@@ -330,25 +344,26 @@ Here follows some styling samples for the various components.
         "caption": {
             "numberOfLines": 1,
             "color": "#FF0000",
-            "fontSize": 8,
-            "lineHeight": 8,
+            "fontSize": 14,
+            "fontFamily": "Lato-Regular",
+            "lineHeight": 20,
             "marginBottom": 8,
             "marginLeft": 8,
             "marginTop": 8
         },
         "outerCircle": {
-            "height": 24,
-            "width": 24,
-            "borderRadius": 12,
-            "borderWidth": 2,
+            "height": 40,
+            "width": 40,
+            "borderRadius": 20,
+            "borderWidth": 1,
             "borderColor": "#FF0000",
             "alignItems": 'center',
             "justifyContent": 'center',
         },
         "innerCircle": {
-            "height": 12,
-            "width": 12,
-            "borderRadius": 6,
+            "height": 32,
+            "width": 32,
+            "borderRadius": 16,
             "backgroundColor": "#FF0000"
         },
         "radioButtonItemContainerStyle": {
@@ -359,8 +374,11 @@ Here follows some styling samples for the various components.
         "label": {
             "numberOfLines": 1,
             "color": "#FF0000",
-            "fontSize": 8,
-            "textAlign": "left"
+            "fontSize": 14,
+            "textAlign": "left",
+            "fontFamily": "Lato-Bold",
+            "marginTop": 24,
+            "marginBottom": 8
         }
     }
 }
