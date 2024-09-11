@@ -449,5 +449,6 @@ Contributions welcome
 * [https://jsonforms.io/docs/](https://jsonforms.io/docs/)
 * [https://jsonforms.io/api/react/index.html](https://jsonforms.io/api/react/index.html)
 * [https://stackoverflow.com/questions/27936772/how-to-deep-merge-instead-of-shallow-merge](https://stackoverflow.com/questions/27936772/how-to-deep-merge-instead-of-shallow-merge)
+* [https://jsonforms.io/api/react/index.html](https://jsonforms.io/api/react/index.html)
 
 
