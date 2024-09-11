@@ -19,13 +19,6 @@
           <attributeType name="String"/>
         </attributeTypes>
       </property>
-      <property key="mxInitData" type="attribute" required="true">
-        <caption>initData</caption>
-        <description>Default values containing the data to be rendered in the form</description>
-        <attributeTypes>
-          <attributeType name="String"/>
-        </attributeTypes>
-      </property>
       <property key="mxFormData" type="attribute" required="true" onChange="onChangeAction">
         <caption>formData</caption>
         <description>Containing the data after submit the form</description>

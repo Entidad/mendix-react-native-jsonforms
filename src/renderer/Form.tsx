@@ -1,110 +1,108 @@
-import { createElement, useState } from "react";
-import { View} from "react-native";
-import { ScrollView} from "react-native";
-import { validateSchema, validationStatus } from './util/Validation'
-import { ErrorList, ErrorItem } from "./util/Error";
-import { ObjectProvider } from "./context/ObjectProvider"
-import { ObjectState } from "./context/ObjectState";
-import { getControlType, getControlProps } from './schemas/UtilSchema'
-import { ControlType } from './schemas/ControlType'
-import { 
-	TextControl, 
-	TextAreaControl,
-	PasswordControl,
-	NumberControl, 
-	IntegerControl, 
-	CheckBoxControl,
-	CheckGroupControl,
-	RadioControl,
-	UnknownControl
-} from "./controls";
-import { ReadOnlyControl } from "./controls/ReadOnlyControl";
+import{createElement}from"react";
+import{useState}from"react";
+import{View}from"react-native";
+import{ScrollView}from"react-native";
+//import{validateSchema}from"./util/Validation"
+//import{validationStatus}from"./util/Validation"
+//import{ErrorList}from"./util/Error";
+import{ErrorItem}from"./util/Error";
+import{ObjectProvider}from"./context/ObjectProvider"
+import{ObjectState}from"./context/ObjectState";
+import{getControlType}from"./schemas/UtilSchema"
+import{getControlProps}from"./schemas/UtilSchema"
+import{ControlType}from"./schemas/ControlType"
+import{TextControl}from"./controls";
+import{TextAreaControl}from"./controls";
+import{PasswordControl}from"./controls";
+import{NumberControl}from"./controls";
+import{IntegerControl}from"./controls";
+import{CheckBoxControl}from"./controls";
+import{CheckGroupControl}from"./controls";
+import{RadioControl}from"./controls";
+import{UnknownControl}from"./controls";
+import{ReadOnlyControl}from"./controls/ReadOnlyControl";
 import{jsonformsControlsContainer}from"./theme/widget-variables";
 import{jsonformsControlContainer}from"./theme/widget-variables";
 import{mergeDeep}from"../util/merge";
-export const Form = ({schema, uischema, initData, i18nData, language, formData, onChange, readOnly, style/*ockert*/}:any) => {
-	const [data, setData] = useState(formData);
-	const [show, setShow] = useState(false);
-
-        let stylesJsonFormsControlContainer:any={};
-        mergeDeep(stylesJsonFormsControlContainer,jsonformsControlContainer||{});
-        mergeDeep(stylesJsonFormsControlContainer,style?.jsonFormsControlContainer||{});
-
-        let stylesJsonFormsControlsContainer:any={};
-        mergeDeep(stylesJsonFormsControlsContainer,jsonformsControlsContainer||{});
-        mergeDeep(stylesJsonFormsControlsContainer,style?.jsonFormsControlsContainer||{});
-
-	const validation:validationStatus =  validateSchema(schema, initData);
-	//if(!validation.validation){	
-	if(false){			
+export const Form=({schema,uischema,/*initData,*/i18nData,language,formData,onChange,readOnly,style}:any)=>{
+	const[data,setData]=useState(formData);
+	const[show,setShow]=useState(false);
+	let stylesJsonFormsControlContainer:any={};
+	mergeDeep(stylesJsonFormsControlContainer,jsonformsControlContainer||{});
+	mergeDeep(stylesJsonFormsControlContainer,style?.jsonFormsControlContainer||{});
+	let stylesJsonFormsControlsContainer:any={};
+	mergeDeep(stylesJsonFormsControlsContainer,jsonformsControlsContainer||{});
+	mergeDeep(stylesJsonFormsControlsContainer,style?.jsonFormsControlsContainer||{});
+	//const validation:validationStatus=validateSchema(schema,initData);
+	/*
+	if(false){
 		if(validation.errors.length!=0){
 			return(
 				<View>
-					<ErrorList  errors={validation.errors}/>
+					<ErrorList errors={validation.errors}/>
 				</View>
 			);
 		}else{
 			return(
 				<View>
-					<ErrorItem  message={"The form data is empty"}/>
+					<ErrorItem message={"The form data is empty"}/>
 				</View>
-			); 
-		}		
-	}	
-	
-	const START_STATE: ObjectState = {
-		schema: schema,
-		uischema: uischema,
-		initData: initData,
-		i18nData: i18nData,
-		language: language,
-		formData: data,
-		setFormData: setData,
-		showError: show,
+			);
+		}
+	}
+	*/
+	const START_STATE:ObjectState={
+		schema:schema,
+		uischema:uischema,
+		//initData:initData,
+		initData:data,
+		i18nData:i18nData,
+		language:language,
+		formData:data,
+		setFormData:setData,
+		showError:show,
 		setShowError:setShow
-	}   
-	let elements=elementList(schema, uischema, initData, i18nData, language, onChange, readOnly,style);  
-	return (			
-		<ObjectProvider 
+	};
+	let elements=elementList(schema,uischema,/*initData,*/i18nData,language,onChange,readOnly,style,formData);
+	return(			
+		<ObjectProvider
 			objectState={START_STATE}
 		>
 			<View style={stylesJsonFormsControlsContainer.viewControl}>
 				<ScrollView>
 					{
-						elements.map((element:JSX.Element) => (
+						elements.map((element:JSX.Element)=>(
 							<View style={stylesJsonFormsControlContainer}>
 								{element}
 							</View>
 						))
-					}						 
-				</ScrollView>		  
+					}
+				</ScrollView>
 			</View>
 		</ObjectProvider>
 	)
-   
 }
-
-//Comments
-export const elementList = (schema:any, uischema:any, initData:any, i18nData:any, language:string, onChange:any, readOnly:boolean, style:any):JSX.Element[] =>{
+export const elementList=(schema:any,uischema:any,/*initData:any,*/i18nData:any,language:string,onChange:any,readOnly:boolean,style:any,formData:any):JSX.Element[]=>{
 	let properties=schema.properties??undefined;
 	let elements:JSX.Element[]=[];
 	if(properties){		
 		for(let property in properties){
 			let allProps=properties[property];
-			let control=getControlType(allProps, uischema, property);
-			let props=getControlProps(schema, uischema, property);
-			props.data=initData[property];
-			props.propertyName=property;		 
-			props.onChange=onChange;			   
+			let control=getControlType(allProps,uischema,property);
+			let props=getControlProps(schema,uischema,property);
+			//props.data=initData[property];
+			props.data=formData[property];//initData[property];//ockert
+			props.propertyName=property;
+			props.onChange=onChange;
 			props.style=style;
-			let translate=getObjectTranslate(i18nData, language, property);
+			let translate=getObjectTranslate(i18nData,language,property);
 			if(translate){
 				props.label=translate.label;
 				props.description=translate.description;
 			}
 			if(readOnly){
-				props.label=(props.label || "No label").toString();
-				let defaultValue=props.data || "---";
+				props.label=(props.label||"No label").toString();
+				let defaultValue=props.data||"---";
 				if(defaultValue!==undefined){					
 					if(control==ControlType.CheckGroupControl){
 						let tmp=[...defaultValue];
@@ -127,48 +125,47 @@ export const elementList = (schema:any, uischema:any, initData:any, i18nData:any
 					case ControlType.TextControl:
 						elements.push(<TextControl props={props}/>);
 						break;
-					case ControlType.TextAreaControl:						
+					case ControlType.TextAreaControl:
 						elements.push(<TextAreaControl props={props}/>);
-						break;	 
-					case ControlType.NumberControl:						
+						break;
+					case ControlType.NumberControl:
 						elements.push(<NumberControl props={props}/>);
 						break;					
 					case ControlType.IntegerControl:
 						elements.push(<IntegerControl props={props}/>);
-						break;	   
+						break;
 					case ControlType.CheckBoxControl:
 						elements.push(<CheckBoxControl props={props}/>);
-						break;						   
+						break;
 					case ControlType.CheckGroupControl:
 						elements.push(<CheckGroupControl props={props}/>);
 						break;
 					case ControlType.RadioControl:
 						elements.push(<RadioControl props={props}/>);
-						break; 
+						break;
 					case ControlType.PasswordControl:
 						elements.push(<PasswordControl props={props}/>);
-						break;	 
+						break;
 					default:
 						let aux=property+",Type:"+allProps.type+", Ctrl:"+ControlType[control];
 						elements.push(<UnknownControl label={aux}/>)
 						break;
 				}		
-			}   
+			}
 		}
 	}else{
 		elements.push(
 			<View>
-				<ErrorItem  message={"No properties"}/>
+				<ErrorItem message={"No properties"}/>
 			</View>
 		);
 	}
-	return elements;
+	return(elements);
 }
-
-export function getObjectTranslate(i18nData:any, language:string, propertyName:string){
+export function getObjectTranslate(i18nData:any,language:string,propertyName:string){
 	if(language!==""){
 		let arr=i18nData[language];
-		return arr[propertyName];
+		return(arr[propertyName]);
 	}
-	return undefined;
+	return(undefined);
 }

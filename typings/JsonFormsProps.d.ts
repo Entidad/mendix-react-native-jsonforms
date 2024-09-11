@@ -11,7 +11,6 @@ export interface JsonFormsProps<Style> {
     style: Style[];
     mxSchema: EditableValue<string>;
     mxUiSchema: EditableValue<string>;
-    mxInitData: EditableValue<string>;
     mxFormData: EditableValue<string>;
     mxI18nData: EditableValue<string>;
     mxLanguage: EditableValue<string>;
@@ -31,7 +30,6 @@ export interface JsonFormsPreviewProps {
     renderMode?: "design" | "xray" | "structure";
     mxSchema: string;
     mxUiSchema: string;
-    mxInitData: string;
     mxFormData: string;
     mxI18nData: string;
     mxLanguage: string;
