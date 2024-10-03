@@ -1,0 +1,1 @@
+C:/mx-studio/9.24.27.44794\modeler\tools\node\win-x64\node.exe C:/mx-studio/9.24.27.44794\modeler\tools\node\node_modules\rollup\dist\bin\rollup -c -w

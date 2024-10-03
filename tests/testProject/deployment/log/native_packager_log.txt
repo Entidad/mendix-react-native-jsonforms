@@ -1,0 +1,25 @@
+C:\mx-studio\9.24.27.44794\modeler\tools\node\win-x64\node.exe C:\mx-studio\9.24.27.44794\modeler\tools\node\node_modules\react-native\local-cli\cli.js start --config "C:\mx\ENTD\mendix-react-native-jsonforms\tests\testProject\deployment\native\metro.config.json" --custom-log-reporter-path "C:\mx-studio\9.24.27.44794\modeler\tools\node\MxTerminalReporter.js" --port "8083"
+
+[Output]                         â–’â–’â–“â–“â–“â–“â–’â–’
+[Output]                      â–’â–“â–“â–“â–’â–’â–‘â–‘â–’â–’â–“â–“â–“â–’
+[Output]                   â–’â–“â–“â–“â–“â–‘â–‘â–‘â–’â–’â–’â–’â–‘â–‘â–‘â–“â–“â–“â–“â–’
+[Output]                  â–“â–“â–’â–’â–’â–“â–“â–“â–“â–“â–“â–“â–“â–“â–“â–“â–“â–’â–’â–’â–“â–“
+[Output]                  â–“â–“â–‘â–‘â–‘â–‘â–‘â–’â–“â–“â–“â–“â–“â–“â–’â–‘â–‘â–‘â–‘â–‘â–“â–“
+[Output]                  â–“â–“â–‘â–‘â–“â–“â–’â–‘â–‘â–‘â–’â–’â–‘â–‘â–‘â–’â–“â–’â–‘â–‘â–“â–“
+[Output]                  â–“â–“â–‘â–‘â–“â–“â–“â–“â–“â–’â–’â–’â–’â–“â–“â–“â–“â–’â–‘â–‘â–“â–“
+[Output]                  â–“â–“â–‘â–‘â–“â–“â–“â–“â–“â–“â–“â–“â–“â–“â–“â–“â–“â–’â–‘â–‘â–“â–“
+[Output]                  â–“â–“â–’â–‘â–‘â–’â–’â–“â–“â–“â–“â–“â–“â–“â–“â–’â–‘â–‘â–‘â–’â–“â–“
+[Output]                   â–’â–“â–“â–“â–’â–‘â–‘â–‘â–’â–“â–“â–’â–‘â–‘â–‘â–’â–“â–“â–“â–’
+[Output]                      â–’â–“â–“â–“â–’â–‘â–‘â–‘â–‘â–’â–“â–“â–“â–’
+[Output]                         â–’â–’â–“â–“â–“â–“â–’â–’
+
+
+[Output] MxTerminalReporter: {"event":"initialize_started"}
+[Output]                 Welcome to Metro v0.72.3
+[Output]               Fast - Scalable - Integrated
+
+
+
+[Output] To reload the app press "r"
+[Output] To open developer menu press "d"
+
