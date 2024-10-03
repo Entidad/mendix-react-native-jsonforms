@@ -45,3 +45,48 @@
 2024-10-03T11:00:28,941: [23852] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
 2024-10-03T11:01:44,622: [16116] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
 2024-10-03T11:01:57,040: [26324] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-03T11:23:09,736: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-NORTH-WHITE
+2024-10-03T11:23:09,738: [listener] failed to parse json from C:\mx\ENTD\mendix-react-native-jsonforms\tests\testProject\deployment\tmp\watchman_state.json: unable to open C:\mx\ENTD\mendix-react-native-jsonforms\tests\testProject\deployment\tmp\watchman_state.json: No such file or directory
+2024-10-03T11:23:09,738: [accept0] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,738: [accept1] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept2] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept3] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept4] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept5] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept6] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept7] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept8] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept9] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept10] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept11] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept12] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept13] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept14] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept15] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept17] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept16] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept18] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept19] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,739: [accept20] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,740: [accept21] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,740: [accept22] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,740: [accept24] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,740: [accept23] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,740: [accept25] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,740: [accept26] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,740: [accept27] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,740: [accept29] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,740: [accept30] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,740: [accept28] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:09,740: [accept31] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:23:10,460: [client=2:stm=2669073957920:pid=0] path C:/mx/ENTD/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-03T11:23:10,460: [client=2:stm=2669073957920:pid=0] root C:/mx/ENTD/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-03T11:23:11,799: [io 2669072326144 C:/mx/ENTD/mendix-react-native-jsonforms] crawl complete
+2024-10-03T11:23:11,799: [client=2:stm=2669073957920:pid=0] PERF: {"start_time": 1727947390.4603131, "version": "4.9.4", "description": "dispatch_command:watch-project", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "args": ["watch-project", "C:/mx/ENTD/mendix-react-native-jsonforms"], "client": {"pid": 0}}, "pid": 39324, "elapsed_time": 1.339275}
+2024-10-03T11:23:11,799: [io 2669072326144 C:/mx/ENTD/mendix-react-native-jsonforms] PERF: {"start_time": 1727947390.4613161, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 39324, "elapsed_time": 1.3382719999999999}
+2024-10-03T11:23:11,801: [client=2:stm=2669073957920:pid=0] path C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-03T11:23:11,801: [client=2:stm=2669073957920:pid=0] root C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-03T11:23:12,119: [io 2669074209136 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1727947391.802588, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 39324, "elapsed_time": 0.31684200000000001}
+2024-10-03T11:23:12,119: [io 2669074209136 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-03T11:25:16,905: [42688] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-03T11:25:29,627: [25236] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context

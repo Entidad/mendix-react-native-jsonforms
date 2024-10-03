@@ -2,7 +2,7 @@ Initialized native services in: C:\Users\Mx-Entidad\.gradle\native
 Initialized jansi services in: C:\Users\Mx-Entidad\.gradle\native
 Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-11.0.19.7-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.19.7-hotspot, JAVA_VERSION=11.0.19, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.19+7, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.19+7, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
 The client will now receive all logging from the daemon (pid: 27408). The daemon log file: C:\Users\Mx-Entidad\.gradle\daemon\8.5\daemon-27408.out.log
-Starting 3rd build in daemon [uptime: 1 mins 31.157 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 16% of 384 MiB]
+Starting 5th build in daemon [uptime: 25 mins 3.59 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 17% of 384 MiB]
 Using 16 worker leases.
 Now considering [C:\mx\ENTD\mendix-react-native-jsonforms\tests\testProject\deployment] as hierarchies to watch
 Watching the file system is configured to be enabled if available
@@ -23,7 +23,8 @@ Tasks to be executed: [task ':clean-excluded-jars', task ':copyDeploymentArtifac
 Tasks that were excluded: []
 Resolve mutations for :clean-excluded-jars (Thread[Execution worker,5,main]) started.
 :clean-excluded-jars (Thread[Execution worker,5,main]) started.
-destroyer locations for task group 0 (Thread[Execution worker Thread 14,5,main]) started.
+destroyer locations for task group 0 (Thread[Execution worker Thread 9,5,main]) started.
+Invalidating in-memory cache of C:\mx\ENTD\mendix-react-native-jsonforms\tests\testProject\deployment\.gradle\buildOutputCleanup\outputFiles.bin
 
 > Task :clean-excluded-jars UP-TO-DATE
 Caching disabled for task ':clean-excluded-jars' because:
@@ -50,17 +51,17 @@ Resolve mutations for :copyUserLibs (Thread[Execution worker,5,main]) started.
 > Task :copyUserLibs NO-SOURCE
 Skipping task ':copyUserLibs' as it has no source files and no previous output files.
 Resolve mutations for :unzipDataSnapshot (Thread[Execution worker,5,main]) started.
-:unzipDataSnapshot (Thread[Execution worker,5,main]) started.
+:unzipDataSnapshot (Thread[Execution worker Thread 6,5,main]) started.
 
 > Task :unzipDataSnapshot SKIPPED
 Skipping task ':unzipDataSnapshot' as task onlyIf 'Task is enabled' is false.
-Resolve mutations for :deploy (Thread[Execution worker,5,main]) started.
-:deploy (Thread[Execution worker Thread 8,5,main]) started.
+Resolve mutations for :deploy (Thread[Execution worker Thread 6,5,main]) started.
+:deploy (Thread[Execution worker Thread 6,5,main]) started.
 
 > Task :deploy
 Skipping task ':deploy' as it has no actions.
 
-BUILD SUCCESSFUL in 610ms
+BUILD SUCCESSFUL in 608ms
 2 actionable tasks: 1 executed, 1 up-to-date
 Watched directory hierarchies: []
 

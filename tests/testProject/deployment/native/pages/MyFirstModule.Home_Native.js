@@ -15,8 +15,8 @@ import * as styles from "../styles.js";
 const { $Button } = asPluginWidgets({ Button });
 
 const placeholder$Main = () => [
-    <$Button key="p1.MyFirstModule.Home_Native.actionButton1"
-        $widgetId="p1.MyFirstModule.Home_Native.actionButton1"
+    <$Button key="p3.MyFirstModule.Home_Native.actionButton1"
+        $widgetId="p3.MyFirstModule.Home_Native.actionButton1"
         style={StyleProperty({
             "styles": [ styles.ActionButton ]
         })}
