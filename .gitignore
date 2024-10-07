@@ -9,7 +9,6 @@ node_modules
 *.launch
 mxproject
 coverage
-
 **/results
 mendixProject
 **/e2e/diffs
@@ -17,3 +16,5 @@ mendixProject
 **/screenshot-results
 **/artifacts
 /tests/testProject/deployment
+/tests/testProject/releases
+/tests/testProject/packages
