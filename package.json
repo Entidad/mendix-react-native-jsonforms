@@ -1,7 +1,7 @@
 {
   "name": "jsonformsnative",
   "widgetName": "JsonForms",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Mendix JsonForms Render for Native",
   "copyright": "GPL",
   "author": "Carlos Sanchez, Ockert van Schalkwyk",

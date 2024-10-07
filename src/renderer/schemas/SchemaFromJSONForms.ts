@@ -32,6 +32,10 @@ export function getControl_FromJSONForms(_props:any, _uischema:any, _property:st
       if(_type==="string" && options.format==="date-time"){
         return ControlType.DateTimeControl;      
       }
+      // catch other text inputs with options (e.g. inputmode)
+      if(_type==="string" && options.inputmode!=undefined){
+        return ControlType.TextControl;      
+      }
     }else{
       //Date
       if(_type==="string" && _format==="date"){
@@ -113,6 +117,9 @@ export function setProps_FromJSONForms(_uischema:any, _property:string, _props:C
           if(options.format){
               _props.format=options.format;
           }
+          if(options.inputmode){
+            _props.inputmode=options.inputmode;
+        }
       }
   }
   return _props;

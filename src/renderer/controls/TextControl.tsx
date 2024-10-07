@@ -24,7 +24,7 @@ export function TextControl(props:any){
 			<Text style={styles?.label}>{attr.label||"No label included"}</Text>
 			<TextInput
 				style={(state.showError&&error)?styles?.inputError||{}:styles?.input||{}}
-				keyboardType="default"
+				inputMode={attr.inputmode}
 				maxLength={attr.maxLength}
 				placeholder={attr.placeholder}
 				placeholderTextColor="lightgray"

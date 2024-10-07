@@ -6,17 +6,18 @@ import { ExpressionProperty } from "mendix/ExpressionProperty";
 import { StyleProperty } from "mendix/StyleProperty";
 
 import { Button } from "mendix/Button";
+import { Text } from "mendix/Text";
 import { addEnumerations, asPluginWidgets, t } from "mendix/native";
 
 import { mainContent, sidebar } from "C:/mx/ENTD/mendix-react-native-jsonforms/tests/testProject/deployment/native/layouts/Atlas_Core.NativePhone_Default.js";
 
 import * as styles from "../styles.js";
 
-const { $Button } = asPluginWidgets({ Button });
+const { $Button, $Text } = asPluginWidgets({ Button, Text });
 
 const placeholder$Main = () => [
-    <$Button key="p3.MyFirstModule.Home_Native.actionButton1"
-        $widgetId="p3.MyFirstModule.Home_Native.actionButton1"
+    <$Button key="p1.MyFirstModule.Home_Native.actionButton1"
+        $widgetId="p1.MyFirstModule.Home_Native.actionButton1"
         style={StyleProperty({
             "styles": [ styles.ActionButton ]
         })}
@@ -29,6 +30,17 @@ const placeholder$Main = () => [
         onClick={ActionProperty({
             "action": { "type": "openPage", "argMap": {}, "config": { "name": "MyFirstModule.Survey", "location": "content" }, "disabledDuringExecution": true }
         })}
+        accessible={false} />,
+    <$Text key="p1.MyFirstModule.Home_Native.text3"
+        $widgetId="p1.MyFirstModule.Home_Native.text3"
+        style={StyleProperty({
+            "styles": [ styles.Text ]
+        })}
+        text={t([
+            ExpressionProperty({
+                "expression": { "expr": { "type": "literal", "value": "Something new" }, "args": {} }
+            })
+        ])}
         accessible={false} />
 ];
 

@@ -195,6 +195,10 @@ function getControl_FromJSONForms(_props, _uischema, _property) {
         if (_type === "string" && options.format === "date-time") {
             return ControlType.DateTimeControl;
         }
+        // catch other text inputs with options (e.g. inputmode)
+        if (_type === "string" && options.inputmode != undefined) {
+            return ControlType.TextControl;
+        }
     }
     else {
         //Date
@@ -275,6 +279,9 @@ function setProps_FromJSONForms(_uischema, _property, _props) {
             }
             if (options.format) {
                 _props.format = options.format;
+            }
+            if (options.inputmode) {
+                _props.inputmode = options.inputmode;
             }
         }
     }
@@ -2285,7 +2292,7 @@ function TextControl(props) {
     };
     return (createElement(View, { style: /*styles?.itemContainer||{}*/ {} },
         createElement(Text, { style: styles === null || styles === void 0 ? void 0 : styles.label }, attr.label || "No label included"),
-        createElement(TextInput, { style: (state.showError && error) ? (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} : (styles === null || styles === void 0 ? void 0 : styles.input) || {}, keyboardType: "default", maxLength: attr.maxLength, placeholder: attr.placeholder, placeholderTextColor: "lightgray", defaultValue: attr.data || attr.value, editable: !attr.readonly, onChangeText: (text) => _onChange(text) }),
+        createElement(TextInput, { style: (state.showError && error) ? (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} : (styles === null || styles === void 0 ? void 0 : styles.input) || {}, inputMode: attr.inputmode, maxLength: attr.maxLength, placeholder: attr.placeholder, placeholderTextColor: "lightgray", defaultValue: attr.data || attr.value, editable: !attr.readonly, onChangeText: (text) => _onChange(text) }),
         (state.showError && error)
             ? createElement(Text, { style: (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} }, attr.errorMessage)
             : ""));

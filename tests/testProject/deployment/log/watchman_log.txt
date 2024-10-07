@@ -90,3 +90,751 @@
 2024-10-03T11:23:12,119: [io 2669074209136 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
 2024-10-03T11:25:16,905: [42688] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
 2024-10-03T11:25:29,627: [25236] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-03T11:50:03,585: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-NORTH-WHITE
+2024-10-03T11:50:03,586: [listener] path C:/mx/ENTD/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-03T11:50:03,587: [listener] root C:/mx/ENTD/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-03T11:50:03,588: [listener] path C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-03T11:50:03,588: [listener] root C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-03T11:50:03,590: [accept0] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,590: [accept1] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,590: [accept2] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,590: [accept3] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,590: [accept4] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,590: [accept5] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,590: [accept6] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,590: [accept7] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,590: [accept8] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,591: [accept9] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,591: [accept10] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,591: [accept11] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,591: [accept12] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,591: [accept13] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,591: [accept15] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,591: [accept14] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,591: [accept16] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,591: [accept17] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,591: [accept19] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,591: [accept18] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,591: [accept21] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,591: [accept20] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,592: [accept22] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,592: [accept24] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,592: [accept25] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,592: [accept23] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,592: [accept26] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,592: [accept27] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,592: [accept29] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,592: [accept30] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,592: [accept28] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:03,592: [accept31] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-03T11:50:04,236: [io 2416600821984 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1727949003.589473, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 37652, "elapsed_time": 0.64699899999999999}
+2024-10-03T11:50:04,236: [io 2416600821984 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-03T11:50:05,767: [io 2416599811216 C:/mx/ENTD/mendix-react-native-jsonforms] PERF: {"start_time": 1727949003.587472, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 37652, "elapsed_time": 2.1800000000000002}
+2024-10-03T11:50:05,767: [io 2416599811216 C:/mx/ENTD/mendix-react-native-jsonforms] crawl complete
+2024-10-03T11:50:18,157: [client=2:stm=2416609002560:pid=0] PERF: {"start_time": 1727949009.494905, "version": "4.9.4", "description": "dispatch_command:query", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "args": ["query", "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], "client": {"pid": 0}}, "pid": 37652, "elapsed_time": 8.6627159999999996}
+2024-10-03T20:18:43,550: [client=14:stm=2416671834000:pid=0] path C:/mx/ENTD/Unmio-mobile-branch_credo_v056 is on filesystem type NTFS
+2024-10-03T20:18:43,551: [client=14:stm=2416671834000:pid=0] root C:/mx/ENTD/Unmio-mobile-branch_credo_v056 using watcher mechanism win32 (auto was requested)
+2024-10-03T20:18:44,933: [client=14:stm=2416671834000:pid=0] PERF: {"start_time": 1727979523.5509889, "version": "4.9.4", "description": "dispatch_command:watch-project", "meta": {"root": {"path": "C:/mx/ENTD/Unmio-mobile-branch_credo_v056", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "args": ["watch-project", "C:/mx/ENTD/Unmio-mobile-branch_credo_v056"], "client": {"pid": 0}}, "pid": 37652, "elapsed_time": 1.3829989999999999}
+2024-10-03T20:18:44,933: [io 2416668410464 C:/mx/ENTD/Unmio-mobile-branch_credo_v056] PERF: {"start_time": 1727979523.5519879, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/Unmio-mobile-branch_credo_v056", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 37652, "elapsed_time": 1.3820000000000001}
+2024-10-03T20:18:44,933: [io 2416668410464 C:/mx/ENTD/Unmio-mobile-branch_credo_v056] crawl complete
+2024-10-03T20:18:47,972: [client=14:stm=2416671834000:pid=0] PERF: {"start_time": 1727979524.9359889, "version": "4.9.4", "description": "dispatch_command:query", "meta": {"root": {"path": "C:/mx/ENTD/Unmio-mobile-branch_credo_v056", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "args": ["query", "C:/mx/ENTD/Unmio-mobile-branch_credo_v056", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "glob_includedotfiles": true, "expression": ["allof", ["type", "f"], ["suffix", ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]]], "glob": ["deployment/native/**", "theme/**", "javascriptsource/**", "themesource/**"]}], "client": {"pid": 0}}, "pid": 37652, "elapsed_time": 3.0365090000000001}
+2024-10-04T13:35:40,518: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-NORTH-WHITE
+2024-10-04T13:35:40,520: [listener] failed to parse json from C:\mx\ENTD\mendix-react-native-jsonforms\tests\testProject\deployment\tmp\watchman_state.json: unable to open C:\mx\ENTD\mendix-react-native-jsonforms\tests\testProject\deployment\tmp\watchman_state.json: No such file or directory
+2024-10-04T13:35:40,521: [accept0] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,521: [accept1] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,521: [accept2] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,521: [accept3] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,521: [accept4] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,521: [accept5] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,521: [accept6] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,522: [accept7] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,522: [accept8] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,522: [accept9] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,522: [accept10] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,522: [accept11] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,522: [accept12] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,522: [accept13] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,522: [accept14] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,522: [accept15] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,522: [accept16] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,522: [accept17] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,522: [accept18] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,522: [accept19] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,522: [accept20] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,522: [accept21] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,522: [accept22] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,523: [accept23] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,523: [accept24] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,523: [accept25] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,523: [accept26] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,523: [accept27] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,523: [accept28] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,523: [accept29] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,523: [accept30] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:40,523: [accept31] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T13:35:45,997: [client=2:stm=1930878947264:pid=0] path C:/mx/ENTD/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-04T13:35:45,998: [client=2:stm=1930878947264:pid=0] root C:/mx/ENTD/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-04T13:35:46,855: [io 1930878969968 C:/mx/ENTD/mendix-react-native-jsonforms] PERF: {"start_time": 1728041745.9986601, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 103716, "elapsed_time": 0.85695900000000003}
+2024-10-04T13:35:46,855: [io 1930878969968 C:/mx/ENTD/mendix-react-native-jsonforms] crawl complete
+2024-10-04T13:35:46,856: [client=2:stm=1930878947264:pid=0] path C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-04T13:35:46,857: [client=2:stm=1930878947264:pid=0] root C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-04T13:35:47,216: [io 1930880946880 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1728041746.8576181, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 103716, "elapsed_time": 0.35755399999999998}
+2024-10-04T13:35:47,216: [io 1930880946880 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-04T13:35:55,183: [client=2:stm=1930878947264:pid=0] PERF: {"start_time": 1728041747.2745421, "version": "4.9.4", "description": "dispatch_command:query", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "args": ["query", "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], "client": {"pid": 0}}, "pid": 103716, "elapsed_time": 7.9091329999999997}
+2024-10-04T13:54:52,378: [107708] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-04T13:55:05,268: [109196] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-04T13:57:37,761: [89420] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-04T13:57:51,120: [109460] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-04T14:11:28,206: [94008] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-04T14:11:40,446: [108680] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-04T14:58:32,394: [113288] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-04T14:58:50,315: [104944] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-04T16:41:02,108: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-NORTH-WHITE
+2024-10-04T16:41:02,110: [listener] path C:/mx/ENTD/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-04T16:41:02,110: [listener] root C:/mx/ENTD/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-04T16:41:02,111: [listener] path C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-04T16:41:02,111: [listener] root C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-04T16:41:02,113: [accept0] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,113: [accept1] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,113: [accept2] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,113: [accept3] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,113: [accept4] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,113: [accept5] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,113: [accept6] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,113: [accept7] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,113: [accept8] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,113: [accept9] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,113: [accept10] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,113: [accept11] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,113: [accept12] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,113: [accept14] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,113: [accept13] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,114: [accept16] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,114: [accept18] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,113: [accept15] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,114: [accept17] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,114: [accept19] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,114: [accept22] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,114: [accept20] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,114: [accept23] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,114: [accept25] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,114: [accept21] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,114: [accept26] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,114: [accept24] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,114: [accept29] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,114: [accept27] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,114: [accept28] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,114: [accept31] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,114: [accept30] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:02,424: [io 2284437669280 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1728052862.112807, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 111832, "elapsed_time": 0.31162499999999999}
+2024-10-04T16:41:02,424: [io 2284437669280 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-04T16:41:03,858: [io 2284436315664 C:/mx/ENTD/mendix-react-native-jsonforms] PERF: {"start_time": 1728052862.111809, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 111832, "elapsed_time": 1.7467000000000001}
+2024-10-04T16:41:03,858: [io 2284436315664 C:/mx/ENTD/mendix-react-native-jsonforms] crawl complete
+2024-10-04T16:41:14,473: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-NORTH-WHITE
+2024-10-04T16:41:14,475: [listener] path C:/mx/ENTD/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-04T16:41:14,475: [listener] root C:/mx/ENTD/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-04T16:41:14,476: [listener] path C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-04T16:41:14,476: [listener] root C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-04T16:41:14,477: [accept0] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,477: [accept1] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,477: [accept2] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,477: [accept3] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,478: [accept4] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,478: [accept5] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,478: [accept6] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,478: [accept7] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,478: [accept8] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,478: [accept9] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,478: [accept10] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,478: [accept11] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,478: [accept12] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,478: [accept13] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,478: [accept14] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,478: [accept15] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,478: [accept16] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,478: [accept17] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,478: [accept18] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,478: [accept19] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,479: [accept20] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,479: [accept21] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,479: [accept22] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,479: [accept23] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,479: [accept24] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,479: [accept25] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,479: [accept26] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,479: [accept27] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,479: [accept28] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,479: [accept29] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,479: [accept30] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,479: [accept31] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-04T16:41:14,768: [io 1821791939312 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1728052874.477031, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 119752, "elapsed_time": 0.29153600000000002}
+2024-10-04T16:41:14,768: [io 1821791939312 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-04T16:41:15,214: [io 1821794745968 C:/mx/ENTD/mendix-react-native-jsonforms] PERF: {"start_time": 1728052874.4760311, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 119752, "elapsed_time": 0.738537}
+2024-10-04T16:41:15,214: [io 1821794745968 C:/mx/ENTD/mendix-react-native-jsonforms] crawl complete
+2024-10-07T09:15:28,013: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-NORTH-WHITE
+2024-10-07T09:15:28,015: [listener] path C:/mx/ENTD/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-07T09:15:28,016: [listener] root C:/mx/ENTD/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-07T09:15:28,016: [listener] path C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-07T09:15:28,017: [listener] root C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-07T09:15:28,019: [accept0] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,019: [accept1] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,019: [accept2] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,019: [accept3] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,019: [accept4] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,019: [accept5] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,019: [accept6] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,019: [accept7] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,019: [accept8] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,019: [accept9] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,019: [accept10] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,019: [accept11] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,019: [accept12] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,020: [accept13] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,020: [accept14] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,020: [accept15] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,020: [accept16] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,020: [accept17] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,020: [accept18] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,020: [accept19] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,020: [accept20] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,020: [accept21] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,020: [accept22] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,020: [accept23] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,021: [accept24] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,021: [accept25] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,021: [accept26] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,021: [accept27] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,021: [accept28] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,021: [accept29] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,021: [accept30] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,021: [accept31] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T09:15:28,525: [io 2840707088800 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1728285328.01741, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 128056, "elapsed_time": 0.50799899999999998}
+2024-10-07T09:15:28,525: [io 2840707088800 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-07T09:15:28,944: [io 2840705362624 C:/mx/ENTD/mendix-react-native-jsonforms] PERF: {"start_time": 1728285328.016408, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 128056, "elapsed_time": 0.92800000000000005}
+2024-10-07T09:15:28,944: [io 2840705362624 C:/mx/ENTD/mendix-react-native-jsonforms] crawl complete
+2024-10-07T09:15:42,795: [client=2:stm=2840718987344:pid=0] PERF: {"start_time": 1728285332.8456681, "version": "4.9.4", "description": "dispatch_command:query", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "args": ["query", "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], "client": {"pid": 0}}, "pid": 128056, "elapsed_time": 9.9500820000000001}
+2024-10-07T09:32:03,556: [130880] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T09:32:16,651: [131748] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T09:33:52,440: [131348] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T09:34:04,668: [131276] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T10:34:39,555: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-NORTH-WHITE
+2024-10-07T10:34:39,557: [listener] path C:/mx/ENTD/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-07T10:34:39,557: [listener] root C:/mx/ENTD/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-07T10:34:39,558: [listener] path C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-07T10:34:39,558: [listener] root C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-07T10:34:39,560: [accept0] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,560: [accept1] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,560: [accept2] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,560: [accept3] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,560: [accept4] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,560: [accept5] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,560: [accept6] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,560: [accept7] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,560: [accept8] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,560: [accept9] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,560: [accept10] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,560: [accept11] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,560: [accept12] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,560: [accept13] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,560: [accept14] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,561: [accept15] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,561: [accept16] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,561: [accept17] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,561: [accept18] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,561: [accept19] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,561: [accept20] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,561: [accept21] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,561: [accept22] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,561: [accept23] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,561: [accept24] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,561: [accept25] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,561: [accept26] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,561: [accept27] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,561: [accept28] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,561: [accept29] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,562: [accept30] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,562: [accept31] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:34:39,901: [io 1955854377680 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1728290079.5597, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 137920, "elapsed_time": 0.34200000000000003}
+2024-10-07T10:34:39,901: [io 1955854377680 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-07T10:34:41,415: [io 1955852962032 C:/mx/ENTD/mendix-react-native-jsonforms] PERF: {"start_time": 1728290079.5587001, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 137920, "elapsed_time": 1.8569990000000001}
+2024-10-07T10:34:41,415: [client=2:stm=1955882639872:pid=0] PERF: {"start_time": 1728290080.1657, "version": "4.9.4", "description": "dispatch_command:watch-project", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "args": ["watch-project", "C:/mx/ENTD/mendix-react-native-jsonforms"], "client": {"pid": 0}}, "pid": 137920, "elapsed_time": 1.2499990000000001}
+2024-10-07T10:34:41,415: [io 1955852962032 C:/mx/ENTD/mendix-react-native-jsonforms] crawl complete
+2024-10-07T10:34:42,557: [client=2:stm=1955882639872:pid=0] PERF: {"start_time": 1728290081.4717021, "version": "4.9.4", "description": "dispatch_command:query", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "args": ["query", "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], "client": {"pid": 0}}, "pid": 137920, "elapsed_time": 1.085998}
+2024-10-07T10:35:02,202: [139456] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T10:35:15,332: [139772] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T10:46:38,337: [130940] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T10:46:51,259: [139848] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T10:50:44,845: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-NORTH-WHITE
+2024-10-07T10:50:44,847: [listener] path C:/mx/ENTD/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-07T10:50:44,847: [listener] root C:/mx/ENTD/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-07T10:50:44,848: [listener] path C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-07T10:50:44,848: [listener] root C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-07T10:50:44,850: [accept0] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,850: [accept1] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,850: [accept2] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,850: [accept3] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,850: [accept5] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,850: [accept4] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,850: [accept6] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,851: [accept7] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,851: [accept8] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,851: [accept9] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,851: [accept10] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,851: [accept11] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,851: [accept12] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,851: [accept13] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,851: [accept14] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,851: [accept17] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,851: [accept15] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,851: [accept20] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,851: [accept16] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,851: [accept18] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,852: [accept22] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,852: [accept23] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,851: [accept21] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,851: [accept19] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,852: [accept24] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,852: [accept25] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,852: [accept31] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,852: [accept27] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,852: [accept30] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,852: [accept29] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,852: [accept28] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:44,852: [accept26] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T10:50:45,157: [io 2285200122096 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1728291044.84865, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 142320, "elapsed_time": 0.309}
+2024-10-07T10:50:45,157: [io 2285200122096 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-07T10:50:45,590: [io 2285198958912 C:/mx/ENTD/mendix-react-native-jsonforms] PERF: {"start_time": 1728291044.84865, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 142320, "elapsed_time": 0.74204599999999998}
+2024-10-07T10:50:45,590: [io 2285198958912 C:/mx/ENTD/mendix-react-native-jsonforms] crawl complete
+2024-10-07T10:53:53,889: [132620] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T10:54:06,914: [141428] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T11:03:33,974: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-NORTH-WHITE
+2024-10-07T11:03:33,976: [listener] path C:/mx/ENTD/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-07T11:03:33,976: [listener] root C:/mx/ENTD/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-07T11:03:33,977: [listener] path C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-07T11:03:33,977: [listener] root C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-07T11:03:33,978: [accept0] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,978: [accept1] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,978: [accept2] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,978: [accept3] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,978: [accept4] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,978: [accept5] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,978: [accept6] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,978: [accept7] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,978: [accept8] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,979: [accept9] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,979: [accept10] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,979: [accept11] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,979: [accept12] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,979: [accept13] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,979: [accept14] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,979: [accept15] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,979: [accept16] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,979: [accept17] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,979: [accept18] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,979: [accept19] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,979: [accept21] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,979: [accept20] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,979: [accept22] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,979: [accept23] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,979: [accept24] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,979: [accept25] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,980: [accept27] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,980: [accept26] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,980: [accept29] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,980: [accept30] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,980: [accept31] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:33,980: [accept28] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:03:34,271: [io 2675867479600 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1728291813.977303, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 141996, "elapsed_time": 0.29399999999999998}
+2024-10-07T11:03:34,271: [io 2675867479600 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-07T11:03:34,705: [io 2675865855680 C:/mx/ENTD/mendix-react-native-jsonforms] PERF: {"start_time": 1728291813.9763041, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 141996, "elapsed_time": 0.72886300000000004}
+2024-10-07T11:03:34,705: [io 2675865855680 C:/mx/ENTD/mendix-react-native-jsonforms] crawl complete
+2024-10-07T11:03:57,518: [136520] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T11:04:10,185: [128600] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T11:19:33,944: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-NORTH-WHITE
+2024-10-07T11:19:33,946: [listener] path C:/mx/ENTD/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-07T11:19:33,946: [listener] root C:/mx/ENTD/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-07T11:19:33,946: [listener] path C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-07T11:19:33,947: [listener] root C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-07T11:19:33,948: [accept0] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,948: [accept1] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,948: [accept2] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,948: [accept3] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,948: [accept4] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,948: [accept5] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,948: [accept6] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,948: [accept7] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,948: [accept8] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,948: [accept9] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,949: [accept10] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,949: [accept11] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,949: [accept12] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,949: [accept13] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,949: [accept14] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,949: [accept15] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,949: [accept16] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,949: [accept17] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,949: [accept18] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,949: [accept19] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,949: [accept20] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,949: [accept21] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,949: [accept22] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,949: [accept23] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,949: [accept24] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,950: [accept26] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,949: [accept25] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,950: [accept27] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,950: [accept30] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,950: [accept28] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,950: [accept31] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:33,950: [accept29] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:19:34,284: [io 2729285061920 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1728292773.947717, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 141660, "elapsed_time": 0.33699699999999999}
+2024-10-07T11:19:34,284: [io 2729285061920 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-07T11:19:34,824: [io 2729283268784 C:/mx/ENTD/mendix-react-native-jsonforms] PERF: {"start_time": 1728292773.9467161, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 141660, "elapsed_time": 0.87803500000000001}
+2024-10-07T11:19:34,824: [io 2729283268784 C:/mx/ENTD/mendix-react-native-jsonforms] crawl complete
+2024-10-07T11:22:19,455: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-NORTH-WHITE
+2024-10-07T11:22:19,457: [listener] path C:/mx/ENTD/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-07T11:22:19,458: [listener] root C:/mx/ENTD/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-07T11:22:19,458: [listener] path C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-07T11:22:19,459: [listener] root C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-07T11:22:19,460: [accept0] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,460: [accept1] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,460: [accept2] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,460: [accept3] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,460: [accept4] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,461: [accept5] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,461: [accept6] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,461: [accept7] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,461: [accept8] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,461: [accept9] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,461: [accept10] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,461: [accept11] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,461: [accept12] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,461: [accept13] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,461: [accept14] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,461: [accept15] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,462: [accept18] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,461: [accept17] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,462: [accept19] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,461: [accept16] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,462: [accept21] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,462: [accept20] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,462: [accept24] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,462: [accept22] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,462: [accept23] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,462: [accept25] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,462: [accept26] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,462: [accept27] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,462: [accept29] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,462: [accept31] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,462: [accept28] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,462: [accept30] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:22:19,809: [io 1875145162880 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1728292939.459435, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 140348, "elapsed_time": 0.35008600000000001}
+2024-10-07T11:22:19,809: [io 1875145162880 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-07T11:22:20,259: [io 1875143474384 C:/mx/ENTD/mendix-react-native-jsonforms] PERF: {"start_time": 1728292939.458442, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 140348, "elapsed_time": 0.80112000000000005}
+2024-10-07T11:22:20,259: [io 1875143474384 C:/mx/ENTD/mendix-react-native-jsonforms] crawl complete
+2024-10-07T11:24:00,892: [147756] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T11:24:13,454: [129640] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T11:28:15,644: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-NORTH-WHITE
+2024-10-07T11:28:15,646: [listener] path C:/mx/ENTD/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-07T11:28:15,646: [listener] root C:/mx/ENTD/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-07T11:28:15,647: [listener] path C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-07T11:28:15,648: [listener] root C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-07T11:28:15,649: [accept0] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,649: [accept1] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,649: [accept2] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,649: [accept3] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,649: [accept4] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,649: [accept5] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,649: [accept6] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,649: [accept7] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,649: [accept8] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,650: [accept9] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,650: [accept10] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,650: [accept11] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,650: [accept12] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,650: [accept13] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,650: [accept14] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,650: [accept15] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,650: [accept16] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,650: [accept17] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,650: [accept18] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,650: [accept19] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,650: [accept21] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,650: [accept22] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,650: [accept20] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,651: [accept24] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,651: [accept26] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,651: [accept23] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,651: [accept25] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,651: [accept27] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,651: [accept28] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,651: [accept31] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,651: [accept29] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,651: [accept30] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:28:15,993: [io 1647800718080 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1728293295.648613, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 149128, "elapsed_time": 0.34499800000000003}
+2024-10-07T11:28:15,993: [io 1647800718080 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-07T11:28:16,420: [io 1647800460464 C:/mx/ENTD/mendix-react-native-jsonforms] PERF: {"start_time": 1728293295.6476109, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 149128, "elapsed_time": 0.77310999999999996}
+2024-10-07T11:28:16,420: [io 1647800460464 C:/mx/ENTD/mendix-react-native-jsonforms] crawl complete
+2024-10-07T11:36:56,220: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-NORTH-WHITE
+2024-10-07T11:36:56,222: [listener] path C:/mx/ENTD/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-07T11:36:56,223: [listener] root C:/mx/ENTD/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-07T11:36:56,223: [listener] path C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-07T11:36:56,224: [listener] root C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-07T11:36:56,225: [accept0] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,225: [accept1] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,225: [accept2] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,225: [accept3] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,225: [accept4] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,225: [accept5] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,225: [accept6] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,225: [accept7] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,225: [accept8] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,225: [accept9] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,225: [accept10] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,225: [accept11] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,225: [accept12] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,225: [accept13] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,225: [accept14] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,225: [accept15] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,225: [accept16] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,226: [accept17] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,226: [accept18] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,226: [accept19] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,226: [accept20] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,226: [accept21] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,226: [accept22] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,226: [accept23] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,226: [accept24] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,226: [accept25] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,226: [accept26] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,226: [accept27] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,226: [accept28] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,226: [accept29] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,226: [accept30] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,226: [accept31] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:36:56,579: [io 1906314700048 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1728293816.2240901, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 137812, "elapsed_time": 0.35499900000000001}
+2024-10-07T11:36:56,579: [io 1906314700048 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-07T11:36:57,232: [io 1906314686560 C:/mx/ENTD/mendix-react-native-jsonforms] PERF: {"start_time": 1728293816.2230899, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 137812, "elapsed_time": 1.0089999999999999}
+2024-10-07T11:36:57,232: [io 1906314686560 C:/mx/ENTD/mendix-react-native-jsonforms] crawl complete
+2024-10-07T11:37:13,095: [140504] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T11:37:26,197: [148072] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T11:42:36,108: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-NORTH-WHITE
+2024-10-07T11:42:36,110: [listener] path C:/mx/ENTD/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-07T11:42:36,111: [listener] root C:/mx/ENTD/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-07T11:42:36,111: [listener] path C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-07T11:42:36,112: [listener] root C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-07T11:42:36,113: [accept0] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,113: [accept1] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,113: [accept2] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,113: [accept3] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,113: [accept4] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,113: [accept5] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,113: [accept6] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,113: [accept7] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,113: [accept8] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,113: [accept9] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,113: [accept10] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,113: [accept11] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,113: [accept12] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,114: [accept14] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,114: [accept13] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,114: [accept16] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,114: [accept15] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,114: [accept18] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,114: [accept17] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,114: [accept20] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,114: [accept21] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,114: [accept19] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,114: [accept22] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,114: [accept26] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,114: [accept23] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,115: [accept27] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,115: [accept29] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,114: [accept24] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,114: [accept25] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,115: [accept30] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,115: [accept31] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,115: [accept28] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:42:36,413: [io 1796603926144 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1728294156.112185, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 139536, "elapsed_time": 0.30099999999999999}
+2024-10-07T11:42:36,413: [io 1796603926144 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-07T11:42:36,843: [io 1796602389472 C:/mx/ENTD/mendix-react-native-jsonforms] PERF: {"start_time": 1728294156.111186, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 139536, "elapsed_time": 0.73191899999999999}
+2024-10-07T11:42:36,843: [io 1796602389472 C:/mx/ENTD/mendix-react-native-jsonforms] crawl complete
+2024-10-07T11:42:51,452: [149344] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T11:43:04,550: [128284] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T11:46:12,405: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-NORTH-WHITE
+2024-10-07T11:46:12,406: [listener] path C:/mx/ENTD/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-07T11:46:12,407: [listener] root C:/mx/ENTD/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-07T11:46:12,407: [listener] path C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-07T11:46:12,408: [listener] root C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-07T11:46:12,409: [accept0] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,409: [accept1] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,409: [accept2] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,409: [accept3] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,409: [accept4] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,409: [accept5] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,409: [accept6] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,410: [accept7] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,410: [accept8] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,410: [accept9] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,410: [accept10] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,410: [accept11] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,410: [accept12] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,410: [accept13] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,410: [accept14] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,410: [accept15] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,410: [accept16] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,410: [accept17] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,410: [accept18] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,410: [accept19] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,410: [accept22] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,410: [accept21] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,410: [accept20] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,411: [accept24] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,411: [accept23] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,411: [accept25] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,411: [accept27] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,411: [accept28] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,411: [accept26] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,411: [accept29] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,411: [accept30] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,411: [accept31] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T11:46:12,707: [io 1962796817936 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1728294372.4082, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 151772, "elapsed_time": 0.29977900000000002}
+2024-10-07T11:46:12,707: [io 1962796817936 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-07T11:46:13,129: [io 1962794084352 C:/mx/ENTD/mendix-react-native-jsonforms] PERF: {"start_time": 1728294372.407202, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 151772, "elapsed_time": 0.72187299999999999}
+2024-10-07T11:46:13,129: [io 1962794084352 C:/mx/ENTD/mendix-react-native-jsonforms] crawl complete
+2024-10-07T11:46:27,757: [151952] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T11:46:40,889: [151956] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T12:05:46,420: [155560] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T12:06:04,096: [154620] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T12:26:17,015: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-NORTH-WHITE
+2024-10-07T12:26:17,017: [listener] path C:/mx/ENTD/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-07T12:26:17,017: [listener] root C:/mx/ENTD/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-07T12:26:17,018: [listener] path C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-07T12:26:17,018: [listener] root C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-07T12:26:17,020: [accept0] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,020: [accept1] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,020: [accept2] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,020: [accept3] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,020: [accept4] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,020: [accept5] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,020: [accept6] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,020: [accept7] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,020: [accept8] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,020: [accept9] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,020: [accept10] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,021: [accept11] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,021: [accept12] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,021: [accept13] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,021: [accept14] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,021: [accept15] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,021: [accept16] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,021: [accept17] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,021: [accept18] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,021: [accept19] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,021: [accept20] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,021: [accept21] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,021: [accept22] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,021: [accept23] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,021: [accept24] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,021: [accept25] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,021: [accept26] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,022: [accept27] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,022: [accept28] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,022: [accept29] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,022: [accept30] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,022: [accept31] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:26:17,356: [io 1631638346416 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1728296777.0191729, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 124296, "elapsed_time": 0.33751700000000001}
+2024-10-07T12:26:17,356: [io 1631638346416 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-07T12:26:18,423: [io 1631636612080 C:/mx/ENTD/mendix-react-native-jsonforms] PERF: {"start_time": 1728296777.0181749, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 124296, "elapsed_time": 1.40517}
+2024-10-07T12:26:18,423: [io 1631636612080 C:/mx/ENTD/mendix-react-native-jsonforms] crawl complete
+2024-10-07T12:26:25,693: [client=2:stm=1631648770464:pid=0] PERF: {"start_time": 1728296780.200458, "version": "4.9.4", "description": "dispatch_command:query", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "args": ["query", "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], "client": {"pid": 0}}, "pid": 124296, "elapsed_time": 5.4927450000000002}
+2024-10-07T12:26:43,331: [io 1631636612080 C:/mx/ENTD/mendix-react-native-jsonforms] getFileInformation(C:/mx/ENTD/mendix-react-native-jsonforms/tests/testProject/deployment/tmp/native/ios/metro-cache/85/773b7bf48db1b8781dec648ec46c0975608cb748eb9a01273a60a6fcde464831196b7a) failed and not handled! -> Access is denied. value=5 category=system
+2024-10-07T12:26:43,436: [157084] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T12:26:56,130: [144520] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T12:36:30,645: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-NORTH-WHITE
+2024-10-07T12:36:30,646: [listener] path C:/mx/ENTD/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-07T12:36:30,647: [listener] root C:/mx/ENTD/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-07T12:36:30,647: [listener] path C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-07T12:36:30,648: [listener] root C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-07T12:36:30,650: [accept0] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,650: [accept1] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,650: [accept2] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,650: [accept3] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,650: [accept4] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,650: [accept5] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,650: [accept6] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,650: [accept7] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,650: [accept8] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,650: [accept9] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,650: [accept10] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,650: [accept11] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,650: [accept12] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,650: [accept13] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,651: [accept14] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,651: [accept15] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,651: [accept16] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,651: [accept17] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,651: [accept18] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,651: [accept19] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,651: [accept20] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,651: [accept21] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,651: [accept22] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,651: [accept23] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,651: [accept24] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,651: [accept25] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,651: [accept26] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,651: [accept27] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,652: [accept28] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,652: [accept29] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,652: [accept31] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:30,652: [accept30] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:36:31,201: [io 1825021700256 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1728297390.6485081, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 157272, "elapsed_time": 0.55296000000000001}
+2024-10-07T12:36:31,201: [io 1825021700256 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-07T12:36:32,282: [io 1825021336128 C:/mx/ENTD/mendix-react-native-jsonforms] PERF: {"start_time": 1728297390.6475101, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 157272, "elapsed_time": 1.6351070000000001}
+2024-10-07T12:36:32,282: [io 1825021336128 C:/mx/ENTD/mendix-react-native-jsonforms] crawl complete
+2024-10-07T12:36:39,708: [client=2:stm=1825063415856:pid=0] PERF: {"start_time": 1728297393.9726191, "version": "4.9.4", "description": "dispatch_command:query", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "args": ["query", "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], "client": {"pid": 0}}, "pid": 157272, "elapsed_time": 5.7357329999999997}
+2024-10-07T12:36:47,011: [155904] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T12:36:59,528: [153512] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T12:57:29,796: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-NORTH-WHITE
+2024-10-07T12:57:29,797: [listener] path C:/mx/ENTD/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-07T12:57:29,798: [listener] root C:/mx/ENTD/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-07T12:57:29,798: [listener] path C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-07T12:57:29,799: [listener] root C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-07T12:57:29,800: [accept0] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,800: [accept1] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,800: [accept2] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,800: [accept3] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,800: [accept4] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,800: [accept5] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,800: [accept6] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,800: [accept7] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,800: [accept8] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,800: [accept9] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,801: [accept11] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,801: [accept10] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,801: [accept12] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,801: [accept13] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,801: [accept14] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,801: [accept17] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,801: [accept22] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,801: [accept15] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,801: [accept18] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,801: [accept16] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,801: [accept20] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,802: [accept24] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,801: [accept19] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,802: [accept26] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,801: [accept21] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,801: [accept23] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,802: [accept25] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,802: [accept29] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,802: [accept31] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,802: [accept30] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,802: [accept28] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:29,802: [accept27] waiting for pipe clients on \\.\pipe\watchman-Mx-Entidad
+2024-10-07T12:57:30,111: [io 2460205381072 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1728298649.7993591, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 156444, "elapsed_time": 0.31190800000000002}
+2024-10-07T12:57:30,111: [io 2460205381072 C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-07T12:57:30,751: [io 2460204918992 C:/mx/ENTD/mendix-react-native-jsonforms] PERF: {"start_time": 1728298649.798357, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/mx/ENTD/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 156444, "elapsed_time": 0.95291199999999998}
+2024-10-07T12:57:30,751: [io 2460204918992 C:/mx/ENTD/mendix-react-native-jsonforms] crawl complete
+2024-10-07T13:19:48,779: [152564] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
+2024-10-07T13:20:01,171: [160004] Failed to acquire mutex named: Global\Watchman-C:/Users/MX-ENT~1/AppData/Local/Temp/Mx-Entidad-state/pid; watchman is already running for this context
