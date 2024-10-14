@@ -19,6 +19,7 @@ import{IntegerControl}from"./controls";
 import{CheckBoxControl}from"./controls";
 import{CheckGroupControl}from"./controls";
 import{RadioControl}from"./controls";
+import{DateControl}from"./controls";
 import{UnknownControl}from"./controls";
 import{ReadOnlyControl}from"./controls/ReadOnlyControl";
 import{jsonformsControlsContainer}from"./theme/widget-variables";
@@ -145,6 +146,9 @@ export const elementList=(schema:any,uischema:any,/*initData:any,*/i18nData:any,
 						break;
 					case ControlType.PasswordControl:
 						elements.push(<PasswordControl props={props}/>);
+						break;
+					case ControlType.DateControl:
+						elements.push(<DateControl props={props}/>);
 						break;
 					default:
 						let aux=property+",Type:"+allProps.type+", Ctrl:"+ControlType[control];

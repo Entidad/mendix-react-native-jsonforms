@@ -1,6 +1,7 @@
 import { createElement, createContext, useContext, useState, Component } from 'react';
-import { StyleSheet, View, Text, Dimensions, PixelRatio, Appearance, Platform, TextInput, TouchableHighlight, TouchableOpacity, TouchableWithoutFeedback, ScrollView } from 'react-native';
+import { StyleSheet, View, Text, Dimensions, PixelRatio, Appearance, Platform, TextInput, TouchableHighlight, TouchableOpacity, TouchableWithoutFeedback, Pressable, ScrollView } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
+import DateTimePicker from '@react-native-community/datetimepicker';
 
 const styles$2 = StyleSheet.create({
     textError: {
@@ -187,6 +188,7 @@ function getControl_FromJSONForms(_props, _uischema, _property) {
         }
         //Date
         if (_type === "string" && options.format === "date") {
+            console.info("render DateControl");
             return ControlType.DateControl;
         }
         if (_type === "string" && options.format === "time") {
@@ -2617,6 +2619,63 @@ function getDataFromBoolean(val) {
     return val;
 }
 
+function DateControl(props) {
+    var _a;
+    const state = useObject();
+    const [date, setDate] = useState(new Date());
+    const [showPicker, setShowPicker] = useState(false);
+    let attr = props.props;
+    let styles = {};
+    mergeDeep(styles, customVariables === null || customVariables === void 0 ? void 0 : input, ((_a = attr === null || attr === void 0 ? void 0 : attr.style) === null || _a === void 0 ? void 0 : _a.input) || {});
+    const [error, setError] = useState(attr.error);
+    const toggleDatePicker = () => {
+        setShowPicker(!showPicker);
+    };
+    // const _onChange=(text:any)=>{
+    // 	state.formData[attr.propertyName]=text;
+    // 	state.setFormData(state.formData);
+    // 	attr.onChange(state.formData);		
+    // 	attr.error=isEmpty(text);
+    // 	setError(attr.error);
+    // 	//return text;
+    // 	return text||attr.placeholder||attr.data||attr.value;
+    // }
+    const formatDate = (rawDate) => {
+        let date = new Date(rawDate);
+        let year = date.getFullYear();
+        let month = date.getMonth() + 1;
+        let day = date.getDate;
+        return `${year}-${month}-${day}`;
+    };
+    const _onChange = ({ type }, selectedDate) => {
+        if (type === "set") {
+            const currentDate = selectedDate;
+            setDate(currentDate);
+            {
+                toggleDatePicker();
+                state.formData[attr.propertyName] = formatDate(date);
+            }
+        }
+    };
+    const confirmIOSDate = () => {
+        state.formData[attr.propertyName] = formatDate(date);
+        toggleDatePicker();
+    };
+    return (createElement(View, { style: /*styles?.itemContainer||{}*/ {} },
+        createElement(Text, { style: styles === null || styles === void 0 ? void 0 : styles.label }, attr.label || "No label included"),
+        showPicker && (createElement(DateTimePicker, { mode: "date", value: date, display: "spinner", onChange: _onChange, style: (state.showError && error) ? (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} : (styles === null || styles === void 0 ? void 0 : styles.input) || {} })),
+        showPicker && "android" === "ios" && (createElement(View, { style: { flexDirection: "row", justifyContent: "space-around" } },
+            createElement(TouchableOpacity, { style: [], onPress: toggleDatePicker },
+                createElement(Text, null, "Cancel")),
+            createElement(TouchableOpacity, { style: [], onPress: confirmIOSDate },
+                createElement(Text, null, "Confirm")))),
+        !showPicker && (createElement(Pressable, { onPress: toggleDatePicker },
+            createElement(TextInput, { style: (state.showError && error) ? (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} : (styles === null || styles === void 0 ? void 0 : styles.input) || {}, placeholder: attr.placeholder, placeholderTextColor: "lightgray", defaultValue: attr.data || attr.value, editable: false, onPressIn: toggleDatePicker }))),
+        (state.showError && error)
+            ? createElement(Text, { style: (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} }, attr.errorMessage)
+            : ""));
+}
+
 const styles = StyleSheet.create({
     Unknown: {
         color: '#f44336',
@@ -2767,6 +2826,9 @@ const elementList = (schema, uischema, /*initData:any,*/ i18nData, language, onC
                         break;
                     case ControlType.PasswordControl:
                         elements.push(createElement(PasswordControl, { props: props }));
+                        break;
+                    case ControlType.DateControl:
+                        elements.push(createElement(DateControl, { props: props }));
                         break;
                     default:
                         let aux = property + ",Type:" + allProps.type + ", Ctrl:" + ControlType[control];

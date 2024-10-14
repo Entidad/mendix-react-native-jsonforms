@@ -8,4 +8,3 @@ C:\mx-studio\9.24.27.44794\modeler\tools\node\win-x64\node.exe C:\mx-studio\9.24
 [Output] info Copying 6 asset files
 [Output] info Done copying assets
 
-
