@@ -28,7 +28,7 @@ export interface ControlProps{
     default?:any;
     data?:any;
     style?:any;//ockert
-    inputmode?:string //stephan
+    inputMode?:string //stephan
     
     minLength?:number;
     maxLength?:number;

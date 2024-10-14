@@ -16,8 +16,8 @@ import * as styles from "../styles.js";
 const { $Button, $Text } = asPluginWidgets({ Button, Text });
 
 const placeholder$Main = () => [
-    <$Button key="p1.MyFirstModule.Home_Native.actionButton1"
-        $widgetId="p1.MyFirstModule.Home_Native.actionButton1"
+    <$Button key="p2.MyFirstModule.Home_Native.actionButton1"
+        $widgetId="p2.MyFirstModule.Home_Native.actionButton1"
         style={StyleProperty({
             "styles": [ styles.ActionButton ]
         })}
@@ -31,8 +31,8 @@ const placeholder$Main = () => [
             "action": { "type": "openPage", "argMap": {}, "config": { "name": "MyFirstModule.Survey", "location": "content" }, "disabledDuringExecution": true }
         })}
         accessible={false} />,
-    <$Text key="p1.MyFirstModule.Home_Native.text3"
-        $widgetId="p1.MyFirstModule.Home_Native.text3"
+    <$Text key="p2.MyFirstModule.Home_Native.text3"
+        $widgetId="p2.MyFirstModule.Home_Native.text3"
         style={StyleProperty({
             "styles": [ styles.Text ]
         })}

@@ -17,57 +17,57 @@ import * as styles from "../styles.js";
 const { $DataView, $io_entidad_widget_native_jsonforms_JsonForms } = asPluginWidgets({ DataView, io_entidad_widget_native_jsonforms_JsonForms });
 
 const placeholder$Main = () => [
-    <$DataView key="p2.MyFirstModule.Survey.dataView1"
-        $widgetId="p2.MyFirstModule.Survey.dataView1"
+    <$DataView key="p1.MyFirstModule.Survey.dataView1"
+        $widgetId="p1.MyFirstModule.Survey.dataView1"
         style={StyleProperty({
             "styles": [ styles.DataView ]
         })}
         object={NanoflowObjectProperty({
-            "dataSourceId": "p2.2",
+            "dataSourceId": "p1.2",
             "editable": true,
             "source": { "nanoflow": () => require("C:/mx/ENTD/mendix-react-native-jsonforms/tests/testProject/deployment/native/nanoflows/MyFirstModule.DS_Survey_Create").DS_Survey_Create },
             "argMap": {}
         })}
         content={[
-            <$io_entidad_widget_native_jsonforms_JsonForms key="p2.MyFirstModule.Survey.jsonFormsNative1"
-                $widgetId="p2.MyFirstModule.Survey.jsonFormsNative1"
+            <$io_entidad_widget_native_jsonforms_JsonForms key="p1.MyFirstModule.Survey.jsonFormsNative1"
+                $widgetId="p1.MyFirstModule.Survey.jsonFormsNative1"
                 mxSchema={AttributeProperty({
-                    "scope": "p2.MyFirstModule.Survey.dataView1",
+                    "scope": "p1.MyFirstModule.Survey.dataView1",
                     "path": "",
                     "entity": "MyFirstModule.Survey",
                     "attribute": "survey_schema",
                     "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
                 })}
                 mxUiSchema={AttributeProperty({
-                    "scope": "p2.MyFirstModule.Survey.dataView1",
+                    "scope": "p1.MyFirstModule.Survey.dataView1",
                     "path": "",
                     "entity": "MyFirstModule.Survey",
                     "attribute": "ui_schema",
                     "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
                 })}
                 mxFormData={AttributeProperty({
-                    "scope": "p2.MyFirstModule.Survey.dataView1",
+                    "scope": "p1.MyFirstModule.Survey.dataView1",
                     "path": "",
                     "entity": "MyFirstModule.Survey",
                     "attribute": "init_data",
                     "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
                 })}
                 mxI18nData={AttributeProperty({
-                    "scope": "p2.MyFirstModule.Survey.dataView1",
+                    "scope": "p1.MyFirstModule.Survey.dataView1",
                     "path": "",
                     "entity": "MyFirstModule.Survey",
                     "attribute": "i18n_data",
                     "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
                 })}
                 mxLanguage={AttributeProperty({
-                    "scope": "p2.MyFirstModule.Survey.dataView1",
+                    "scope": "p1.MyFirstModule.Survey.dataView1",
                     "path": "",
                     "entity": "MyFirstModule.Survey",
                     "attribute": "language",
                     "onChange": { "type": "doNothing", "argMap": {}, "config": {}, "disabledDuringExecution": false }
                 })}
                 mxReadOnly={AttributeProperty({
-                    "scope": "p2.MyFirstModule.Survey.dataView1",
+                    "scope": "p1.MyFirstModule.Survey.dataView1",
                     "path": "",
                     "entity": "MyFirstModule.Survey",
                     "attribute": "readonly",
