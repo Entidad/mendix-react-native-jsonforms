@@ -1,8 +1,8 @@
 Initialized native services in: C:\Users\ockert\.gradle\native
 Initialized jansi services in: C:\Users\ockert\.gradle\native
 Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-11.0.20.101-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.20.101-hotspot, JAVA_VERSION=11.0.20.1, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.20.1+1, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.20.1+1, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
-The client will now receive all logging from the daemon (pid: 28444). The daemon log file: C:\Users\ockert\.gradle\daemon\8.5\daemon-28444.out.log
-Starting 21st build in daemon [uptime: 3 hrs 53 mins 29.471 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 14% of 384 MiB]
+The client will now receive all logging from the daemon (pid: 18720). The daemon log file: C:\Users\ockert\.gradle\daemon\8.5\daemon-18720.out.log
+Starting 16th build in daemon [uptime: 49 mins 59.812 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 13% of 384 MiB]
 Using 8 worker leases.
 Now considering [C:\Users\ockert\src\entidad\mendix-react-native-jsonforms\tests\testProject\deployment] as hierarchies to watch
 Watching the file system is configured to be enabled if available
@@ -21,8 +21,8 @@ Selected primary task 'clean-excluded-jars' from project :
 Selected primary task 'deploy' from project :
 Tasks to be executed: [task ':clean-excluded-jars', task ':copyDeploymentArtifacts', task ':copyResources', task ':copyUserLibs', task ':unzipDataSnapshot', task ':deploy']
 Tasks that were excluded: []
-Resolve mutations for :clean-excluded-jars (Thread[Execution worker Thread 2,5,main]) started.
-:clean-excluded-jars (Thread[Execution worker Thread 2,5,main]) started.
+Resolve mutations for :clean-excluded-jars (Thread[Execution worker,5,main]) started.
+:clean-excluded-jars (Thread[Execution worker,5,main]) started.
 destroyer locations for task group 0 (Thread[included builds,5,main]) started.
 
 > Task :clean-excluded-jars UP-TO-DATE
@@ -30,31 +30,31 @@ Caching disabled for task ':clean-excluded-jars' because:
   Build cache is disabled
 Task ':clean-excluded-jars' is not up-to-date because:
   Task has not declared any outputs despite executing actions.
-Resolve mutations for :copyDeploymentArtifacts (Thread[Execution worker Thread 2,5,main]) started.
-:copyDeploymentArtifacts (Thread[Execution worker Thread 2,5,main]) started.
+Resolve mutations for :copyDeploymentArtifacts (Thread[Execution worker,5,main]) started.
+:copyDeploymentArtifacts (Thread[Execution worker,5,main]) started.
 
 > Task :copyDeploymentArtifacts
 Caching disabled for task ':copyDeploymentArtifacts' because:
   Build cache is disabled
 Task ':copyDeploymentArtifacts' is not up-to-date because:
   Task is untracked because: Always copy deployment artifacts
-Resolve mutations for :copyResources (Thread[Execution worker Thread 2,5,main]) started.
-:copyResources (Thread[Execution worker Thread 2,5,main]) started.
+Resolve mutations for :copyResources (Thread[Execution worker,5,main]) started.
+:copyResources (Thread[Execution worker,5,main]) started.
 
 > Task :copyResources NO-SOURCE
 Skipping task ':copyResources' as it has no source files and no previous output files.
-Resolve mutations for :copyUserLibs (Thread[included builds,5,main]) started.
-:copyUserLibs (Thread[included builds,5,main]) started.
+Resolve mutations for :copyUserLibs (Thread[Execution worker,5,main]) started.
+:copyUserLibs (Thread[Execution worker,5,main]) started.
 
 > Task :copyUserLibs NO-SOURCE
 Skipping task ':copyUserLibs' as it has no source files and no previous output files.
-Resolve mutations for :unzipDataSnapshot (Thread[included builds,5,main]) started.
-:unzipDataSnapshot (Thread[included builds,5,main]) started.
+Resolve mutations for :unzipDataSnapshot (Thread[Execution worker,5,main]) started.
+:unzipDataSnapshot (Thread[Execution worker,5,main]) started.
 
 > Task :unzipDataSnapshot SKIPPED
 Skipping task ':unzipDataSnapshot' as task onlyIf 'Task is enabled' is false.
-Resolve mutations for :deploy (Thread[included builds,5,main]) started.
-:deploy (Thread[included builds,5,main]) started.
+Resolve mutations for :deploy (Thread[Execution worker,5,main]) started.
+:deploy (Thread[Execution worker,5,main]) started.
 
 > Task :deploy
 Skipping task ':deploy' as it has no actions.

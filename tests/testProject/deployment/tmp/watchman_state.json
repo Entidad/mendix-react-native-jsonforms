@@ -7,15 +7,11 @@
         },
         {
             "triggers": [],
-            "path": "C:/Users/ockert/src/entidad/fwos-demo-app"
-        },
-        {
-            "triggers": [],
             "path": "C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules"
         },
         {
             "triggers": [],
-            "path": "C:/Users/ockert/src/entidad/mendix-facetec-main"
+            "path": "C:/Users/ockert/src/entidad/fwos-demo-app"
         },
         {
             "triggers": [],
@@ -24,6 +20,10 @@
         {
             "triggers": [],
             "path": "C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules"
+        },
+        {
+            "triggers": [],
+            "path": "C:/Users/ockert/src/entidad/mendix-facetec-main"
         },
         {
             "triggers": [],

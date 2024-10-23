@@ -2653,6 +2653,10 @@ function DateControl(props) {
     };
     //const _onChange = ({ type }, selectedDate: Date) => {//stephan
     const _onChange = (type, selectedDate) => {
+        var _a, _b;
+        console.info("_onChange:beg");
+        console.info(typeof (date));
+        console.info(date);
         if (type === "set") {
             const currentDate = selectedDate;
             console.info(">>> 1 type: " + type + "  platform os: " + "ios" + " selectedDate: " + selectedDate);
@@ -2661,14 +2665,38 @@ function DateControl(props) {
                 toggleDatePicker();
                 console.info(">>> 4 type: " + type + "  platform os: " + "ios" + " date: " + currentDate);
                 let strDate = formatDate(currentDate);
+                state.formData[attr.propertyName] = strDate;
+                state.setFormData(state.formData);
+                attr.onChange(state.formData);
+                attr.error = isEmpty(strDate);
+                setError(attr.error);
+                console.info(">>> 3 type: " + type + "  platform os: " + "ios" + " date: " + currentDate);
+                return strDate || attr.placeholder || attr.data || attr.value;
+            }
+        }
+        else {
+            {
+                console.info("_onChange:4");
+                console.info(JSON.stringify(Object.keys(type)));
+                toggleDatePicker();
+                let currentDate = (_b = (_a = type === null || type === void 0 ? void 0 : type.nativeEvent) === null || _a === void 0 ? void 0 : _a.timestamp) !== null && _b !== void 0 ? _b : type;
+                let strDate = formatDate(currentDate);
+                console.info(">>> 2 type: " + type + "  platform os: " + "ios" + " strDate: " + strDate);
+                state.formData[attr.propertyName] = strDate;
+                state.setFormData(state.formData);
+                attr.onChange(state.formData);
+                attr.error = isEmpty(strDate);
+                setError(attr.error);
+                console.info(">>> 3 type: " + type + "  platform os: " + "ios" + " date: " + currentDate);
                 return strDate || attr.placeholder || attr.data || attr.value;
             }
         }
     };
     const confirmIOSDate = () => {
         state.formData[attr.propertyName] = formatDate(date);
-        toggleDatePicker();
         console.info(">>> 6 platform os: " + "ios" + " date: " + date);
+        console.info(">>> 6 typeof(date): " + typeof (date));
+        toggleDatePicker();
         _onChange(date);
     };
     return (createElement(View, { style: {} },

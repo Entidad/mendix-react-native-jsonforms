@@ -2653,6 +2653,9 @@ function DateControl(props) {
     };
     //const _onChange = ({ type }, selectedDate: Date) => {//stephan
     const _onChange = (type, selectedDate) => {
+        console.info("_onChange:beg");
+        console.info(typeof (date));
+        console.info(date);
         if (type === "set") {
             const currentDate = selectedDate;
             console.info(">>> 1 type: " + type + "  platform os: " + "android" + " selectedDate: " + selectedDate);
@@ -2688,8 +2691,9 @@ function DateControl(props) {
     };
     const confirmIOSDate = () => {
         state.formData[attr.propertyName] = formatDate(date);
-        toggleDatePicker();
         console.info(">>> 6 platform os: " + "android" + " date: " + date);
+        console.info(">>> 6 typeof(date): " + typeof (date));
+        toggleDatePicker();
         _onChange(date);
     };
     return (createElement(View, { style: {} },
