@@ -5,10 +5,20 @@ export const DS_Survey_Create = {
   "instructions": [
     {
       "type": "setVariable",
+      "label": "688741b0-222c-478f-b0f5-b602fe0261b4",
+      "value": {
+        "type": "literal",
+        "value": "{}"
+      },
+      "outputVar": "style",
+      "outputKind": "primitive"
+    },
+    {
+      "type": "setVariable",
       "label": "0b56c6c5-26a2-41db-b918-b474e14a500c",
       "value": {
         "type": "literal",
-        "value": "{\n\t\"title\": \"\",\n\t\"description\": \"\",\n\t\"type\": \"object\",\n\t\"properties\": {\n\t\t\"qstText_b0eba288-53d4-4182-a64b-76ffae6ff70d\": {\n\t\t\t\"title\": \"What is your favorite food?\",\n\t\t\t\"type\": \"string\"\n\t\t},\n\t\t\"qstText Number_ec8bdc72-bdac-465b-ae0c-64a5c7298c2d\": {\n\t\t\t\"title\": \"How much taller is the Eiffel Tower during the summer?\",\n\t\t\t\"type\": \"number\"\n\t\t},\n\t\t\"qstRadio Button_d743bb35-ed9d-437b-a42a-a54cc8c8393a\": {\n\t\t\t\"title\": \"What is the only planet that spins clockwise?\",\n\t\t\t\"type\": \"string\",\n\t\t\t\"enum\": [\n\t\t\t\t\"Venus\",\n\t\t\t\t\"Pluto\",\n\t\t\t\t\"Earth\"\n\t\t\t]\n\t\t},\n\t\t\"qstText_14f41b5c-4d56-4818-931b-b7a421fe37df\": {\n\t\t\t\"title\": \"What is a solar equinox?\",\n\t\t\t\"type\": \"string\"\n\t\t},\n\t\t\"qstRange_57499324-d855-47c8-9f71-faaa7501a8f8\": {\n\t\t\t\"title\": \"What is the range of your car?\",\n\t\t\t\"type\": \"integer\"\n\t\t},\n\t\t\"qstDate_871b8385-60bc-469c-a17b-87bd2686b846\": {\n\t\t\t\"title\": \"Beste date?\",\n\t\t\t\"type\": \"string\"\n\t\t},\n\t\t\"qstEmail_9e6aea88-b85c-441c-b2b9-e408c7d81d13\": {\n\t\t\t\"title\": \"Email\",\n\t\t\t\"type\": \"string\"\n\t\t},\n\t\t\"qstURI_c9d216c7-0653-40b7-834e-232fa6a14a6f\": {\n\t\t\t\"title\": \"Homepage?\",\n\t\t\t\"type\": \"string\"\n\t\t},\n\t\t\"qstRadio Button_ff041e28-37e3-46bb-addc-b69a31813c79\": {\n\t\t\t\"title\": \"Yes or No\",\n\t\t\t\"type\": \"string\",\n\t\t\t\"enum\": [\n\t\t\t\t\"Yes\",\n\t\t\t\t\"No\"\n\t\t\t]\n\t\t},\n\t\t\"qstSingle Select_526eaf65-1b38-45e6-9510-d955e90e4531\": {\n\t\t\t\"title\": \"Single select\",\n\t\t\t\"type\": \"string\",\n\t\t\t\"enum\": [\n\t\t\t\t\"Pick me\",\n\t\t\t\t\"No pick me\",\n\t\t\t\t\"Both\"\n\t\t\t]\n\t\t},\n\t\t\"qstMulti Select_7e096ff3-f9b6-4b26-a7c6-91121f36a2a2\": {\n\t\t\t\"title\": \"Multi-select\",\n\t\t\t\"type\": \"array\",\n\t\t\t\"uniqueItems\": true,\n\t\t\t\"items\": {\n\t\t\t\t\"type\": \"string\",\n\t\t\t\t\"enum\": [\n\t\t\t\t\t\"Option1\",\n\t\t\t\t\t\"Option2\",\n\t\t\t\t\t\"Option3\"\n\t\t\t\t]\n\t\t\t}\n\t\t}\n\t}\n}"
+        "value": "{\n\t\"title\": \"\",\n\t\"description\": \"\",\n\t\"type\": \"object\",\n\t\"properties\": {\n\t\t\"qstDate_871b8385-60bc-469c-a17b-87bd2686b846\": {\n\t\t\t\"title\": \"Beste date?\",\n\t\t\t\"type\": \"string\"\n\t\t},\n\t\t\"qstText_b0eba288-53d4-4182-a64b-76ffae6ff70d\": {\n\t\t\t\"title\": \"What is your favorite food?\",\n\t\t\t\"type\": \"string\"\n\t\t},\n\t\t\"qstText Number_ec8bdc72-bdac-465b-ae0c-64a5c7298c2d\": {\n\t\t\t\"title\": \"How much taller is the Eiffel Tower during the summer?\",\n\t\t\t\"type\": \"number\"\n\t\t},\n\t\t\"qstRadio Button_d743bb35-ed9d-437b-a42a-a54cc8c8393a\": {\n\t\t\t\"title\": \"What is the only planet that spins clockwise?\",\n\t\t\t\"type\": \"string\",\n\t\t\t\"enum\": [\n\t\t\t\t\"Venus\",\n\t\t\t\t\"Pluto\",\n\t\t\t\t\"Earth\"\n\t\t\t]\n\t\t},\n\t\t\"qstText_14f41b5c-4d56-4818-931b-b7a421fe37df\": {\n\t\t\t\"title\": \"What is a solar equinox?\",\n\t\t\t\"type\": \"string\"\n\t\t},\n\t\t\"qstRange_57499324-d855-47c8-9f71-faaa7501a8f8\": {\n\t\t\t\"title\": \"What is the range of your car?\",\n\t\t\t\"type\": \"integer\"\n\t\t},\n\t\t\"qstEmail_9e6aea88-b85c-441c-b2b9-e408c7d81d13\": {\n\t\t\t\"title\": \"Email\",\n\t\t\t\"type\": \"string\"\n\t\t},\n\t\t\"qstURI_c9d216c7-0653-40b7-834e-232fa6a14a6f\": {\n\t\t\t\"title\": \"Homepage?\",\n\t\t\t\"type\": \"string\"\n\t\t},\n\t\t\"qstRadio Button_ff041e28-37e3-46bb-addc-b69a31813c79\": {\n\t\t\t\"title\": \"Yes or No\",\n\t\t\t\"type\": \"string\",\n\t\t\t\"enum\": [\n\t\t\t\t\"Yes\",\n\t\t\t\t\"No\"\n\t\t\t]\n\t\t},\n\t\t\"qstSingle Select_526eaf65-1b38-45e6-9510-d955e90e4531\": {\n\t\t\t\"title\": \"Single select\",\n\t\t\t\"type\": \"string\",\n\t\t\t\"enum\": [\n\t\t\t\t\"Pick me\",\n\t\t\t\t\"No pick me\",\n\t\t\t\t\"Both\"\n\t\t\t]\n\t\t},\n\t\t\"qstMulti Select_7e096ff3-f9b6-4b26-a7c6-91121f36a2a2\": {\n\t\t\t\"title\": \"Multi-select\",\n\t\t\t\"type\": \"array\",\n\t\t\t\"uniqueItems\": true,\n\t\t\t\"items\": {\n\t\t\t\t\"type\": \"string\",\n\t\t\t\t\"enum\": [\n\t\t\t\t\t\"Option1\",\n\t\t\t\t\t\"Option2\",\n\t\t\t\t\t\"Option3\"\n\t\t\t\t]\n\t\t\t}\n\t\t}\n\t}\n}"
       },
       "outputVar": "schema",
       "outputKind": "primitive"
@@ -18,7 +28,7 @@ export const DS_Survey_Create = {
       "label": "87ade843-09d2-4d08-b941-968b5873d21e",
       "value": {
         "type": "literal",
-        "value": "{\n  \"type\": \"VerticalLayout\",\n  \"elements\": [\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstText_b0eba288-53d4-4182-a64b-76ffae6ff70d\"\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstText Number_ec8bdc72-bdac-465b-ae0c-64a5c7298c2d\"\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstRadio Button_d743bb35-ed9d-437b-a42a-a54cc8c8393a\",\n      \"options\": {\n        \"showSortButtons\": false,\n        \"format\": \"radio\",\n        \"readonly\": false,\n        \"multi\": false\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstText_14f41b5c-4d56-4818-931b-b7a421fe37df\"\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstRange_57499324-d855-47c8-9f71-faaa7501a8f8\"\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstDate_871b8385-60bc-469c-a17b-87bd2686b846\",\n\t\"options\": {\n\t\t\"format\": \"date\"\n\t}\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstEmail_9e6aea88-b85c-441c-b2b9-e408c7d81d13\",\n      \"options\": {\n        \"showSortButtons\": false,\n        \"inputMode\": \"email\",\n        \"readonly\": false,\n        \"multi\": false\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstURI_c9d216c7-0653-40b7-834e-232fa6a14a6f\",\n      \"options\": {\n        \"showSortButtons\": false,\n        \"inputMode\": \"url\",\n        \"readonly\": false,\n        \"multi\": false\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstRadio Button_ff041e28-37e3-46bb-addc-b69a31813c79\",\n      \"options\": {\n        \"showSortButtons\": false,\n        \"format\": \"radio\",\n        \"readonly\": false,\n        \"multi\": false\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstSingle Select_526eaf65-1b38-45e6-9510-d955e90e4531\"\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstMulti Select_7e096ff3-f9b6-4b26-a7c6-91121f36a2a2\"\n    }\n  ]\n}"
+        "value": "{\n  \"type\": \"VerticalLayout\",\n  \"elements\": [\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstDate_871b8385-60bc-469c-a17b-87bd2686b846\",\n\t\"options\": {\n\t\t\"format\": \"date\"\n\t}\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstText_b0eba288-53d4-4182-a64b-76ffae6ff70d\"\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstText Number_ec8bdc72-bdac-465b-ae0c-64a5c7298c2d\"\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstRadio Button_d743bb35-ed9d-437b-a42a-a54cc8c8393a\",\n      \"options\": {\n        \"showSortButtons\": false,\n        \"format\": \"radio\",\n        \"readonly\": false,\n        \"multi\": false\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstText_14f41b5c-4d56-4818-931b-b7a421fe37df\"\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstRange_57499324-d855-47c8-9f71-faaa7501a8f8\"\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstEmail_9e6aea88-b85c-441c-b2b9-e408c7d81d13\",\n      \"options\": {\n        \"showSortButtons\": false,\n        \"inputMode\": \"email\",\n        \"readonly\": false,\n        \"multi\": false\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstURI_c9d216c7-0653-40b7-834e-232fa6a14a6f\",\n      \"options\": {\n        \"showSortButtons\": false,\n        \"inputMode\": \"url\",\n        \"readonly\": false,\n        \"multi\": false\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstRadio Button_ff041e28-37e3-46bb-addc-b69a31813c79\",\n      \"options\": {\n        \"showSortButtons\": false,\n        \"format\": \"radio\",\n        \"readonly\": false,\n        \"multi\": false\n      }\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstSingle Select_526eaf65-1b38-45e6-9510-d955e90e4531\"\n    },\n    {\n      \"type\": \"Control\",\n      \"scope\": \"#/properties/qstMulti Select_7e096ff3-f9b6-4b26-a7c6-91121f36a2a2\"\n    }\n  ]\n}"
       },
       "outputVar": "ui",
       "outputKind": "primitive"
@@ -36,7 +46,7 @@ export const DS_Survey_Create = {
     {
       "type": "createObject",
       "label": "2b7d2fb1-831e-41fc-a70f-d9ddde4d9f09",
-      "operationId": "i5ZoTFrp1kOChGI9Q1ZXSw",
+      "operationId": "H5KR8l3OgEiVX+d7MbCHBQ",
       "objectType": "MyFirstModule.Survey",
       "outputVar": "NewSurvey"
     },
@@ -83,6 +93,15 @@ export const DS_Survey_Create = {
       "value": {
         "type": "variable",
         "variable": "i18n"
+      }
+    },
+    {
+      "type": "changeObject",
+      "inputVar": "NewSurvey",
+      "member": "jsonStyle",
+      "value": {
+        "type": "variable",
+        "variable": "style"
       }
     },
     {

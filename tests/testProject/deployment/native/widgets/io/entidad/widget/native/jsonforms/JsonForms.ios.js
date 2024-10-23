@@ -2204,6 +2204,38 @@ const readOnlyControl = {
     marginBottom: spacing.small
   }
 };
+const dateTimePicker = {
+  buttonContainer: {
+    flexDirection: "row"
+  },
+  button: button,
+  buttonCancel: {},
+  buttonConfirm: {}
+};
+/*
+{
+  "dateTimePicker": {
+    "button": {
+      "container": {
+        "flex": 1,
+        "justifyContent": "center"
+      },
+      "header": {
+        "textAlign": "center"
+      },
+      "primary": {}
+    },
+    "buttonContainer": {
+      "flex": 1,
+      "flexDirection": "row",
+      "alignItems": "center",
+      "justifyContent": "center"
+    },
+    "buttonConfirm": {},
+    "buttonCancel": {}
+  }
+}
+*/
 
 var customVariables = /*#__PURE__*/Object.freeze({
     __proto__: null,
@@ -2212,6 +2244,7 @@ var customVariables = /*#__PURE__*/Object.freeze({
     jsonformsControlsContainer: jsonformsControlsContainer,
     jsonformsControlContainer: jsonformsControlContainer,
     readOnlyControl: readOnlyControl,
+    dateTimePicker: dateTimePicker,
     brand: brand,
     darkMode: darkMode,
     backgroundDefaults: backgroundDefaults,
@@ -2620,11 +2653,15 @@ function getDataFromBoolean(val) {
 }
 
 function DateControl(props) {
-    var _a;
+    var _a, _b, _c;
     const state = useObject();
     let attr = props.props;
     let styles = {};
     mergeDeep(styles, customVariables === null || customVariables === void 0 ? void 0 : input, ((_a = attr === null || attr === void 0 ? void 0 : attr.style) === null || _a === void 0 ? void 0 : _a.input) || {});
+    let stylesButton = {};
+    mergeDeep(stylesButton, customVariables === null || customVariables === void 0 ? void 0 : button, ((_b = attr === null || attr === void 0 ? void 0 : attr.style) === null || _b === void 0 ? void 0 : _b.button) || {});
+    let stylesDateTimePicker = {};
+    mergeDeep(stylesDateTimePicker, customVariables === null || customVariables === void 0 ? void 0 : dateTimePicker, ((_c = attr === null || attr === void 0 ? void 0 : attr.style) === null || _c === void 0 ? void 0 : _c.dateTimePicker) || {});
     const [error, setError] = useState(attr.error);
     const [date, setDate] = useState(getDateFromString(attr.data));
     const [showPicker, setShowPicker] = useState(false);
@@ -2638,7 +2675,8 @@ function DateControl(props) {
         let day = date.getDate();
         return `${year}-${month}-${day}`;
     };
-    const _onChange = ({ type }, selectedDate) => {
+    //const _onChange = ({ type }, selectedDate: Date) => {//stephan
+    const _onChange = (type, selectedDate) => {
         if (type === "set") {
             const currentDate = selectedDate;
             console.info(">>> 1 type: " + type + "  platform os: " + "ios" + " selectedDate: " + selectedDate);
@@ -2658,14 +2696,72 @@ function DateControl(props) {
         toggleDatePicker();
         console.info(">>> 6 platform os: " + "ios" + " date: " + date);
     };
-    return (createElement(View, { style: {} },
+    return (
+    /*
+                    backgroundColor:stylesButton.primary.backgroundColor,
+                    borderRadius:stylesButton.container.borderRadius,
+                    minWidth:stylesButton.container.minWidth,
+                    minHeight:stylesButton.container.minHeight,
+                    paddingVertical:stylesButton.container.paddingVertical,
+                    paddingHorizontal:stylesButton.container.paddingHorizontal
+    
+                        color:stylesButton.header.color,
+                        borderColor:stylesButton.header.borderColor,
+                        backgroundColor:stylesButton.header.backgroundColor,
+                        fontSize:stylesButton.header.fontSize,
+                        paddingLeft:stylesButton.header.paddingLeft,
+                        paddingRight:stylesButton.header.paddingRight
+    
+    
+    
+                <View style={
+                    {
+                        ...stylesButton.container,
+                        ...stylesButton.primary
+                    }
+                }>
+                    <Text style={
+                        stylesButton.header
+                    }>
+                        Cancel
+                    </Text>
+                </View>
+    
+    */
+    createElement(View, { style: {} },
         createElement(Text, { style: styles === null || styles === void 0 ? void 0 : styles.label }, attr.label || "No label included"),
         showPicker ? (createElement(DateTimePicker, { mode: "date", value: date, display: "spinner", onChange: _onChange, style: (state.showError && error) ? (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} : (styles === null || styles === void 0 ? void 0 : styles.input) || {} })) : null,
-        (showPicker && "ios" === "ios") ? (createElement(View, { style: { flexDirection: "row", justifyContent: "space-around" } },
-            createElement(TouchableOpacity, { style: [], onPress: toggleDatePicker },
-                createElement(Text, null, "Cancel")),
-            createElement(TouchableOpacity, { style: [], onPress: confirmIOSDate },
-                createElement(Text, null, "Confirm")))) : null,
+        (showPicker && "ios" === "ios") ? (createElement(View, { style: stylesDateTimePicker.buttonContainer },
+            createElement(TouchableOpacity, { onPress: toggleDatePicker, style: {
+                    ...stylesDateTimePicker.button.container,
+                    ...stylesDateTimePicker.button.primary,
+                    ...stylesDateTimePicker.buttonCancel,
+                    ...{
+                        flex: 1,
+                        justifyContent: "center"
+                    }
+                } },
+                createElement(Text, { style: {
+                        ...stylesDateTimePicker.button.header,
+                        ...{
+                            textAlign: "center"
+                        }
+                    } }, "Cancel")),
+            createElement(TouchableOpacity, { onPress: confirmIOSDate, style: {
+                    ...stylesDateTimePicker.button.container,
+                    ...stylesDateTimePicker.button.primary,
+                    ...stylesDateTimePicker.buttonConfirm,
+                    ...{
+                        flex: 1,
+                        justifyContent: "center"
+                    }
+                } },
+                createElement(Text, { style: {
+                        ...stylesDateTimePicker.button.header,
+                        ...{
+                            textAlign: "center"
+                        }
+                    } }, "Confirm")))) : null,
         createElement(Pressable, { onPress: toggleDatePicker },
             createElement(TextInput, { style: (state.showError && error) ? (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} : (styles === null || styles === void 0 ? void 0 : styles.input) || {}, placeholder: attr.placeholder, placeholderTextColor: "lightgray", defaultValue: attr.data || attr.value, editable: false, onPressIn: toggleDatePicker })),
         (state.showError && error) ? (createElement(Text, { style: (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} }, attr.errorMessage)) : null));
@@ -2723,7 +2819,9 @@ function ReadOnlyControl(props) {
         createElement(Text, { style: (styles === null || styles === void 0 ? void 0 : styles.value) || {} }, attr.data)));
 }
 
-const Form = ({ schema, uischema, /*initData,*/ i18nData, language, formData, onChange, readOnly, style }) => {
+const Form = ({ schema, uischema, /*initData,*/ i18nData, language, formData, onChange, logger, readOnly, style }) => {
+    //this.logger=this.logger.bind(this);
+    //logger.log("Form:constructor:beg");
     const [data, setData] = useState(formData);
     const [show, setShow] = useState(false);
     let stylesJsonFormsControlContainer = {};
@@ -2880,6 +2978,7 @@ class JsonForms extends Component {
             //errorInitData:undefined,
             errorI18nData: undefined,
             errorStyleData: undefined,
+            debugon: false,
         };
     }
     render() {
@@ -2929,7 +3028,7 @@ class JsonForms extends Component {
                             console.error(e.toString());
                             return ({});
                         }
-                    })(), language: this.state.language, readOnly: this.state.readOnly, onChange: this.onChange })));
+                    })(), language: this.state.language, readOnly: this.state.readOnly, onChange: this.onChange, logger: this.logger })));
         }
     }
     componentDidMount() {
@@ -3109,6 +3208,10 @@ class JsonForms extends Component {
                     }
         
         */
+    }
+    logger(data) {
+        if (this.state.debugon)
+            console.info(data);
     }
     componentWillUnmount() {
         //console.info("componentWillUnmount():beg");

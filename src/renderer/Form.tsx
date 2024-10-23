@@ -25,7 +25,9 @@ import{ReadOnlyControl}from"./controls/ReadOnlyControl";
 import{jsonformsControlsContainer}from"./theme/widget-variables";
 import{jsonformsControlContainer}from"./theme/widget-variables";
 import{mergeDeep}from"../util/merge";
-export const Form=({schema,uischema,/*initData,*/i18nData,language,formData,onChange,readOnly,style}:any)=>{
+export const Form=({schema,uischema,/*initData,*/i18nData,language,formData,onChange,logger,readOnly,style}:any)=>{
+	//this.logger=this.logger.bind(this);
+	//logger.log("Form:constructor:beg");
 	const[data,setData]=useState(formData);
 	const[show,setShow]=useState(false);
 	let stylesJsonFormsControlContainer:any={};

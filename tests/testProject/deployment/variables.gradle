@@ -1,14 +1,14 @@
 ext {
 	mendixJavaVersion = 11
-	mendixInstallDir = "C:/mx-studio/9.24.27.44794"
+	mendixInstallDir = "C:/Program Files/Mendix/9.24.27.44794"
 	projectName = "ReactNativeJSONFormsTest"
 	projectSafeName = "testProject"
-	mendixProjectDir = "C:/mx/ENTD/mendix-react-native-jsonforms/tests/testProject"
-	deploymentDir = "C:/mx/ENTD/mendix-react-native-jsonforms/tests/testProject/deployment"
-	dataSnapshotFile = "C:/mx/ENTD/mendix-react-native-jsonforms/tests/testProject/data-snapshot.zip"
-	dataDir = "C:/mx/ENTD/mendix-react-native-jsonforms/tests/testProject/deployment/data"
+	mendixProjectDir = "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject"
+	deploymentDir = "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment"
+	dataSnapshotFile = "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/data-snapshot.zip"
+	dataDir = "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment/data"
 	extractDataSnapshot = false
-	templatesDir = "C:/mx-studio/9.24.27.44794/modeler/runtemplates"
+	templatesDir = "C:/Program Files/Mendix/9.24.27.44794/modeler/runtemplates"
 	runDir = "run"
 	compileTargetDir = "run/bin"
 	deploymentDirName = "deployment"

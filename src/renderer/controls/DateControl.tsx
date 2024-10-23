@@ -9,7 +9,11 @@ export function DateControl(props: any) {
 	const state = useObject();
 	let attr = props.props;
 	let styles: any = {};
-	mergeDeep(styles, customVariables?.input, attr?.style?.input || {});
+	mergeDeep(styles, customVariables?.input, attr?.style?.input||{});
+	let stylesButton: any = {};
+	mergeDeep(stylesButton, customVariables?.button,attr?.style?.button||{});
+	let stylesDateTimePicker: any = {};
+	mergeDeep(stylesDateTimePicker, customVariables?.dateTimePicker,attr?.style?.dateTimePicker||{});
 	const [error, setError] = useState(attr.error);
 	const [date, setDate] = useState(getDateFromString(attr.data));
 	const [showPicker, setShowPicker] = useState(false);
@@ -23,7 +27,8 @@ export function DateControl(props: any) {
 		let day = date.getDate();
 		return `${year}-${month}-${day}`;
 	};
-	const _onChange = ({ type }, selectedDate: Date) => {
+	//const _onChange = ({ type }, selectedDate: Date) => {//stephan
+	const _onChange = (type: any, selectedDate?: any ) =>{//ockert
 		if (type === "set") {
 			const currentDate = selectedDate;
 			console.info(">>> 1 type: " + type + "  platform os: " + Platform.OS + " selectedDate: "+ selectedDate);
@@ -55,7 +60,39 @@ export function DateControl(props: any) {
 		console.info(">>> 6 platform os: " + Platform.OS + " date: "+ date);
 	};
 	return (
+/*
+				backgroundColor:stylesButton.primary.backgroundColor,
+				borderRadius:stylesButton.container.borderRadius,
+				minWidth:stylesButton.container.minWidth,
+				minHeight:stylesButton.container.minHeight,
+				paddingVertical:stylesButton.container.paddingVertical,
+				paddingHorizontal:stylesButton.container.paddingHorizontal
+
+					color:stylesButton.header.color,
+					borderColor:stylesButton.header.borderColor,
+					backgroundColor:stylesButton.header.backgroundColor,
+					fontSize:stylesButton.header.fontSize,
+					paddingLeft:stylesButton.header.paddingLeft,
+					paddingRight:stylesButton.header.paddingRight
+
+
+
+			<View style={
+				{
+					...stylesButton.container,
+					...stylesButton.primary
+				}
+			}>
+				<Text style={
+					stylesButton.header
+				}>
+					Cancel
+				</Text>
+			</View>
+
+*/
 		<View style={{}}>
+
 			<Text style={styles?.label}>{attr.label || "No label included"}</Text>
 			{showPicker ? (
 				<DateTimePicker
@@ -67,12 +104,44 @@ export function DateControl(props: any) {
 				/>
 			) : null}
 			{(showPicker && Platform.OS === "ios") ? (
-				<View style={{ flexDirection: "row", justifyContent: "space-around" }}>
-					<TouchableOpacity style={[]} onPress={toggleDatePicker}>
-						<Text>Cancel</Text>
+				<View style={
+					stylesDateTimePicker.buttonContainer
+				}>
+					<TouchableOpacity onPress={toggleDatePicker} style={{
+						...stylesDateTimePicker.button.container,
+						...stylesDateTimePicker.button.primary,
+						...stylesDateTimePicker.buttonCancel,
+						...{
+							flex:1,
+							justifyContent:"center"
+						}
+					}}>
+						<Text style={{
+							...stylesDateTimePicker.button.header,
+							...{
+								textAlign:"center"
+							}
+						}}>
+							Cancel
+						</Text>
 					</TouchableOpacity>
-					<TouchableOpacity style={[]} onPress={confirmIOSDate}>
-						<Text>Confirm</Text>
+					<TouchableOpacity onPress={confirmIOSDate} style={{
+						...stylesDateTimePicker.button.container,
+						...stylesDateTimePicker.button.primary,
+						...stylesDateTimePicker.buttonConfirm,
+						...{
+							flex:1,
+							justifyContent:"center"
+						}
+					}}>
+						<Text style={{
+							...stylesDateTimePicker.button.header,
+							...{
+								textAlign:"center"
+							}
+						}}>
+							Confirm
+						</Text>
 					</TouchableOpacity>
 				</View>
 			) : null}

@@ -26,6 +26,7 @@ interface AppState{
 	//errorInitData:any;
 	errorI18nData:any;
 	errorStyleData:any;
+	debugon:boolean;
 }
 export class JsonForms extends Component<JsonFormsProps<CustomStyle>,AppState>{
 	shouldUpdate:boolean;
@@ -49,6 +50,7 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>,AppState>{
 			//errorInitData:undefined,
 			errorI18nData:undefined,
 			errorStyleData:undefined,
+			debugon:false,
 		};
 	}
 	render():ReactNode{
@@ -117,6 +119,7 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>,AppState>{
 							language={this.state.language}
 							readOnly={this.state.readOnly}
 							onChange={this.onChange}
+							logger={this.logger}
 						/>
 					</View>
 					);
@@ -298,6 +301,9 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>,AppState>{
 			}
 
 */
+	}
+	logger(data:any):void{
+		if(this.state.debugon)console.info(data);
 	}
 	componentWillUnmount(){
 		//console.info("componentWillUnmount():beg");

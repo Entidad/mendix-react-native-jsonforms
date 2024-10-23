@@ -4,6 +4,8 @@
     "baseUrl": "./",
     "allowJs": true,
     "outDir": "./dist",
+    "noUnusedLocals":false,
+    "noUnusedParameters":false
   },
   "include": ["./src", "./typings"]
 }

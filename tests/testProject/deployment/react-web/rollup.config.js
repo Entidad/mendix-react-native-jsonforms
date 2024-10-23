@@ -1,15 +1,15 @@
 const {
     nodeResolve,
-} = require("C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules/@rollup/plugin-node-resolve");
-const commonjs = require("C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules/@rollup/plugin-commonjs");
-const clear = require("C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules/rollup-plugin-clear");
-const copy = require("C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules/rollup-plugin-copy");
-const esbuild = require("C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules/rollup-plugin-esbuild").default;
-const { babel } = require("C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules/@rollup/plugin-babel");
-const nodePolyfills = require("C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules/rollup-plugin-node-polyfills");
-const mendixResolve = require("C:/mx-studio/9.24.27.44794/modeler/tools/node/rollup-plugin-mendix-resolve.js");
-const css = require("C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules/rollup-plugin-import-css");
-const generatePrecacheServiceWorker = require("C:/mx-studio/9.24.27.44794/modeler/tools/node/generate-precache-serviceworker");
+} = require("C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules/@rollup/plugin-node-resolve");
+const commonjs = require("C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules/@rollup/plugin-commonjs");
+const clear = require("C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules/rollup-plugin-clear");
+const copy = require("C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules/rollup-plugin-copy");
+const esbuild = require("C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules/rollup-plugin-esbuild").default;
+const { babel } = require("C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules/@rollup/plugin-babel");
+const nodePolyfills = require("C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules/rollup-plugin-node-polyfills");
+const mendixResolve = require("C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/rollup-plugin-mendix-resolve.js");
+const css = require("C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules/rollup-plugin-import-css");
+const generatePrecacheServiceWorker = require("C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/generate-precache-serviceworker");
 
 const JAVASCRIPT_SOURCE_PATH_REGEX = /javascriptsource/;
 const PLUGGABLE_WIDGETS_PATH_FILTER = "./widgets/**";
@@ -38,9 +38,9 @@ export default {
     },
     plugins: [
         mendixResolve(
-            "C:/mx-studio/9.24.27.44794/modeler/tools/node/web-resolutions.json",
-            "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules",
-            "C:/mx/ENTD/mendix-react-native-jsonforms/tests/testProject/deployment/web/cachetag.txt"
+            "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/web-resolutions.json",
+            "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules",
+            "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment/web/cachetag.txt"
         ),
         nodePolyfills(),
         esbuild({
@@ -60,7 +60,7 @@ export default {
         }),
         ignore(/react-native/),
         nodeResolve({
-            moduleDirectories: ["C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules"]
+            moduleDirectories: ["C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules"]
         }),
         commonjs({ transformMixedEsModules: true, exclude: [/mendix-web/, PLUGGABLE_WIDGETS_PATH_FILTER] }),
         // @rollup/plugin-babel must be placed after @rollup/plugin-commonjs
@@ -69,13 +69,13 @@ export default {
             include: JAVASCRIPT_SOURCE_PATH_REGEX,
             presets: [
                 [
-                    "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules/@babel/preset-env",
+                    "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules/@babel/preset-env",
                     { targets: { safari: "13" } },
                 ],
             ],
             plugins: [
-                "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules/@babel/plugin-syntax-dynamic-import",
-                "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules/babel-plugin-transform-bigint-to-jsbi",
+                "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules/@babel/plugin-syntax-dynamic-import",
+                "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules/babel-plugin-transform-bigint-to-jsbi",
             ],
         }),
         clear({
@@ -88,17 +88,17 @@ export default {
             minify: isProduction
         }),
         generatePrecacheServiceWorker({
-            deploymentDir: "C:/mx/ENTD/mendix-react-native-jsonforms/tests/testProject/deployment"
+            deploymentDir: "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment"
         }),
         copy({
             targets: [
                 {
                     dest: "dist",
-                    src: "C:/mx/ENTD/mendix-react-native-jsonforms/tests/testProject/deployment/web/widgets/*"
+                    src: "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment/web/widgets/*"
                 },
                 {
                     dest: "dist",
-                    src: "C:/mx-studio/9.24.27.44794/modeler/tools/node/node_modules/@mendix/wa-sqlite/dist/wa-sqlite-async.wasm",
+                    src: "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules/@mendix/wa-sqlite/dist/wa-sqlite-async.wasm",
                 },
             ]
         })
