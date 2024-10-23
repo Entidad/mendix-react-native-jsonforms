@@ -43,54 +43,39 @@ export function DateControl(props: any) {
 				attr.error = isEmpty(strDate);
 				setError(attr.error);
 				console.info(">>> 3 type: " + type + "  platform os: " + Platform.OS + " date: "+ currentDate);
+				return strDate||attr.placeholder||attr.data||attr.value;;
 			}
 			else {
 				toggleDatePicker();
 				console.info(">>> 4 type: " + type + "  platform os: " + Platform.OS + " date: "+ currentDate);
+				let strDate = formatDate(currentDate);
+				return strDate||attr.placeholder||attr.data||attr.value;;
 			}
 		}
 		else {
-			toggleDatePicker();
-			console.info(">>> 5 type: " + type + "  platform os: " + Platform.OS + " date: "+ date);
+			if (Platform.OS === 'android') {
+				toggleDatePicker();
+				let currentDate=type.nativeEvent.timestamp;
+				let strDate = formatDate(currentDate);
+				console.info(">>> 2 type: " + type + "  platform os: " + Platform.OS + " strDate: "+ strDate);
+				state.formData[attr.propertyName] = strDate;
+				state.setFormData(state.formData);
+				attr.onChange(state.formData);
+				attr.error = isEmpty(strDate);
+				setError(attr.error);
+				console.info(">>> 3 type: " + type + "  platform os: " + Platform.OS + " date: "+ currentDate);
+				return strDate||attr.placeholder||attr.data||attr.value;;
+			}
+
 		}
 	};
 	const confirmIOSDate = () => {
 		state.formData[attr.propertyName] = formatDate(date);
 		toggleDatePicker();
 		console.info(">>> 6 platform os: " + Platform.OS + " date: "+ date);
+		_onChange(date);
 	};
 	return (
-/*
-				backgroundColor:stylesButton.primary.backgroundColor,
-				borderRadius:stylesButton.container.borderRadius,
-				minWidth:stylesButton.container.minWidth,
-				minHeight:stylesButton.container.minHeight,
-				paddingVertical:stylesButton.container.paddingVertical,
-				paddingHorizontal:stylesButton.container.paddingHorizontal
-
-					color:stylesButton.header.color,
-					borderColor:stylesButton.header.borderColor,
-					backgroundColor:stylesButton.header.backgroundColor,
-					fontSize:stylesButton.header.fontSize,
-					paddingLeft:stylesButton.header.paddingLeft,
-					paddingRight:stylesButton.header.paddingRight
-
-
-
-			<View style={
-				{
-					...stylesButton.container,
-					...stylesButton.primary
-				}
-			}>
-				<Text style={
-					stylesButton.header
-				}>
-					Cancel
-				</Text>
-			</View>
-
-*/
 		<View style={{}}>
 
 			<Text style={styles?.label}>{attr.label || "No label included"}</Text>

@@ -2212,30 +2212,6 @@ const dateTimePicker = {
   buttonCancel: {},
   buttonConfirm: {}
 };
-/*
-{
-  "dateTimePicker": {
-    "button": {
-      "container": {
-        "flex": 1,
-        "justifyContent": "center"
-      },
-      "header": {
-        "textAlign": "center"
-      },
-      "primary": {}
-    },
-    "buttonContainer": {
-      "flex": 1,
-      "flexDirection": "row",
-      "alignItems": "center",
-      "justifyContent": "center"
-    },
-    "buttonConfirm": {},
-    "buttonCancel": {}
-  }
-}
-*/
 
 var customVariables = /*#__PURE__*/Object.freeze({
     __proto__: null,
@@ -2684,51 +2660,18 @@ function DateControl(props) {
             {
                 toggleDatePicker();
                 console.info(">>> 4 type: " + type + "  platform os: " + "ios" + " date: " + currentDate);
+                let strDate = formatDate(currentDate);
+                return strDate || attr.placeholder || attr.data || attr.value;
             }
-        }
-        else {
-            toggleDatePicker();
-            console.info(">>> 5 type: " + type + "  platform os: " + "ios" + " date: " + date);
         }
     };
     const confirmIOSDate = () => {
         state.formData[attr.propertyName] = formatDate(date);
         toggleDatePicker();
         console.info(">>> 6 platform os: " + "ios" + " date: " + date);
+        _onChange(date);
     };
-    return (
-    /*
-                    backgroundColor:stylesButton.primary.backgroundColor,
-                    borderRadius:stylesButton.container.borderRadius,
-                    minWidth:stylesButton.container.minWidth,
-                    minHeight:stylesButton.container.minHeight,
-                    paddingVertical:stylesButton.container.paddingVertical,
-                    paddingHorizontal:stylesButton.container.paddingHorizontal
-    
-                        color:stylesButton.header.color,
-                        borderColor:stylesButton.header.borderColor,
-                        backgroundColor:stylesButton.header.backgroundColor,
-                        fontSize:stylesButton.header.fontSize,
-                        paddingLeft:stylesButton.header.paddingLeft,
-                        paddingRight:stylesButton.header.paddingRight
-    
-    
-    
-                <View style={
-                    {
-                        ...stylesButton.container,
-                        ...stylesButton.primary
-                    }
-                }>
-                    <Text style={
-                        stylesButton.header
-                    }>
-                        Cancel
-                    </Text>
-                </View>
-    
-    */
-    createElement(View, { style: {} },
+    return (createElement(View, { style: {} },
         createElement(Text, { style: styles === null || styles === void 0 ? void 0 : styles.label }, attr.label || "No label included"),
         showPicker ? (createElement(DateTimePicker, { mode: "date", value: date, display: "spinner", onChange: _onChange, style: (state.showError && error) ? (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} : (styles === null || styles === void 0 ? void 0 : styles.input) || {} })) : null,
         (showPicker && "ios" === "ios") ? (createElement(View, { style: stylesDateTimePicker.buttonContainer },

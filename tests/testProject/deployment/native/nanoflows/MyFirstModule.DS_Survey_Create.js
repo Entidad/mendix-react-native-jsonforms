@@ -46,7 +46,7 @@ export const DS_Survey_Create = {
     {
       "type": "createObject",
       "label": "2b7d2fb1-831e-41fc-a70f-d9ddde4d9f09",
-      "operationId": "H5KR8l3OgEiVX+d7MbCHBQ",
+      "operationId": "a0HZKuiMOEu/L2tASd+RBQ",
       "objectType": "MyFirstModule.Survey",
       "outputVar": "NewSurvey"
     },

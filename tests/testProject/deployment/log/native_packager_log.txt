@@ -27,6 +27,10 @@ C:\Program Files\Mendix\9.24.27.44794\modeler\tools\node\win-x64\node.exe C:\Pro
 [Error]   Usually this happens when watchman isn't running. Create an empty `.watchmanconfig` file in your project's root folder or initialize a git or hg repository in your project.
 [Error]   Error: Watchman error: query failed: synchronization failed: root dir was removed or is inaccessible. Make sure watchman is running for this project. See https://facebook.github.io/watchman/docs/troubleshooting.
 [Output] MxTerminalReporter: {"event":"bundle_build_started"}
+[Output] MxTerminalReporter: {"event":"bundle_build_started"}
+[Output]  BUNDLE  ./index.js 
+
+[Output] MxTerminalReporter: {"event":"bundle_build_done"}
 [Output]  BUNDLE  ./index.js 
 
 [Output] MxTerminalReporter: {"event":"bundle_build_done"}

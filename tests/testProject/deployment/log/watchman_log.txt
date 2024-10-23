@@ -6465,3 +6465,537 @@
 2024-10-23T18:36:45,122: [client=11:stm=2259515833024:pid=0] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
 2024-10-23T18:36:45,677: [io 2259354281552 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1729701405.124433, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 13116, "elapsed_time": 0.55264100000000005}
 2024-10-23T18:36:45,678: [io 2259354281552 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-23T18:59:13,911: [listener] Watchman 4.9.4 <no build info set> starting up on LAPTOP-CLNBK1U3
+2024-10-23T18:59:13,917: [listener] path C:/Users/ockert/src/entidad/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-23T18:59:13,918: [listener] root C:/Users/ockert/src/entidad/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-23T18:59:13,919: [listener] path C:/Users/ockert/src/entidad/fwos-demo-app is on filesystem type NTFS
+2024-10-23T18:59:13,920: [listener] root C:/Users/ockert/src/entidad/fwos-demo-app using watcher mechanism win32 (auto was requested)
+2024-10-23T18:59:13,921: [listener] path C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T18:59:13,922: [listener] root C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T18:59:13,922: [listener] path C:/Users/ockert/src/entidad/mendix-facetec-main is on filesystem type NTFS
+2024-10-23T18:59:13,923: [listener] root C:/Users/ockert/src/entidad/mendix-facetec-main using watcher mechanism win32 (auto was requested)
+2024-10-23T18:59:13,924: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource is on filesystem type NTFS
+2024-10-23T18:59:13,925: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource using watcher mechanism win32 (auto was requested)
+2024-10-23T18:59:13,927: [listener] path C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T18:59:13,928: [listener] root C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T18:59:13,929: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native is on filesystem type NTFS
+2024-10-23T18:59:13,930: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native using watcher mechanism win32 (auto was requested)
+2024-10-23T18:59:13,938: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-main is on filesystem type NTFS
+2024-10-23T18:59:13,940: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-main using watcher mechanism win32 (auto was requested)
+2024-10-23T18:59:13,945: [listener] path C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T18:59:13,946: [listener] root C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T18:59:13,955: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme is on filesystem type NTFS
+2024-10-23T18:59:13,957: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme using watcher mechanism win32 (auto was requested)
+2024-10-23T18:59:13,967: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource is on filesystem type NTFS
+2024-10-23T18:59:13,968: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource using watcher mechanism win32 (auto was requested)
+2024-10-23T18:59:13,969: [io 2197209630480 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme] PERF: {"start_time": 1729702753.966306, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 19224, "elapsed_time": 0.0029940000000000001}
+2024-10-23T18:59:13,969: [io 2197209630480 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme] crawl complete
+2024-10-23T18:59:13,976: [listener] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T18:59:13,977: [listener] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T18:59:14,024: [accept0] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,026: [accept1] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,026: [accept2] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,026: [accept3] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,026: [accept4] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,027: [accept5] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,033: [accept6] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,040: [accept7] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,047: [accept8] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,052: [accept9] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,052: [accept10] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,056: [accept11] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,058: [accept12] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,060: [accept13] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,063: [accept14] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,065: [accept15] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,069: [accept16] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,074: [accept17] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,079: [accept18] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,086: [accept19] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,086: [accept20] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,086: [accept21] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,086: [accept22] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,087: [accept23] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,087: [accept24] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,087: [accept25] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,087: [accept26] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,087: [accept27] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,087: [accept29] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,087: [accept28] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,087: [accept31] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,087: [accept30] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T18:59:14,116: [io 2197209625008 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource] PERF: {"start_time": 1729702753.927299, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 19224, "elapsed_time": 0.188995}
+2024-10-23T18:59:14,116: [io 2197209625008 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource] crawl complete
+2024-10-23T18:59:15,109: [io 2197209629568 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native] PERF: {"start_time": 1729702753.9382989, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 19224, "elapsed_time": 1.1708080000000001}
+2024-10-23T18:59:15,109: [io 2197209629568 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native] crawl complete
+2024-10-23T18:59:16,622: [io 2197206551648 C:/Users/ockert/src/entidad/mendix-facetec-main] PERF: {"start_time": 1729702753.924293, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/mendix-facetec-main", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 19224, "elapsed_time": 2.698366}
+2024-10-23T18:59:16,622: [io 2197206551648 C:/Users/ockert/src/entidad/mendix-facetec-main] crawl complete
+2024-10-23T18:59:18,013: [io 2197209628656 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1729702753.9933071, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 19224, "elapsed_time": 4.0202450000000001}
+2024-10-23T18:59:18,014: [io 2197209628656 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-23T18:59:18,039: [io 2197209627744 C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules] PERF: {"start_time": 1729702753.955308, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 19224, "elapsed_time": 4.0842460000000003}
+2024-10-23T18:59:18,039: [io 2197209627744 C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules] crawl complete
+2024-10-23T18:59:18,041: [io 2197206703728 C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules] PERF: {"start_time": 1729702753.9222901, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 19224, "elapsed_time": 4.1192650000000004}
+2024-10-23T18:59:18,041: [io 2197206703728 C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules] crawl complete
+2024-10-23T18:59:18,065: [io 2197209624096 C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules] PERF: {"start_time": 1729702753.9292951, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 19224, "elapsed_time": 4.1352630000000001}
+2024-10-23T18:59:18,065: [io 2197209624096 C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules] crawl complete
+2024-10-23T18:59:20,498: [io 2197209626832 C:/Users/ockert/src/entidad/Unmio-mobile-main] PERF: {"start_time": 1729702753.944299, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-main", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 19224, "elapsed_time": 6.553248}
+2024-10-23T18:59:20,498: [io 2197209626832 C:/Users/ockert/src/entidad/Unmio-mobile-main] crawl complete
+2024-10-23T18:59:20,519: [io 2197206058176 C:/Users/ockert/src/entidad/mendix-react-native-jsonforms] PERF: {"start_time": 1729702753.9192951, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 19224, "elapsed_time": 6.6002489999999998}
+2024-10-23T18:59:20,519: [client=2:stm=2197219738080:pid=0] PERF: {"start_time": 1729702758.9452391, "version": "4.9.4", "description": "dispatch_command:watch-project", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "args": ["watch-project", "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms"], "client": {"pid": 0}}, "pid": 19224, "elapsed_time": 1.5743049999999998}
+2024-10-23T18:59:20,520: [io 2197206058176 C:/Users/ockert/src/entidad/mendix-react-native-jsonforms] crawl complete
+2024-10-23T18:59:20,607: [client=2:stm=2197219738080:pid=0] PERF: {"start_time": 1729702760.60654, "version": "4.9.4", "description": "sync_to_now", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "sync_to_now": {"success": false, "reason": "root dir was removed or is inaccessible", "timeoutms": 60000}}, "pid": 19224, "elapsed_time": 0.001003}
+2024-10-23T18:59:20,607: [readchange C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] signalled
+2024-10-23T18:59:20,615: [client=2:stm=2197219738080:pid=0] send_error_response: ["query", "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], failed: query failed: synchronization failed: root dir was removed or is inaccessible
+2024-10-23T18:59:22,052: [io 2197206320640 C:/Users/ockert/src/entidad/fwos-demo-app] PERF: {"start_time": 1729702753.920296, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/fwos-demo-app", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 19224, "elapsed_time": 8.1318520000000003}
+2024-10-23T18:59:22,052: [io 2197206320640 C:/Users/ockert/src/entidad/fwos-demo-app] crawl complete
+2024-10-23T18:59:23,143: [io 2197209625920 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource] PERF: {"start_time": 1729702753.9743021, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 19224, "elapsed_time": 9.1688550000000006}
+2024-10-23T18:59:23,143: [io 2197209625920 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource] crawl complete
+2024-10-23T18:59:25,266: [client=12:stm=2197395608848:pid=0] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T18:59:25,268: [client=12:stm=2197395608848:pid=0] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T18:59:26,016: [io 2197209628656 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1729702765.269917, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 19224, "elapsed_time": 0.74653899999999995}
+2024-10-23T18:59:26,016: [io 2197209628656 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:05:03,756: [listener] Watchman 4.9.4 <no build info set> starting up on LAPTOP-CLNBK1U3
+2024-10-23T19:05:03,763: [listener] path C:/Users/ockert/src/entidad/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-23T19:05:03,763: [listener] root C:/Users/ockert/src/entidad/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-23T19:05:03,765: [listener] path C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:05:03,766: [listener] root C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:05:03,768: [listener] path C:/Users/ockert/src/entidad/fwos-demo-app is on filesystem type NTFS
+2024-10-23T19:05:03,769: [listener] root C:/Users/ockert/src/entidad/fwos-demo-app using watcher mechanism win32 (auto was requested)
+2024-10-23T19:05:03,771: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource is on filesystem type NTFS
+2024-10-23T19:05:03,772: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource using watcher mechanism win32 (auto was requested)
+2024-10-23T19:05:03,774: [listener] path C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:05:03,775: [listener] root C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:05:03,778: [listener] path C:/Users/ockert/src/entidad/mendix-facetec-main is on filesystem type NTFS
+2024-10-23T19:05:03,779: [listener] root C:/Users/ockert/src/entidad/mendix-facetec-main using watcher mechanism win32 (auto was requested)
+2024-10-23T19:05:03,781: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native is on filesystem type NTFS
+2024-10-23T19:05:03,782: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native using watcher mechanism win32 (auto was requested)
+2024-10-23T19:05:03,799: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-main is on filesystem type NTFS
+2024-10-23T19:05:03,801: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-main using watcher mechanism win32 (auto was requested)
+2024-10-23T19:05:03,817: [listener] path C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:05:03,818: [listener] root C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:05:03,831: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme is on filesystem type NTFS
+2024-10-23T19:05:03,832: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme using watcher mechanism win32 (auto was requested)
+2024-10-23T19:05:03,867: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource is on filesystem type NTFS
+2024-10-23T19:05:03,868: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource using watcher mechanism win32 (auto was requested)
+2024-10-23T19:05:03,871: [io 2187665638656 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme] PERF: {"start_time": 1729703103.8673129, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 22444, "elapsed_time": 0.0040000000000000001}
+2024-10-23T19:05:03,871: [io 2187665638656 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme] crawl complete
+2024-10-23T19:05:03,890: [listener] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:05:03,891: [listener] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:05:03,918: [io 2187658453248 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource] PERF: {"start_time": 1729703103.7743151, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 22444, "elapsed_time": 0.14400099999999999}
+2024-10-23T19:05:03,919: [io 2187658453248 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource] crawl complete
+2024-10-23T19:05:03,945: [accept0] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:03,965: [accept1] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:03,981: [accept2] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,017: [accept3] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,033: [accept4] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,063: [accept5] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,079: [accept6] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,097: [accept7] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,113: [accept8] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,135: [accept9] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,186: [accept10] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,216: [accept11] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,245: [accept12] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,283: [accept13] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,304: [accept14] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,332: [accept15] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,341: [accept16] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,347: [accept17] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,373: [accept18] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,377: [accept19] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,377: [accept20] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,383: [accept21] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,390: [accept22] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,392: [accept23] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,395: [accept24] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,407: [accept25] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,457: [accept26] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,503: [accept27] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,513: [accept28] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,525: [accept29] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,537: [accept30] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,553: [accept31] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:05:04,604: [io 2187664483888 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native] PERF: {"start_time": 1729703103.79931, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 22444, "elapsed_time": 0.805145}
+2024-10-23T19:05:04,604: [io 2187664483888 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native] crawl complete
+2024-10-23T19:05:05,291: [io 2187662027600 C:/Users/ockert/src/entidad/mendix-facetec-main] PERF: {"start_time": 1729703103.780313, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/mendix-facetec-main", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 22444, "elapsed_time": 1.5112109999999999}
+2024-10-23T19:05:05,292: [io 2187662027600 C:/Users/ockert/src/entidad/mendix-facetec-main] crawl complete
+2024-10-23T19:05:06,234: [io 2187665636832 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1729703103.902318, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 22444, "elapsed_time": 2.3322080000000001}
+2024-10-23T19:05:06,234: [io 2187665636832 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:05:06,247: [io 2187658177424 C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules] PERF: {"start_time": 1729703103.767324, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 22444, "elapsed_time": 2.4792040000000002}
+2024-10-23T19:05:06,247: [io 2187658177424 C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:05:06,269: [io 2187658593728 C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules] PERF: {"start_time": 1729703103.778317, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 22444, "elapsed_time": 2.4912049999999999}
+2024-10-23T19:05:06,270: [io 2187658593728 C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:05:06,305: [io 2187665634096 C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules] PERF: {"start_time": 1729703103.830313, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 22444, "elapsed_time": 2.4752079999999999}
+2024-10-23T19:05:06,305: [io 2187665634096 C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:05:07,548: [io 2187664472656 C:/Users/ockert/src/entidad/Unmio-mobile-main] PERF: {"start_time": 1729703103.8173211, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-main", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 22444, "elapsed_time": 3.7308780000000001}
+2024-10-23T19:05:07,548: [io 2187664472656 C:/Users/ockert/src/entidad/Unmio-mobile-main] crawl complete
+2024-10-23T19:05:07,581: [io 2187657275776 C:/Users/ockert/src/entidad/mendix-react-native-jsonforms] PERF: {"start_time": 1729703103.764313, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 22444, "elapsed_time": 3.8168880000000001}
+2024-10-23T19:05:07,581: [client=2:stm=2187775553664:pid=0] PERF: {"start_time": 1729703106.1855259, "version": "4.9.4", "description": "dispatch_command:watch-project", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "args": ["watch-project", "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms"], "client": {"pid": 0}}, "pid": 22444, "elapsed_time": 1.395675}
+2024-10-23T19:05:07,581: [io 2187657275776 C:/Users/ockert/src/entidad/mendix-react-native-jsonforms] crawl complete
+2024-10-23T19:05:07,666: [client=2:stm=2187775553664:pid=0] PERF: {"start_time": 1729703107.6652219, "version": "4.9.4", "description": "sync_to_now", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "sync_to_now": {"success": false, "reason": "root dir was removed or is inaccessible", "timeoutms": 60000}}, "pid": 22444, "elapsed_time": 0.00098499999999999998}
+2024-10-23T19:05:07,666: [readchange C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] signalled
+2024-10-23T19:05:07,666: [client=2:stm=2187775553664:pid=0] send_error_response: ["query", "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], failed: query failed: synchronization failed: root dir was removed or is inaccessible
+2024-10-23T19:05:07,697: [io 2187658315408 C:/Users/ockert/src/entidad/fwos-demo-app] PERF: {"start_time": 1729703103.771312, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/fwos-demo-app", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 22444, "elapsed_time": 3.9258929999999999}
+2024-10-23T19:05:07,697: [io 2187658315408 C:/Users/ockert/src/entidad/fwos-demo-app] crawl complete
+2024-10-23T19:05:08,909: [io 2187665639568 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource] PERF: {"start_time": 1729703103.890312, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 22444, "elapsed_time": 5.0191629999999998}
+2024-10-23T19:05:08,909: [io 2187665639568 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource] crawl complete
+2024-10-23T19:05:10,784: [client=12:stm=2187845091840:pid=0] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:05:10,785: [client=12:stm=2187845091840:pid=0] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:05:11,439: [io 2187665635008 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1729703110.786902, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 22444, "elapsed_time": 0.65254400000000001}
+2024-10-23T19:05:11,439: [io 2187665635008 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:08:42,199: [listener] Watchman 4.9.4 <no build info set> starting up on LAPTOP-CLNBK1U3
+2024-10-23T19:08:42,203: [listener] path C:/Users/ockert/src/entidad/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-23T19:08:42,204: [listener] root C:/Users/ockert/src/entidad/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-23T19:08:42,205: [listener] path C:/Users/ockert/src/entidad/fwos-demo-app is on filesystem type NTFS
+2024-10-23T19:08:42,206: [listener] root C:/Users/ockert/src/entidad/fwos-demo-app using watcher mechanism win32 (auto was requested)
+2024-10-23T19:08:42,207: [listener] path C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:08:42,209: [listener] root C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:08:42,210: [listener] path C:/Users/ockert/src/entidad/mendix-facetec-main is on filesystem type NTFS
+2024-10-23T19:08:42,211: [listener] root C:/Users/ockert/src/entidad/mendix-facetec-main using watcher mechanism win32 (auto was requested)
+2024-10-23T19:08:42,212: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource is on filesystem type NTFS
+2024-10-23T19:08:42,213: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource using watcher mechanism win32 (auto was requested)
+2024-10-23T19:08:42,219: [listener] path C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:08:42,220: [listener] root C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:08:42,226: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native is on filesystem type NTFS
+2024-10-23T19:08:42,227: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native using watcher mechanism win32 (auto was requested)
+2024-10-23T19:08:42,232: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-main is on filesystem type NTFS
+2024-10-23T19:08:42,233: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-main using watcher mechanism win32 (auto was requested)
+2024-10-23T19:08:42,238: [listener] path C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:08:42,240: [listener] root C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:08:42,249: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme is on filesystem type NTFS
+2024-10-23T19:08:42,250: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme using watcher mechanism win32 (auto was requested)
+2024-10-23T19:08:42,259: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource is on filesystem type NTFS
+2024-10-23T19:08:42,260: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource using watcher mechanism win32 (auto was requested)
+2024-10-23T19:08:42,262: [io 1904796679296 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme] PERF: {"start_time": 1729703322.2580609, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 15364, "elapsed_time": 0.0039950000000000003}
+2024-10-23T19:08:42,262: [io 1904796679296 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme] crawl complete
+2024-10-23T19:08:42,292: [listener] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:08:42,293: [listener] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:08:42,323: [accept0] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,329: [accept1] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,340: [accept2] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,346: [accept3] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,348: [accept4] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,353: [accept5] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,364: [accept6] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,366: [accept7] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,369: [accept8] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,370: [accept9] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,378: [accept10] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,381: [accept12] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,392: [io 1904796676560 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource] PERF: {"start_time": 1729703322.219058, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 15364, "elapsed_time": 0.17299800000000001}
+2024-10-23T19:08:42,393: [io 1904796676560 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource] crawl complete
+2024-10-23T19:08:42,381: [accept11] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,410: [accept13] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,414: [accept14] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,418: [accept15] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,422: [accept16] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,430: [accept17] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,431: [accept18] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,437: [accept19] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,439: [accept20] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,440: [accept21] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,445: [accept22] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,448: [accept23] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,451: [accept24] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,461: [accept25] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,474: [accept26] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,491: [accept27] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,494: [accept28] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,498: [accept29] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,500: [accept30] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,511: [accept31] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:08:42,926: [io 1904796674736 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native] PERF: {"start_time": 1729703322.2320559, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 15364, "elapsed_time": 0.69400399999999995}
+2024-10-23T19:08:42,927: [io 1904796674736 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native] crawl complete
+2024-10-23T19:08:43,543: [io 1904796673824 C:/Users/ockert/src/entidad/mendix-facetec-main] PERF: {"start_time": 1729703322.2120559, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/mendix-facetec-main", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 15364, "elapsed_time": 1.331059}
+2024-10-23T19:08:43,543: [io 1904796673824 C:/Users/ockert/src/entidad/mendix-facetec-main] crawl complete
+2024-10-23T19:08:44,469: [io 1904796678384 C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules] PERF: {"start_time": 1729703322.2480569, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 15364, "elapsed_time": 2.2217250000000002}
+2024-10-23T19:08:44,469: [io 1904796678384 C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:08:44,479: [io 1904796680208 C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules] PERF: {"start_time": 1729703322.2100661, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 15364, "elapsed_time": 2.2697069999999999}
+2024-10-23T19:08:44,479: [io 1904796680208 C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:08:44,489: [io 1904806824576 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1729703322.303056, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 15364, "elapsed_time": 2.1867169999999998}
+2024-10-23T19:08:44,490: [io 1904806824576 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:08:44,503: [io 1904796677472 C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules] PERF: {"start_time": 1729703322.226054, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 15364, "elapsed_time": 2.27772}
+2024-10-23T19:08:44,504: [io 1904796677472 C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:08:45,650: [io 1904796675648 C:/Users/ockert/src/entidad/Unmio-mobile-main] PERF: {"start_time": 1729703322.2380569, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-main", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 15364, "elapsed_time": 3.4127209999999999}
+2024-10-23T19:08:45,650: [io 1904796675648 C:/Users/ockert/src/entidad/Unmio-mobile-main] crawl complete
+2024-10-23T19:08:45,726: [client=2:stm=1902736785472:pid=0] PERF: {"start_time": 1729703324.351779, "version": "4.9.4", "description": "dispatch_command:watch-project", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "args": ["watch-project", "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms"], "client": {"pid": 0}}, "pid": 15364, "elapsed_time": 1.374995}
+2024-10-23T19:08:45,726: [io 1904795832688 C:/Users/ockert/src/entidad/mendix-react-native-jsonforms] PERF: {"start_time": 1729703322.2050581, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 15364, "elapsed_time": 3.5217160000000001}
+2024-10-23T19:08:45,726: [io 1904795832688 C:/Users/ockert/src/entidad/mendix-react-native-jsonforms] crawl complete
+2024-10-23T19:08:45,817: [readchange C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] signalled
+2024-10-23T19:08:45,817: [client=2:stm=1902736785472:pid=0] PERF: {"start_time": 1729703325.8177791, "version": "4.9.4", "description": "sync_to_now", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "sync_to_now": {"success": false, "reason": "root dir was removed or is inaccessible", "timeoutms": 60000}}, "pid": 15364, "elapsed_time": 0.0}
+2024-10-23T19:08:45,827: [client=2:stm=1902736785472:pid=0] send_error_response: ["query", "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], failed: query failed: synchronization failed: root dir was removed or is inaccessible
+2024-10-23T19:08:45,885: [io 1904796093552 C:/Users/ockert/src/entidad/fwos-demo-app] PERF: {"start_time": 1729703322.207063, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/fwos-demo-app", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 15364, "elapsed_time": 3.678706}
+2024-10-23T19:08:45,885: [io 1904796093552 C:/Users/ockert/src/entidad/fwos-demo-app] crawl complete
+2024-10-23T19:08:46,999: [io 1904806827312 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource] PERF: {"start_time": 1729703322.2930579, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 15364, "elapsed_time": 4.7067259999999997}
+2024-10-23T19:08:46,999: [io 1904806827312 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource] crawl complete
+2024-10-23T19:08:48,914: [client=9:stm=1902786816176:pid=0] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:08:48,915: [client=9:stm=1902786816176:pid=0] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:08:49,506: [io 1904806824576 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1729703328.917609, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 15364, "elapsed_time": 0.58851600000000004}
+2024-10-23T19:08:49,506: [io 1904806824576 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:11:26,408: [listener] Watchman 4.9.4 <no build info set> starting up on LAPTOP-CLNBK1U3
+2024-10-23T19:11:26,429: [listener] path C:/Users/ockert/src/entidad/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-23T19:11:26,431: [listener] root C:/Users/ockert/src/entidad/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-23T19:11:26,433: [listener] path C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:11:26,435: [listener] root C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:11:26,440: [listener] path C:/Users/ockert/src/entidad/fwos-demo-app is on filesystem type NTFS
+2024-10-23T19:11:26,440: [listener] root C:/Users/ockert/src/entidad/fwos-demo-app using watcher mechanism win32 (auto was requested)
+2024-10-23T19:11:26,444: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource is on filesystem type NTFS
+2024-10-23T19:11:26,446: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource using watcher mechanism win32 (auto was requested)
+2024-10-23T19:11:26,447: [listener] path C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:11:26,448: [listener] root C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:11:26,459: [listener] path C:/Users/ockert/src/entidad/mendix-facetec-main is on filesystem type NTFS
+2024-10-23T19:11:26,460: [listener] root C:/Users/ockert/src/entidad/mendix-facetec-main using watcher mechanism win32 (auto was requested)
+2024-10-23T19:11:26,493: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native is on filesystem type NTFS
+2024-10-23T19:11:26,495: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native using watcher mechanism win32 (auto was requested)
+2024-10-23T19:11:26,542: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-main is on filesystem type NTFS
+2024-10-23T19:11:26,543: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-main using watcher mechanism win32 (auto was requested)
+2024-10-23T19:11:26,567: [io 3025720370656 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource] PERF: {"start_time": 1729703486.446903, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 3096, "elapsed_time": 0.120999}
+2024-10-23T19:11:26,567: [listener] path C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:11:26,567: [io 3025720370656 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource] crawl complete
+2024-10-23T19:11:26,568: [listener] root C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:11:26,609: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme is on filesystem type NTFS
+2024-10-23T19:11:26,611: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme using watcher mechanism win32 (auto was requested)
+2024-10-23T19:11:26,649: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource is on filesystem type NTFS
+2024-10-23T19:11:26,650: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource using watcher mechanism win32 (auto was requested)
+2024-10-23T19:11:26,652: [io 3025720377040 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme] PERF: {"start_time": 1729703486.6489789, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 3096, "elapsed_time": 0.003999}
+2024-10-23T19:11:26,653: [io 3025720377040 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme] crawl complete
+2024-10-23T19:11:26,693: [listener] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:11:26,694: [listener] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:11:26,783: [accept0] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,784: [accept1] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,788: [accept2] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,792: [accept3] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,799: [accept4] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,825: [accept5] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,841: [accept6] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,846: [accept7] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,856: [accept8] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,858: [accept9] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,865: [accept10] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,868: [accept11] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,871: [accept12] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,873: [accept13] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,882: [accept14] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,899: [accept15] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,900: [accept16] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,902: [accept17] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,909: [accept18] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,910: [accept19] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,911: [accept20] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,912: [accept21] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,922: [accept22] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,933: [accept23] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,939: [accept24] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,944: [accept25] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,948: [accept26] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,949: [accept27] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,949: [accept28] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,950: [accept29] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,952: [accept30] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:26,959: [accept31] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:11:27,387: [io 3025720372480 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native] PERF: {"start_time": 1729703486.5419021, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 3096, "elapsed_time": 0.84545700000000001}
+2024-10-23T19:11:27,387: [io 3025720372480 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native] crawl complete
+2024-10-23T19:11:27,992: [io 3025720374304 C:/Users/ockert/src/entidad/mendix-facetec-main] PERF: {"start_time": 1729703486.492909, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/mendix-facetec-main", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 3096, "elapsed_time": 1.4995540000000001}
+2024-10-23T19:11:27,992: [io 3025720374304 C:/Users/ockert/src/entidad/mendix-facetec-main] crawl complete
+2024-10-23T19:11:28,838: [io 3025717310944 C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules] PERF: {"start_time": 1729703486.4419031, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 3096, "elapsed_time": 2.3951530000000001}
+2024-10-23T19:11:28,838: [io 3025717310944 C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:11:28,842: [io 3025720376128 C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules] PERF: {"start_time": 1729703486.4619091, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 3096, "elapsed_time": 2.3801429999999999}
+2024-10-23T19:11:28,842: [io 3025720376128 C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:11:28,909: [io 3025740309264 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1729703486.7490759, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 3096, "elapsed_time": 2.1599729999999999}
+2024-10-23T19:11:28,909: [io 3025740309264 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:11:28,927: [io 3025720371568 C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules] PERF: {"start_time": 1729703486.612896, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 3096, "elapsed_time": 2.3141620000000001}
+2024-10-23T19:11:28,928: [io 3025720371568 C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:11:30,194: [io 3025715521024 C:/Users/ockert/src/entidad/mendix-react-native-jsonforms] PERF: {"start_time": 1729703486.433902, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 3096, "elapsed_time": 3.7609569999999999}
+2024-10-23T19:11:30,194: [io 3025715521024 C:/Users/ockert/src/entidad/mendix-react-native-jsonforms] crawl complete
+2024-10-23T19:11:30,194: [client=2:stm=3023684345936:pid=0] PERF: {"start_time": 1729703488.5914609, "version": "4.9.4", "description": "dispatch_command:watch-project", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "args": ["watch-project", "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms"], "client": {"pid": 0}}, "pid": 3096, "elapsed_time": 1.6033979999999999}
+2024-10-23T19:11:30,250: [io 3025720373392 C:/Users/ockert/src/entidad/Unmio-mobile-main] PERF: {"start_time": 1729703486.5689089, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-main", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 3096, "elapsed_time": 3.6819470000000001}
+2024-10-23T19:11:30,250: [io 3025720373392 C:/Users/ockert/src/entidad/Unmio-mobile-main] crawl complete
+2024-10-23T19:11:30,435: [client=2:stm=3023684345936:pid=0] PERF: {"start_time": 1729703490.435873, "version": "4.9.4", "description": "sync_to_now", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "sync_to_now": {"success": false, "reason": "root dir was removed or is inaccessible", "timeoutms": 60000}}, "pid": 3096, "elapsed_time": 0.0}
+2024-10-23T19:11:30,435: [readchange C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] signalled
+2024-10-23T19:11:30,436: [client=2:stm=3023684345936:pid=0] send_error_response: ["query", "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], failed: query failed: synchronization failed: root dir was removed or is inaccessible
+2024-10-23T19:11:30,437: [io 3025717821360 C:/Users/ockert/src/entidad/fwos-demo-app] PERF: {"start_time": 1729703486.4439061, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/fwos-demo-app", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 3096, "elapsed_time": 3.9939520000000002}
+2024-10-23T19:11:30,437: [io 3025717821360 C:/Users/ockert/src/entidad/fwos-demo-app] crawl complete
+2024-10-23T19:11:31,354: [io 3025720375216 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource] PERF: {"start_time": 1729703486.691076, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 3096, "elapsed_time": 4.6637779999999998}
+2024-10-23T19:11:31,355: [io 3025720375216 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource] crawl complete
+2024-10-23T19:11:33,642: [client=12:stm=3025786508960:pid=0] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:11:33,643: [client=12:stm=3025786508960:pid=0] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:11:34,263: [io 3025735624080 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1729703493.6449411, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 3096, "elapsed_time": 0.61810299999999996}
+2024-10-23T19:11:34,263: [io 3025735624080 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:15:23,623: [listener] Watchman 4.9.4 <no build info set> starting up on LAPTOP-CLNBK1U3
+2024-10-23T19:15:23,627: [listener] path C:/Users/ockert/src/entidad/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-23T19:15:23,628: [listener] root C:/Users/ockert/src/entidad/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-23T19:15:23,630: [listener] path C:/Users/ockert/src/entidad/fwos-demo-app is on filesystem type NTFS
+2024-10-23T19:15:23,631: [listener] root C:/Users/ockert/src/entidad/fwos-demo-app using watcher mechanism win32 (auto was requested)
+2024-10-23T19:15:23,633: [listener] path C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:15:23,634: [listener] root C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:15:23,637: [listener] path C:/Users/ockert/src/entidad/mendix-facetec-main is on filesystem type NTFS
+2024-10-23T19:15:23,638: [listener] root C:/Users/ockert/src/entidad/mendix-facetec-main using watcher mechanism win32 (auto was requested)
+2024-10-23T19:15:23,647: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource is on filesystem type NTFS
+2024-10-23T19:15:23,648: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource using watcher mechanism win32 (auto was requested)
+2024-10-23T19:15:23,657: [listener] path C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:15:23,658: [listener] root C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:15:23,711: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native is on filesystem type NTFS
+2024-10-23T19:15:23,712: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native using watcher mechanism win32 (auto was requested)
+2024-10-23T19:15:23,741: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-main is on filesystem type NTFS
+2024-10-23T19:15:23,742: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-main using watcher mechanism win32 (auto was requested)
+2024-10-23T19:15:23,766: [listener] path C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:15:23,767: [listener] root C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:15:23,786: [io 2379581130512 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource] PERF: {"start_time": 1729703723.6573441, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 26188, "elapsed_time": 0.12900700000000001}
+2024-10-23T19:15:23,786: [io 2379581130512 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource] crawl complete
+2024-10-23T19:15:23,802: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme is on filesystem type NTFS
+2024-10-23T19:15:23,804: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme using watcher mechanism win32 (auto was requested)
+2024-10-23T19:15:23,865: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource is on filesystem type NTFS
+2024-10-23T19:15:23,867: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource using watcher mechanism win32 (auto was requested)
+2024-10-23T19:15:23,868: [io 2379597705008 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme] PERF: {"start_time": 1729703723.8645239, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 26188, "elapsed_time": 0.0039960000000000004}
+2024-10-23T19:15:23,868: [io 2379597705008 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme] crawl complete
+2024-10-23T19:15:23,879: [listener] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:15:23,881: [listener] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:15:23,931: [accept0] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:23,931: [accept1] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:23,931: [accept2] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:23,954: [accept3] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:23,963: [accept4] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:23,969: [accept5] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:23,994: [accept6] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,002: [accept7] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,006: [accept8] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,011: [accept9] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,011: [accept10] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,011: [accept11] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,011: [accept12] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,011: [accept13] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,012: [accept14] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,013: [accept15] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,025: [accept16] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,041: [accept17] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,058: [accept18] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,066: [accept19] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,088: [accept20] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,093: [accept21] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,097: [accept22] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,099: [accept23] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,101: [accept24] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,105: [accept25] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,109: [accept26] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,117: [accept27] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,121: [accept28] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,131: [accept29] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,144: [accept30] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,150: [accept31] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:15:24,486: [io 2379584707056 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native] PERF: {"start_time": 1729703723.7413459, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 26188, "elapsed_time": 0.74534999999999996}
+2024-10-23T19:15:24,486: [io 2379584707056 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native] crawl complete
+2024-10-23T19:15:24,971: [io 2379580874256 C:/Users/ockert/src/entidad/mendix-facetec-main] PERF: {"start_time": 1729703723.6473479, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/mendix-facetec-main", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 26188, "elapsed_time": 1.3243400000000001}
+2024-10-23T19:15:24,971: [io 2379580874256 C:/Users/ockert/src/entidad/mendix-facetec-main] crawl complete
+2024-10-23T19:15:25,881: [io 2379580681248 C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules] PERF: {"start_time": 1729703723.637356, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 26188, "elapsed_time": 2.2443270000000002}
+2024-10-23T19:15:25,881: [io 2379580681248 C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:15:25,925: [io 2379586378128 C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules] PERF: {"start_time": 1729703723.7093501, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 26188, "elapsed_time": 2.216332}
+2024-10-23T19:15:25,925: [io 2379586378128 C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:15:25,968: [io 2379594039424 C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules] PERF: {"start_time": 1729703723.8023491, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 26188, "elapsed_time": 2.1663329999999998}
+2024-10-23T19:15:25,968: [io 2379594039424 C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:15:25,971: [io 2379595386912 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1729703723.9135239, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 26188, "elapsed_time": 2.0581659999999999}
+2024-10-23T19:15:25,971: [io 2379595386912 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:15:27,243: [io 2379580150064 C:/Users/ockert/src/entidad/mendix-react-native-jsonforms] PERF: {"start_time": 1729703723.6303501, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 26188, "elapsed_time": 3.6134819999999999}
+2024-10-23T19:15:27,243: [io 2379580150064 C:/Users/ockert/src/entidad/mendix-react-native-jsonforms] crawl complete
+2024-10-23T19:15:27,244: [client=2:stm=2379630461760:pid=0] PERF: {"start_time": 1729703725.87868, "version": "4.9.4", "description": "dispatch_command:watch-project", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "args": ["watch-project", "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms"], "client": {"pid": 0}}, "pid": 26188, "elapsed_time": 1.3651519999999999}
+2024-10-23T19:15:27,246: [io 2379585137312 C:/Users/ockert/src/entidad/Unmio-mobile-main] PERF: {"start_time": 1729703723.765348, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-main", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 26188, "elapsed_time": 3.4814859999999999}
+2024-10-23T19:15:27,246: [io 2379585137312 C:/Users/ockert/src/entidad/Unmio-mobile-main] crawl complete
+2024-10-23T19:15:27,349: [client=2:stm=2379630461760:pid=0] PERF: {"start_time": 1729703727.3488281, "version": "4.9.4", "description": "sync_to_now", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "sync_to_now": {"success": false, "reason": "root dir was removed or is inaccessible", "timeoutms": 60000}}, "pid": 26188, "elapsed_time": 0.0010009999999999999}
+2024-10-23T19:15:27,349: [readchange C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] signalled
+2024-10-23T19:15:27,349: [client=2:stm=2379630461760:pid=0] send_error_response: ["query", "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], failed: query failed: synchronization failed: root dir was removed or is inaccessible
+2024-10-23T19:15:27,384: [io 2379580511776 C:/Users/ockert/src/entidad/fwos-demo-app] PERF: {"start_time": 1729703723.6333439, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/fwos-demo-app", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 26188, "elapsed_time": 3.7514829999999999}
+2024-10-23T19:15:27,384: [io 2379580511776 C:/Users/ockert/src/entidad/fwos-demo-app] crawl complete
+2024-10-23T19:15:28,206: [io 2379599168816 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource] PERF: {"start_time": 1729703723.8805239, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 26188, "elapsed_time": 4.3260269999999998}
+2024-10-23T19:15:28,206: [io 2379599168816 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource] crawl complete
+2024-10-23T19:15:30,808: [client=6:stm=2379763256112:pid=0] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:15:30,809: [client=6:stm=2379763256112:pid=0] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:15:31,459: [io 2379665087552 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1729703730.8125539, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 26188, "elapsed_time": 0.64696500000000001}
+2024-10-23T19:15:31,459: [io 2379665087552 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:18:33,465: [listener] Watchman 4.9.4 <no build info set> starting up on LAPTOP-CLNBK1U3
+2024-10-23T19:18:33,470: [listener] path C:/Users/ockert/src/entidad/mendix-react-native-jsonforms is on filesystem type NTFS
+2024-10-23T19:18:33,472: [listener] root C:/Users/ockert/src/entidad/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2024-10-23T19:18:33,473: [listener] path C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:18:33,474: [listener] root C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:18:33,477: [listener] path C:/Users/ockert/src/entidad/fwos-demo-app is on filesystem type NTFS
+2024-10-23T19:18:33,478: [listener] root C:/Users/ockert/src/entidad/fwos-demo-app using watcher mechanism win32 (auto was requested)
+2024-10-23T19:18:33,480: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource is on filesystem type NTFS
+2024-10-23T19:18:33,482: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource using watcher mechanism win32 (auto was requested)
+2024-10-23T19:18:33,484: [listener] path C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:18:33,485: [listener] root C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:18:33,487: [listener] path C:/Users/ockert/src/entidad/mendix-facetec-main is on filesystem type NTFS
+2024-10-23T19:18:33,488: [listener] root C:/Users/ockert/src/entidad/mendix-facetec-main using watcher mechanism win32 (auto was requested)
+2024-10-23T19:18:33,500: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native is on filesystem type NTFS
+2024-10-23T19:18:33,501: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native using watcher mechanism win32 (auto was requested)
+2024-10-23T19:18:33,505: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-main is on filesystem type NTFS
+2024-10-23T19:18:33,506: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-main using watcher mechanism win32 (auto was requested)
+2024-10-23T19:18:33,569: [listener] path C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:18:33,571: [listener] root C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:18:33,598: [io 2628311681728 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource] PERF: {"start_time": 1729703913.485738, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 13724, "elapsed_time": 0.113}
+2024-10-23T19:18:33,599: [io 2628311681728 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource] crawl complete
+2024-10-23T19:18:33,618: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme is on filesystem type NTFS
+2024-10-23T19:18:33,619: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme using watcher mechanism win32 (auto was requested)
+2024-10-23T19:18:33,661: [listener] path C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource is on filesystem type NTFS
+2024-10-23T19:18:33,663: [listener] root C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource using watcher mechanism win32 (auto was requested)
+2024-10-23T19:18:33,664: [io 2628325680960 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme] PERF: {"start_time": 1729703913.661747, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 13724, "elapsed_time": 0.0029949999999999998}
+2024-10-23T19:18:33,665: [io 2628325680960 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme] crawl complete
+2024-10-23T19:18:33,686: [listener] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:18:33,688: [listener] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:18:33,712: [accept0] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,716: [accept1] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,717: [accept2] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,719: [accept3] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,728: [accept4] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,728: [accept5] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,731: [accept6] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,740: [accept7] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,746: [accept8] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,748: [accept9] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,752: [accept10] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,759: [accept11] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,766: [accept12] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,774: [accept13] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,782: [accept14] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,785: [accept15] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,789: [accept16] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,790: [accept17] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,795: [accept18] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,797: [accept19] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,802: [accept20] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,805: [accept21] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,808: [accept22] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,811: [accept23] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,819: [accept24] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,825: [accept25] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,828: [accept26] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,831: [accept27] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,835: [accept28] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,836: [accept29] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,837: [accept30] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:33,839: [accept31] waiting for pipe clients on \\.\pipe\watchman-ockert
+2024-10-23T19:18:34,101: [io 2628313410560 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native] PERF: {"start_time": 1729703913.5047331, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 13724, "elapsed_time": 0.597194}
+2024-10-23T19:18:34,101: [io 2628313410560 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native] crawl complete
+2024-10-23T19:18:34,705: [io 2628314536272 C:/Users/ockert/src/entidad/mendix-facetec-main] PERF: {"start_time": 1729703913.4997399, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/mendix-facetec-main", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 13724, "elapsed_time": 1.206186}
+2024-10-23T19:18:34,706: [io 2628314536272 C:/Users/ockert/src/entidad/mendix-facetec-main] crawl complete
+2024-10-23T19:18:35,519: [io 2628308668688 C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules] PERF: {"start_time": 1729703913.4767439, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 13724, "elapsed_time": 2.0431789999999999}
+2024-10-23T19:18:35,519: [io 2628308668688 C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:18:35,541: [io 2628312638208 C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules] PERF: {"start_time": 1729703913.48774, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 13724, "elapsed_time": 2.0541830000000001}
+2024-10-23T19:18:35,541: [io 2628312638208 C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:18:35,612: [io 2628318470976 C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules] PERF: {"start_time": 1729703913.617739, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 13724, "elapsed_time": 1.9951810000000001}
+2024-10-23T19:18:35,612: [io 2628318470976 C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:18:35,614: [io 2628332078416 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1729703913.7017479, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 13724, "elapsed_time": 1.9131719999999999}
+2024-10-23T19:18:35,615: [io 2628332078416 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-23T19:18:36,753: [io 2628316851152 C:/Users/ockert/src/entidad/Unmio-mobile-main] PERF: {"start_time": 1729703913.5717421, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-main", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 13724, "elapsed_time": 3.1821790000000001}
+2024-10-23T19:18:36,753: [io 2628316851152 C:/Users/ockert/src/entidad/Unmio-mobile-main] crawl complete
+2024-10-23T19:18:36,759: [io 2628308348496 C:/Users/ockert/src/entidad/mendix-react-native-jsonforms] PERF: {"start_time": 1729703913.473736, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 13724, "elapsed_time": 3.2861850000000001}
+2024-10-23T19:18:36,759: [client=2:stm=2628409901264:pid=0] PERF: {"start_time": 1729703915.4939229, "version": "4.9.4", "description": "dispatch_command:watch-project", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "args": ["watch-project", "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms"], "client": {"pid": 0}}, "pid": 13724, "elapsed_time": 1.265998}
+2024-10-23T19:18:36,760: [io 2628308348496 C:/Users/ockert/src/entidad/mendix-react-native-jsonforms] crawl complete
+2024-10-23T19:18:36,866: [readchange C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] signalled
+2024-10-23T19:18:36,866: [client=2:stm=2628409901264:pid=0] PERF: {"start_time": 1729703916.8669219, "version": "4.9.4", "description": "sync_to_now", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "sync_to_now": {"success": false, "reason": "root dir was removed or is inaccessible", "timeoutms": 60000}}, "pid": 13724, "elapsed_time": 0.0}
+2024-10-23T19:18:36,874: [client=2:stm=2628409901264:pid=0] send_error_response: ["query", "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], failed: query failed: synchronization failed: root dir was removed or is inaccessible
+2024-10-23T19:18:36,978: [io 2628311405984 C:/Users/ockert/src/entidad/fwos-demo-app] PERF: {"start_time": 1729703913.4807401, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/fwos-demo-app", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 13724, "elapsed_time": 3.4981800000000001}
+2024-10-23T19:18:36,979: [io 2628311405984 C:/Users/ockert/src/entidad/fwos-demo-app] crawl complete
+2024-10-23T19:18:38,307: [io 2628327116144 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource] PERF: {"start_time": 1729703913.6877389, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 13724, "elapsed_time": 4.6192650000000004}
+2024-10-23T19:18:38,308: [io 2628327116144 C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource] crawl complete
+2024-10-23T19:18:39,931: [client=10:stm=2628401477984:pid=0] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2024-10-23T19:18:39,932: [client=10:stm=2628401477984:pid=0] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2024-10-23T19:18:40,567: [io 2628376783952 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1729703919.9336569, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 13724, "elapsed_time": 0.63397400000000004}
+2024-10-23T19:18:40,567: [io 2628376783952 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
