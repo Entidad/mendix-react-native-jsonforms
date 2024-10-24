@@ -340,51 +340,70 @@ Here follows some styling samples for the various components.
 
 ```
 {
-    "radioButtons":{
-        "caption": {
-            "numberOfLines": 1,
-            "color": "#FF0000",
-            "fontSize": 14,
-            "fontFamily": "Lato-Regular",
-            "lineHeight": 20,
-            "marginBottom": 8,
-            "marginLeft": 8,
-            "marginTop": 8
-        },
-        "outerCircle": {
-            "height": 40,
-            "width": 40,
-            "borderRadius": 20,
-            "borderWidth": 1,
-            "borderColor": "#FF0000",
-            "alignItems": 'center',
-            "justifyContent": 'center',
-        },
-        "innerCircle": {
-            "height": 32,
-            "width": 32,
-            "borderRadius": 16,
-            "backgroundColor": "#FF0000"
-        },
-        "radioButtonItemContainerStyle": {
-            "marginBottom": 8
-        }
-    },
-    "input": {
-        "label": {
-            "numberOfLines": 1,
-            "color": "#FF0000",
-            "fontSize": 14,
-            "textAlign": "left",
-            "fontFamily": "Lato-Bold",
-            "marginTop": 24,
-            "marginBottom": 8
+    "dateControl": {
+        "dateTimePicker": {
+            "button": {
+                "container": {
+                    "flex": 1,
+                    "justifyContent": "center"
+                },
+                "header": {
+                    "textAlign": "center"
+                },
+                "primary": {}
+            },
+            "buttonContainer": {
+                "flex": 1,
+                "flexDirection": "row",
+                "alignItems": "center",
+                "justifyContent": "center"
+            },
+            "buttonConfirm": {},
+            "buttonCancel": {}
         }
     }
 }
 ```
 
 </details>
+
+### DateControl Styling
+
+![DateControl](../main/images/DateControl.png?raw=true)
+
+<details>
+  <summary>JSON</summary>
+
+```
+{
+	"dateControl": {
+		"dateTimePicker": {
+			"button": {
+				"container": {
+					"flex": 1,
+					"justifyContent": "center"
+				},
+				"header": {
+					"textAlign": "center"
+				},
+				"primary": {}
+			},
+			"buttonContainer": {
+				"flex": 1,
+				"flexDirection": "row",
+				"alignItems": "center",
+				"justifyContent": "center"
+			},
+			"buttonConfirm": {},
+			"buttonCancel": {}
+		}
+	}
+}
+```
+
+</details>
+
+
 
 ### ReadOnlyControl Styling
 
