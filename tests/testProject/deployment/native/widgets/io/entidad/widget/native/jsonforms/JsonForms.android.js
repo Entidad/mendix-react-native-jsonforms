@@ -1,7 +1,8 @@
 import { createElement, createContext, useContext, useState, Component } from 'react';
-import { StyleSheet, View, Text, Dimensions, PixelRatio, Appearance, Platform, TextInput, TouchableHighlight, TouchableOpacity, TouchableWithoutFeedback, Pressable, ScrollView } from 'react-native';
+import { StyleSheet, View, Text, Dimensions, PixelRatio, Appearance, Platform, TextInput, TouchableHighlight, TouchableOpacity, TouchableWithoutFeedback, Modal, Pressable, ScrollView } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 import DateTimePicker from '@react-native-community/datetimepicker';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 const styles$2 = StyleSheet.create({
     textError: {
@@ -2209,8 +2210,14 @@ const dateTimePicker = {
     flexDirection: "row"
   },
   button: button,
-  buttonCancel: {},
-  buttonConfirm: {}
+  buttonCancel: {
+    borderTopRightRadius: 0,
+    borderBottomRightRadius: 0
+  },
+  buttonConfirm: {
+    borderTopLeftRadius: 0,
+    borderBottomLeftRadius: 0
+  }
 };
 
 var customVariables = /*#__PURE__*/Object.freeze({
@@ -2628,6 +2635,41 @@ function getDataFromBoolean(val) {
     return val;
 }
 
+const stylesModal = StyleSheet.create({
+    centeredView: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    modalView: {
+        height: "25%",
+        width: "90%",
+        backgroundColor: "#25292e",
+        borderTopRightRadius: 18,
+        borderTopLeftRadius: 18,
+        bottom: 0,
+    },
+    button: {
+        borderRadius: 20,
+        padding: 10,
+        elevation: 2,
+    },
+    buttonOpen: {
+        backgroundColor: "#F194FF",
+    },
+    buttonClose: {
+        backgroundColor: "#2196F3",
+    },
+    textStyle: {
+        color: "white",
+        fontWeight: "bold",
+        textAlign: "center",
+    },
+    modalText: {
+        marginBottom: 15,
+        textAlign: "center",
+    }
+});
 function DateControl(props) {
     var _a, _b, _c;
     const state = useObject();
@@ -2641,8 +2683,10 @@ function DateControl(props) {
     const [error, setError] = useState(attr.error);
     const [date, setDate] = useState(getDateFromString(attr.data));
     const [showPicker, setShowPicker] = useState(false);
+    const [modalVisible, setModalVisible] = useState(false); //ockert
     const toggleDatePicker = () => {
         setShowPicker(!showPicker);
+        setModalVisible(!modalVisible);
     };
     const formatDate = (rawDate) => {
         let date = new Date(rawDate);
@@ -2651,25 +2695,55 @@ function DateControl(props) {
         let day = date.getDate();
         return `${year}-${month}-${day}`;
     };
-    //const _onChange = ({ type }, selectedDate: Date) => {//stephan
     const _onChange = (type, selectedDate) => {
-        console.info("_onChange:beg");
-        console.info(typeof (date));
-        console.info(date);
+        /*
+        console.info("dispatchConfig");
+            console.info(JSON.stringify(type.dispatchConfig));
+        //console.info("_targetInst");
+        //	console.info(JSON.stringify(type._targetInst));
+        console.info("nativeEvent");
+            console.info(JSON.stringify(type.nativeEvent));
+        console.info("_dispatchListeners");
+            console.info(JSON.stringify(type._dispatchListeners));
+        //console.info("_dispatchInstances");
+        //	console.info(JSON.stringify(type._dispatchInstances));
+        console.info("type");
+            console.info(JSON.stringify(type.type));
+        console.info("target");
+            console.info(JSON.stringify(type.target));
+        console.info("currentTarget");
+            console.info(JSON.stringify(type.currentTarget));
+        console.info("eventPhase");
+            console.info(JSON.stringify(type.eventPhase));
+        console.info("bubbles");
+            console.info(JSON.stringify(type.bubbles));
+        console.info("cancelable");
+            console.info(JSON.stringify(type.cancelable));
+        console.info("timeStamp");
+            console.info(JSON.stringify(type.timeStamp));
+        console.info("defaultPrevented");
+            console.info(JSON.stringify(type.defaultPrevented));
+        console.info("isTrusted");
+            console.info(JSON.stringify(type.isTrusted));
+        console.info("isDefaultPrevented");
+            console.info(JSON.stringify(type.isDefaultPrevented));
+        console.info("isPropagationStopped");
+            console.info(JSON.stringify(type.isPropagationStopped));
+        */
+        if ((type === null || type === void 0 ? void 0 : type.type) == "dismissed") {
+            return;
+        }
         if (type === "set") {
             const currentDate = selectedDate;
-            console.info(">>> 1 type: " + type + "  platform os: " + "android" + " selectedDate: " + selectedDate);
             setDate(currentDate);
             {
                 toggleDatePicker();
                 let strDate = formatDate(currentDate);
-                console.info(">>> 2 type: " + type + "  platform os: " + "android" + " strDate: " + strDate);
                 state.formData[attr.propertyName] = strDate;
                 state.setFormData(state.formData);
                 attr.onChange(state.formData);
                 attr.error = isEmpty(strDate);
                 setError(attr.error);
-                console.info(">>> 3 type: " + type + "  platform os: " + "android" + " date: " + currentDate);
                 return strDate || attr.placeholder || attr.data || attr.value;
             }
         }
@@ -2678,74 +2752,81 @@ function DateControl(props) {
                 toggleDatePicker();
                 let currentDate = type.nativeEvent.timestamp;
                 let strDate = formatDate(currentDate);
-                console.info(">>> 2 type: " + type + "  platform os: " + "android" + " strDate: " + strDate);
                 state.formData[attr.propertyName] = strDate;
                 state.setFormData(state.formData);
                 attr.onChange(state.formData);
                 attr.error = isEmpty(strDate);
                 setError(attr.error);
-                console.info(">>> 3 type: " + type + "  platform os: " + "android" + " date: " + currentDate);
                 return strDate || attr.placeholder || attr.data || attr.value;
             }
         }
     };
     const confirmIOSDate = () => {
         state.formData[attr.propertyName] = formatDate(date);
-        console.info(">>> 6 platform os: " + "android" + " date: " + date);
-        console.info(">>> 6 typeof(date): " + typeof (date));
         toggleDatePicker();
         _onChange(date);
     };
     return (createElement(View, { style: {} },
         createElement(Text, { style: styles === null || styles === void 0 ? void 0 : styles.label }, attr.label || "No label included"),
-        showPicker ? (createElement(DateTimePicker, { mode: "date", value: date, display: "spinner", onChange: _onChange, style: (state.showError && error) ? (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} : (styles === null || styles === void 0 ? void 0 : styles.input) || {} })) : null,
-        (showPicker && "android" === "ios") ? (createElement(View, { style: stylesDateTimePicker.buttonContainer },
-            createElement(TouchableOpacity, { onPress: toggleDatePicker, style: {
-                    ...stylesDateTimePicker.button.container,
-                    ...stylesDateTimePicker.button.primary,
-                    ...stylesDateTimePicker.buttonCancel,
-                    ...{
-                        flex: 1,
-                        justifyContent: "center"
-                    }
-                } },
-                createElement(Text, { style: {
-                        ...stylesDateTimePicker.button.header,
-                        ...{
-                            textAlign: "center"
-                        }
-                    } }, "Cancel")),
-            createElement(TouchableOpacity, { onPress: confirmIOSDate, style: {
-                    ...stylesDateTimePicker.button.container,
-                    ...stylesDateTimePicker.button.primary,
-                    ...stylesDateTimePicker.buttonConfirm,
-                    ...{
-                        flex: 1,
-                        justifyContent: "center"
-                    }
-                } },
-                createElement(Text, { style: {
-                        ...stylesDateTimePicker.button.header,
-                        ...{
-                            textAlign: "center"
-                        }
-                    } }, "Confirm")))) : null,
+        showPicker ? (createElement(SafeAreaProvider, null,
+            createElement(SafeAreaView, { style: stylesModal.centeredView },
+                createElement(Modal, { animationType: "slide", transparent: true, visible: modalVisible, onRequestClose: () => {
+                        setModalVisible(!modalVisible);
+                    }, style: { margin: 0, justifyContent: "center", alignItems: "center" } },
+                    createElement(View, { style: stylesModal.centeredView },
+                        createElement(View, { style: stylesModal.modalView },
+                            createElement(DateTimePicker, { mode: "date", value: date, display: "inline", onChange: _onChange, style: (state.showError && error) ? (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} : (styles === null || styles === void 0 ? void 0 : styles.input) || {} }),
+                            (showPicker && "android" === "ios") ? (createElement(View, { style: stylesDateTimePicker.buttonContainer },
+                                createElement(TouchableOpacity, { onPress: toggleDatePicker, style: {
+                                        ...stylesDateTimePicker.button.container,
+                                        ...stylesDateTimePicker.button.primary,
+                                        ...stylesDateTimePicker.buttonCancel,
+                                        ...{
+                                            flex: 1,
+                                            justifyContent: "center"
+                                        }
+                                    } },
+                                    createElement(Text, { style: {
+                                            ...stylesDateTimePicker.button.header,
+                                            ...{
+                                                textAlign: "center"
+                                            }
+                                        } }, "Cancel")),
+                                createElement(TouchableOpacity, { onPress: confirmIOSDate, style: {
+                                        ...stylesDateTimePicker.button.container,
+                                        ...stylesDateTimePicker.button.primary,
+                                        ...stylesDateTimePicker.buttonConfirm,
+                                        ...{
+                                            flex: 1,
+                                            justifyContent: "center"
+                                        }
+                                    } },
+                                    createElement(Text, { style: {
+                                            ...stylesDateTimePicker.button.header,
+                                            ...{
+                                                textAlign: "center"
+                                            }
+                                        } }, "Confirm")))) : null))),
+                createElement(Pressable, { style: [styles.button, styles.buttonOpen], onPress: () => setModalVisible(true) },
+                    createElement(Text, { style: styles.textStyle }, "Show Modal"))))) : null,
         createElement(Pressable, { onPress: toggleDatePicker },
             createElement(TextInput, { style: (state.showError && error) ? (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} : (styles === null || styles === void 0 ? void 0 : styles.input) || {}, placeholder: attr.placeholder, placeholderTextColor: "lightgray", defaultValue: attr.data || attr.value, editable: false, onPressIn: toggleDatePicker })),
         (state.showError && error) ? (createElement(Text, { style: (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} }, attr.errorMessage)) : null));
 }
 function getDateFromString(val) {
     if (!isEmpty(val)) {
-        let parts = val.split('-');
+        let parts = val.split("-");
         if (parts.length == 3) {
             let parsedDate = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
             return parsedDate;
         }
-        else
+        else {
             return new Date();
+        }
     }
-    else
+    else {
         return new Date();
+    }
 }
 
 const styles = StyleSheet.create({

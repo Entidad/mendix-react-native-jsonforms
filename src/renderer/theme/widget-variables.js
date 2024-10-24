@@ -99,7 +99,11 @@ export const dateTimePicker={
 	},
 	button:button,
 	buttonCancel:{
+		borderTopRightRadius:0,
+		borderBottomRightRadius:0
 	},
 	buttonConfirm:{
+		borderTopLeftRadius:0,
+		borderBottomLeftRadius:0
 	}
 }
