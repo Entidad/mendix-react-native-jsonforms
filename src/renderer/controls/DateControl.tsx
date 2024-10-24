@@ -20,6 +20,7 @@ const stylesModal=StyleSheet.create({
 		borderTopRightRadius:18,
 		borderTopLeftRadius:18,
 		bottom:0,
+		padding:10
 	},
 	button:{
 		borderRadius:20,
@@ -43,6 +44,10 @@ const stylesModal=StyleSheet.create({
 	}
 });
 export function DateControl(props:any){
+	const logname="DateControl.tsx";
+	const log=(data:any)=>{
+		if(props.props.debugon)console.info(logname+":"+data);
+	}
 	const state=useObject();
 	let attr=props.props;
 	let styles:any={};
@@ -56,55 +61,59 @@ export function DateControl(props:any){
 	const[showPicker,setShowPicker]=useState(false);
 	const[modalVisible,setModalVisible]=useState(false);//ockert
 	const toggleDatePicker=()=>{
+		log("DateControl:toggleDatePicker:beg");
 		setShowPicker(!showPicker);
 		setModalVisible(!modalVisible);
+		log("DateControl:toggleDatePicker:end");
 	};
 	const formatDate=(rawDate:Date)=>{
+		log("DateControl:formatDate:beg");
 		let date=new Date(rawDate);
 		let year=date.getFullYear();
 		let month=date.getMonth()+1;
 		let day=date.getDate();
+		log("DateControl:formatDate:end");
 		return`${year}-${month}-${day}`;
 	};
 	const _onChange=(type:any,selectedDate?:any)=>{
+		log("DateControl:_onChange:beg");
+		let ret;
 		/*
-		console.info("dispatchConfig");
-			console.info(JSON.stringify(type.dispatchConfig));
-		//console.info("_targetInst");
-		//	console.info(JSON.stringify(type._targetInst));
-		console.info("nativeEvent");
-			console.info(JSON.stringify(type.nativeEvent));
-		console.info("_dispatchListeners");
-			console.info(JSON.stringify(type._dispatchListeners));
-		//console.info("_dispatchInstances");
-		//	console.info(JSON.stringify(type._dispatchInstances));
-		console.info("type");
-			console.info(JSON.stringify(type.type));
-		console.info("target");
-			console.info(JSON.stringify(type.target));
-		console.info("currentTarget");
-			console.info(JSON.stringify(type.currentTarget));
-		console.info("eventPhase");
-			console.info(JSON.stringify(type.eventPhase));
-		console.info("bubbles");
-			console.info(JSON.stringify(type.bubbles));
-		console.info("cancelable");
-			console.info(JSON.stringify(type.cancelable));
-		console.info("timeStamp");
-			console.info(JSON.stringify(type.timeStamp));
-		console.info("defaultPrevented");
-			console.info(JSON.stringify(type.defaultPrevented));
-		console.info("isTrusted");
-			console.info(JSON.stringify(type.isTrusted));
-		console.info("isDefaultPrevented");
-			console.info(JSON.stringify(type.isDefaultPrevented));
-		console.info("isPropagationStopped");
-			console.info(JSON.stringify(type.isPropagationStopped));
+		log("dispatchConfig");
+			log(JSON.stringify(type.dispatchConfig));
+		//log("_targetInst");
+		//	log(JSON.stringify(type._targetInst));
+		log("nativeEvent");
+			log(JSON.stringify(type.nativeEvent));
+		log("_dispatchListeners");
+			log(JSON.stringify(type._dispatchListeners));
+		//log("_dispatchInstances");
+		//	log(JSON.stringify(type._dispatchInstances));
+		log("type");
+			log(JSON.stringify(type.type));
+		log("target");
+			log(JSON.stringify(type.target));
+		log("currentTarget");
+			log(JSON.stringify(type.currentTarget));
+		log("eventPhase");
+			log(JSON.stringify(type.eventPhase));
+		log("bubbles");
+			log(JSON.stringify(type.bubbles));
+		log("cancelable");
+			log(JSON.stringify(type.cancelable));
+		log("timeStamp");
+			log(JSON.stringify(type.timeStamp));
+		log("defaultPrevented");
+			log(JSON.stringify(type.defaultPrevented));
+		log("isTrusted");
+			log(JSON.stringify(type.isTrusted));
+		log("isDefaultPrevented");
+			log(JSON.stringify(type.isDefaultPrevented));
+		log("isPropagationStopped");
+			log(JSON.stringify(type.isPropagationStopped));
 		*/
 		if(type?.type=="dismissed"){
-			return;
-		}
-		if(type==="set"){
+		}else if(type==="set"){
 			const currentDate=selectedDate;
 			setDate(currentDate);
 			if(Platform.OS==="android"){
@@ -115,7 +124,7 @@ export function DateControl(props:any){
 				attr.onChange(state.formData);
 				attr.error=isEmpty(strDate);
 				setError(attr.error);
-				return strDate||attr.placeholder||attr.data||attr.value;;
+				ret=strDate||attr.placeholder||attr.data||attr.value;;
 			}else{
 				toggleDatePicker();
 				let strDate=formatDate(currentDate);
@@ -124,7 +133,7 @@ export function DateControl(props:any){
 				attr.onChange(state.formData);
 				attr.error=isEmpty(strDate);
 				setError(attr.error);
-				return strDate||attr.placeholder||attr.data||attr.value;;
+				ret=strDate||attr.placeholder||attr.data||attr.value;;
 			}
 		}else{
 			if(Platform.OS==="android"){
@@ -136,7 +145,7 @@ export function DateControl(props:any){
 				attr.onChange(state.formData);
 				attr.error=isEmpty(strDate);
 				setError(attr.error);
-				return strDate||attr.placeholder||attr.data||attr.value;;
+				ret=strDate||attr.placeholder||attr.data||attr.value;;
 			}else{
 				//if(Object.keys(type).length>0)return;
 				let currentDate=type?.nativeEvent?.timestamp??type;
@@ -147,14 +156,18 @@ export function DateControl(props:any){
 				toggleDatePicker();
 				attr.error=isEmpty(strDate);
 				setError(attr.error);
-				return strDate||attr.placeholder||attr.data||attr.value;
+				ret=strDate||attr.placeholder||attr.data||attr.value;
 			}
 		}
+		log("DateControl:_onChange:end");
+		return(ret);
 	};
 	const confirmIOSDate=()=>{
+		log("DateControl:confirmIOSDate:beg");
 		state.formData[attr.propertyName]=formatDate(date);
 		toggleDatePicker();
 		_onChange(date);
+		log("DateControl:confirmIOSDate:end");
 	};
 	return(
 		<View style={{}}>
@@ -227,7 +240,10 @@ export function DateControl(props:any){
 						</Modal>
 					<Pressable
 						style={[styles.button,styles.buttonOpen]}
-						onPress={()=>setModalVisible(true)}
+						onPress={()=>{
+							log("DateControl:modalVisible:true");
+							setModalVisible(true)
+						}}
 					>
 						<Text style={styles.textStyle}>Show Modal</Text>
 					</Pressable>
@@ -251,15 +267,19 @@ export function DateControl(props:any){
 	)
 }
 function getDateFromString(val:string){
+	//log("DateControl:getDateFromString:beg");
+	let ret;
 	if(!isEmpty(val)){
 		let parts=val.split("-");
 		if(parts.length==3){
 			let parsedDate=new Date(parseInt(parts[0]),parseInt(parts[1])-1,parseInt(parts[2]));
-			return parsedDate;
+			ret=parsedDate;
 		}else{
-			return new Date();
+			ret=new Date();
 		}
 	}else{
-		return new Date();
+		ret=new Date();
 	}
+	//log("DateControl:getDateFromString:end");
+	return(ret);
 };

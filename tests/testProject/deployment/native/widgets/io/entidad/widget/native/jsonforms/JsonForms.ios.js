@@ -189,7 +189,6 @@ function getControl_FromJSONForms(_props, _uischema, _property) {
         }
         //Date
         if (_type === "string" && options.format === "date") {
-            console.info("render DateControl");
             return ControlType.DateControl;
         }
         if (_type === "string" && options.format === "time") {
@@ -330,7 +329,8 @@ function initControlProps() {
         items: [],
         error: false,
         errorMessage: "This field is required",
-        onChange: undefined
+        onChange: undefined,
+        debugon: true //ockert
     };
     return props;
 }
@@ -2648,6 +2648,7 @@ const stylesModal = StyleSheet.create({
         borderTopRightRadius: 18,
         borderTopLeftRadius: 18,
         bottom: 0,
+        padding: 10
     },
     button: {
         borderRadius: 20,
@@ -2672,6 +2673,11 @@ const stylesModal = StyleSheet.create({
 });
 function DateControl(props) {
     var _a, _b, _c;
+    const logname = "DateControl.tsx";
+    const log = (data) => {
+        if (props.props.debugon)
+            console.info(logname + ":" + data);
+    };
     const state = useObject();
     let attr = props.props;
     let styles = {};
@@ -2685,56 +2691,60 @@ function DateControl(props) {
     const [showPicker, setShowPicker] = useState(false);
     const [modalVisible, setModalVisible] = useState(false); //ockert
     const toggleDatePicker = () => {
+        log("DateControl:toggleDatePicker:beg");
         setShowPicker(!showPicker);
         setModalVisible(!modalVisible);
+        log("DateControl:toggleDatePicker:end");
     };
     const formatDate = (rawDate) => {
+        log("DateControl:formatDate:beg");
         let date = new Date(rawDate);
         let year = date.getFullYear();
         let month = date.getMonth() + 1;
         let day = date.getDate();
+        log("DateControl:formatDate:end");
         return `${year}-${month}-${day}`;
     };
     const _onChange = (type, selectedDate) => {
         var _a, _b;
+        log("DateControl:_onChange:beg");
+        let ret;
         /*
-        console.info("dispatchConfig");
-            console.info(JSON.stringify(type.dispatchConfig));
-        //console.info("_targetInst");
-        //	console.info(JSON.stringify(type._targetInst));
-        console.info("nativeEvent");
-            console.info(JSON.stringify(type.nativeEvent));
-        console.info("_dispatchListeners");
-            console.info(JSON.stringify(type._dispatchListeners));
-        //console.info("_dispatchInstances");
-        //	console.info(JSON.stringify(type._dispatchInstances));
-        console.info("type");
-            console.info(JSON.stringify(type.type));
-        console.info("target");
-            console.info(JSON.stringify(type.target));
-        console.info("currentTarget");
-            console.info(JSON.stringify(type.currentTarget));
-        console.info("eventPhase");
-            console.info(JSON.stringify(type.eventPhase));
-        console.info("bubbles");
-            console.info(JSON.stringify(type.bubbles));
-        console.info("cancelable");
-            console.info(JSON.stringify(type.cancelable));
-        console.info("timeStamp");
-            console.info(JSON.stringify(type.timeStamp));
-        console.info("defaultPrevented");
-            console.info(JSON.stringify(type.defaultPrevented));
-        console.info("isTrusted");
-            console.info(JSON.stringify(type.isTrusted));
-        console.info("isDefaultPrevented");
-            console.info(JSON.stringify(type.isDefaultPrevented));
-        console.info("isPropagationStopped");
-            console.info(JSON.stringify(type.isPropagationStopped));
+        log("dispatchConfig");
+            log(JSON.stringify(type.dispatchConfig));
+        //log("_targetInst");
+        //	log(JSON.stringify(type._targetInst));
+        log("nativeEvent");
+            log(JSON.stringify(type.nativeEvent));
+        log("_dispatchListeners");
+            log(JSON.stringify(type._dispatchListeners));
+        //log("_dispatchInstances");
+        //	log(JSON.stringify(type._dispatchInstances));
+        log("type");
+            log(JSON.stringify(type.type));
+        log("target");
+            log(JSON.stringify(type.target));
+        log("currentTarget");
+            log(JSON.stringify(type.currentTarget));
+        log("eventPhase");
+            log(JSON.stringify(type.eventPhase));
+        log("bubbles");
+            log(JSON.stringify(type.bubbles));
+        log("cancelable");
+            log(JSON.stringify(type.cancelable));
+        log("timeStamp");
+            log(JSON.stringify(type.timeStamp));
+        log("defaultPrevented");
+            log(JSON.stringify(type.defaultPrevented));
+        log("isTrusted");
+            log(JSON.stringify(type.isTrusted));
+        log("isDefaultPrevented");
+            log(JSON.stringify(type.isDefaultPrevented));
+        log("isPropagationStopped");
+            log(JSON.stringify(type.isPropagationStopped));
         */
-        if ((type === null || type === void 0 ? void 0 : type.type) == "dismissed") {
-            return;
-        }
-        if (type === "set") {
+        if ((type === null || type === void 0 ? void 0 : type.type) == "dismissed") ;
+        else if (type === "set") {
             const currentDate = selectedDate;
             setDate(currentDate);
             {
@@ -2745,7 +2755,7 @@ function DateControl(props) {
                 attr.onChange(state.formData);
                 attr.error = isEmpty(strDate);
                 setError(attr.error);
-                return strDate || attr.placeholder || attr.data || attr.value;
+                ret = strDate || attr.placeholder || attr.data || attr.value;
             }
         }
         else {
@@ -2759,14 +2769,18 @@ function DateControl(props) {
                 toggleDatePicker();
                 attr.error = isEmpty(strDate);
                 setError(attr.error);
-                return strDate || attr.placeholder || attr.data || attr.value;
+                ret = strDate || attr.placeholder || attr.data || attr.value;
             }
         }
+        log("DateControl:_onChange:end");
+        return (ret);
     };
     const confirmIOSDate = () => {
+        log("DateControl:confirmIOSDate:beg");
         state.formData[attr.propertyName] = formatDate(date);
         toggleDatePicker();
         _onChange(date);
+        log("DateControl:confirmIOSDate:end");
     };
     return (createElement(View, { style: {} },
         createElement(Text, { style: styles === null || styles === void 0 ? void 0 : styles.label }, attr.label || "No label included"),
@@ -2809,26 +2823,33 @@ function DateControl(props) {
                                                 textAlign: "center"
                                             }
                                         } }, "Confirm")))) : null))),
-                createElement(Pressable, { style: [styles.button, styles.buttonOpen], onPress: () => setModalVisible(true) },
+                createElement(Pressable, { style: [styles.button, styles.buttonOpen], onPress: () => {
+                        log("DateControl:modalVisible:true");
+                        setModalVisible(true);
+                    } },
                     createElement(Text, { style: styles.textStyle }, "Show Modal"))))) : null,
         createElement(Pressable, { onPress: toggleDatePicker },
             createElement(TextInput, { style: (state.showError && error) ? (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} : (styles === null || styles === void 0 ? void 0 : styles.input) || {}, placeholder: attr.placeholder, placeholderTextColor: "lightgray", defaultValue: attr.data || attr.value, editable: false, onPressIn: toggleDatePicker })),
         (state.showError && error) ? (createElement(Text, { style: (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} }, attr.errorMessage)) : null));
 }
 function getDateFromString(val) {
+    //log("DateControl:getDateFromString:beg");
+    let ret;
     if (!isEmpty(val)) {
         let parts = val.split("-");
         if (parts.length == 3) {
             let parsedDate = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
-            return parsedDate;
+            ret = parsedDate;
         }
         else {
-            return new Date();
+            ret = new Date();
         }
     }
     else {
-        return new Date();
+        ret = new Date();
     }
+    //log("DateControl:getDateFromString:end");
+    return (ret);
 }
 
 const styles = StyleSheet.create({
@@ -2870,9 +2891,7 @@ function ReadOnlyControl(props) {
         createElement(Text, { style: (styles === null || styles === void 0 ? void 0 : styles.value) || {} }, attr.data)));
 }
 
-const Form = ({ schema, uischema, /*initData,*/ i18nData, language, formData, onChange, logger, readOnly, style }) => {
-    //this.logger=this.logger.bind(this);
-    //logger.log("Form:constructor:beg");
+const Form = ({ schema, uischema, i18nData, language, formData, onChange, readOnly, style, debugon }) => {
     const [data, setData] = useState(formData);
     const [show, setShow] = useState(false);
     let stylesJsonFormsControlContainer = {};
@@ -2881,7 +2900,6 @@ const Form = ({ schema, uischema, /*initData,*/ i18nData, language, formData, on
     let stylesJsonFormsControlsContainer = {};
     mergeDeep(stylesJsonFormsControlsContainer, jsonformsControlsContainer || {});
     mergeDeep(stylesJsonFormsControlsContainer, (style === null || style === void 0 ? void 0 : style.jsonFormsControlsContainer) || {});
-    //const validation:validationStatus=validateSchema(schema,initData);
     /*
     if(false){
         if(validation.errors.length!=0){
@@ -2902,21 +2920,20 @@ const Form = ({ schema, uischema, /*initData,*/ i18nData, language, formData, on
     const START_STATE = {
         schema: schema,
         uischema: uischema,
-        //initData:initData,
-        initData: data,
         i18nData: i18nData,
         language: language,
         formData: data,
         setFormData: setData,
         showError: show,
-        setShowError: setShow
+        setShowError: setShow,
+        debugon: debugon
     };
-    let elements = elementList(schema, uischema, /*initData,*/ i18nData, language, onChange, readOnly, style, formData);
+    let elements = elementList(schema, uischema, i18nData, language, onChange, readOnly, style, formData, debugon);
     return (createElement(ObjectProvider, { objectState: START_STATE },
         createElement(View, { style: stylesJsonFormsControlsContainer.viewControl },
             createElement(ScrollView, null, elements.map((element) => (createElement(View, { style: stylesJsonFormsControlContainer }, element)))))));
 };
-const elementList = (schema, uischema, /*initData:any,*/ i18nData, language, onChange, readOnly, style, formData) => {
+const elementList = (schema, uischema, i18nData, language, onChange, readOnly, style, formData, debugon) => {
     var _a;
     let properties = (_a = schema.properties) !== null && _a !== void 0 ? _a : undefined;
     let elements = [];
@@ -2925,11 +2942,11 @@ const elementList = (schema, uischema, /*initData:any,*/ i18nData, language, onC
             let allProps = properties[property];
             let control = getControlType(allProps, uischema, property);
             let props = getControlProps(schema, uischema, property);
-            //props.data=initData[property];
-            props.data = formData[property]; //initData[property];//ockert
+            props.data = formData[property];
             props.propertyName = property;
             props.onChange = onChange;
             props.style = style;
+            props.debugon = debugon; //ockert
             let translate = getObjectTranslate(i18nData, language, property);
             if (translate) {
                 props.label = translate.label;
@@ -3012,6 +3029,8 @@ function getObjectTranslate(i18nData, language, propertyName) {
 class JsonForms extends Component {
     constructor(props) {
         super(props);
+        this.lognode = "JsonForms.tsx";
+        this.log("constructor:beg");
         this.shouldUpdate = true;
         this.data = {};
         this.onChange = this.onChange.bind(this);
@@ -3028,26 +3047,21 @@ class JsonForms extends Component {
             errorUiSchema: undefined,
             //errorInitData:undefined,
             errorI18nData: undefined,
-            errorStyleData: undefined,
-            debugon: false,
+            errorStyleData: undefined
         };
+        this.log("constructor:end");
     }
     render() {
-        //console.info("render:beg");
+        var _a;
+        this.log("render:beg");
+        let ret;
         if (this.state.errorSchema ||
             this.state.errorUiSchema ||
             //this.state.errorInitData||
             this.state.errorI18nData ||
             this.state.errorStyleData) {
-            /*
-                    {(this.state.errorInitData)
-                        ?<ErrorItem message={"Error in Init Data:"+this.state.errorInitData}/>
-                        :""
-                    }
-            */
-            //console.info("render:error:beg");
             try {
-                let ret = (createElement(View, null,
+                ret = (createElement(View, null,
                     (this.state.errorSchema)
                         ? createElement(ErrorItem, { message: "Error in Schema:" + this.state.errorSchema })
                         : "",
@@ -3060,17 +3074,13 @@ class JsonForms extends Component {
                     (this.state.errorStyleData)
                         ? createElement(ErrorItem, { message: "Error in Style Data:" + this.state.errorStyleData })
                         : ""));
-                return (ret);
             }
             catch (e) {
                 console.error(e.toString());
             }
         }
         else {
-            //console.info("render:jsonform:beg");
-            //console.info("render:jsonform:formData:"+(this.state.formData));
-            //initData={ JSON.parse(this.state.initData) }
-            return (createElement(View, null,
+            ret = (createElement(View, null,
                 createElement(Form, { schema: JSON.parse(this.state.schema), uischema: JSON.parse(this.state.uischema), i18nData: JSON.parse(this.state.i18nData), formData: JSON.parse(this.state.formData), style: (() => {
                         try {
                             return (this.props.mxStyleData.value ? JSON.parse(this.props.mxStyleData.value) : {});
@@ -3079,18 +3089,18 @@ class JsonForms extends Component {
                             console.error(e.toString());
                             return ({});
                         }
-                    })(), language: this.state.language, readOnly: this.state.readOnly, onChange: this.onChange, logger: this.logger })));
+                    })(), language: this.state.language, readOnly: this.state.readOnly, onChange: this.onChange, debugon: (_a = this.props.debugon) !== null && _a !== void 0 ? _a : false })));
         }
+        this.log("render:end");
+        return (ret);
     }
     componentDidMount() {
         var _a;
-        //console.info("componentDidMount():beg");
+        this.log("componentDidMount:beg");
         const { mxSchema, mxUiSchema, /*mxInitData,*/ mxI18nData, mxStyleData, mxFormData, mxLanguage, mxReadOnly } = this.props;
         let inputSchema = mxSchema.value ? mxSchema.value.toString() : "{}";
         let inputUISchema = mxUiSchema.value ? mxUiSchema.value.toString() : "{}";
-        //let inputInitData=mxInitData.value?mxInitData.value.toString():"{}";
         let inputI18nData = mxI18nData.value ? mxI18nData.value.toString() : "{}";
-        //let inputStyleData=mxStyleData?mxStyleData:"{}";//original
         let inputStyleData = mxStyleData.value ? mxStyleData.value.toString() : "{}";
         inputStyleData = inputStyleData.length == 0 ? "{}" : inputStyleData;
         let inputFormData = mxFormData.value ? mxFormData.value.toString() : "{}"; //ockert
@@ -3098,7 +3108,6 @@ class JsonForms extends Component {
         let inputReadOnly = (_a = mxReadOnly.value) !== null && _a !== void 0 ? _a : false;
         let eSchema = isValidJSON(inputSchema);
         let eUiSchema = isValidJSON(inputUISchema);
-        //let eInitData=isValidJSON(inputInitData);
         let eI18nData = isValidJSON(inputI18nData);
         let eStyleData = isValidJSON(inputStyleData);
         let eFormData = isValidJSON(inputFormData);
@@ -3143,35 +3152,28 @@ class JsonForms extends Component {
             errorI18nData: eI18nData,
             errorStyleData: eStyleData
         });
-        //console.info("componentDidMount():end");
+        this.log("componentDidMount:end");
     }
     componentDidUpdate(prevProps) {
         var _a, _b, _c, _d, _e, _f;
-        //console.info("componentDidUpdate():beg");
-        //console.info("componentDidUpdate():mxFormData:"+(this.props.mxFormData.value||"{empty}"));
+        this.log("componentDidUpdate:beg");
         const { mxSchema, mxUiSchema, /*mxInitData,*/ mxI18nData, mxStyleData, mxFormData, mxLanguage, mxReadOnly } = this.props;
         if (mxSchema.value !== prevProps.mxSchema.value ||
             mxUiSchema.value !== prevProps.mxUiSchema.value ||
-            //mxInitData.value!==prevProps.mxInitData.value||
             mxI18nData.value !== prevProps.mxI18nData.value ||
-            //mxStyleData!==prevProps.mxStyleData||//original
             mxStyleData.value !== prevProps.mxStyleData.value ||
             mxFormData.value !== prevProps.mxFormData.value ||
             mxLanguage.value !== prevProps.mxLanguage.value ||
             mxReadOnly.value !== prevProps.mxReadOnly.value) {
-            //console.info("componentDidUpdate():>>>");
             let inputSchema = ((_a = mxSchema.value) === null || _a === void 0 ? void 0 : _a.toString()) || "{}";
             let inputUISchema = ((_b = mxUiSchema.value) === null || _b === void 0 ? void 0 : _b.toString()) || "{}";
-            //let inputInitData=mxInitData!.value?.toString()||"{}";
             let inputI18nData = ((_c = mxI18nData.value) === null || _c === void 0 ? void 0 : _c.toString()) || "{}";
-            //let inputStyleData=mxStyleData||"{}";//original
             let inputStyleData = ((_d = mxStyleData.value) === null || _d === void 0 ? void 0 : _d.toString()) || "{}";
             let inputFormData = ((_e = mxFormData.value) === null || _e === void 0 ? void 0 : _e.toString()) || "{}";
             let inputLanguage = ((_f = mxLanguage.value) === null || _f === void 0 ? void 0 : _f.toString()) || "";
             let inputReadOnly = mxReadOnly.value || false;
             let eSchema = isValidJSON(inputSchema);
             let eUiSchema = isValidJSON(inputUISchema);
-            //let eInitData=isValidJSON(inputInitData);
             let eI18nData = isValidJSON(inputI18nData);
             let eStyleData = isValidJSON(inputStyleData);
             let eFormData = isValidJSON(inputFormData);
@@ -3183,12 +3185,6 @@ class JsonForms extends Component {
                 console.debug(eUiSchema);
                 inputUISchema = "{}";
             }
-            /*
-            if(eInitData){
-                console.debug(eInitData);
-                inputInitData="{}";
-            }
-            */
             if (eI18nData) {
                 console.debug(eI18nData);
                 inputI18nData = "{}";
@@ -3204,7 +3200,6 @@ class JsonForms extends Component {
             this.setState({
                 schema: inputSchema,
                 uischema: inputUISchema,
-                //initData:inputInitData,
                 i18nData: inputI18nData,
                 styleData: inputStyleData,
                 formData: inputFormData,
@@ -3212,25 +3207,19 @@ class JsonForms extends Component {
                 readOnly: inputReadOnly,
                 errorSchema: eSchema,
                 errorUiSchema: eUiSchema,
-                //errorInitData:eInitData,
                 errorI18nData: eI18nData
             });
         }
-        //console.info("componentDidUpdate():state.formData:"+(this.state.formData||"{empty}"));
-        //console.info("componentDidUpdate():end");
+        this.log("componentDidUpdate:end");
     }
     shouldComponentUpdate(_nextProps) {
-        //console.info("shouldComponentUpdate:beg");
-        //nextProps=nextProps;
+        this.log("shouldComponentUpdate:beg");
         let ret = true;
-        //if(this.props.mxFormData.value==nextProps.mxFormData.value)ret=false;
-        //console.info("shouldComponentUpdate:end");
+        this.log("shouldComponentUpdate:end");
         return (ret);
     }
     onChange(data) {
-        //console.info("onChange:beg");
-        //console.info("onChange:data:"+JSON.stringify(data));
-        //console.info("onChange():state.formData:"+(this.state.formData||"{empty}"));
+        this.log("onChange:beg");
         let obj = JSON.parse(this.state.formData);
         Object.keys(data).forEach((k) => {
             //if(data[k]==null||data[k]=="")return;
@@ -3239,34 +3228,16 @@ class JsonForms extends Component {
         let sobj = JSON.stringify(obj);
         if (sobj != this.props.mxFormData.value)
             this.props.mxFormData.setValue(sobj);
-        //this.data=obj;
-        //this.setState({
-        //	formData:JSON.stringify(obj)
-        //});
-        //console.info("onChange:end");
-        /*
-                    if(data[k]==null||data[k]==""){
-                        delete obj[k];//todo:define behavior for ""
-                    }else{
-                        if(parseNumber(data[k])!=isNaN(parseNumber(data[k]))){
-                            obj[k]=parseNumber(data[k])
-                        }else if(data[k]=="true"){
-                            obj[k]=true;
-                        }else if(data[k]=="false"){
-                            obj[k]=false;
-                        }
-                        obj[k]=data[k]
-                    }
-        
-        */
-    }
-    logger(data) {
-        if (this.state.debugon)
-            console.info(data);
+        this.log("onChange:end");
     }
     componentWillUnmount() {
-        //console.info("componentWillUnmount():beg");
-        //console.info("componentWillUnmount():end");
+        this.log("componentWillUnmount:beg");
+        this.log("componentWillUnmount:end");
+    }
+    log(data) {
+        var _a;
+        if ((_a = this.props.debugon) !== null && _a !== void 0 ? _a : false)
+            console.info(this.lognode + ":" + data);
     }
 }
 function isValidJSON(jsonString) {

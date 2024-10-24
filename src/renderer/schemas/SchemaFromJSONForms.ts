@@ -24,7 +24,6 @@ export function getControl_FromJSONForms(_props:any, _uischema:any, _property:st
       }
       //Date
       if(_type==="string" && options.format==="date"){
-        console.info("render DateControl");
         return ControlType.DateControl;
       }
       if(_type==="string" && options.format==="time"){

@@ -25,14 +25,16 @@ interface AppState{
 	errorUiSchema:any;
 	//errorInitData:any;
 	errorI18nData:any;
-	errorStyleData:any;
-	debugon:boolean;
+	errorStyleData:any
 }
 export class JsonForms extends Component<JsonFormsProps<CustomStyle>,AppState>{
 	shouldUpdate:boolean;
 	data:any;
+	lognode:string;
 	constructor(props:any){
 		super(props);
+		this.lognode="JsonForms.tsx";
+		this.log("constructor:beg");
 		this.shouldUpdate=true;
 		this.data={};
 		this.onChange=this.onChange.bind(this);
@@ -49,12 +51,13 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>,AppState>{
 			errorUiSchema:undefined,
 			//errorInitData:undefined,
 			errorI18nData:undefined,
-			errorStyleData:undefined,
-			debugon:false,
+			errorStyleData:undefined
 		};
+		this.log("constructor:end");
 	}
 	render():ReactNode{
-		//console.info("render:beg");
+		this.log("render:beg");
+		let ret;
 		if(
 			this.state.errorSchema||
 			this.state.errorUiSchema||
@@ -62,15 +65,8 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>,AppState>{
 			this.state.errorI18nData||
 			this.state.errorStyleData
 		){
-			/*
-					{(this.state.errorInitData)
-						?<ErrorItem message={"Error in Init Data:"+this.state.errorInitData}/>
-						:""
-					}
-			*/
-			//console.info("render:error:beg");
 			try{
-				let ret=(
+				ret=(
 					<View>
 						{(this.state.errorSchema)
 							?<ErrorItem message={"Error in Schema:"+this.state.errorSchema}/>
@@ -90,16 +86,11 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>,AppState>{
 						}
 					</View>
 				);
-				return(ret);
 			}catch(e){
 				console.error(e.toString());
 			}
 		}else{
-			//console.info("render:jsonform:beg");
-			//console.info("render:jsonform:formData:"+(this.state.formData));
-							
-							//initData={ JSON.parse(this.state.initData) }
-			return(
+			ret=(
 					<View>
 						<Form
 							schema={   JSON.parse(this.state.schema)   }
@@ -119,20 +110,20 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>,AppState>{
 							language={this.state.language}
 							readOnly={this.state.readOnly}
 							onChange={this.onChange}
-							logger={this.logger}
+							debugon={this.props.debugon??false}
 						/>
 					</View>
 					);
 		}
+		this.log("render:end");
+		return(ret);
 	}
 	componentDidMount():void{
-		//console.info("componentDidMount():beg");
+		this.log("componentDidMount:beg");
 		const{mxSchema,mxUiSchema,/*mxInitData,*/mxI18nData,mxStyleData,mxFormData,mxLanguage,mxReadOnly}=this.props;
 		let inputSchema=mxSchema.value?mxSchema.value.toString():"{}";
 		let inputUISchema=mxUiSchema.value?mxUiSchema.value.toString():"{}";
-		//let inputInitData=mxInitData.value?mxInitData.value.toString():"{}";
 		let inputI18nData=mxI18nData.value?mxI18nData.value.toString():"{}";
-		//let inputStyleData=mxStyleData?mxStyleData:"{}";//original
 		let inputStyleData=mxStyleData.value?mxStyleData.value.toString():"{}";
 		inputStyleData=inputStyleData.length==0?"{}":inputStyleData;
 		let inputFormData=mxFormData.value?mxFormData.value.toString():"{}";//ockert
@@ -140,7 +131,6 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>,AppState>{
 		let inputReadOnly=mxReadOnly.value??false;
 		let eSchema=isValidJSON(inputSchema);
 		let eUiSchema=isValidJSON(inputUISchema);
-		//let eInitData=isValidJSON(inputInitData);
 		let eI18nData=isValidJSON(inputI18nData);
 		let eStyleData=isValidJSON(inputStyleData);
 		let eFormData=isValidJSON(inputFormData);
@@ -185,36 +175,29 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>,AppState>{
 			errorI18nData:eI18nData,
 			errorStyleData:eStyleData
 		});
-		//console.info("componentDidMount():end");
+		this.log("componentDidMount:end");
 	}
 	componentDidUpdate(prevProps:Readonly<JsonFormsProps<CustomStyle>>):void{
-		//console.info("componentDidUpdate():beg");
-		//console.info("componentDidUpdate():mxFormData:"+(this.props.mxFormData.value||"{empty}"));
+		this.log("componentDidUpdate:beg");
 		const{mxSchema,mxUiSchema,/*mxInitData,*/mxI18nData,mxStyleData,mxFormData,mxLanguage,mxReadOnly}=this.props;
 		if(
 			mxSchema.value!==prevProps.mxSchema.value||
 			mxUiSchema.value!==prevProps.mxUiSchema.value||
-			//mxInitData.value!==prevProps.mxInitData.value||
 			mxI18nData.value!==prevProps.mxI18nData.value||
-			//mxStyleData!==prevProps.mxStyleData||//original
 			mxStyleData.value!==prevProps.mxStyleData.value||
 			mxFormData.value!==prevProps.mxFormData.value||
 			mxLanguage.value!==prevProps.mxLanguage.value||
 			mxReadOnly.value!==prevProps.mxReadOnly.value
 		){
-			//console.info("componentDidUpdate():>>>");
 			let inputSchema=mxSchema.value?.toString()||"{}";
 			let inputUISchema=mxUiSchema!.value?.toString()||"{}";
-			//let inputInitData=mxInitData!.value?.toString()||"{}";
 			let inputI18nData=mxI18nData!.value?.toString()||"{}";
-			//let inputStyleData=mxStyleData||"{}";//original
 			let inputStyleData=mxStyleData.value?.toString()||"{}";
 			let inputFormData=mxFormData.value?.toString()||"{}";
 			let inputLanguage=mxLanguage!.value?.toString()||"";
 			let inputReadOnly=mxReadOnly!.value||false;
 			let eSchema=isValidJSON(inputSchema);
 			let eUiSchema=isValidJSON(inputUISchema);
-			//let eInitData=isValidJSON(inputInitData);
 			let eI18nData=isValidJSON(inputI18nData);
 			let eStyleData=isValidJSON(inputStyleData);
 			let eFormData=isValidJSON(inputFormData);
@@ -226,12 +209,6 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>,AppState>{
 				console.debug(eUiSchema);
 				inputUISchema="{}";
 			}
-			/*
-			if(eInitData){
-				console.debug(eInitData);
-				inputInitData="{}";
-			}
-			*/
 			if(eI18nData){
 				console.debug(eI18nData);
 				inputI18nData="{}";
@@ -247,33 +224,26 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>,AppState>{
 			this.setState({
 				schema:inputSchema,
 				uischema:inputUISchema,
-				//initData:inputInitData,
 				i18nData:inputI18nData,
 				styleData:inputStyleData,
-				formData:inputFormData,//this.props.mxFormData.value||"{}",//ockert - added
+				formData:inputFormData,
 				language:inputLanguage,
 				readOnly:inputReadOnly,
 				errorSchema:eSchema,
 				errorUiSchema:eUiSchema,
-				//errorInitData:eInitData,
 				errorI18nData:eI18nData
 			});
 		}
-		//console.info("componentDidUpdate():state.formData:"+(this.state.formData||"{empty}"));
-		//console.info("componentDidUpdate():end");
+		this.log("componentDidUpdate:end");
 	}
 	shouldComponentUpdate(_nextProps:Readonly<JsonFormsProps<CustomStyle>>){
-		//console.info("shouldComponentUpdate:beg");
-		//nextProps=nextProps;
+		this.log("shouldComponentUpdate:beg");
 		let ret=true;
-		//if(this.props.mxFormData.value==nextProps.mxFormData.value)ret=false;
-		//console.info("shouldComponentUpdate:end");
+		this.log("shouldComponentUpdate:end");
 		return(ret);
 	}
 	onChange(data:any):void{
-		//console.info("onChange:beg");
-		//console.info("onChange:data:"+JSON.stringify(data));
-		//console.info("onChange():state.formData:"+(this.state.formData||"{empty}"));
+		this.log("onChange:beg");
 		let obj=JSON.parse(this.state.formData);
 		Object.keys(data).forEach((k)=>{
 			//if(data[k]==null||data[k]=="")return;
@@ -281,33 +251,14 @@ export class JsonForms extends Component<JsonFormsProps<CustomStyle>,AppState>{
 		});
 		let sobj=JSON.stringify(obj);
 		if(sobj!=this.props.mxFormData.value)this.props.mxFormData.setValue(sobj);
-		//this.data=obj;
-		//this.setState({
-		//	formData:JSON.stringify(obj)
-		//});
-		//console.info("onChange:end");
-/*
-			if(data[k]==null||data[k]==""){
-				delete obj[k];//todo:define behavior for ""
-			}else{
-				if(parseNumber(data[k])!=isNaN(parseNumber(data[k]))){
-					obj[k]=parseNumber(data[k])
-				}else if(data[k]=="true"){
-					obj[k]=true;
-				}else if(data[k]=="false"){
-					obj[k]=false;
-				}
-				obj[k]=data[k]
-			}
-
-*/
-	}
-	logger(data:any):void{
-		if(this.state.debugon)console.info(data);
+		this.log("onChange:end");
 	}
 	componentWillUnmount(){
-		//console.info("componentWillUnmount():beg");
-		//console.info("componentWillUnmount():end");
+		this.log("componentWillUnmount:beg");
+		this.log("componentWillUnmount:end");
+	}
+	log(data:any):void{
+		if(this.props.debugon??false)console.info(this.lognode+":"+data);
 	}
 }
 function isValidJSON(jsonString:string){

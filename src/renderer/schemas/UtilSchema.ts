@@ -41,7 +41,8 @@ export function initControlProps(){
       items:[],
       error:false,
       errorMessage:"This field is required",
-      onChange:undefined
+      onChange:undefined,
+      debugon:true//ockert
   }
   return props;  
 }

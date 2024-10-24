@@ -53,4 +53,5 @@ export interface ControlProps{
     items?:string[];
 
     onChange:any;
+    debugon:boolean;//ockert
 }
