@@ -13496,3 +13496,4 @@
 2024-10-24T23:52:48,750: [client=11:stm=2223655267664:pid=0] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
 2024-10-24T23:52:49,292: [io 2223462643840 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1729806768.750524, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 22028, "elapsed_time": 0.54200599999999999}
 2024-10-24T23:52:49,292: [io 2223462643840 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2024-10-28T14:14:00,613: [io 2223457697408 C:/Users/ockert/src/entidad/mendix-react-native-jsonforms] aged 15 files, 15 dirs

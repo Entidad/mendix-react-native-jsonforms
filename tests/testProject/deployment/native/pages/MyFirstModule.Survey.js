@@ -76,7 +76,7 @@ const placeholder$Main = () => [
                 mxStyleData={ExpressionProperty({
                     "expression": { "expr": { "type": "variable", "variable": "currentObject", "path": "jsonStyle" }, "args": { "currentObject": "p0.MyFirstModule.Survey.dataView1" } }
                 })}
-                debugon={false}
+                debugon={true}
                 style={StyleProperty({
                     "styles": [ styles.io_entidad_widget_native_jsonforms_JsonForms ]
                 })} />
