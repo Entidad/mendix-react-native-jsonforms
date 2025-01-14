@@ -367,7 +367,7 @@ Here follows some styling samples for the various components.
 
 </details>
 
-### DateControl Styling - Removed
+### DateControl Styling
 
 ![DateControl](../main/images/DateControl.png?raw=true)
 
