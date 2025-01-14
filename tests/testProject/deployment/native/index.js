@@ -274,11 +274,11 @@ startApp({
         }
     ] ),
     "registerPages": () => {
-        NativeUI.registerPage("MyFirstModule.Home_Native", require("C:/Users/ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment/native/pages/MyFirstModule.Home_Native"), {"sidebar":false,"headerRegionName":"placeholder$Header","showBottomBar":true,"type":"Default"});
-        NativeUI.registerPage("MyFirstModule.Survey", require("C:/Users/ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment/native/pages/MyFirstModule.Survey"), {"sidebar":false,"headerRegionName":"placeholder$Header","showBottomBar":true,"type":"Default"});
+        NativeUI.registerPage("MyFirstModule.Home_Native", require("C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment/native/pages/MyFirstModule.Home_Native"), {"sidebar":false,"headerRegionName":"placeholder$Header","showBottomBar":true,"type":"Default"});
+        NativeUI.registerPage("MyFirstModule.Survey", require("C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment/native/pages/MyFirstModule.Survey"), {"sidebar":false,"headerRegionName":"placeholder$Header","showBottomBar":true,"type":"Default"});
     },
     "animationEnabled": true,
-    "deploymentID": "638654117932971671",
+    "deploymentID": "638724669979377978",
     "checkForOTAUpdates": false,
     "loggingEnabled": true,
     "encryptionDbEnabled": false,

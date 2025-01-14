@@ -40,7 +40,7 @@ export default {
         mendixResolve(
             "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/web-resolutions.json",
             "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules",
-            "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment/web/cachetag.txt"
+            "C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment/web/cachetag.txt"
         ),
         nodePolyfills(),
         esbuild({
@@ -88,13 +88,13 @@ export default {
             minify: isProduction
         }),
         generatePrecacheServiceWorker({
-            deploymentDir: "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment"
+            deploymentDir: "C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment"
         }),
         copy({
             targets: [
                 {
                     dest: "dist",
-                    src: "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment/web/widgets/*"
+                    src: "C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment/web/widgets/*"
                 },
                 {
                     dest: "dist",

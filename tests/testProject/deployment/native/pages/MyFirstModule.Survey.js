@@ -10,7 +10,7 @@ import { DataView } from "mendix/DataView";
 import { io_entidad_widget_native_jsonforms_JsonForms } from "externalWidgets";
 import { addEnumerations, asPluginWidgets, t } from "mendix/native";
 
-import { mainContent, sidebar } from "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment/native/layouts/Atlas_Core.NativePhone_Default.js";
+import { mainContent, sidebar } from "C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment/native/layouts/Atlas_Core.NativePhone_Default.js";
 
 import * as styles from "../styles.js";
 
@@ -25,7 +25,7 @@ const placeholder$Main = () => [
         object={NanoflowObjectProperty({
             "dataSourceId": "p0.2",
             "editable": true,
-            "source": { "nanoflow": () => require("C:/Users/ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment/native/nanoflows/MyFirstModule.DS_Survey_Create").DS_Survey_Create },
+            "source": { "nanoflow": () => require("C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment/native/nanoflows/MyFirstModule.DS_Survey_Create").DS_Survey_Create },
             "argMap": {}
         })}
         content={[
