@@ -1,8 +1,6 @@
 import { createElement, createContext, useContext, useState, Component } from 'react';
-import { StyleSheet, View, Text, Dimensions, PixelRatio, Appearance, Platform, TextInput, TouchableHighlight, TouchableOpacity, TouchableWithoutFeedback, Modal, Pressable, ScrollView } from 'react-native';
+import { StyleSheet, View, Text, Dimensions, PixelRatio, Appearance, Platform, TextInput, TouchableHighlight, TouchableOpacity, TouchableWithoutFeedback, ScrollView } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
-import DateTimePicker from '@react-native-community/datetimepicker';
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 const styles$2 = StyleSheet.create({
     textError: {
@@ -41,11 +39,8 @@ var ControlType;
     ControlType[ControlType["CheckGroupControl"] = 8] = "CheckGroupControl";
     ControlType[ControlType["RadioControl"] = 9] = "RadioControl";
     ControlType[ControlType["SelectControl"] = 10] = "SelectControl";
-    ControlType[ControlType["DateControl"] = 11] = "DateControl";
-    ControlType[ControlType["TimeControl"] = 12] = "TimeControl";
-    ControlType[ControlType["DateTimeControl"] = 13] = "DateTimeControl";
-    ControlType[ControlType["EnumControl"] = 14] = "EnumControl";
-    ControlType[ControlType["UnknownControl"] = 15] = "UnknownControl";
+    ControlType[ControlType["EnumControl"] = 11] = "EnumControl";
+    ControlType[ControlType["UnknownControl"] = 12] = "UnknownControl";
 })(ControlType || (ControlType = {}));
 
 // Verify if UISchema is RJSF type
@@ -65,7 +60,7 @@ function isRJSFSchema(_uischema) {
 function getControl_FromRJSF(_props, _uischema, _property) {
     var _a;
     let _type = _props.type;
-    let _format = _props.format;
+    _props.format;
     let _enum = _props.enum;
     let props = getProperties_FromRJSF(_uischema, _property);
     if (props) {
@@ -91,16 +86,6 @@ function getControl_FromRJSF(_props, _uischema, _property) {
         }
         if (_type === "boolean" && widget === "select") {
             return ControlType.SelectControl;
-        }
-        //Date    
-        if (_type === "string" && _format === "date") {
-            return ControlType.DateControl;
-        }
-        if (_type === "string" && _format === "time") {
-            return ControlType.TimeControl;
-        }
-        if (_type === "string" && _format === "date-time") {
-            return ControlType.DateTimeControl;
         }
         //Radio and CheckBoxGroups
         if (_type === "string" && (widget === "RadioWidget" || widget === "radio")) {
@@ -187,16 +172,6 @@ function getControl_FromJSONForms(_props, _uischema, _property) {
         if (_type === "string" && _enum != undefined && options.format === "radio") {
             return ControlType.RadioControl;
         }
-        //Date
-        if (_type === "string" && options.format === "date") {
-            return ControlType.DateControl;
-        }
-        if (_type === "string" && options.format === "time") {
-            return ControlType.TimeControl;
-        }
-        if (_type === "string" && options.format === "date-time") {
-            return ControlType.DateTimeControl;
-        }
         // catch other text inputs with options (e.g. inputmode)
         if (_type === "string" && options.inputMode != undefined) {
             return ControlType.TextControl;
@@ -204,15 +179,6 @@ function getControl_FromJSONForms(_props, _uischema, _property) {
     }
     else {
         //Date
-        if (_type === "string" && _format === "date") {
-            return ControlType.DateControl;
-        }
-        if (_type === "string" && _format === "time") {
-            return ControlType.TimeControl;
-        }
-        if (_type === "string" && _format === "date-time") {
-            return ControlType.DateTimeControl;
-        }
         if (_type === "string" && _format === "password") {
             return ControlType.PasswordControl;
         }
@@ -2635,221 +2601,6 @@ function getDataFromBoolean(val) {
     return val;
 }
 
-const stylesModal = StyleSheet.create({
-    centeredView: {
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-    },
-    modalView: {
-        height: "25%",
-        width: "90%",
-        backgroundColor: "#25292e",
-        borderTopRightRadius: 18,
-        borderTopLeftRadius: 18,
-        bottom: 0,
-        padding: 10
-    },
-    button: {
-        borderRadius: 20,
-        padding: 10,
-        elevation: 2,
-    },
-    buttonOpen: {
-        backgroundColor: "#F194FF",
-    },
-    buttonClose: {
-        backgroundColor: "#2196F3",
-    },
-    textStyle: {
-        color: "white",
-        fontWeight: "bold",
-        textAlign: "center",
-    },
-    modalText: {
-        marginBottom: 15,
-        textAlign: "center",
-    }
-});
-function DateControl(props) {
-    var _a, _b, _c;
-    const logname = "DateControl.tsx";
-    const log = (data) => {
-        if (props.props.debugon)
-            console.info(logname + ":" + data);
-    };
-    const state = useObject();
-    let attr = props.props;
-    let styles = {};
-    mergeDeep(styles, customVariables === null || customVariables === void 0 ? void 0 : input, ((_a = attr === null || attr === void 0 ? void 0 : attr.style) === null || _a === void 0 ? void 0 : _a.input) || {});
-    let stylesButton = {};
-    mergeDeep(stylesButton, customVariables === null || customVariables === void 0 ? void 0 : button, ((_b = attr === null || attr === void 0 ? void 0 : attr.style) === null || _b === void 0 ? void 0 : _b.button) || {});
-    let stylesDateTimePicker = {};
-    mergeDeep(stylesDateTimePicker, customVariables === null || customVariables === void 0 ? void 0 : dateTimePicker, ((_c = attr === null || attr === void 0 ? void 0 : attr.style) === null || _c === void 0 ? void 0 : _c.dateTimePicker) || {});
-    const [error, setError] = useState(attr.error);
-    const [date, setDate] = useState(getDateFromString(attr.data));
-    const [showPicker, setShowPicker] = useState(false);
-    const [modalVisible, setModalVisible] = useState(false); //ockert
-    const toggleDatePicker = () => {
-        log("DateControl:toggleDatePicker:beg");
-        setShowPicker(!showPicker);
-        setModalVisible(!modalVisible);
-        log("DateControl:toggleDatePicker:end");
-    };
-    const formatDate = (rawDate) => {
-        log("DateControl:formatDate:beg");
-        let date = new Date(rawDate);
-        let year = date.getFullYear();
-        let month = date.getMonth() + 1;
-        let day = date.getDate();
-        log("DateControl:formatDate:end");
-        return `${year}-${month}-${day}`;
-    };
-    const _onChange = (type, selectedDate) => {
-        log("DateControl:_onChange:beg");
-        let ret;
-        /*
-        log("dispatchConfig");
-            log(JSON.stringify(type.dispatchConfig));
-        //log("_targetInst");
-        //	log(JSON.stringify(type._targetInst));
-        log("nativeEvent");
-            log(JSON.stringify(type.nativeEvent));
-        log("_dispatchListeners");
-            log(JSON.stringify(type._dispatchListeners));
-        //log("_dispatchInstances");
-        //	log(JSON.stringify(type._dispatchInstances));
-        log("type");
-            log(JSON.stringify(type.type));
-        log("target");
-            log(JSON.stringify(type.target));
-        log("currentTarget");
-            log(JSON.stringify(type.currentTarget));
-        log("eventPhase");
-            log(JSON.stringify(type.eventPhase));
-        log("bubbles");
-            log(JSON.stringify(type.bubbles));
-        log("cancelable");
-            log(JSON.stringify(type.cancelable));
-        log("timeStamp");
-            log(JSON.stringify(type.timeStamp));
-        log("defaultPrevented");
-            log(JSON.stringify(type.defaultPrevented));
-        log("isTrusted");
-            log(JSON.stringify(type.isTrusted));
-        log("isDefaultPrevented");
-            log(JSON.stringify(type.isDefaultPrevented));
-        log("isPropagationStopped");
-            log(JSON.stringify(type.isPropagationStopped));
-        */
-        if ((type === null || type === void 0 ? void 0 : type.type) == "dismissed") ;
-        else if (type === "set") {
-            const currentDate = selectedDate;
-            setDate(currentDate);
-            {
-                toggleDatePicker();
-                let strDate = formatDate(currentDate);
-                state.formData[attr.propertyName] = strDate;
-                state.setFormData(state.formData);
-                attr.onChange(state.formData);
-                attr.error = isEmpty(strDate);
-                setError(attr.error);
-                ret = strDate || attr.placeholder || attr.data || attr.value;
-            }
-        }
-        else {
-            {
-                toggleDatePicker();
-                let currentDate = type.nativeEvent.timestamp;
-                let strDate = formatDate(currentDate);
-                state.formData[attr.propertyName] = strDate;
-                state.setFormData(state.formData);
-                attr.onChange(state.formData);
-                attr.error = isEmpty(strDate);
-                setError(attr.error);
-                ret = strDate || attr.placeholder || attr.data || attr.value;
-            }
-        }
-        log("DateControl:_onChange:end");
-        return (ret);
-    };
-    const confirmIOSDate = () => {
-        log("DateControl:confirmIOSDate:beg");
-        state.formData[attr.propertyName] = formatDate(date);
-        toggleDatePicker();
-        _onChange(date);
-        log("DateControl:confirmIOSDate:end");
-    };
-    return (createElement(View, { style: {} },
-        createElement(Text, { style: styles === null || styles === void 0 ? void 0 : styles.label }, attr.label || "No label included"),
-        showPicker ? (createElement(SafeAreaProvider, null,
-            createElement(SafeAreaView, { style: stylesModal.centeredView },
-                createElement(Modal, { animationType: "slide", transparent: true, visible: modalVisible, onRequestClose: () => {
-                        setModalVisible(!modalVisible);
-                    }, style: { margin: 0, justifyContent: "center", alignItems: "center" } },
-                    createElement(View, { style: stylesModal.centeredView },
-                        createElement(View, { style: stylesModal.modalView },
-                            createElement(DateTimePicker, { mode: "date", value: date, display: "inline", onChange: _onChange, style: (state.showError && error) ? (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} : (styles === null || styles === void 0 ? void 0 : styles.input) || {} }),
-                            (showPicker && "android" === "ios") ? (createElement(View, { style: stylesDateTimePicker.buttonContainer },
-                                createElement(TouchableOpacity, { onPress: toggleDatePicker, style: {
-                                        ...stylesDateTimePicker.button.container,
-                                        ...stylesDateTimePicker.button.primary,
-                                        ...stylesDateTimePicker.buttonCancel,
-                                        ...{
-                                            flex: 1,
-                                            justifyContent: "center"
-                                        }
-                                    } },
-                                    createElement(Text, { style: {
-                                            ...stylesDateTimePicker.button.header,
-                                            ...{
-                                                textAlign: "center"
-                                            }
-                                        } }, "Cancel")),
-                                createElement(TouchableOpacity, { onPress: confirmIOSDate, style: {
-                                        ...stylesDateTimePicker.button.container,
-                                        ...stylesDateTimePicker.button.primary,
-                                        ...stylesDateTimePicker.buttonConfirm,
-                                        ...{
-                                            flex: 1,
-                                            justifyContent: "center"
-                                        }
-                                    } },
-                                    createElement(Text, { style: {
-                                            ...stylesDateTimePicker.button.header,
-                                            ...{
-                                                textAlign: "center"
-                                            }
-                                        } }, "Confirm")))) : null))),
-                createElement(Pressable, { style: [styles.button, styles.buttonOpen], onPress: () => {
-                        log("DateControl:modalVisible:true");
-                        setModalVisible(true);
-                    } },
-                    createElement(Text, { style: styles.textStyle }, "Show Modal"))))) : null,
-        createElement(Pressable, { onPress: toggleDatePicker },
-            createElement(TextInput, { style: (state.showError && error) ? (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} : (styles === null || styles === void 0 ? void 0 : styles.input) || {}, placeholder: attr.placeholder, placeholderTextColor: "lightgray", defaultValue: attr.data || attr.value, editable: false, onPressIn: toggleDatePicker })),
-        (state.showError && error) ? (createElement(Text, { style: (styles === null || styles === void 0 ? void 0 : styles.inputError) || {} }, attr.errorMessage)) : null));
-}
-function getDateFromString(val) {
-    //log("DateControl:getDateFromString:beg");
-    let ret;
-    if (!isEmpty(val)) {
-        let parts = val.split("-");
-        if (parts.length == 3) {
-            let parsedDate = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
-            ret = parsedDate;
-        }
-        else {
-            ret = new Date();
-        }
-    }
-    else {
-        ret = new Date();
-    }
-    //log("DateControl:getDateFromString:end");
-    return (ret);
-}
-
 const styles = StyleSheet.create({
     Unknown: {
         color: '#f44336',
@@ -2998,9 +2749,6 @@ const elementList = (schema, uischema, i18nData, language, onChange, readOnly, s
                         break;
                     case ControlType.PasswordControl:
                         elements.push(createElement(PasswordControl, { props: props }));
-                        break;
-                    case ControlType.DateControl:
-                        elements.push(createElement(DateControl, { props: props }));
                         break;
                     default:
                         let aux = property + ",Type:" + allProps.type + ", Ctrl:" + ControlType[control];

@@ -54,16 +54,6 @@ export function getControl_FromRJSF(_props:any, _uischema:any, _property:string)
       return ControlType.SelectControl;      
     }
     
-    //Date    
-    if(_type==="string" && _format==="date"){
-      return ControlType.DateControl;
-    }
-    if(_type==="string" && _format==="time"){
-      return ControlType.TimeControl;
-    }
-    if(_type==="string" && _format==="date-time"){
-      return ControlType.DateTimeControl;      
-    }
 
     //Radio and CheckBoxGroups
     if(_type==="string" && (widget==="RadioWidget" || widget==="radio")){

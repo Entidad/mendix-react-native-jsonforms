@@ -11,9 +11,6 @@ export enum ControlType {
     CheckGroupControl,
     RadioControl,
     SelectControl,  
-    DateControl,
-    TimeControl,
-    DateTimeControl,  
     EnumControl,
     UnknownControl
 } 

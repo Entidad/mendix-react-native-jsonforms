@@ -22,31 +22,12 @@ export function getControl_FromJSONForms(_props:any, _uischema:any, _property:st
       if(_type==="string" && _enum!=undefined && options.format==="radio"){
         return ControlType.RadioControl;      
       }
-      //Date
-      if(_type==="string" && options.format==="date"){
-        return ControlType.DateControl;
-      }
-      if(_type==="string" && options.format==="time"){
-        return ControlType.TimeControl;
-      }
-      if(_type==="string" && options.format==="date-time"){
-        return ControlType.DateTimeControl;      
-      }
       // catch other text inputs with options (e.g. inputmode)
       if(_type==="string" && options.inputMode!=undefined){
         return ControlType.TextControl;      
       }
     }else{
       //Date
-      if(_type==="string" && _format==="date"){
-        return ControlType.DateControl;
-      }
-      if(_type==="string" && _format==="time"){
-        return ControlType.TimeControl;
-      }
-      if(_type==="string" && _format==="date-time"){
-        return ControlType.DateTimeControl;      
-      }
       if(_type==="string" && _format==="password"){
         return ControlType.PasswordControl;      
       }

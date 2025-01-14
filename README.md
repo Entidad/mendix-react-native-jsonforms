@@ -1,4 +1,4 @@
-## JsonformsNative TEST2
+## JsonformsNative
 Mendix JsonForms Render for Native
 
 ## Features
@@ -22,7 +22,6 @@ The following native controls are implemented
 * `src/renderer/controls/RadioControl.tsx`
 * `src/renderer/controls/ReadOnlyControl.tsx`
 * `src/renderer/controls/TextAreaControl.tsx`
-* `src/renderer/controls/DateControl.tsx`
 * `src/renderer/controls/UnknownControl.tsx`
 
 ## Styling
@@ -366,44 +365,6 @@ Here follows some styling samples for the various components.
 ```
 
 </details>
-
-### DateControl Styling
-
-![DateControl](../main/images/DateControl.png?raw=true)
-
-<details>
-  <summary>JSON</summary>
-
-```
-{
-	"dateControl": {
-		"dateTimePicker": {
-			"button": {
-				"container": {
-					"flex": 1,
-					"justifyContent": "center"
-				},
-				"header": {
-					"textAlign": "center"
-				},
-				"primary": {}
-			},
-			"buttonContainer": {
-				"flex": 1,
-				"flexDirection": "row",
-				"alignItems": "center",
-				"justifyContent": "center"
-			},
-			"buttonConfirm": {},
-			"buttonCancel": {}
-		}
-	}
-}
-```
-
-</details>
-
-
 
 ### ReadOnlyControl Styling
 
