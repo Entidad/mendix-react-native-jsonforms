@@ -8,15 +8,15 @@ import { StyleProperty } from "mendix/StyleProperty";
 import { Button } from "mendix/Button";
 import { addEnumerations, asPluginWidgets, t } from "mendix/native";
 
-import { mainContent, sidebar } from "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment/native/layouts/Atlas_Core.NativePhone_Default.js";
+import { mainContent, sidebar } from "C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment/native/layouts/Atlas_Core.NativePhone_Default.js";
 
 import * as styles from "../styles.js";
 
 const { $Button } = asPluginWidgets({ Button });
 
 const placeholder$Main = () => [
-    <$Button key="p5.MyFirstModule.Home_Native.actionButton1"
-        $widgetId="p5.MyFirstModule.Home_Native.actionButton1"
+    <$Button key="p0.MyFirstModule.Home_Native.actionButton1"
+        $widgetId="p0.MyFirstModule.Home_Native.actionButton1"
         style={StyleProperty({
             "styles": [ styles.ActionButton ]
         })}

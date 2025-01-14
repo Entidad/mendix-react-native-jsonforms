@@ -3,47 +3,7 @@
     "watched": [
         {
             "triggers": [],
-            "path": "C:/Users/ockert/src/entidad/mendix-react-native-jsonforms"
-        },
-        {
-            "triggers": [],
-            "path": "C:/Program Files/Mendix/9.24.22.36298/modeler/tools/node/node_modules"
-        },
-        {
-            "triggers": [],
-            "path": "C:/Users/ockert/src/entidad/fwos-demo-app"
-        },
-        {
-            "triggers": [],
-            "path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/themesource"
-        },
-        {
-            "triggers": [],
-            "path": "C:/Program Files/Mendix/9.24.18.31862/modeler/tools/node/node_modules"
-        },
-        {
-            "triggers": [],
-            "path": "C:/Users/ockert/src/entidad/mendix-facetec-main"
-        },
-        {
-            "triggers": [],
-            "path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/deployment/native"
-        },
-        {
-            "triggers": [],
-            "path": "C:/Users/ockert/src/entidad/Unmio-mobile-main"
-        },
-        {
-            "triggers": [],
-            "path": "C:/Program Files/Mendix/9.24.28.46946/modeler/tools/node/node_modules"
-        },
-        {
-            "triggers": [],
-            "path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/theme"
-        },
-        {
-            "triggers": [],
-            "path": "C:/Users/ockert/src/entidad/Unmio-mobile-branch_credo_v0510/javascriptsource"
+            "path": "C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms"
         },
         {
             "triggers": [],
