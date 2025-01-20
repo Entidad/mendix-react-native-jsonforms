@@ -47,6 +47,7 @@ export interface ControlProps{
     toogle?:boolean;
     format?:string;
     enum?:string[];
+    enumLabels?:{[key:string]:string;};//ockert
     items?:string[];
 
     onChange:any;

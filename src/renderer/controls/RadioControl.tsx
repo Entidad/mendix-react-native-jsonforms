@@ -16,6 +16,7 @@ export function RadioControl(props:any){
         mergeDeep(stylesInput,customVariables?.input,attr?.style?.input||{});
 	const[error,setError]=useState(attr.error);
 	let opts:any[]=attr.enum||[];	
+	let translations:any=attr.enumLabels||{};
 	let data=getDataFromBoolean(attr.data);
 	if(opts.length==0){
 		opts.push("Yes");
@@ -30,7 +31,7 @@ export function RadioControl(props:any){
 		attr.error=isEmptyBoolean(label);
 		setError(attr.error);
 	};
-	const renderRadioControl=(label:any,index:any)=>{
+	const renderRadioControl=(label:any,translation:any,index:any)=>{
 				//flexDirection:"row",
 				//marginTop:5
 		let radioButtonItemContainerStyle=styles?.radioButtonItemContainerStyle||{
@@ -83,7 +84,7 @@ export function RadioControl(props:any){
 									marginTop: styles?.label?.marginTop||0
 								}
 							}>
-								{label}
+								{translation}
 							</Text>
 						</View>
 					</TouchableWithoutFeedback>
@@ -97,7 +98,10 @@ export function RadioControl(props:any){
 		}}>
 			<Text style={stylesInput?.label||{}}>{attr.description||(attr.label||"No label included")}</Text>			
 			{opts!=undefined&&opts.map((optionValue,index)=>(
-				renderRadioControl(optionValue,index)
+				renderRadioControl(optionValue,(()=>{
+					let translation:string=translations[optionValue]?translations[optionValue]:optionValue;
+					return translation;
+				})(),index)
 			))}
 			{(state.showError&&error)
 				?<Text style={stylesInput?.inputError||{}}>{attr.errorMessage}</Text>

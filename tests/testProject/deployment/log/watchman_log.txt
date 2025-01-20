@@ -14410,3 +14410,387 @@
 2025-01-20T08:58:51,174: [client=10:stm=2217431040576:pid=0] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
 2025-01-20T08:58:51,550: [io 2217408854096 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1737356331.1747389, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 13456, "elapsed_time": 0.37600099999999997}
 2025-01-20T08:58:51,550: [io 2217408854096 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2025-01-20T09:03:04,690: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-MNO2TFK
+2025-01-20T09:03:04,692: [listener] path C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms is on filesystem type NTFS
+2025-01-20T09:03:04,693: [listener] root C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2025-01-20T09:03:04,694: [listener] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2025-01-20T09:03:04,695: [listener] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2025-01-20T09:03:04,697: [accept0] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,697: [accept1] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,697: [accept2] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,697: [accept3] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,697: [accept4] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,697: [accept5] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,697: [accept6] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,698: [accept7] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,698: [accept8] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,698: [accept9] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,698: [accept10] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,698: [accept11] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,698: [accept12] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,698: [accept13] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,698: [accept14] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,698: [accept15] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,699: [accept16] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,699: [accept17] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,699: [accept18] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,699: [accept19] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,699: [accept20] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,699: [accept21] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,699: [accept22] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,699: [accept23] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,699: [accept24] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,700: [accept25] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,700: [accept26] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,700: [accept27] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,700: [accept28] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,700: [accept29] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,700: [accept30] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:04,700: [accept31] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T09:03:05,242: [io 1774912045760 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1737356584.696528, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 43384, "elapsed_time": 0.54625100000000004}
+2025-01-20T09:03:05,243: [io 1774912045760 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2025-01-20T09:03:06,168: [io 1774909711072 C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms] PERF: {"start_time": 1737356584.694525, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 43384, "elapsed_time": 1.473938}
+2025-01-20T09:03:06,168: [io 1774909711072 C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms] crawl complete
+2025-01-20T09:03:06,236: [readchange C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] signalled
+2025-01-20T09:03:06,236: [client=2:stm=1774918524112:pid=0] PERF: {"start_time": 1737356586.2360151, "version": "4.9.4", "description": "sync_to_now", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "sync_to_now": {"success": false, "reason": "root dir was removed or is inaccessible", "timeoutms": 60000}}, "pid": 43384, "elapsed_time": 0.0}
+2025-01-20T09:03:06,242: [client=2:stm=1774918524112:pid=0] send_error_response: ["query", "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], failed: query failed: synchronization failed: root dir was removed or is inaccessible
+2025-01-20T09:03:07,541: [client=12:stm=1774922291472:pid=0] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2025-01-20T09:03:07,541: [client=12:stm=1774922291472:pid=0] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2025-01-20T09:03:07,966: [io 1774918943968 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1737356587.5424299, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 43384, "elapsed_time": 0.42399700000000001}
+2025-01-20T09:03:07,967: [io 1774918943968 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2025-01-20T10:14:52,139: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-MNO2TFK
+2025-01-20T10:14:52,146: [listener] path C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms is on filesystem type NTFS
+2025-01-20T10:14:52,147: [listener] root C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2025-01-20T10:14:52,149: [listener] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2025-01-20T10:14:52,151: [listener] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2025-01-20T10:14:52,156: [accept0] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,157: [accept1] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,158: [accept2] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,162: [accept3] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,169: [accept4] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,170: [accept5] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,170: [accept6] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,170: [accept7] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,172: [accept8] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,174: [accept9] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,176: [accept10] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,176: [accept11] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,176: [accept12] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,176: [accept13] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,181: [accept14] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,186: [accept15] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,186: [accept16] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,187: [accept17] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,188: [accept18] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,189: [accept19] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,189: [accept20] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,190: [accept21] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,190: [accept22] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,191: [accept23] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,191: [accept24] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,192: [accept25] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,192: [accept26] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,192: [accept27] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,192: [accept28] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,193: [accept29] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,193: [accept31] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,193: [accept30] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T10:14:52,824: [io 1727871191440 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1737360892.1521051, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 24372, "elapsed_time": 0.67207600000000001}
+2025-01-20T10:14:52,824: [io 1727871191440 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2025-01-20T10:14:53,707: [io 1727870832944 C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms] PERF: {"start_time": 1737360892.148103, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 24372, "elapsed_time": 1.559032}
+2025-01-20T10:14:53,707: [io 1727870832944 C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms] crawl complete
+2025-01-20T10:14:53,782: [client=2:stm=1727871289152:pid=0] PERF: {"start_time": 1737360893.7821341, "version": "4.9.4", "description": "sync_to_now", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "sync_to_now": {"success": false, "reason": "root dir was removed or is inaccessible", "timeoutms": 60000}}, "pid": 24372, "elapsed_time": 0.0}
+2025-01-20T10:14:53,782: [readchange C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] signalled
+2025-01-20T10:14:53,783: [client=2:stm=1727871289152:pid=0] send_error_response: ["query", "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], failed: query failed: synchronization failed: root dir was removed or is inaccessible
+2025-01-20T10:14:55,079: [client=10:stm=1727919967552:pid=0] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2025-01-20T10:14:55,080: [client=10:stm=1727919967552:pid=0] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2025-01-20T10:14:55,518: [io 1727871734352 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1737360895.080152, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 24372, "elapsed_time": 0.438552}
+2025-01-20T10:14:55,518: [io 1727871734352 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2025-01-20T11:18:51,374: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-MNO2TFK
+2025-01-20T11:18:51,377: [listener] path C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms is on filesystem type NTFS
+2025-01-20T11:18:51,377: [listener] root C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2025-01-20T11:18:51,378: [listener] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2025-01-20T11:18:51,379: [listener] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2025-01-20T11:18:51,380: [accept0] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,380: [accept1] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,380: [accept2] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,380: [accept3] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,380: [accept4] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,380: [accept5] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,381: [accept6] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,381: [accept7] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,381: [accept8] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,381: [accept9] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,381: [accept10] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,381: [accept11] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,381: [accept12] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,381: [accept13] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,381: [accept14] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,381: [accept15] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,381: [accept16] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,382: [accept17] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,382: [accept18] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,382: [accept19] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,382: [accept20] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,382: [accept21] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,382: [accept22] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,382: [accept23] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,382: [accept24] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,382: [accept25] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,382: [accept26] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,382: [accept27] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,383: [accept28] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,383: [accept29] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,383: [accept31] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,383: [accept30] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:18:51,792: [io 2437779802480 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1737364731.37939, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 24988, "elapsed_time": 0.41299799999999998}
+2025-01-20T11:18:51,792: [io 2437779802480 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2025-01-20T11:18:52,394: [io 2437778885376 C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms] PERF: {"start_time": 1737364731.3783889, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 24988, "elapsed_time": 1.0160009999999999}
+2025-01-20T11:18:52,395: [io 2437778885376 C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms] crawl complete
+2025-01-20T11:18:52,451: [client=2:stm=2437789065632:pid=0] PERF: {"start_time": 1737364732.4513891, "version": "4.9.4", "description": "sync_to_now", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "sync_to_now": {"success": false, "reason": "root dir was removed or is inaccessible", "timeoutms": 60000}}, "pid": 24988, "elapsed_time": 0.0}
+2025-01-20T11:18:52,451: [readchange C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] signalled
+2025-01-20T11:18:52,457: [client=2:stm=2437789065632:pid=0] send_error_response: ["query", "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], failed: query failed: synchronization failed: root dir was removed or is inaccessible
+2025-01-20T11:18:53,651: [client=12:stm=2437782444848:pid=0] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2025-01-20T11:18:53,651: [client=12:stm=2437782444848:pid=0] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2025-01-20T11:18:53,952: [io 2437836453088 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1737364733.6529231, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 24988, "elapsed_time": 0.299514}
+2025-01-20T11:18:53,952: [io 2437836453088 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2025-01-20T11:32:46,364: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-MNO2TFK
+2025-01-20T11:32:46,366: [listener] path C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms is on filesystem type NTFS
+2025-01-20T11:32:46,367: [listener] root C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2025-01-20T11:32:46,367: [listener] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2025-01-20T11:32:46,368: [listener] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2025-01-20T11:32:46,369: [accept0] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,369: [accept1] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,369: [accept2] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,370: [accept3] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,370: [accept4] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,370: [accept5] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,370: [accept6] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,370: [accept7] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,370: [accept8] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,370: [accept9] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,370: [accept10] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,370: [accept11] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,370: [accept12] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,370: [accept13] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,371: [accept14] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,371: [accept15] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,371: [accept16] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,371: [accept17] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,371: [accept18] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,371: [accept19] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,371: [accept20] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,371: [accept21] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,371: [accept22] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,371: [accept23] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,371: [accept24] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,371: [accept25] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,372: [accept26] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,372: [accept27] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,372: [accept28] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,372: [accept29] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,372: [accept30] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,372: [accept31] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:32:46,761: [io 3170825954992 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1737365566.36818, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 19884, "elapsed_time": 0.39300000000000002}
+2025-01-20T11:32:46,761: [io 3170825954992 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2025-01-20T11:32:47,533: [io 3170825443648 C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms] PERF: {"start_time": 1737365566.3671839, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 19884, "elapsed_time": 1.166015}
+2025-01-20T11:32:47,533: [io 3170825443648 C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms] crawl complete
+2025-01-20T11:32:47,591: [readchange C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] signalled
+2025-01-20T11:32:47,591: [client=2:stm=3170846875744:pid=0] PERF: {"start_time": 1737365567.5901999, "version": "4.9.4", "description": "sync_to_now", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "sync_to_now": {"success": false, "reason": "root dir was removed or is inaccessible", "timeoutms": 60000}}, "pid": 19884, "elapsed_time": 0.0010020000000000001}
+2025-01-20T11:32:47,598: [client=2:stm=3170846875744:pid=0] send_error_response: ["query", "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], failed: query failed: synchronization failed: root dir was removed or is inaccessible
+2025-01-20T11:32:48,764: [client=12:stm=3170872284448:pid=0] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2025-01-20T11:32:48,765: [client=12:stm=3170872284448:pid=0] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2025-01-20T11:32:49,081: [io 3170823629840 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1737365568.7657919, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 19884, "elapsed_time": 0.31599899999999997}
+2025-01-20T11:32:49,082: [io 3170823629840 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2025-01-20T11:46:17,713: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-MNO2TFK
+2025-01-20T11:46:17,715: [listener] path C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms is on filesystem type NTFS
+2025-01-20T11:46:17,715: [listener] root C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2025-01-20T11:46:17,716: [listener] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2025-01-20T11:46:17,716: [listener] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2025-01-20T11:46:17,718: [accept0] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,718: [accept1] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,718: [accept2] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,718: [accept3] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,718: [accept4] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,718: [accept5] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,718: [accept6] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,718: [accept7] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,719: [accept8] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,719: [accept9] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,719: [accept10] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,719: [accept11] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,719: [accept12] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,719: [accept13] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,719: [accept14] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,719: [accept15] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,719: [accept16] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,719: [accept17] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,720: [accept18] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,720: [accept19] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,720: [accept20] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,720: [accept21] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,720: [accept22] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,720: [accept23] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,720: [accept24] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,720: [accept25] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,720: [accept26] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,720: [accept27] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,720: [accept28] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,721: [accept29] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,721: [accept30] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:17,721: [accept31] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:46:18,094: [io 2438474575968 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1737366377.7176249, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 21724, "elapsed_time": 0.37700099999999998}
+2025-01-20T11:46:18,094: [io 2438474575968 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2025-01-20T11:46:18,798: [io 2438473501600 C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms] PERF: {"start_time": 1737366377.716624, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 21724, "elapsed_time": 1.082004}
+2025-01-20T11:46:18,798: [io 2438473501600 C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms] crawl complete
+2025-01-20T11:46:18,860: [client=2:stm=2438498783392:pid=0] PERF: {"start_time": 1737366378.860625, "version": "4.9.4", "description": "sync_to_now", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "sync_to_now": {"success": false, "reason": "root dir was removed or is inaccessible", "timeoutms": 60000}}, "pid": 21724, "elapsed_time": 0.0}
+2025-01-20T11:46:18,860: [readchange C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] signalled
+2025-01-20T11:46:18,865: [client=2:stm=2438498783392:pid=0] send_error_response: ["query", "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], failed: query failed: synchronization failed: root dir was removed or is inaccessible
+2025-01-20T11:46:19,934: [client=12:stm=2438518750448:pid=0] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2025-01-20T11:46:19,935: [client=12:stm=2438518750448:pid=0] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2025-01-20T11:46:20,289: [io 2438523787168 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1737366379.936626, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 21724, "elapsed_time": 0.352603}
+2025-01-20T11:46:20,289: [io 2438523787168 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2025-01-20T11:57:41,908: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-MNO2TFK
+2025-01-20T11:57:41,910: [listener] path C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms is on filesystem type NTFS
+2025-01-20T11:57:41,911: [listener] root C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2025-01-20T11:57:41,911: [listener] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2025-01-20T11:57:41,912: [listener] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2025-01-20T11:57:41,913: [accept0] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,913: [accept1] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,913: [accept2] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,913: [accept3] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,914: [accept4] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,914: [accept5] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,914: [accept6] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,914: [accept7] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,914: [accept8] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,914: [accept9] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,914: [accept10] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,914: [accept11] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,914: [accept12] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,914: [accept13] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,914: [accept14] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,915: [accept15] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,915: [accept16] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,915: [accept17] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,915: [accept18] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,915: [accept19] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,915: [accept20] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,915: [accept21] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,915: [accept22] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,915: [accept23] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,915: [accept24] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,915: [accept25] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,915: [accept26] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,916: [accept27] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,916: [accept28] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,916: [accept29] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,916: [accept30] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:41,916: [accept31] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T11:57:42,285: [io 2531123842800 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1737367061.9121399, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 22688, "elapsed_time": 0.373004}
+2025-01-20T11:57:42,285: [io 2531123842800 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2025-01-20T11:57:42,981: [io 2531123570000 C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms] PERF: {"start_time": 1737367061.9111431, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 22688, "elapsed_time": 1.0699959999999999}
+2025-01-20T11:57:42,981: [io 2531123570000 C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms] crawl complete
+2025-01-20T11:57:43,050: [readchange C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] signalled
+2025-01-20T11:57:43,050: [client=2:stm=2531164770592:pid=0] PERF: {"start_time": 1737367063.0501411, "version": "4.9.4", "description": "sync_to_now", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "sync_to_now": {"success": false, "reason": "root dir was removed or is inaccessible", "timeoutms": 60000}}, "pid": 22688, "elapsed_time": 0.0}
+2025-01-20T11:57:43,055: [client=2:stm=2531164770592:pid=0] send_error_response: ["query", "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], failed: query failed: synchronization failed: root dir was removed or is inaccessible
+2025-01-20T11:57:44,116: [client=10:stm=2531164862320:pid=0] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2025-01-20T11:57:44,117: [client=10:stm=2531164862320:pid=0] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2025-01-20T11:57:44,417: [io 2531174083936 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1737367064.1171429, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 22688, "elapsed_time": 0.30005700000000002}
+2025-01-20T11:57:44,417: [io 2531174083936 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2025-01-20T12:03:51,559: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-MNO2TFK
+2025-01-20T12:03:51,561: [listener] path C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms is on filesystem type NTFS
+2025-01-20T12:03:51,561: [listener] root C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2025-01-20T12:03:51,562: [listener] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2025-01-20T12:03:51,563: [listener] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2025-01-20T12:03:51,564: [accept0] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,564: [accept1] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,565: [accept2] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,565: [accept3] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,565: [accept4] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,565: [accept5] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,565: [accept6] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,565: [accept7] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,565: [accept8] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,565: [accept9] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,565: [accept10] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,565: [accept11] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,565: [accept12] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,565: [accept13] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,566: [accept14] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,566: [accept15] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,566: [accept16] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,566: [accept17] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,566: [accept18] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,566: [accept19] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,566: [accept20] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,566: [accept21] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,566: [accept22] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,566: [accept23] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,566: [accept24] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,567: [accept25] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,567: [accept26] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,567: [accept27] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,567: [accept28] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,567: [accept29] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,567: [accept30] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,567: [accept31] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:03:51,935: [io 1992190715152 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1737367431.563406, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 15560, "elapsed_time": 0.37199900000000002}
+2025-01-20T12:03:51,935: [io 1992190715152 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2025-01-20T12:03:52,612: [io 1992188680384 C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms] PERF: {"start_time": 1737367431.562407, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 15560, "elapsed_time": 1.05}
+2025-01-20T12:03:52,612: [io 1992188680384 C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms] crawl complete
+2025-01-20T12:03:52,673: [readchange C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] signalled
+2025-01-20T12:03:52,674: [client=2:stm=1992190640944:pid=0] PERF: {"start_time": 1737367432.6734059, "version": "4.9.4", "description": "sync_to_now", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "sync_to_now": {"success": false, "reason": "root dir was removed or is inaccessible", "timeoutms": 60000}}, "pid": 15560, "elapsed_time": 0.001}
+2025-01-20T12:03:52,680: [client=2:stm=1992190640944:pid=0] send_error_response: ["query", "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], failed: query failed: synchronization failed: root dir was removed or is inaccessible
+2025-01-20T12:03:53,739: [client=12:stm=1992234515536:pid=0] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2025-01-20T12:03:53,739: [client=12:stm=1992234515536:pid=0] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2025-01-20T12:03:54,070: [io 1992201792896 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1737367433.7404051, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 15560, "elapsed_time": 0.32999800000000001}
+2025-01-20T12:03:54,070: [io 1992201792896 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2025-01-20T12:05:17,716: [listener] Watchman 4.9.4 <no build info set> starting up on DESKTOP-MNO2TFK
+2025-01-20T12:05:17,718: [listener] path C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms is on filesystem type NTFS
+2025-01-20T12:05:17,719: [listener] root C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms using watcher mechanism win32 (auto was requested)
+2025-01-20T12:05:17,719: [listener] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2025-01-20T12:05:17,720: [listener] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2025-01-20T12:05:17,722: [accept0] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,722: [accept1] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,722: [accept2] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,722: [accept3] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,722: [accept4] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,722: [accept5] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,722: [accept6] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,722: [accept7] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,722: [accept8] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,722: [accept9] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,722: [accept10] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,723: [accept11] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,723: [accept12] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,723: [accept13] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,723: [accept14] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,723: [accept15] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,723: [accept16] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,723: [accept17] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,723: [accept19] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,723: [accept18] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,723: [accept20] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,724: [accept21] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,724: [accept22] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,724: [accept24] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,724: [accept23] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,724: [accept25] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,724: [accept26] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,724: [accept27] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,724: [accept28] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,724: [accept29] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,725: [accept30] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:17,725: [accept31] waiting for pipe clients on \\.\pipe\watchman-Ockert
+2025-01-20T12:05:18,129: [io 3202515957536 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1737367517.720731, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 38840, "elapsed_time": 0.407999}
+2025-01-20T12:05:18,129: [io 3202515957536 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete
+2025-01-20T12:05:18,801: [io 3202513298288 C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms] PERF: {"start_time": 1737367517.719732, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 38840, "elapsed_time": 1.0819989999999999}
+2025-01-20T12:05:18,801: [io 3202513298288 C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms] crawl complete
+2025-01-20T12:05:18,858: [client=2:stm=3202524965856:pid=0] PERF: {"start_time": 1737367518.858732, "version": "4.9.4", "description": "sync_to_now", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}, "sync_to_now": {"success": false, "reason": "root dir was removed or is inaccessible", "timeoutms": 60000}}, "pid": 38840, "elapsed_time": 0.0}
+2025-01-20T12:05:18,858: [readchange C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] signalled
+2025-01-20T12:05:18,864: [client=2:stm=3202524965856:pid=0] send_error_response: ["query", "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", {"fields": ["name", "exists", "mtime_ms", "size", "content.sha1hex"], "expression": ["allof", ["type", "f"]], "suffix": ["js", "jsx", "ts", "tsx", "cjs", "mjs", "json", "js_commonjs-exports", "js_commonjs-module", "bmp", "gif", "jpg", "jpeg", "png", "psd", "svg", "webp", "m4v", "mov", "mp4", "mpeg", "mpg", "webm", "aac", "aiff", "caf", "m4a", "mp3", "wav", "html", "pdf", "yaml", "yml", "otf", "ttf", "zip"]}], failed: query failed: synchronization failed: root dir was removed or is inaccessible
+2025-01-20T12:05:19,984: [client=12:stm=3202565987216:pid=0] path C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules is on filesystem type NTFS
+2025-01-20T12:05:19,985: [client=12:stm=3202565987216:pid=0] root C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules using watcher mechanism win32 (auto was requested)
+2025-01-20T12:05:20,286: [io 3202565352816 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] PERF: {"start_time": 1737367519.985255, "version": "4.9.4", "description": "full-crawl", "meta": {"root": {"path": "C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules", "watcher": "win32", "recrawl_count": 0, "case_sensitive": false}}, "pid": 38840, "elapsed_time": 0.30095699999999997}
+2025-01-20T12:05:20,286: [io 3202565352816 C:/Program Files/Mendix/9.24.27.44794/modeler/tools/node/node_modules] crawl complete

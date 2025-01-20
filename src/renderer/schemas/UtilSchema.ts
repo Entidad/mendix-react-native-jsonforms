@@ -23,6 +23,7 @@ export function getControlProps(schema:any, uischema:any, property:string){
   let value = props.value??(props.default??props.emptyValue);
   props.label=label;
   props.value=value;
+  props.enumLabels={};//ockert
   return props;
 }
 

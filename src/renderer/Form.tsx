@@ -93,28 +93,13 @@ export const elementList=(schema:any,uischema:any,i18nData:any,language:string,o
 			props.onChange=onChange;
 			props.style=style;
 			props.debugon=debugon;//ockert
+			props.enumLabels={};//ockert
 			let translate=getObjectTranslate(i18nData,language,property);
 			if(translate){
 				props.label=translate.label;
 				//Ockert - Mon Jan 20 08:10:07 SAST 2025 - beg
-				/*
-				Object.keys(translate).forEach((k)=>{
-					props[k]=translate[k];
-				});
-				*/
 				if(
-					control==ControlType.RadioControl
-				){
-					if(props.enum)
-					props.enum.forEach((v,i)=>{
-						if(
-							props.enum&&
-							props.enum[i]&&
-							translate[props.enum[i]]
-						)props.enum[i]=translate[props.enum[i]];
-					});
-				}
-				if(
+					control==ControlType.RadioControl||
 					control==ControlType.CheckGroupControl
 				){
 					if(props.enum)
@@ -122,12 +107,14 @@ export const elementList=(schema:any,uischema:any,i18nData:any,language:string,o
 						if(
 							props.enum&&
 							props.enum[i]&&
-							translate[props.enum[i]]
-						)props.enum[i]=translate[props.enum[i]];//">"+props.enum[i]+"<";
+							translate[props.enum[i]]&&
+							props.enumLabels
+						){
+							props.enumLabels[props.enum[i]]=translate[props.enum[i]];
+							//props.enum[i]=translate[props.enum[i]];
+						}
 					});
-
 				}
-
 				//Ockert - Mon Jan 20 08:10:07 SAST 2025 - end
 				props.description=translate.description;
 			}
@@ -148,8 +135,6 @@ export const elementList=(schema:any,uischema:any,i18nData:any,language:string,o
 					defaultValue="---"
 				}
 				props.data=defaultValue;
-				console.log("label:"+props.label);
-				console.log(defaultValue);
 				elements.push(<ReadOnlyControl props={props}/>);
 			}else{
 				switch(control){

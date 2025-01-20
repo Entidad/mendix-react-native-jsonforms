@@ -278,6 +278,7 @@ function getControlProps(schema, uischema, property) {
     let value = (_c = props.value) !== null && _c !== void 0 ? _c : ((_d = props.default) !== null && _d !== void 0 ? _d : props.emptyValue);
     props.label = label;
     props.value = value;
+    props.enumLabels = {}; //ockert
     return props;
 }
 // Initialize Props;
@@ -2446,6 +2447,7 @@ function CheckGroupControl(props) {
     const [error, setError] = useState(attr.error);
     let tmp = [];
     const [checked, setChecked] = useState(attr.data || tmp);
+    let translations = attr.enumLabels || {}; //ockert
     const _onPress = (label) => {
         tmp = [...checked];
         let exist = tmp.filter(item => item === label);
@@ -2492,7 +2494,7 @@ function CheckGroupControl(props) {
             } },
             createElement(Text, { style: [(styles === null || styles === void 0 ? void 0 : styles.caption) || {}] }, text)));
     };
-    const renderControl = (label, index) => {
+    const renderControl = (label, translation, index) => {
         var _a, _b, _c, _d;
         let stylesContainer = (styles === null || styles === void 0 ? void 0 : styles.container) || {
             flexDirection: ((_a = styles === null || styles === void 0 ? void 0 : styles.container) === null || _a === void 0 ? void 0 : _a.flexDirection) || "row",
@@ -2505,11 +2507,14 @@ function CheckGroupControl(props) {
         return (createElement(TouchableHighlight, { onPress: () => _onPress(label), underlayColor: "transparent" },
             createElement(View, { style: stylesContainer },
                 renderCheckBox(label),
-                renderText(label))));
+                renderText(translation))));
     };
     return (createElement(View, { style: {} },
         createElement(Text, { style: (stylesInput === null || stylesInput === void 0 ? void 0 : stylesInput.label) || {} }, attr.description || (attr.label || "No label included")),
-        opts.map((optionValue, index) => (renderControl(optionValue, index))),
+        opts.map((optionValue, index) => (renderControl(optionValue, (() => {
+            let translation = translations[optionValue] ? translations[optionValue] : optionValue; //ockert
+            return translation;
+        })(), index))),
         (state.showError && error)
             ? createElement(Text, { style: (stylesInput === null || stylesInput === void 0 ? void 0 : stylesInput.inputError) || {} }, attr.errorMessage)
             : ""));
@@ -2525,6 +2530,7 @@ function RadioControl(props) {
     mergeDeep(stylesInput, customVariables === null || customVariables === void 0 ? void 0 : input, ((_b = attr === null || attr === void 0 ? void 0 : attr.style) === null || _b === void 0 ? void 0 : _b.input) || {});
     const [error, setError] = useState(attr.error);
     let opts = attr.enum || [];
+    let translations = attr.enumLabels || {};
     let data = getDataFromBoolean(attr.data);
     if (opts.length == 0) {
         opts.push("Yes");
@@ -2539,7 +2545,7 @@ function RadioControl(props) {
         attr.error = isEmptyBoolean(label);
         setError(attr.error);
     };
-    const renderRadioControl = (label, index) => {
+    const renderRadioControl = (label, translation, index) => {
         var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u;
         //flexDirection:"row",
         //marginTop:5
@@ -2580,13 +2586,16 @@ function RadioControl(props) {
                                 textAlign: ((_s = styles === null || styles === void 0 ? void 0 : styles.label) === null || _s === void 0 ? void 0 : _s.textAlign) || "left",
                                 marginLeft: ((_t = styles === null || styles === void 0 ? void 0 : styles.label) === null || _t === void 0 ? void 0 : _t.marginLeft) || 0,
                                 marginTop: ((_u = styles === null || styles === void 0 ? void 0 : styles.label) === null || _u === void 0 ? void 0 : _u.marginTop) || 0
-                            } }, label))))));
+                            } }, translation))))));
     };
     return (createElement(View, { style: {
             marginBottom: 10
         } },
         createElement(Text, { style: (stylesInput === null || stylesInput === void 0 ? void 0 : stylesInput.label) || {} }, attr.description || (attr.label || "No label included")),
-        opts != undefined && opts.map((optionValue, index) => (renderRadioControl(optionValue, index))),
+        opts != undefined && opts.map((optionValue, index) => (renderRadioControl(optionValue, (() => {
+            let translation = translations[optionValue] ? translations[optionValue] : optionValue;
+            return translation;
+        })(), index))),
         (state.showError && error)
             ? createElement(Text, { style: (stylesInput === null || stylesInput === void 0 ? void 0 : stylesInput.inputError) || {} }, attr.errorMessage)
             : ""));
@@ -2696,31 +2705,22 @@ const elementList = (schema, uischema, i18nData, language, onChange, readOnly, s
             props.onChange = onChange;
             props.style = style;
             props.debugon = debugon; //ockert
+            props.enumLabels = {}; //ockert
             let translate = getObjectTranslate(i18nData, language, property);
             if (translate) {
                 props.label = translate.label;
                 //Ockert - Mon Jan 20 08:10:07 SAST 2025 - beg
-                /*
-                Object.keys(translate).forEach((k)=>{
-                    props[k]=translate[k];
-                });
-                */
-                if (control == ControlType.RadioControl) {
+                if (control == ControlType.RadioControl ||
+                    control == ControlType.CheckGroupControl) {
                     if (props.enum)
                         props.enum.forEach((v, i) => {
                             if (props.enum &&
                                 props.enum[i] &&
-                                translate[props.enum[i]])
-                                props.enum[i] = translate[props.enum[i]];
-                        });
-                }
-                if (control == ControlType.CheckGroupControl) {
-                    if (props.enum)
-                        props.enum.forEach((v, i) => {
-                            if (props.enum &&
-                                props.enum[i] &&
-                                translate[props.enum[i]])
-                                props.enum[i] = translate[props.enum[i]]; //">"+props.enum[i]+"<";
+                                translate[props.enum[i]] &&
+                                props.enumLabels) {
+                                props.enumLabels[props.enum[i]] = translate[props.enum[i]];
+                                //props.enum[i]=translate[props.enum[i]];
+                            }
                         });
                 }
                 //Ockert - Mon Jan 20 08:10:07 SAST 2025 - end
@@ -2745,8 +2745,6 @@ const elementList = (schema, uischema, i18nData, language, onChange, readOnly, s
                     defaultValue = "---";
                 }
                 props.data = defaultValue;
-                console.log("label:" + props.label);
-                console.log(defaultValue);
                 elements.push(createElement(ReadOnlyControl, { props: props }));
             }
             else {

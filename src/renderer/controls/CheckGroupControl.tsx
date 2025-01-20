@@ -18,6 +18,7 @@ export function CheckGroupControl(props:any){
 	const[error,setError]=useState(attr.error);
 	let tmp:any[]=[];
 	const[checked,setChecked]=useState(attr.data||tmp);
+	let translations:any=attr.enumLabels||{};//ockert
 	const _onPress=(label:any)=>{
 		tmp=[...checked];
 		let exist=tmp.filter(item=>item===label);
@@ -71,7 +72,7 @@ export function CheckGroupControl(props:any){
 			</View>
 		);
 	}
-	const renderControl=(label:any,index:any)=>{
+	const renderControl=(label:any,translation:any,index:any)=>{
 		let stylesContainer=
 			styles?.container||{
 				flexDirection:styles?.container?.flexDirection||"row",
@@ -87,7 +88,7 @@ export function CheckGroupControl(props:any){
 			>
 				<View style={stylesContainer}>
 					{renderCheckBox(label)}
-					{renderText(label)}
+					{renderText(translation)}
 				</View>
 			</TouchableHighlight>
 		);
@@ -96,7 +97,10 @@ export function CheckGroupControl(props:any){
 		<View style={{}}>
 			<Text style={stylesInput?.label||{}}>{attr.description||(attr.label||"No label included")}</Text>
 			{opts.map((optionValue,index)=>(
-				renderControl(optionValue,index)
+				renderControl(optionValue,(()=>{
+					let translation:string=translations[optionValue]?translations[optionValue]:optionValue;//ockert
+                                        return translation;
+				})(),index)
 			))}
 			{(state.showError&&error)
 				?<Text style={stylesInput?.inputError||{}}>{attr.errorMessage}</Text>

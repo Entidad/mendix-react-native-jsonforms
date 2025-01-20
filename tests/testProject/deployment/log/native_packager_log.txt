@@ -26,3 +26,39 @@ C:\Program Files\Mendix\9.24.27.44794\modeler\tools\node\win-x64\node.exe C:\Pro
 [Output]  BUNDLE  ./index.js 
 
 [Output] MxTerminalReporter: {"event":"bundle_build_done"}
+[Output] MxTerminalReporter: {"event":"bundle_build_started"}
+[Output]  BUNDLE  ./index.js 
+
+[Output] MxTerminalReporter: {"event":"bundle_build_done"}
+[Output] MxTerminalReporter: {"event":"bundle_build_started"}
+[Output]  BUNDLE  ./index.js 
+
+[Output] MxTerminalReporter: {"event":"bundle_build_done"}
+[Output] MxTerminalReporter: {"event":"bundle_build_started"}
+[Output]  BUNDLE  ./index.js 
+
+[Output] MxTerminalReporter: {"event":"bundle_build_done"}
+[Output] MxTerminalReporter: {"event":"bundle_build_started"}
+[Output]  BUNDLE  ./index.js 
+
+[Output] MxTerminalReporter: {"event":"bundle_build_done"}
+[Output] MxTerminalReporter: {"event":"bundle_build_started"}
+[Output]  BUNDLE  ./index.js 
+
+[Output] MxTerminalReporter: {"event":"bundle_build_done"}
+[Output] MxTerminalReporter: {"event":"bundle_build_started"}
+[Output]  BUNDLE  ./index.js 
+
+[Output] MxTerminalReporter: {"event":"bundle_build_done"}
+[Output] MxTerminalReporter: {"event":"bundle_build_started"}
+[Output]  BUNDLE  ./index.js 
+
+[Output] MxTerminalReporter: {"event":"bundle_build_done"}
+[Output] MxTerminalReporter: {"event":"bundle_build_started"}
+[Output]  BUNDLE  ./index.js 
+
+[Output] MxTerminalReporter: {"event":"bundle_build_done"}
+[Output] MxTerminalReporter: {"event":"bundle_build_started"}
+[Output]  BUNDLE  ./index.js 
+
+[Output] MxTerminalReporter: {"event":"bundle_build_done"}
