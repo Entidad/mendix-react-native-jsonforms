@@ -1,16 +1,14 @@
 Initialized native services in: C:\Users\Ockert\.gradle\native
 Initialized jansi services in: C:\Users\Ockert\.gradle\native
 Received JVM installation metadata from 'C:\Program Files\Eclipse Adoptium\jdk-11.0.20.101-hotspot': {JAVA_HOME=C:\Program Files\Eclipse Adoptium\jdk-11.0.20.101-hotspot, JAVA_VERSION=11.0.20.1, JAVA_VENDOR=Eclipse Adoptium, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=11.0.20.1+1, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=11.0.20.1+1, VM_VENDOR=Eclipse Adoptium, OS_ARCH=amd64}
-The client will now receive all logging from the daemon (pid: 6932). The daemon log file: C:\Users\Ockert\.gradle\daemon\8.5\daemon-6932.out.log
-Starting 2nd build in daemon [uptime: 25 mins 33.017 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 13% of 384 MiB]
+The client will now receive all logging from the daemon (pid: 48620). The daemon log file: C:\Users\Ockert\.gradle\daemon\8.5\daemon-48620.out.log
+Starting 14th build in daemon [uptime: 1 hrs 6 mins 7.001 secs, performance: 100%, GC rate: 0.00/s, heap usage: 0% of 512 MiB, non-heap usage: 17% of 384 MiB]
+Using 16 worker leases.
 Closing daemon's stdin at end of input.
 The daemon will no longer process any standard input.
-Using 16 worker leases.
 Now considering [C:\Users\Ockert\src\entidad\mendix-react-native-jsonforms\tests\testProject\deployment] as hierarchies to watch
 Watching the file system is configured to be enabled if available
 File system watching is active
-Invalidating in-memory cache of C:\Users\Ockert\src\entidad\mendix-react-native-jsonforms\tests\testProject\deployment\.gradle\8.5\fileHashes\fileHashes.bin
-Invalidating in-memory cache of C:\Users\Ockert\src\entidad\mendix-react-native-jsonforms\tests\testProject\deployment\.gradle\8.5\fileHashes\resourceHashesCache.bin
 Starting Build
 Settings evaluated using settings file 'C:\Users\Ockert\src\entidad\mendix-react-native-jsonforms\tests\testProject\deployment\settings.gradle'.
 Projects loaded. Root project using build file 'C:\Users\Ockert\src\entidad\mendix-react-native-jsonforms\tests\testProject\deployment\build.gradle'.
@@ -28,8 +26,6 @@ Tasks that were excluded: []
 Resolve mutations for :clean-excluded-jars (Thread[Execution worker,5,main]) started.
 :clean-excluded-jars (Thread[Execution worker,5,main]) started.
 destroyer locations for task group 0 (Thread[included builds,5,main]) started.
-Invalidating in-memory cache of C:\Users\Ockert\src\entidad\mendix-react-native-jsonforms\tests\testProject\deployment\.gradle\8.5\executionHistory\executionHistory.bin
-Invalidating in-memory cache of C:\Users\Ockert\src\entidad\mendix-react-native-jsonforms\tests\testProject\deployment\.gradle\buildOutputCleanup\outputFiles.bin
 
 > Task :clean-excluded-jars UP-TO-DATE
 Caching disabled for task ':clean-excluded-jars' because:
@@ -59,13 +55,13 @@ Resolve mutations for :unzipDataSnapshot (Thread[Execution worker,5,main]) start
 
 > Task :unzipDataSnapshot SKIPPED
 Skipping task ':unzipDataSnapshot' as task onlyIf 'Task is enabled' is false.
-Resolve mutations for :deploy (Thread[Execution worker Thread 14,5,main]) started.
-:deploy (Thread[Execution worker Thread 14,5,main]) started.
+Resolve mutations for :deploy (Thread[Execution worker,5,main]) started.
+:deploy (Thread[Execution worker,5,main]) started.
 
 > Task :deploy
 Skipping task ':deploy' as it has no actions.
 
-BUILD SUCCESSFUL in 837ms
+BUILD SUCCESSFUL in 1s
 2 actionable tasks: 1 executed, 1 up-to-date
 Watched directory hierarchies: []
 

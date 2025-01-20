@@ -12,14 +12,14 @@ import * as styles from "../styles.js";
 const { $ScrollContainer, $Placeholder } = asPluginWidgets({ ScrollContainer, Placeholder });
 
 export const mainContent = (placeholder$Main) => [
-    <$ScrollContainer key="l3.Atlas_Core.NativePhone_Default.scrollContainer1"
-        $widgetId="l3.Atlas_Core.NativePhone_Default.scrollContainer1"
+    <$ScrollContainer key="l0.Atlas_Core.NativePhone_Default.scrollContainer1"
+        $widgetId="l0.Atlas_Core.NativePhone_Default.scrollContainer1"
         style={StyleProperty({
             "styles": [ styles.ScrollContainer ]
         })}
         content={[
-            <$Placeholder key="l3.Atlas_Core.NativePhone_Default.Main"
-                $widgetId="l3.Atlas_Core.NativePhone_Default.Main"
+            <$Placeholder key="l0.Atlas_Core.NativePhone_Default.Main"
+                $widgetId="l0.Atlas_Core.NativePhone_Default.Main"
                 content={placeholder$Main()} />
         ]}
         hideScrollbars={false} />

@@ -278,7 +278,7 @@ startApp({
         NativeUI.registerPage("MyFirstModule.Survey", require("C:/Users/Ockert/src/entidad/mendix-react-native-jsonforms/tests/testProject/deployment/native/pages/MyFirstModule.Survey"), {"sidebar":false,"headerRegionName":"placeholder$Header","showBottomBar":true,"type":"Default"});
     },
     "animationEnabled": true,
-    "deploymentID": "638724669979377978",
+    "deploymentID": "638729603242891236",
     "checkForOTAUpdates": false,
     "loggingEnabled": true,
     "encryptionDbEnabled": false,
