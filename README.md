@@ -12,9 +12,14 @@ Studio Pro **11.12** or higher.
 Version `2.0.0` is built against Mendix Pluggable Widgets Tools 11.12 (React 19, React
 Native 0.84) and is **not backward compatible**. Stay on the `1.x` release for Studio Pro 10.
 
+The date control uses `@react-native-community/datetimepicker`, pinned to `8.6.0` to match the
+version the Mendix native template already links. It ships inside the `.mpk`, so no change to
+the app template is needed, but the pin should be kept in step with the template to avoid two
+versions of the same native module.
+
 ## Version history
 
-**2.0.0** — rebuilt for Studio Pro 11.12. The vendored theme was trimmed to the files the
+**2.0.0** — added a date control for schema properties declaring `format: date`. Rebuilt for Studio Pro 11.12. The vendored theme was trimmed to the files the
 widget actually uses and converted to TypeScript; unused dependencies were removed.
 
 The widget id also changed, from `io.entidad.widget.native.jsonforms.JsonForms` to
@@ -60,6 +65,7 @@ Place the widget in a **Data view** and map the attributes below.
 The following native controls are implemented
 
 * `src/renderer/controls/TextControl.tsx`
+* `src/renderer/controls/DateControl.tsx`
 * `src/renderer/controls/CheckBoxControl.tsx`
 * `src/renderer/controls/CheckGroupControl.tsx`
 * `src/renderer/controls/IntegerControl.tsx`
@@ -427,6 +433,63 @@ surrounding label, which are the two keys the control merges.
 It is not set above, so an invalid radio falls back to the built-in danger colours rather than
 your own palette.
 
+
+### DateControl Styling
+
+A date question is rendered as a tappable field that opens the platform's own date picker.
+The field is styled through `input`, the same key the text controls use — the picker itself is
+drawn by the operating system and takes no styling from the widget.
+
+<details>
+  <summary>JSON</summary>
+
+```
+{
+    "input": {
+        "label": {
+            "numberOfLines": 1,
+            "color": "#201313",
+            "fontSize": 14,
+            "fontFamily": "Lato-Bold",
+            "marginTop": 24,
+            "marginBottom": 8
+        },
+        "input": {
+            "color": "#201313",
+            "borderColor": "#cdcdcd",
+            "backgroundColor": "#FFFFFF",
+            "fontSize": 14,
+            "borderWidth": 1,
+            "borderRadius": 12,
+            "minHeight": 48,
+            "paddingVertical": 8,
+            "paddingHorizontal": 8
+        },
+        "inputError": {
+            "color": "#FF0000",
+            "borderColor": "#FF0000"
+        }
+    }
+}
+```
+
+</details>
+
+A date question must declare `format` in the JSON Schema. Without it the property is an
+ordinary string and renders as a text input:
+
+```
+"qstDate_1718370d-dfc3-4068-b42c-4716980fd16c": {
+    "title": "What year did you graduate high school?",
+    "type": "string",
+    "format": "date"
+}
+```
+
+`format` may be `date` or `date-time`. Values are held as RFC 3339 full dates — `1993-11-23`,
+not `11/23/1993` — which is what `format: date` requires and what the bundled `ajv-formats`
+validates against. The date shown to the user is formatted for the device locale; only the
+stored value is ISO.
 
 ### ReadOnlyControl Styling
 

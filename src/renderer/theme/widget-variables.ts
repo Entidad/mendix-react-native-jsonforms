@@ -5,7 +5,6 @@ import{
 	border,
 	brand,
 	checkbox,
-	button,
 }from"../../theme/theme/native/custom-variables";
 import { StyleSheet } from "react-native";
 export * from "../../theme/theme/native/custom-variables";
@@ -91,19 +90,5 @@ export const readOnlyControl={
 	},
 	container:{
 		marginBottom:spacing.small
-	}
-}
-export const dateTimePicker={
-	buttonContainer:{
-		flexDirection:"row"
-	},
-	button:button,
-	buttonCancel:{
-		borderTopRightRadius:0,
-		borderBottomRightRadius:0
-	},
-	buttonConfirm:{
-		borderTopLeftRadius:0,
-		borderBottomLeftRadius:0
 	}
 }

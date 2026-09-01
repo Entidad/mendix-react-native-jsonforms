@@ -18,3 +18,4 @@ mendixProject
 /tests/testProject/deployment
 /tests/testProject/releases
 /tests/testProject/packages
+/tests/testProject/widgets/*JsonForms.mpk

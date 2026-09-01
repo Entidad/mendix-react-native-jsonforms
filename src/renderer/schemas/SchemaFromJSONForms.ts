@@ -28,6 +28,9 @@ export function getControl_FromJSONForms(_props:any, _uischema:any, _property:st
       }
     }else{
       //Date
+      if(_type==="string" && (_format==="date" || _format==="date-time")){
+        return ControlType.DateControl;
+      }
       if(_type==="string" && _format==="password"){
         return ControlType.PasswordControl;      
       }

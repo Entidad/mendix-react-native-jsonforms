@@ -2,6 +2,7 @@
 export enum ControlType {
     TextControl,
     TextAreaControl,
+    DateControl,
     PasswordControl,
     NumberControl,
     NumberEnumControl,

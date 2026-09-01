@@ -13,6 +13,7 @@ import{getControlType}from"./schemas/UtilSchema"
 import{getControlProps}from"./schemas/UtilSchema"
 import{ControlType}from"./schemas/ControlType"
 import{TextControl}from"./controls";
+import{DateControl}from"./controls";
 import{TextAreaControl}from"./controls";
 import{PasswordControl}from"./controls";
 import{NumberControl}from"./controls";
@@ -141,6 +142,9 @@ export const elementList=(schema:any,uischema:any,i18nData:any,language:string,o
 				switch(control){
 					case ControlType.TextControl:
 						elements.push(<TextControl props={props}/>);
+						break;
+					case ControlType.DateControl:
+						elements.push(<DateControl props={props}/>);
 						break;
 					case ControlType.TextAreaControl:
 						elements.push(<TextAreaControl props={props}/>);
