@@ -1,6 +1,7 @@
+//React 19 removed the global JSX namespace; it is imported from react instead.
+import type { JSX } from 'react';
 import { ObjectContext } from './ObjectContext';
 import { ObjectState } from './ObjectState';
-import { createElement } from 'react'
 
 interface ObjectProps {
     objectState:ObjectState,

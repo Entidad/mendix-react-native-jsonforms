@@ -1,6 +1,5 @@
 import{Component}from"react";
 import{ReactNode}from"react";
-import{createElement}from"react";
 //import{useState}from"react";
 //import{useEffect}from"react";
 import{TextStyle,ViewStyle,View}from"react-native";

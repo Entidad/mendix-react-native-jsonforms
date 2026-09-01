@@ -1,5 +1,6 @@
-import{createElement}from"react";
 import{useState}from"react";
+//React 19 removed the global JSX namespace; it is imported from react instead.
+import type{JSX}from"react";
 import{View}from"react-native";
 import{ScrollView}from"react-native";
 //import{validateSchema}from"./util/Validation"

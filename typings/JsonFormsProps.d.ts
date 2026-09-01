@@ -3,8 +3,8 @@
  * WARNING: All changes made to this file will be overwritten
  * @author Mendix Widgets Framework Team
  */
-import { CSSProperties } from "react";
 import { DynamicValue, EditableValue } from "mendix";
+import { CSSProperties } from "react";
 
 export interface JsonFormsProps<Style> {
     name: string;
@@ -28,7 +28,8 @@ export interface JsonFormsPreviewProps {
     style: string;
     styleObject?: CSSProperties;
     readOnly: boolean;
-    renderMode?: "design" | "xray" | "structure";
+    renderMode: "design" | "xray" | "structure";
+    translate: (text: string) => string;
     mxSchema: string;
     mxUiSchema: string;
     mxFormData: string;

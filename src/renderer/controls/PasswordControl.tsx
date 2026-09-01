@@ -1,5 +1,4 @@
 import{useObject}from'../context/ObjectHook';
-import{createElement}from'react'
 import{StyleSheet,View,TextInput,Text}from"react-native";
 const styles=StyleSheet.create({
 	inputControl:{

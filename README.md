@@ -6,8 +6,54 @@ JSON Forms is a declarative framework for efficiently building form-based web UI
 
 Implements features from the JSON Forms library in a mendix widget
 
+## Requirements
+Studio Pro **11.12** or higher.
+
+Version `2.0.0` is built against Mendix Pluggable Widgets Tools 11.12 (React 19, React
+Native 0.84) and is **not backward compatible**. Stay on the `1.x` release for Studio Pro 10.
+
+## Version history
+
+**2.0.0** — rebuilt for Studio Pro 11.12. The vendored theme was trimmed to the files the
+widget actually uses and converted to TypeScript; unused dependencies were removed.
+
+The widget id also changed, from `io.entidad.widget.native.jsonforms.JsonForms` to
+`entidad.io.native.jsonforms.JsonForms`, bringing it in line with the other Entidad native
+widgets. Studio Pro treats a changed id as a different widget, so **a page using the previous
+version will not pick this one up**: remove the old widget from the page, add this one, and map
+the attributes again.
+
+**1.0.18** — last release for Studio Pro 10.
+
 ## Usage
-Emplace the JSON Forms widget in a dataview and configure the attributes
+Download one of the [releases](https://github.com/Entidad/mendix-react-native-jsonforms/releases)
+or build from source as follows
+
+```
+git clone https://github.com/Entidad/mendix-react-native-jsonforms.git
+cd ./mendix-react-native-jsonforms
+npm install
+npm run build
+```
+
+Deploy `entidad.io.native.JsonForms.mpk` to `$PROJ/widgets`, then run
+`Synchronize App Directory` in Studio Pro (`F4`, or `Menu / App / Synchronize App Directory`).
+
+Place the widget in a **Data view** and map the attributes below.
+
+### Properties
+
+| Property | Type | Required | Description |
+| --- | --- | --- | --- |
+| `mxSchema` | String attribute | yes | The JSON Schema describing the form's data. |
+| `mxUiSchema` | String attribute | yes | The UI Schema describing the form's layout. |
+| `mxFormData` | String attribute | yes | Holds the form data. Written as the user edits. |
+| `mxI18nData` | String attribute | yes | Translatable strings for the form, per language. |
+| `mxLanguage` | String attribute | yes | Code of the language to display the form in. |
+| `mxReadOnly` | Boolean attribute | yes | Render values without allowing edits. |
+| `mxStyleData` | Expression | no (default `'{}'`) | Style JSON, described under Styling below. |
+| `onChangeAction` | Action | no | Runs when the form data changes. |
+| `debugon` | Boolean | yes (default `false`) | Write messages to the console. |
 
 ## Controls Implemented
 
@@ -26,7 +72,7 @@ The following native controls are implemented
 
 ## Styling
 
-Compile time styling can be customized by edited `src/renderer/theme/custom-variables.js`. Modeling time styling can be achieved by editing the `UI / Style JSON` field. A sample style can be found at `styles/sample.json`
+Compile time styling can be customized by editing `src/theme/theme/native/custom-variables.ts`. Modeling time styling can be achieved by editing the `UI / Style JSON` field. A sample style can be found at `styles/sample.json`
 
 ### Main Container
 
@@ -50,7 +96,7 @@ The main container around the widget can be styled as follows
 ```
 </details>
 
-## Conponent Wrapper Stylling
+## Component Wrapper Styling
 
 Each component has a wrapper that can be styled as follows
 
@@ -334,37 +380,53 @@ Here follows some styling samples for the various components.
 
 ![RadioControl](../main/images/RadioControl.png?raw=true)
 
+A radio control is styled through `radioButtons` for the buttons themselves and `input` for the
+surrounding label, which are the two keys the control merges.
+
 <details>
   <summary>JSON</summary>
 
 ```
 {
-    "dateControl": {
-        "dateTimePicker": {
-            "button": {
-                "container": {
-                    "flex": 1,
-                    "justifyContent": "center"
-                },
-                "header": {
-                    "textAlign": "center"
-                },
-                "primary": {}
-            },
-            "buttonContainer": {
-                "flex": 1,
-                "flexDirection": "row",
-                "alignItems": "center",
-                "justifyContent": "center"
-            },
-            "buttonConfirm": {},
-            "buttonCancel": {}
+    "radioButtons": {
+        "caption": {
+            "numberOfLines": 1,
+            "color": "#201313",
+            "fontSize": 14,
+            "fontFamily": "Lato-Regular",
+            "lineHeight": 20,
+            "marginBottom": 8,
+            "marginLeft": 8,
+            "marginTop": 8
+        },
+        "outerCircle": {
+            "height": 40,
+            "width": 40,
+            "borderRadius": 20,
+            "borderWidth": 1,
+            "borderColor": "#CCCCCC",
+            "alignItems": "center",
+            "justifyContent": "center"
+        },
+        "innerCircle": {
+            "height": 32,
+            "width": 32,
+            "borderRadius": 16,
+            "backgroundColor": "#622C6D"
+        },
+        "radioButtonItemContainerStyle": {
+            "marginBottom": 8
         }
     }
 }
 ```
 
 </details>
+
+`radioButtons` also accepts a `radioButtonError` key, applied when the value fails validation.
+It is not set above, so an invalid radio falls back to the built-in danger colours rather than
+your own palette.
+
 
 ### ReadOnlyControl Styling
 
@@ -399,12 +461,23 @@ Here follows some styling samples for the various components.
 
 # Compiled Styling
 
-For styling the components `theme/native/custom-variables.js`, `theme/native/exclusion-variables.js`, and `themesource` were copied from a stock standard Mendix project and added to the source tree with minor modifications at the following locations.
+Some styling is baked in at build time rather than set through the Style JSON. It comes from
+a small copy of a stock Mendix theme kept in the source tree:
 
-* `src/renderer/theme`
-* `src/renderer/themesource`
+* `src/theme/theme/native/custom-variables.ts` — the design tokens the controls read
+* `src/theme/theme/native/exclusion-variables.ts`
+* `src/theme/themesource/atlas_core/native/api.ts` and the three helper functions it uses
 
-To modify the compiled styling edit `src/renderer/theme/custom-variables.js`
+To change the compiled styling, edit `src/theme/theme/native/custom-variables.ts` and rebuild.
+
+These files are vendored from a stock Mendix project and are marked `@ts-nocheck`, since they
+are not maintained here. Only the files above are kept: the rest of the copied theme was
+unreachable from the widget and was removed in `2.0.0`, along with the web assets — stylesheets,
+fonts and images — that came with it.
+
+Widget-specific styles such as `radioButtons`, `checkboxControl`, `readOnlyControl`,
+`jsonformsControlsContainer` and `jsonformsControlContainer` are defined in
+`src/renderer/theme/widget-variables.ts`.
 
 ## Demo project
 Currently there is no demo project
@@ -415,7 +488,7 @@ Currently there is no demo project
 
 ## Development and contribution
 
-1. Install NPM package dependencies by using: `npm install`. If you use NPM v7.x.x, which can be checked by executing `npm -v`, execute: `npm install --legacy-peer-deps`.
+1. Install NPM package dependencies by using: `npm install`. Node 20.19.4 or higher is required.
 1. Run `npm start` to watch for code changes. On every change:
     - the widget will be bundled;
     - the bundle will be included in a `dist` folder in the root directory of the project;

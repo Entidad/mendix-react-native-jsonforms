@@ -1,18 +1,18 @@
 {
   "name": "jsonformsnative",
   "widgetName": "JsonForms",
-  "version": "1.0.18",
+  "version": "2.0.0",
   "description": "Mendix JsonForms Render for Native",
-  "copyright": "GPL",
+  "copyright": "\u00a9 2024-2026 Entidad. All Rights Reserved.",
   "author": "Carlos Sanchez, Ockert van Schalkwyk",
   "engines": {
-    "node": ">=16"
+    "node": ">=20.19.4"
   },
-  "license": "GPL",
+  "license": "Apache-2.0",
   "config": {
     "projectPath": "./../testProject"
   },
-  "packagePath": "io.entidad.widget.native",
+  "packagePath": "entidad.io.native",
   "scripts": {
     "start": "pluggable-widgets-tools start:native",
     "build": "pluggable-widgets-tools build:native",
@@ -22,27 +22,23 @@
     "release": "pluggable-widgets-tools release:native"
   },
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^10.5.0",
+    "@mendix/pluggable-widgets-tools": "^11.12.0",
     "@types/big.js": "^6.0.2",
     "tslib": "^2.7.0"
   },
   "dependencies": {
-    "@react-native-community/cli": "^14.1.1",
     "ajv": "^8.12.0",
     "ajv-formats": "^2.1.1",
-    "react-native-safe-area-context": "^4.11.1",
     "react-native-svg": "^15.0.0"
   },
   "resolutions": {
-    "react": "18.2.0",
-    "react-native": "0.72.7",
-    "@types/react": "18.2.0",
-    "@types/react-native": "0.72.7"
+    "react": "^19.2.0",
+    "@types/react": "^19.0.0",
+    "react-native": "0.84.1"
   },
   "overrides": {
-    "react": "18.2.0",
-    "react-native": "0.72.7",
-    "@types/react": "18.2.0",
-    "@types/react-native": "0.72.7"
+    "react": "^19.2.0",
+    "@types/react": "^19.0.0",
+    "react-native": "0.84.1"
   }
 }

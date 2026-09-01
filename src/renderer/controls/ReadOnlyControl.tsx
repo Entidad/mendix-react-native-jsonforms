@@ -1,4 +1,3 @@
-import{createElement}from'react'
 import{View}from"react-native";
 import{Text}from"react-native";
 import*as customVariables from'../theme/widget-variables';
