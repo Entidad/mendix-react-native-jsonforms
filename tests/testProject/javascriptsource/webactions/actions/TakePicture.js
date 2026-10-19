@@ -14,7 +14,7 @@ import { Big } from "big.js";
  * Take a picture using the device's camera.
  * @param {MxObject} picture - This is required.
  * @param {boolean} showConfirmationScreen
- * @param {"WebActions.PictureQuality.original"|"WebActions.PictureQuality.low"|"WebActions.PictureQuality.medium"|"WebActions.PictureQuality.high"|"WebActions.PictureQuality.custom"} pictureQuality - The default picture quality is 'Medium'.
+ * @param {undefined|"original"|"low"|"medium"|"high"|"custom"} pictureQuality - The default picture quality is 'Medium'.
  * @param {Big} maximumWidth - The picture will be scaled to this maximum pixel width, while maintaining the aspect ratio.
  * @param {Big} maximumHeight - The picture will be scaled to this maximum pixel height, while maintaining the aspect ratio.
  * @returns {Promise.<boolean>}
@@ -53,13 +53,9 @@ export async function TakePicture(picture, showConfirmationScreen, pictureQualit
     return new Promise(async (resolve, reject) => {
         let error;
         let stream;
-        const styleElements = [];
         let videoIsReady = false;
         let shouldFaceEnvironment = true;
-        for (const styleElement of createStyleElements(createStyles())) {
-            styleElements.push(styleElement);
-            document.head.appendChild(styleElement);
-        }
+        let retryAttempt = 0;
         const {
             video,
             wrapper,
@@ -88,13 +84,32 @@ export async function TakePicture(picture, showConfirmationScreen, pictureQualit
             resolve(false);
         });
         switchControl.addEventListener("click", switchControlHandler);
-        actionControl.addEventListener("click", () => {
+        actionControl.addEventListener("click", actionControlClicked);
+        video.addEventListener("loadedmetadata", () => (videoIsReady = true));
+        function actionControlClicked() {
+             if(!videoIsReady){
+                actionControl.disabled = true;
+                // reload video if not ready yet (some devices need this extra step)
+                if(retryAttempt < 3){
+                    retryAttempt++;
+                } else {
+                    mx.ui.error(getUserText("Media not available.", "Media niet beschikbaar."));
+                    return;
+                }
+                video.load();
+                setTimeout(() => {
+                    actionControlClicked();
+                }, 50);
+                return;
+            }
+
             removeAllControlButtons();
             if (showConfirmationScreen) {
                 // Delay the `takePictureHandler` to the next cycle so the UI preparations can go first. Otherwise, the control-buttons are not removed while the second screen is being set up.
                 setTimeout(() => {
                     takePictureHandler(() => {
                         addAllControlButtons();
+                        retryAttempt = 0;
                         video.play();
                     });
                 }, 0);
@@ -106,8 +121,9 @@ export async function TakePicture(picture, showConfirmationScreen, pictureQualit
                     closeControlHandler();
                 });
             }
-        });
-        video.addEventListener("loadedmetadata", () => (videoIsReady = true));
+
+            actionControl.disabled = false;
+        }
         function getVideoCanvas() {
             const videoCanvas = document.createElement("canvas");
             videoCanvas.height = video.videoHeight;
@@ -115,204 +131,6 @@ export async function TakePicture(picture, showConfirmationScreen, pictureQualit
             const videoContext = videoCanvas.getContext("2d");
             videoContext === null || videoContext === void 0 ? void 0 : videoContext.drawImage(video, 0, 0);
             return videoCanvas;
-        }
-        function createStyles() {
-            return [
-                `
-                .take-picture-wrapper {
-                    height: 100%;
-                    width: 100%;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                    display: flex;
-                    flex-direction: column-reverse;
-                    justify-content: space-between;
-                    /* Should be higher than the the video. */
-                    z-index: 111;
-                };
-                `,
-                `
-                .take-picture-video-element {
-                    position: absolute;
-                    /* Should be higher than the z-index of '.layout-atlas .region-sidebar' so it sits on top of the page. */
-                    z-index: 110;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    object-fit: cover;
-                    width: 100%;
-                    height: 100%;
-                    background-color: black;
-                };
-                `,
-                `
-                .take-picture-action-control-wrapper {
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: row;
-                    align-items: center;
-                    /* should be higher than the video. */
-                    z-index: 111;
-                    margin-bottom: 74px;
-                };
-                `,
-                `
-                .take-picture-action-switch-control-wrapper {
-                    display: flex;
-                    justify-content: space-between;
-                    flex-direction: row;
-                    align-items: center;
-                    /* should be higher than the video. */
-                    z-index: 111;
-                    margin-bottom: 74px;
-                };
-                `,
-                `
-                .take-picture-close-control-wrapper {
-                    display: flex;
-                    justify-content: flex-start;
-                    flex-direction: column;
-                    align-items: flex-start;
-                    /* should be higher than the video. */
-                    z-index: 111;
-                };
-                `,
-                `
-                .take-picture-action-control {
-                    background-color: transparent;
-                    border-style: none;
-                    padding: 0;
-                };
-                `,
-                `
-                .take-picture-action-spacing {
-                    flex: 1;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                };
-                `,
-                `
-                .take-picture-switch-spacing {
-                    display: flex;
-                    flex: 1;
-                    justify-content: flex-end;
-                    align-items: center;
-                };
-                `,
-                `
-                .take-picture-spacing-div {
-                    flex: 1;
-                };
-                `,
-                `
-                .take-picture-action-control-inner {
-                    border-radius: 50%;
-                    background-color: white;
-                    border: 1px solid black;
-                    width: 58px;
-                    height: 58px;
-                };
-                `,
-                `
-                .take-picture-button-wrapper {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    z-index: 111;
-                };
-                `,
-                `
-                .take-picture-save-button {
-                    color: white;
-                    background-color: #264AE5;
-                    width: 100%;
-                    border-radius: 4px;
-                    height: 40px;
-                    font-size: 14px;
-                    line-height: 20px;
-                    text-align: center;
-                    border-style: none;
-                };
-                `,
-                `
-                .take-picture-switch-control {
-                    background-color: transparent;
-                    border-style: none;
-                    padding: 0;
-                    margin-right: 22.33px;
-                };
-                `,
-                `
-                .take-picture-close-control {
-                    margin: 30px 0 0 30px;
-                    border-style: none;
-                    padding: 0;
-                    background-color: transparent;
-                };
-                `,
-                `
-                .take-picture-save-control {
-                    margin: 30px 30px 0 0;
-                    border-style: none;
-                    padding: 0;
-                    background-color: transparent;
-                };
-                `,
-                `
-                .take-picture-confirm-wrapper {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color: white;
-                    /* should be higher than the wrapper. */
-                    z-index: 112;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                }
-                `,
-                `
-                .take-picture-image {
-                    position: absolute;
-                    /* Should be higher than the z-index of '.layout-atlas .region-sidebar' so it sits on top of the page. */
-                    z-index: 110;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    object-fit: cover;
-                    width: 100%;
-                    height: 100%;
-                    background-color: black;
-                }
-                `,
-                `
-                /* Overwrite 'atlas_core/web/core/_legacy/_mxui.scss' for this particular widget because otherwise
-                 iOS Safari will in certain cases put the top and/or bottom bar on top of the overlay of this widget. */
-                 
-                .mx-scrollcontainer-wrapper:not(.mx-scrollcontainer-nested) {
-                    -webkit-overflow-scrolling: auto;
-                }
-                `
-            ];
-        }
-        function createStyleElements(styles) {
-            const styleElements = [];
-            for (const style of styles) {
-                const styleElement = document.createElement("style");
-                styleElement.appendChild(document.createTextNode(style));
-                styleElements.push(styleElement);
-            }
-            return styleElements;
         }
         function createFirstScreenElements() {
             const wrapper = document.createElement("div");
@@ -425,7 +243,7 @@ export async function TakePicture(picture, showConfirmationScreen, pictureQualit
                             cleanupConfirmationElements();
                             onResumeFirstScreen();
                         });
-                        // eslint-disable-next-line no-inner-declarations
+                         
                         function cleanupConfirmationElements() {
                             document.body.removeChild(confirmationWrapper);
                             videoCanvas.remove();
@@ -454,9 +272,6 @@ export async function TakePicture(picture, showConfirmationScreen, pictureQualit
         function closeControlHandler() {
             stopCamera();
             document.body.removeChild(wrapper);
-            for (const styleElement of styleElements) {
-                document.head.removeChild(styleElement);
-            }
         }
         async function startCamera(facingMode) {
             var _a;
@@ -598,9 +413,9 @@ export async function TakePicture(picture, showConfirmationScreen, pictureQualit
     function prepareLanguage() {
         const englishFn = english => english;
         try {
-            return mx.session.sessionData.locale.code.toLowerCase().includes("en")
-                ? englishFn
-                : (_english, dutch) => dutch;
+            return mx.session.sessionData.locale.code.toLowerCase().includes("nl")
+                ? (_english, dutch) => dutch
+                : englishFn;
         } catch (_) {
             return englishFn;
         }

@@ -8,15 +8,6 @@
 import { Big } from "big.js";
 
 // BEGIN EXTRA CODE
-function deg2rad(deg) {
-    return deg.times(Math.PI / 180);
-}
-function kmToStatueMile(km) {
-    return km.div(1.609344);
-}
-function kmToNauticalMile(km) {
-    return km.div(1.852);
-}
 // END EXTRA CODE
 
 /**
@@ -24,7 +15,7 @@ function kmToNauticalMile(km) {
  * @param {Big} longitudePoint1
  * @param {Big} latitudePoint2
  * @param {Big} longitudePoint2
- * @param {"NanoflowCommons.Enum_DistanceUnit.KILOMETER"|"NanoflowCommons.Enum_DistanceUnit.STATUTE_MILE"|"NanoflowCommons.Enum_DistanceUnit.NAUTICAL_MILE"} unit
+ * @param {undefined|"KILOMETER"|"STATUTE_MILE"|"NAUTICAL_MILE"} unit
  * @returns {Promise.<Big>}
  */
 export async function GetStraightLineDistance(latitudePoint1, longitudePoint1, latitudePoint2, longitudePoint2, unit) {
