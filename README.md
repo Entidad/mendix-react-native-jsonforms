@@ -12,12 +12,22 @@ Studio Pro **11.12** or higher.
 Version `2.0.0` is built against Mendix Pluggable Widgets Tools 11.12 (React 19, React
 Native 0.84) and is **not backward compatible**. Stay on the `1.x` release for Studio Pro 10.
 
-The date control uses `@react-native-community/datetimepicker`, pinned to `8.6.0` to match the
-version the Mendix native template already links. It ships inside the `.mpk`, so no change to
-the app template is needed, but the pin should be kept in step with the template to avoid two
-versions of the same native module.
+The date control uses `@react-native-community/datetimepicker` but does **not** ship it. Studio
+Pro's own Date picker depends on the same package, so every Mendix native app already links it —
+the native template for Studio Pro 11.12 pins `8.6.0`. The build keeps the import external (see
+`rollup.config.mjs`), so when the app is bundled the widget resolves to the app's single copy.
+The `8.6.0` entry in `package.json` is there for type checking and should be kept in step with
+the template (see [Native template](#native-template)).
 
 ## Version history
+
+**2.0.1** — fixes an iOS crash, `Invariant Violation: Tried to register two views with the same
+name RNDateTimePicker`, when opening a page with the widget in an app that also uses Studio Pro's
+Date picker. `2.0.0` copied its own `@react-native-community/datetimepicker` into the `.mpk`;
+Metro resolved the widget's import to that copy and Studio Pro's to its own, and both registered
+the same native view. Matching versions did not help, since the two copies sat at different
+paths. The package is now kept out of the `.mpk` and is no longer declared as a native dependency
+of the widget. Properties and behaviour are unchanged: replace the `.mpk` and synchronize.
 
 **2.0.0** — added a date control for schema properties declaring `format: date`. Rebuilt for Studio Pro 11.12. The vendored theme was trimmed to the files the
 widget actually uses and converted to TypeScript; unused dependencies were removed.
@@ -558,6 +568,48 @@ Currently there is no demo project
     - the bundle will be included in the `deployment` and `widgets` folder of the Mendix test project.
 
 Contributions welcome
+
+### Building with `rollup.config.mjs`
+
+`rollup.config.mjs` adds `@react-native-community/datetimepicker` to the build's externals.
+Pluggable Widgets Tools `11.12.0` and `11.12.1` cannot load a custom config for native widgets:
+`configs/rollup.config.native.mjs` imports `loadConfigFile` as a default export, and the build
+fails with `TypeError: loadConfigFile is not a function`. Until that is fixed upstream, change
+line 12 of `node_modules/@mendix/pluggable-widgets-tools/configs/rollup.config.native.mjs` after
+every `npm install`, the same way the web config already does:
+
+```js
+import rollupLoadConfigFile from "rollup/dist/loadConfigFile.js";
+const { loadConfigFile } = rollupLoadConfigFile;
+```
+
+Do not work around the error by deleting `rollup.config.mjs`: the build will succeed, but the
+`.mpk` will bundle datetimepicker again and crash on iOS as described under `2.0.1`. A good
+build has no `node_modules` folder and no `JsonForms.json` inside the `.mpk`:
+
+```
+unzip -l dist/<version>/entidad.io.native.JsonForms.mpk
+```
+
+## Native template
+
+The test project includes a copy of the Mendix Native Template at
+`tests/testProject/resources/nativeTemplate`, version `v19.1.7` (see its `.template_version`),
+matching Studio Pro `11.12.6`: React Native `0.84.1`, React `19.2.3`, Node `24`. It is kept
+with the test project so the widget can be built into a native app and exercised on a device;
+see the template's own `README.md` for building it.
+
+It is also the reference for native packages the widget uses but does not ship. Before changing
+the version of `@react-native-community/datetimepicker` in `package.json`, check the version the
+template pins:
+
+```
+grep datetimepicker tests/testProject/resources/nativeTemplate/package.json
+```
+
+When moving to a new Studio Pro version, replace the template with the release that its
+`mendix_version.json` maps to that version (for example, Studio Pro `>=11.11.0` takes template
+`19.1.x`), then check the pinned versions again.
 
 ## References
 

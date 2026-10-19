@@ -2,7 +2,7 @@
 @import url("resources/fonts/open-sans/open-sans.css");
 @font-face {
   font-family: "Atlas_Core$Atlas_Filled";
-  src: url("./fonts/Atlas_Core$Atlas_Filled.ttf?639279984410813140") format("truetype");
+  src: url("./fonts/Atlas_Core$Atlas_Filled.ttf?639280006386904548") format("truetype");
 }
 .mx-icon-filled {
   display: inline-block;
@@ -1478,7 +1478,7 @@
 
 @font-face {
   font-family: "Atlas_Core$Atlas";
-  src: url("./fonts/Atlas_Core$Atlas.ttf?639279984410813140") format("truetype");
+  src: url("./fonts/Atlas_Core$Atlas.ttf?639280006386904548") format("truetype");
 }
 .mx-icon-lined {
   display: inline-block;
